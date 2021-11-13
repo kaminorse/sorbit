@@ -1,0 +1,40 @@
+/**
+ * components/message.scss
+ * @author kaminorse
+ */
+
+@use "../variables/index.scss" as variables;
+
+.message {
+  display: block;
+  border: 0.25rem solid transparent;
+  border-radius: 0.25rem;
+  .message-header {
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    display: block;
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-semibold);
+  }
+  .message-body {
+    padding: 0.5rem;
+    display: block;
+  }
+
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      color: var(--color-#{$color}-200);
+      border: 0.25rem solid var(--color-#{$color}-700);
+      background-color: var(--color-#{$color}-700);
+      .message-header {
+        border: 0.25rem solid var(--color-#{$color}-500);
+        color: var(--color-#{$color}-800);
+        background-color: var(--color-#{$color}-500);
+      }
+      .message-body {
+        color: var(--color-#{$color}-500);
+        background-color: var(--color-#{$color}-700);
+      }
+    }
+  }
+}

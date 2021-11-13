@@ -1,0 +1,36 @@
+/**
+ * utilities/typography.scss
+ * @author kaminorse
+ */
+
+.is-italic{
+  font-style: italic !important;
+}
+
+.is-oblique{
+  font-style: italic !important;
+}
+
+.is-capitalized{
+  text-transform: capitalize !important;
+}
+
+.is-lowercase{
+  text-transform: lowercase !important;
+}
+
+.is-uppercase{
+  text-transform: uppercase !important;
+}
+
+.is-text-align-left{
+  text-align: left;
+}
+
+.is-text-align-right{
+  text-align: right;
+}
+
+.is-white-space-nowrap {
+  white-space: nowrap;
+}

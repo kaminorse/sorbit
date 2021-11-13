@@ -1,0 +1,102 @@
+@use "../variables/index.scss" as variables;
+
+@mixin mobile() {
+  @media screen and (max-width: variables.$breakpoint-tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media screen and (min-width: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-desktop - 1px) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (min-width: variables.$breakpoint-desktop) and (max-width: variables.$breakpoint-widescreen - 1px) {
+    @content;
+  }
+}
+
+@mixin widescreen() {
+  @media screen and (min-width: variables.$breakpoint-widescreen) and (max-width: variables.$breakpoint-fullhd - 1px) {
+    @content;
+  }
+}
+
+@mixin fullhd() {
+  @media screen and (min-width: variables.$breakpoint-fullhd) {
+    @content;
+  }
+}
+
+@mixin reducemotion() {
+  @media (print), (prefers-reduced-motion: reduce){
+    @content;
+  }
+}
+
+@mixin is-responsive($suffix: "") {
+  @include mobile() {
+    &.is-mobile#{$suffix},
+    &.is-mobile-or-more#{$suffix},
+    &.is-tablet-or-less#{$suffix},
+    &.is-desktop-or-less#{$suffix},
+    &.is-widescreen-or-less#{$suffix}
+    &.is-fullhd-or-less#{$suffix} {
+      @content;
+    }
+  }
+  @include tablet() {
+    &.is-mobile-or-more#{$suffix},
+    &.is-tablet-or-less#{$suffix},
+    &.is-tablet#{$suffix},
+    &.is-tablet-or-more#{$suffix},
+    &.is-desktop-or-less#{$suffix},
+    &.is-widescreen-or-less#{$suffix}
+    &.is-fullhd-or-less#{$suffix} {
+      @content;
+    }
+  }
+  @include desktop() {
+    &.is-mobile-or-more#{$suffix},
+    &.is-tablet-or-more#{$suffix},
+    &.is-desktop-or-less#{$suffix},
+    &.is-desktop,
+    &.is-desktop-or-more#{$suffix},
+    &.is-widescreen-or-less#{$suffix}
+    &.is-fullhd-or-less#{$suffix} {
+      @content;
+    }
+  }
+  @include widescreen() {
+    &.is-mobile-or-more#{$suffix},
+    &.is-tablet-or-more#{$suffix},
+    &.is-desktop-or-more#{$suffix},
+    &.is-widescreen-or-less#{$suffix},
+    &.is-widescreen#{$suffix},
+    &.is-widescreen-or-more#{$suffix},
+    &.is-fullhd-or-less#{$suffix} {
+      @content;
+    }
+  }
+  @include fullhd() {
+    &.is-mobile-or-more#{$suffix},
+    &.is-tablet-or-more#{$suffix},
+    &.is-desktop-or-more#{$suffix},
+    &.is-widescreen-or-more#{$suffix},
+    &.is-fullhd-or-less#{$suffix},
+    &.is-fullhd#{$suffix} {
+      @content;
+    }
+  }
+}
+
+@mixin column() {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  max-width: 100%;
+  position: relative;
+}

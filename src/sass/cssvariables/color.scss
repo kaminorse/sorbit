@@ -1,0 +1,190 @@
+/**
+ * cssvariables/color.scss
+ * @author kaminorse
+ */
+
+@use "../variables/color.scss" as variables;
+
+@mixin color_light() {
+  color-scheme: light;
+}
+
+@mixin color_dark() {
+  color-scheme: dark;
+}
+
+:root {
+  --color-white: #{variables.$color-white};
+  --color-black: #{variables.$color-black};
+
+  //#region hsl values
+
+  --color-gray-900-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-900};
+  --color-gray-800-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-800};
+  --color-gray-700-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-700};
+  --color-gray-600-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-600};
+  --color-gray-500-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-500};
+  --color-gray-400-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-400};
+  --color-gray-300-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-300};
+  --color-gray-200-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-200};
+  --color-gray-100-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-100};
+
+  --color-red-900-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-red-800-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-red-700-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-red-600-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-red-500-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-red-400-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-red-300-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-red-200-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-red-100-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  --color-orange-900-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-orange-800-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-orange-700-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-orange-600-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-orange-500-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-orange-400-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-orange-300-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-orange-200-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-orange-100-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  --color-yellow-900-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-yellow-800-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-yellow-700-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-yellow-600-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-yellow-500-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-yellow-400-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-yellow-300-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-yellow-200-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-yellow-100-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  --color-green-900-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-green-800-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-green-700-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-green-600-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-green-500-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-green-400-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-green-300-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-green-200-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-green-100-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  --color-cyan-900-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-cyan-800-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-cyan-700-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-cyan-600-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-cyan-500-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-cyan-400-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-cyan-300-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-cyan-200-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-cyan-100-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  --color-blue-900-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-blue-800-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-blue-700-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-blue-600-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-blue-500-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-blue-400-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-blue-300-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-blue-200-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-blue-100-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  --color-violet-900-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
+  --color-violet-800-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
+  --color-violet-700-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
+  --color-violet-600-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
+  --color-violet-500-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
+  --color-violet-400-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
+  --color-violet-300-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
+  --color-violet-200-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
+  --color-violet-100-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
+
+  //#endregion hsl values
+
+  //#region color
+
+  --color-gray-900: #{variables.$color-gray-900};
+  --color-gray-800: #{variables.$color-gray-800};
+  --color-gray-700: #{variables.$color-gray-700};
+  --color-gray-600: #{variables.$color-gray-600};
+  --color-gray-500: #{variables.$color-gray-500};
+  --color-gray-400: #{variables.$color-gray-400};
+  --color-gray-300: #{variables.$color-gray-300};
+  --color-gray-200: #{variables.$color-gray-200};
+  --color-gray-100: #{variables.$color-gray-100};
+  --color-red-900: #{variables.$color-red-900};
+  --color-red-800: #{variables.$color-red-800};
+  --color-red-700: #{variables.$color-red-700};
+  --color-red-600: #{variables.$color-red-600};
+  --color-red-500: #{variables.$color-red-500};
+  --color-red-400: #{variables.$color-red-400};
+  --color-red-300: #{variables.$color-red-300};
+  --color-red-200: #{variables.$color-red-200};
+  --color-red-100: #{variables.$color-red-100};
+  --color-orange-900: #{variables.$color-orange-900};
+  --color-orange-800: #{variables.$color-orange-800};
+  --color-orange-700: #{variables.$color-orange-700};
+  --color-orange-600: #{variables.$color-orange-600};
+  --color-orange-500: #{variables.$color-orange-500};
+  --color-orange-400: #{variables.$color-orange-400};
+  --color-orange-300: #{variables.$color-orange-300};
+  --color-orange-200: #{variables.$color-orange-200};
+  --color-orange-100: #{variables.$color-orange-100};
+  --color-yellow-900: #{variables.$color-yellow-900};
+  --color-yellow-800: #{variables.$color-yellow-800};
+  --color-yellow-700: #{variables.$color-yellow-700};
+  --color-yellow-600: #{variables.$color-yellow-600};
+  --color-yellow-500: #{variables.$color-yellow-500};
+  --color-yellow-400: #{variables.$color-yellow-400};
+  --color-yellow-300: #{variables.$color-yellow-300};
+  --color-yellow-200: #{variables.$color-yellow-200};
+  --color-yellow-100: #{variables.$color-yellow-100};
+  --color-green-900: #{variables.$color-green-900};
+  --color-green-800: #{variables.$color-green-800};
+  --color-green-700: #{variables.$color-green-700};
+  --color-green-600: #{variables.$color-green-600};
+  --color-green-500: #{variables.$color-green-500};
+  --color-green-400: #{variables.$color-green-400};
+  --color-green-300: #{variables.$color-green-300};
+  --color-green-200: #{variables.$color-green-200};
+  --color-green-100: #{variables.$color-green-100};
+  --color-cyan-900: #{variables.$color-cyan-900};
+  --color-cyan-800: #{variables.$color-cyan-800};
+  --color-cyan-700: #{variables.$color-cyan-700};
+  --color-cyan-600: #{variables.$color-cyan-600};
+  --color-cyan-500: #{variables.$color-cyan-500};
+  --color-cyan-400: #{variables.$color-cyan-400};
+  --color-cyan-300: #{variables.$color-cyan-300};
+  --color-cyan-200: #{variables.$color-cyan-200};
+  --color-cyan-100: #{variables.$color-cyan-100};
+  --color-blue-900: #{variables.$color-blue-900};
+  --color-blue-800: #{variables.$color-blue-800};
+  --color-blue-700: #{variables.$color-blue-700};
+  --color-blue-600: #{variables.$color-blue-600};
+  --color-blue-500: #{variables.$color-blue-500};
+  --color-blue-400: #{variables.$color-blue-400};
+  --color-blue-300: #{variables.$color-blue-300};
+  --color-blue-200: #{variables.$color-blue-200};
+  --color-blue-100: #{variables.$color-blue-100};
+  --color-violet-900: #{variables.$color-violet-900};
+  --color-violet-800: #{variables.$color-violet-800};
+  --color-violet-700: #{variables.$color-violet-700};
+  --color-violet-600: #{variables.$color-violet-600};
+  --color-violet-500: #{variables.$color-violet-500};
+  --color-violet-400: #{variables.$color-violet-400};
+  --color-violet-300: #{variables.$color-violet-300};
+  --color-violet-200: #{variables.$color-violet-200};
+  --color-violet-100: #{variables.$color-violet-100};
+
+  //#endregion color
+
+  @include color_light();
+}
+
+[data-color-scheme="light"] {
+  @include color_light();
+}
+
+[data-color-scheme="dark"] {
+  @include color_dark();
+}

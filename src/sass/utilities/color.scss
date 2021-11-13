@@ -1,0 +1,20 @@
+/**
+ * utilities/color.scss
+ * @author kaminorse
+ */
+
+@use "../variables/index.scss" as variables;
+
+@each $color in variables.$colors {
+  @for $p from 1 through 9 {
+    .forecolor-#{$color}-#{$p}00 {
+      color: var(--color-#{$color}-#{$p}00) !important;
+    }
+    .backcolor-#{$color}-#{$p}00 {
+      color: var(--color-#{$color}-#{$p}00) !important;
+    }
+    .highlighter-#{$color}-#{$p}00 {
+      background: linear-gradient(transparent 66.66%, var(--color-#{$color}-#{$p}00) 33.33%);
+    }
+  }
+}

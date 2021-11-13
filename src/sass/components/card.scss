@@ -1,0 +1,23 @@
+/**
+ * components/card.scss
+ * @author kaminorse
+ */
+
+.card {
+  display: block;
+  border: 0.25rem solid var(--color-gray-700);
+  border-radius: 0;
+  box-shadow: 0 0.5rem 0.5rem var(--color-gray-700);
+  margin: 0.5rem;
+  padding: 0.5rem;
+  .card-title {
+    font-weight: var(--font-weight-semibold);
+    border-bottom: 0.25rem solid var(--color-gray-700);
+    margin: 0.25rem;
+    padding: 0.25rem;
+  }
+  .card-body {
+    margin: 0.25rem;
+    padding: 0.25rem;
+  }
+}

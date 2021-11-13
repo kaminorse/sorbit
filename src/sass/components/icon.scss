@@ -1,0 +1,24 @@
+/**
+ * components/icon.scss
+ * @author kaminorse
+ */
+
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  min-height: 1.5em;
+  min-width: 1.5em;
+  &.is-small {
+    min-height: 1em;
+    min-width: 1em;
+  }
+  &.is-medium {
+    min-height: 2em;
+    min-width: 2em;
+  }
+  &.is-large {
+    min-height: 3em;
+    min-width: 3em;
+  }
+}

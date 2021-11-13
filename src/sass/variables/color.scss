@@ -1,0 +1,137 @@
+/**
+ * variables/color.scss
+ * @author kaminorse
+ */
+
+@use "sass:color";
+
+//#region define color settings
+
+// NOTE: set your base color
+$color-hue-gray: 228 !default;
+
+$color-hue-red: 0 !default;
+$color-hue-orange: 26 !default;
+$color-hue-yellow: 60 !default;
+$color-hue-green: 90 !default;
+$color-hue-cyan: 174 !default;
+$color-hue-blue: 228 !default;
+$color-hue-violet: 270 !default;
+
+$color-saturation-gray: 21% !default;
+$color-saturation-colorful: 53% !default;
+
+$color-lightness-500: 58% !default;
+$color-lightness-900: $color-lightness-500 + 40% !default;
+$color-lightness-800: $color-lightness-500 + 30% !default;
+$color-lightness-700: $color-lightness-500 + 20% !default;
+$color-lightness-600: $color-lightness-500 + 10% !default;
+$color-lightness-400: $color-lightness-500 - 10% !default;
+$color-lightness-300: $color-lightness-500 - 20% !default;
+$color-lightness-200: $color-lightness-500 - 30% !default;
+$color-lightness-100: $color-lightness-500 - 40% !default;
+
+$color-white: hsl($color-hue-gray, $color-saturation-gray, 95%) !default;
+$color-black: hsl($color-hue-gray, $color-saturation-gray, 25%) !default;
+
+//#endregion define color settings
+
+//#region define colors
+
+$color-gray-900: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-900) !default;
+$color-gray-800: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-800) !default;
+$color-gray-700: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-700) !default;
+$color-gray-600: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-600) !default;
+$color-gray-500: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-500) !default;
+$color-gray-400: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-400) !default;
+$color-gray-300: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-300) !default;
+$color-gray-200: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-200) !default;
+$color-gray-100: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-100) !default;
+
+$color-red-900: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-900) !default;
+$color-red-800: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-800) !default;
+$color-red-700: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-700) !default;
+$color-red-600: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-600) !default;
+$color-red-500: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-500) !default;
+$color-red-400: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-400) !default;
+$color-red-300: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-300) !default;
+$color-red-200: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-200) !default;
+$color-red-100: hsl($color-hue-red, $color-saturation-colorful, $color-lightness-100) !default;
+
+$color-orange-900: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-900) !default;
+$color-orange-800: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-800) !default;
+$color-orange-700: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-700) !default;
+$color-orange-600: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-600) !default;
+$color-orange-500: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-500) !default;
+$color-orange-400: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-400) !default;
+$color-orange-300: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-300) !default;
+$color-orange-200: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-200) !default;
+$color-orange-100: hsl($color-hue-orange, $color-saturation-colorful, $color-lightness-100) !default;
+
+$color-yellow-900: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-900) !default;
+$color-yellow-800: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-800) !default;
+$color-yellow-700: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-700) !default;
+$color-yellow-600: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-600) !default;
+$color-yellow-500: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-500) !default;
+$color-yellow-400: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-400) !default;
+$color-yellow-300: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-300) !default;
+$color-yellow-200: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-200) !default;
+$color-yellow-100: hsl($color-hue-yellow, $color-saturation-colorful, $color-lightness-100) !default;
+
+$color-green-900: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-900) !default;
+$color-green-800: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-800) !default;
+$color-green-700: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-700) !default;
+$color-green-600: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-600) !default;
+$color-green-500: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-500) !default;
+$color-green-400: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-400) !default;
+$color-green-300: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-300) !default;
+$color-green-200: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-200) !default;
+$color-green-100: hsl($color-hue-green, $color-saturation-colorful, $color-lightness-100) !default;
+
+
+$color-cyan-900: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-900) !default;
+$color-cyan-800: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-800) !default;
+$color-cyan-700: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-700) !default;
+$color-cyan-600: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-600) !default;
+$color-cyan-500: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-500) !default;
+$color-cyan-400: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-400) !default;
+$color-cyan-300: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-300) !default;
+$color-cyan-200: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-200) !default;
+$color-cyan-100: hsl($color-hue-cyan, $color-saturation-colorful, $color-lightness-100) !default;
+
+$color-blue-900: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-900) !default;
+$color-blue-800: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-800) !default;
+$color-blue-700: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-700) !default;
+$color-blue-600: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-600) !default;
+$color-blue-500: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-500) !default;
+$color-blue-400: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-400) !default;
+$color-blue-300: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-300) !default;
+$color-blue-200: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-200) !default;
+$color-blue-100: hsl($color-hue-blue, $color-saturation-colorful, $color-lightness-100) !default;
+
+$color-violet-900: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-900) !default;
+$color-violet-800: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-800) !default;
+$color-violet-700: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-700) !default;
+$color-violet-600: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-600) !default;
+$color-violet-500: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-500) !default;
+$color-violet-400: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-400) !default;
+$color-violet-300: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-300) !default;
+$color-violet-200: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-200) !default;
+$color-violet-100: hsl($color-hue-violet, $color-saturation-colorful, $color-lightness-100) !default;
+
+//#endregion define colors
+
+//#region define colors array
+
+$colors: (
+  "gray",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "cyan",
+  "blue",
+  "violet",
+);
+
+//#endregion define colors array

@@ -1,0 +1,25 @@
+{
+  "name": "sorbit.css",
+  "version": "0.0.1",
+  "description": "sweet css written by scss",
+  "main": "src/sass/sorbit.scss",
+  "scripts": {
+    "build-css": "sass src/sass/sorbit.scss dist/sass/sorbit.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaminorse/sorbit.css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "kaminorse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaminorse/sorbit.css/issues"
+  },
+  "homepage": "https://github.com/kaminorse/sorbit.css#readme",
+  "dependencies": {
+    "sass": "^1.43.4"
+  }
+}

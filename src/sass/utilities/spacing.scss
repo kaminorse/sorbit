@@ -1,0 +1,72 @@
+/**
+ * utilities/spacing.scss
+ * @author kaminorse
+ */
+
+@use "sass:string";
+@use "../functions/index.scss" as functions;
+
+.display-block {
+  display: block;
+}
+
+.centering {
+  display: flex;
+  height: auto;
+  justify-content: flex-start;
+  width: 100%;
+  &>* {
+    margin: 0 auto
+  }
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.margin-top-auto {
+  margin-top: auto;
+}
+.margin-right-auto {
+  margin-right: auto;
+}
+.margin-bottom-auto {
+  margin-bottom: auto;
+}
+.margin-left-auto {
+  margin-left: auto;
+}
+
+@for $p from 0 through 100 {
+  $suffix: functions.str-replace(#{($p * 0.1)}, ".", "\\.");
+  .margin-#{$suffix} {
+    margin: $p * 0.1rem;
+  }
+  .margin-top-#{$suffix} {
+    margin-top: $p * 0.1rem;
+  }
+  .margin-right-#{$suffix} {
+    margin-right: $p * 0.1rem;
+  }
+  .margin-bottom-#{$suffix} {
+    margin-bottom: $p * 0.1rem;
+  }
+  .margin-left-#{$suffix} {
+    margin-left: $p * 0.1rem;
+  }
+  .padding-#{$suffix} {
+    padding: $p * 0.1rem;
+  }
+  .padding-top-#{$suffix} {
+    padding-top: $p * 0.1rem;
+  }
+  .padding-right-#{$suffix} {
+    padding-right: $p * 0.1rem;
+  }
+  .padding-bottom-#{$suffix} {
+    padding-bottom: $p * 0.1rem;
+  }
+  .padding-left-#{$suffix} {
+    padding-left: $p * 0.1rem;
+  }
+}

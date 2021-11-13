@@ -1,0 +1,11 @@
+/**
+ * components/header.scss
+ * @author kaminorse
+ */
+
+.header {
+  display: block;
+  width: 100%;
+  color: var(--color-black);
+  box-shadow: 0 0 0.5rem var(--color-gray-700);
+}
