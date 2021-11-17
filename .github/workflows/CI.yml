@@ -28,4 +28,4 @@ jobs:
       - name: Restore dependencies
         run: npm install
       - name: Build
-        run: npm run build-css
+        run: npm run build

@@ -1,25 +1,42 @@
 {
-  "name": "sorbit.css",
+  "name": "sorbit",
   "version": "0.0.1",
   "description": "sweet css written by scss",
   "main": "src/sass/sorbit.scss",
   "scripts": {
-    "build-css": "sass src/sass/sorbit.scss dist/sass/sorbit.css"
+    "build": "npm run clean && npm run sass && npm run autoprefix && npm run cleancss",
+    "clean": "rimraf dist/css",
+    "autoprefix": "postcss --use autoprefixer --map false --output dist/css/sorbit.css dist/css/sorbit.css",
+    "cleancss": "cleancss -o dist/css/sorbit.min.css dist/css/sorbit.css",
+    "sass": "sass src/sass/sorbit.scss dist/css/sorbit.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaminorse/sorbit.css.git"
+    "url": "git+https://github.com/kaminorse/sorbit.git"
   },
   "keywords": [
-    "css"
+    "css",
+    "sass",
+    "scss"
+  ],
+  "files": [
+    "dist",
+    "src",
+    "LICENSE",
+    "README.md"
   ],
   "author": "kaminorse",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaminorse/sorbit.css/issues"
+    "url": "https://github.com/kaminorse/sorbit/issues"
   },
-  "homepage": "https://github.com/kaminorse/sorbit.css#readme",
-  "dependencies": {
+  "homepage": "https://github.com/kaminorse/sorbit#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "clean-css-cli": "^5.4.2",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "rimraf": "^3.0.2",
     "sass": "^1.43.4"
   }
 }
