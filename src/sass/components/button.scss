@@ -6,11 +6,12 @@
 @use "../variables/index.scss" as variables;
 
 .button {
-  background-color: var(--color-white);
-  border-color: var(--color-gray-500);
+  background-color: var(--color-default-back);
+  border-color: var(--color-default-border);
   border-radius: 0.5rem;
+  border-style: solid;
   box-sizing: border-box;
-  color: var(--color-black);
+  color: var(--color-default-fore);
   cursor: pointer;
   display: inline-block;
   height: auto;
@@ -22,51 +23,51 @@
   word-spacing: 0px;
   &:hover,
   &.is-hovered {
-    background-color: var(--color-gray-800);
-    border-color: var(--color-gray-600);
+    background-color: var(--color-default-back-hovered);
+    border-color: var(--color-default-border-hovered);
   }
   &:focus,
   &.is-focused {
-    background-color: var(--color-gray-800);
-    border-color: var(--color-gray-600);
+    background-color: var(--color-default-back-focused);
+    border-color: var(--color-default-border-focused);
   }
   &:active,
   &.is-active {
-    background-color: var(--color-gray-700);
-    border-color: var(--color-gray-600);
+    background-color: var(--color-default-back-active);
+    border-color: var(--color-default-border-active);
   }
   &[disabled],
   fieldset[disabled],
   &.is-disabled {
-    background-color: var(--color-gray-700);
-    border-color: var(--color-gray-600);
+    background-color: var(--color-default-back-disabled);
+    border-color: var(--color-default-border-disabled);
   }
 
   @each $color in variables.$colors {
     &.is-#{$color} {
-      background-color: var(--color-#{$color}-600);
-      border-color: var(--color-#{$color}-500);
-      color: var(--color-#{$color}-200);
+      background-color: var(--color-#{$color}-back);
+      border-color: var(--color-#{$color}-border);
+      color: var(--color-#{$color}-fore);
       &:hover,
       &.is-hovered {
-        background-color: var(--color-#{$color}-800);
-        border-color: var(--color-#{$color}-600);
+        background-color: var(--color-#{$color}-back-hovered);
+        border-color: var(--color-#{$color}-border-hovered);
       }
       &:focus,
       &.is-focused {
-        background-color: var(--color-#{$color}-800);
-        border-color: var(--color-#{$color}-600);
+        background-color: var(--color-#{$color}-back-focused);
+        border-color: var(--color-#{$color}-border-focused);
       }
       &:active,
       &.is-active {
-        background-color: var(--color-#{$color}-700);
-        border-color: var(--color-#{$color}-600);
+        background-color: var(--color-#{$color}-back-active);
+        border-color: var(--color-#{$color}-border-active);
       }
       &[disabled],
       fieldset[disabled],
       &.is-disabled {
-        background-color: var(--color-#{$color}-700);
-        border-color: var(--color-#{$color}-600);
+        background-color: var(--color-#{$color}-back-disabled);
+        border-color: var(--color-#{$color}-border-disabled);
       }
     }
   }

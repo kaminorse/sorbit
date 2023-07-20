@@ -8,24 +8,26 @@
 .badge {
   align-items: center;
   border: 0.1rem solid transparent;
-  background-color: var(--color-gray-700);
+  background-color: var(--color-default-back);
+  border-color: var(--color-default-border);
   border-radius: 0.25rem;
-  color: var(--color-black);
+  color: var(--color-default-fore);
   display: inline-flex;
   font-size: var(--font-size-small);
   justify-content: center;
-  padding: 0.1rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   white-space: nowrap;
+
   &.is-small {
-    border: 0.05rem solid transparent;
-    padding: 0.05rem 0.25rem;
+    border-width: 0.05rem;
+    padding: 0.125rem 0.25rem;
   }
 
   @each $color in variables.$colors {
     &.is-#{$color} {
-      background-color: var(--color-#{$color}-600);
-      border-color: var(--color-#{$color}-600);
-      color: var(--color-#{$color}-200);
+      background-color: var(--color-#{$color}-back);
+      border-color: var(--color-#{$color}-border);
+      color: var(--color-#{$color}-fore);
     }
   }
 }

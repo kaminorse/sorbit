@@ -3,21 +3,55 @@
  * @author kaminorse
  */
 
+@use "../variables/index.scss" as variables;
+
 .card {
   display: block;
-  border: 0.25rem solid var(--color-gray-700);
+  border: 0.125rem solid var(--color-default-border);
   border-radius: 0;
-  box-shadow: 0 0.5rem 0.5rem var(--color-gray-700);
-  margin: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem var(--color-default-shadow);
   padding: 0.5rem;
-  .card-title {
+
+  .card-header {
     font-weight: var(--font-weight-semibold);
-    border-bottom: 0.25rem solid var(--color-gray-700);
-    margin: 0.25rem;
-    padding: 0.25rem;
+    border-bottom: 0.125rem solid var(--color-default-border);
+    margin: 0.125rem;
+    padding: 0.125rem;
   }
   .card-body {
-    margin: 0.25rem;
-    padding: 0.25rem;
+    margin: 0.125em;
+    padding: 0.125rem;
+  }
+
+  .card-footer {
+    border-top: 0.125rem solid var(--color-default-border);
+    margin: 0.125rem;
+    padding: 0.125rem;
+  }
+
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      color: var(--color-#{$color}-fore);
+      border-color: var(--color-#{$color}-border);
+      background-color: var(--color-#{$color}-back);
+      
+      .card-header {
+        color: var(--color-#{$color}-fore);
+        border-color: var(--color-#{$color}-border);
+        background-color: var(--color-#{$color}-back);
+      }
+
+      .card-body {
+        color: var(--color-#{$color}-fore);
+        border-color: var(--color-#{$color}-border);
+        background-color: var(--color-#{$color}-back);
+      }
+    
+      .card-footer {
+        color: var(--color-#{$color}-fore);
+        border-color: var(--color-#{$color}-border);
+        background-color: var(--color-#{$color}-back);
+      }
+    }
   }
 }

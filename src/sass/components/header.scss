@@ -6,6 +6,12 @@
 .header {
   display: block;
   width: 100%;
-  color: var(--color-black);
-  box-shadow: 0 0 0.5rem var(--color-gray-700);
+  box-shadow: 0 0 0.5rem var(--color-default-shadow);
+  &.is-sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
 }

@@ -11,14 +11,13 @@
     display: none;
   }
   > .checkbox-box {
-    background-color: var(--color-white);
-    border: 0.25em solid var(--color-gray-500);
+    background-color: var(--color-default-back);
+    border: 0.25em solid var(--color-default-border);
     border-radius: 25%;
     cursor: pointer;
     display: inline-block;
     height: 1em;
     line-height: 1.5;
-    margin-left: 0.5em;
     position: relative;
     vertical-align: middle;
     width: 1em;
@@ -44,33 +43,33 @@
   }
   > .checkbox-input:checked ~ .checkbox-box:before,
   > .checkbox-input:checked ~ .checkbox-box:after {
-    border-color: var(--color-gray-500);
+    border-color: var(--color-default-fore);
   }
   > .checkbox-input[disabled] ~ .checkbox-box,
   fieldset[disabled] > .checkbox-box {
-    border-color: var(--color-gray-500);
+    border-color: var(--color-default-border-disabled);
   }
   > .checkbox-input[disabled] ~ .checkbox-text,
   fieldset[disabled] > .checkbox-text {
-    color: var(--color-gray-700);
+    color: var(--color-default-fore-disabled);
   }
   > .checkbox-input[disabled]:checked
     ~ .checkbox-box:before
     fieldset[disabled]
     .checkbox-input:checked
     ~ .checkbox-box:before {
-    color: var(--color-gray-700);
+    color: var(--color-default-fore-disabled);
   }
 
   @each $color in variables.$colors {
     &.is-#{$color} {
       > .checkbox-box {
-        background-color: var(--color-#{$color}-900);
-        border-color: var(--color-#{$color}-600);
+        background-color: var(--color-#{$color}-back);
+        border-color: var(--color-#{$color}-border);
       }
       > .checkbox-input:checked ~ .checkbox-box:before,
       > .checkbox-input:checked ~ .checkbox-box:after {
-        border-color: var(--color-#{$color}-600);
+        border-color: var(--color-#{$color}-fore);
       }
     }
   }

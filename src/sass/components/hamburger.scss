@@ -3,12 +3,14 @@
  * @author kaminorse
  */
 
+@use "../variables/index.scss" as variables;
+
 $hamburger-size: 3.5rem;
 $hamburger-line-height: 0.2rem;
-$hamburger-line-color: var(--color-black);
+$hamburger-line-color: var(--color-default-border);
 
 .hamburger {
-  color: var(--color-black);
+  color: var(--color-default-fore);
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
@@ -74,6 +76,20 @@ $hamburger-line-color: var(--color-black);
     .lowerpatty {
       animation: hamburger-lowerpatty-is-active .75s forwards;
       top: 50%;
+    }
+  }
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      color: var(--color-#{$color}-fore);
+      .upperpatty {
+        background-color: var(--color-#{$color}-border);
+      }
+      .club {
+        background-color: var(--color-#{$color}-border);
+      }
+      .lowerpatty {
+        background-color: var(--color-#{$color}-border);
+      }
     }
   }
 }

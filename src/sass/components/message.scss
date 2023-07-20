@@ -7,9 +7,11 @@
 
 .message {
   display: block;
-  border: 0.25rem solid transparent;
+  background-color: var(--color-default-back);
   border-radius: 0.25rem;
+  border: 0.25rem solid var(--color-default-border);
   .message-header {
+    border-color: 0.25rem solid var(--color-default-border);
     border-radius: 0.25rem;
     padding: 0.5rem;
     display: block;
@@ -23,17 +25,17 @@
 
   @each $color in variables.$colors {
     &.is-#{$color} {
-      color: var(--color-#{$color}-200);
-      border: 0.25rem solid var(--color-#{$color}-700);
-      background-color: var(--color-#{$color}-700);
+      background-color: var(--color-#{$color}-back);
+      border-color: var(--color-#{$color}-border);
+      color: var(--color-#{$color}-fore);
       .message-header {
-        border: 0.25rem solid var(--color-#{$color}-500);
-        color: var(--color-#{$color}-800);
-        background-color: var(--color-#{$color}-500);
+        background-color: var(--color-#{$color}-back);
+        border-color: var(--color-#{$color}-border);
+        color: var(--color-#{$color}-fore);
       }
       .message-body {
-        color: var(--color-#{$color}-500);
-        background-color: var(--color-#{$color}-700);
+        background-color: var(--color-#{$color}-back);
+        color: var(--color-#{$color}-fore);
       }
     }
   }
