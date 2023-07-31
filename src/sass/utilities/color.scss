@@ -16,5 +16,14 @@
     .highlighter-#{$color}-#{$p}00 {
       background: linear-gradient(transparent 66.66%, var(--color-#{$color}-#{$p}00) 33.33%);
     }
+    .forecolor-#{$color}-#{$p}50 {
+      color: var(--color-#{$color}-#{$p}50) !important;
+    }
+    .backcolor-#{$color}-#{$p}50 {
+      color: var(--color-#{$color}-#{$p}50) !important;
+    }
+    .highlighter-#{$color}-#{$p}50 {
+      background: linear-gradient(transparent 66.66%, var(--color-#{$color}-#{$p}50) 33.33%);
+    }
   }
 }
