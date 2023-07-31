@@ -23,23 +23,23 @@
   word-spacing: 0px;
   &:hover,
   &.is-hovered {
-    background-color: var(--color-default-back-hovered);
-    border-color: var(--color-default-border-hovered);
+    background-color: var(--color-default-hovered-back);
+    border-color: var(--color-default-hovered-border);
   }
   &:focus,
   &.is-focused {
-    background-color: var(--color-default-back-focused);
+    background-color: var(--color-default-focused-back);
     border-color: var(--color-default-border-focused);
   }
   &:active,
   &.is-active {
-    background-color: var(--color-default-back-active);
+    background-color: var(--color-default-active-back);
     border-color: var(--color-default-border-active);
   }
   &[disabled],
   fieldset[disabled],
   &.is-disabled {
-    background-color: var(--color-default-back-disabled);
+    background-color: var(--color-default-disabled-back);
     border-color: var(--color-default-border-disabled);
   }
 
@@ -50,24 +50,24 @@
       color: var(--color-#{$color}-fore);
       &:hover,
       &.is-hovered {
-        background-color: var(--color-#{$color}-back-hovered);
-        border-color: var(--color-#{$color}-border-hovered);
+        background-color: var(--color-#{$color}-hovered-back);
+        border-color: var(--color-#{$color}-hovered-border);
       }
       &:focus,
       &.is-focused {
-        background-color: var(--color-#{$color}-back-focused);
-        border-color: var(--color-#{$color}-border-focused);
+        background-color: var(--color-#{$color}-focused-back);
+        border-color: var(--color-#{$color}-focused-border);
       }
       &:active,
       &.is-active {
-        background-color: var(--color-#{$color}-back-active);
-        border-color: var(--color-#{$color}-border-active);
+        background-color: var(--color-#{$color}-active-back);
+        border-color: var(--color-#{$color}-active-border);
       }
       &[disabled],
       fieldset[disabled],
       &.is-disabled {
-        background-color: var(--color-#{$color}-back-disabled);
-        border-color: var(--color-#{$color}-border-disabled);
+        background-color: var(--color-#{$color}-disabled-back);
+        border-color: var(--color-#{$color}-disabled-border);
       }
     }
   }
