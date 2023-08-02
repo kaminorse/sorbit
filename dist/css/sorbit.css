@@ -8202,7 +8202,7 @@ template {
 }
 
 .backcolor-gray-100 {
-  color: var(--color-gray-100) !important;
+  background-color: var(--color-gray-100) !important;
 }
 
 .highlighter-gray-100 {
@@ -8214,7 +8214,7 @@ template {
 }
 
 .backcolor-gray-150 {
-  color: var(--color-gray-150) !important;
+  background-color: var(--color-gray-150) !important;
 }
 
 .highlighter-gray-150 {
@@ -8226,7 +8226,7 @@ template {
 }
 
 .backcolor-gray-200 {
-  color: var(--color-gray-200) !important;
+  background-color: var(--color-gray-200) !important;
 }
 
 .highlighter-gray-200 {
@@ -8238,7 +8238,7 @@ template {
 }
 
 .backcolor-gray-250 {
-  color: var(--color-gray-250) !important;
+  background-color: var(--color-gray-250) !important;
 }
 
 .highlighter-gray-250 {
@@ -8250,7 +8250,7 @@ template {
 }
 
 .backcolor-gray-300 {
-  color: var(--color-gray-300) !important;
+  background-color: var(--color-gray-300) !important;
 }
 
 .highlighter-gray-300 {
@@ -8262,7 +8262,7 @@ template {
 }
 
 .backcolor-gray-350 {
-  color: var(--color-gray-350) !important;
+  background-color: var(--color-gray-350) !important;
 }
 
 .highlighter-gray-350 {
@@ -8274,7 +8274,7 @@ template {
 }
 
 .backcolor-gray-400 {
-  color: var(--color-gray-400) !important;
+  background-color: var(--color-gray-400) !important;
 }
 
 .highlighter-gray-400 {
@@ -8286,7 +8286,7 @@ template {
 }
 
 .backcolor-gray-450 {
-  color: var(--color-gray-450) !important;
+  background-color: var(--color-gray-450) !important;
 }
 
 .highlighter-gray-450 {
@@ -8298,7 +8298,7 @@ template {
 }
 
 .backcolor-gray-500 {
-  color: var(--color-gray-500) !important;
+  background-color: var(--color-gray-500) !important;
 }
 
 .highlighter-gray-500 {
@@ -8310,7 +8310,7 @@ template {
 }
 
 .backcolor-gray-550 {
-  color: var(--color-gray-550) !important;
+  background-color: var(--color-gray-550) !important;
 }
 
 .highlighter-gray-550 {
@@ -8322,7 +8322,7 @@ template {
 }
 
 .backcolor-gray-600 {
-  color: var(--color-gray-600) !important;
+  background-color: var(--color-gray-600) !important;
 }
 
 .highlighter-gray-600 {
@@ -8334,7 +8334,7 @@ template {
 }
 
 .backcolor-gray-650 {
-  color: var(--color-gray-650) !important;
+  background-color: var(--color-gray-650) !important;
 }
 
 .highlighter-gray-650 {
@@ -8346,7 +8346,7 @@ template {
 }
 
 .backcolor-gray-700 {
-  color: var(--color-gray-700) !important;
+  background-color: var(--color-gray-700) !important;
 }
 
 .highlighter-gray-700 {
@@ -8358,7 +8358,7 @@ template {
 }
 
 .backcolor-gray-750 {
-  color: var(--color-gray-750) !important;
+  background-color: var(--color-gray-750) !important;
 }
 
 .highlighter-gray-750 {
@@ -8370,7 +8370,7 @@ template {
 }
 
 .backcolor-gray-800 {
-  color: var(--color-gray-800) !important;
+  background-color: var(--color-gray-800) !important;
 }
 
 .highlighter-gray-800 {
@@ -8382,7 +8382,7 @@ template {
 }
 
 .backcolor-gray-850 {
-  color: var(--color-gray-850) !important;
+  background-color: var(--color-gray-850) !important;
 }
 
 .highlighter-gray-850 {
@@ -8394,7 +8394,7 @@ template {
 }
 
 .backcolor-gray-900 {
-  color: var(--color-gray-900) !important;
+  background-color: var(--color-gray-900) !important;
 }
 
 .highlighter-gray-900 {
@@ -8406,7 +8406,7 @@ template {
 }
 
 .backcolor-gray-950 {
-  color: var(--color-gray-950) !important;
+  background-color: var(--color-gray-950) !important;
 }
 
 .highlighter-gray-950 {
@@ -8418,7 +8418,7 @@ template {
 }
 
 .backcolor-red-100 {
-  color: var(--color-red-100) !important;
+  background-color: var(--color-red-100) !important;
 }
 
 .highlighter-red-100 {
@@ -8430,7 +8430,7 @@ template {
 }
 
 .backcolor-red-150 {
-  color: var(--color-red-150) !important;
+  background-color: var(--color-red-150) !important;
 }
 
 .highlighter-red-150 {
@@ -8442,7 +8442,7 @@ template {
 }
 
 .backcolor-red-200 {
-  color: var(--color-red-200) !important;
+  background-color: var(--color-red-200) !important;
 }
 
 .highlighter-red-200 {
@@ -8454,7 +8454,7 @@ template {
 }
 
 .backcolor-red-250 {
-  color: var(--color-red-250) !important;
+  background-color: var(--color-red-250) !important;
 }
 
 .highlighter-red-250 {
@@ -8466,7 +8466,7 @@ template {
 }
 
 .backcolor-red-300 {
-  color: var(--color-red-300) !important;
+  background-color: var(--color-red-300) !important;
 }
 
 .highlighter-red-300 {
@@ -8478,7 +8478,7 @@ template {
 }
 
 .backcolor-red-350 {
-  color: var(--color-red-350) !important;
+  background-color: var(--color-red-350) !important;
 }
 
 .highlighter-red-350 {
@@ -8490,7 +8490,7 @@ template {
 }
 
 .backcolor-red-400 {
-  color: var(--color-red-400) !important;
+  background-color: var(--color-red-400) !important;
 }
 
 .highlighter-red-400 {
@@ -8502,7 +8502,7 @@ template {
 }
 
 .backcolor-red-450 {
-  color: var(--color-red-450) !important;
+  background-color: var(--color-red-450) !important;
 }
 
 .highlighter-red-450 {
@@ -8514,7 +8514,7 @@ template {
 }
 
 .backcolor-red-500 {
-  color: var(--color-red-500) !important;
+  background-color: var(--color-red-500) !important;
 }
 
 .highlighter-red-500 {
@@ -8526,7 +8526,7 @@ template {
 }
 
 .backcolor-red-550 {
-  color: var(--color-red-550) !important;
+  background-color: var(--color-red-550) !important;
 }
 
 .highlighter-red-550 {
@@ -8538,7 +8538,7 @@ template {
 }
 
 .backcolor-red-600 {
-  color: var(--color-red-600) !important;
+  background-color: var(--color-red-600) !important;
 }
 
 .highlighter-red-600 {
@@ -8550,7 +8550,7 @@ template {
 }
 
 .backcolor-red-650 {
-  color: var(--color-red-650) !important;
+  background-color: var(--color-red-650) !important;
 }
 
 .highlighter-red-650 {
@@ -8562,7 +8562,7 @@ template {
 }
 
 .backcolor-red-700 {
-  color: var(--color-red-700) !important;
+  background-color: var(--color-red-700) !important;
 }
 
 .highlighter-red-700 {
@@ -8574,7 +8574,7 @@ template {
 }
 
 .backcolor-red-750 {
-  color: var(--color-red-750) !important;
+  background-color: var(--color-red-750) !important;
 }
 
 .highlighter-red-750 {
@@ -8586,7 +8586,7 @@ template {
 }
 
 .backcolor-red-800 {
-  color: var(--color-red-800) !important;
+  background-color: var(--color-red-800) !important;
 }
 
 .highlighter-red-800 {
@@ -8598,7 +8598,7 @@ template {
 }
 
 .backcolor-red-850 {
-  color: var(--color-red-850) !important;
+  background-color: var(--color-red-850) !important;
 }
 
 .highlighter-red-850 {
@@ -8610,7 +8610,7 @@ template {
 }
 
 .backcolor-red-900 {
-  color: var(--color-red-900) !important;
+  background-color: var(--color-red-900) !important;
 }
 
 .highlighter-red-900 {
@@ -8622,7 +8622,7 @@ template {
 }
 
 .backcolor-red-950 {
-  color: var(--color-red-950) !important;
+  background-color: var(--color-red-950) !important;
 }
 
 .highlighter-red-950 {
@@ -8634,7 +8634,7 @@ template {
 }
 
 .backcolor-orange-100 {
-  color: var(--color-orange-100) !important;
+  background-color: var(--color-orange-100) !important;
 }
 
 .highlighter-orange-100 {
@@ -8646,7 +8646,7 @@ template {
 }
 
 .backcolor-orange-150 {
-  color: var(--color-orange-150) !important;
+  background-color: var(--color-orange-150) !important;
 }
 
 .highlighter-orange-150 {
@@ -8658,7 +8658,7 @@ template {
 }
 
 .backcolor-orange-200 {
-  color: var(--color-orange-200) !important;
+  background-color: var(--color-orange-200) !important;
 }
 
 .highlighter-orange-200 {
@@ -8670,7 +8670,7 @@ template {
 }
 
 .backcolor-orange-250 {
-  color: var(--color-orange-250) !important;
+  background-color: var(--color-orange-250) !important;
 }
 
 .highlighter-orange-250 {
@@ -8682,7 +8682,7 @@ template {
 }
 
 .backcolor-orange-300 {
-  color: var(--color-orange-300) !important;
+  background-color: var(--color-orange-300) !important;
 }
 
 .highlighter-orange-300 {
@@ -8694,7 +8694,7 @@ template {
 }
 
 .backcolor-orange-350 {
-  color: var(--color-orange-350) !important;
+  background-color: var(--color-orange-350) !important;
 }
 
 .highlighter-orange-350 {
@@ -8706,7 +8706,7 @@ template {
 }
 
 .backcolor-orange-400 {
-  color: var(--color-orange-400) !important;
+  background-color: var(--color-orange-400) !important;
 }
 
 .highlighter-orange-400 {
@@ -8718,7 +8718,7 @@ template {
 }
 
 .backcolor-orange-450 {
-  color: var(--color-orange-450) !important;
+  background-color: var(--color-orange-450) !important;
 }
 
 .highlighter-orange-450 {
@@ -8730,7 +8730,7 @@ template {
 }
 
 .backcolor-orange-500 {
-  color: var(--color-orange-500) !important;
+  background-color: var(--color-orange-500) !important;
 }
 
 .highlighter-orange-500 {
@@ -8742,7 +8742,7 @@ template {
 }
 
 .backcolor-orange-550 {
-  color: var(--color-orange-550) !important;
+  background-color: var(--color-orange-550) !important;
 }
 
 .highlighter-orange-550 {
@@ -8754,7 +8754,7 @@ template {
 }
 
 .backcolor-orange-600 {
-  color: var(--color-orange-600) !important;
+  background-color: var(--color-orange-600) !important;
 }
 
 .highlighter-orange-600 {
@@ -8766,7 +8766,7 @@ template {
 }
 
 .backcolor-orange-650 {
-  color: var(--color-orange-650) !important;
+  background-color: var(--color-orange-650) !important;
 }
 
 .highlighter-orange-650 {
@@ -8778,7 +8778,7 @@ template {
 }
 
 .backcolor-orange-700 {
-  color: var(--color-orange-700) !important;
+  background-color: var(--color-orange-700) !important;
 }
 
 .highlighter-orange-700 {
@@ -8790,7 +8790,7 @@ template {
 }
 
 .backcolor-orange-750 {
-  color: var(--color-orange-750) !important;
+  background-color: var(--color-orange-750) !important;
 }
 
 .highlighter-orange-750 {
@@ -8802,7 +8802,7 @@ template {
 }
 
 .backcolor-orange-800 {
-  color: var(--color-orange-800) !important;
+  background-color: var(--color-orange-800) !important;
 }
 
 .highlighter-orange-800 {
@@ -8814,7 +8814,7 @@ template {
 }
 
 .backcolor-orange-850 {
-  color: var(--color-orange-850) !important;
+  background-color: var(--color-orange-850) !important;
 }
 
 .highlighter-orange-850 {
@@ -8826,7 +8826,7 @@ template {
 }
 
 .backcolor-orange-900 {
-  color: var(--color-orange-900) !important;
+  background-color: var(--color-orange-900) !important;
 }
 
 .highlighter-orange-900 {
@@ -8838,7 +8838,7 @@ template {
 }
 
 .backcolor-orange-950 {
-  color: var(--color-orange-950) !important;
+  background-color: var(--color-orange-950) !important;
 }
 
 .highlighter-orange-950 {
@@ -8850,7 +8850,7 @@ template {
 }
 
 .backcolor-yellow-100 {
-  color: var(--color-yellow-100) !important;
+  background-color: var(--color-yellow-100) !important;
 }
 
 .highlighter-yellow-100 {
@@ -8862,7 +8862,7 @@ template {
 }
 
 .backcolor-yellow-150 {
-  color: var(--color-yellow-150) !important;
+  background-color: var(--color-yellow-150) !important;
 }
 
 .highlighter-yellow-150 {
@@ -8874,7 +8874,7 @@ template {
 }
 
 .backcolor-yellow-200 {
-  color: var(--color-yellow-200) !important;
+  background-color: var(--color-yellow-200) !important;
 }
 
 .highlighter-yellow-200 {
@@ -8886,7 +8886,7 @@ template {
 }
 
 .backcolor-yellow-250 {
-  color: var(--color-yellow-250) !important;
+  background-color: var(--color-yellow-250) !important;
 }
 
 .highlighter-yellow-250 {
@@ -8898,7 +8898,7 @@ template {
 }
 
 .backcolor-yellow-300 {
-  color: var(--color-yellow-300) !important;
+  background-color: var(--color-yellow-300) !important;
 }
 
 .highlighter-yellow-300 {
@@ -8910,7 +8910,7 @@ template {
 }
 
 .backcolor-yellow-350 {
-  color: var(--color-yellow-350) !important;
+  background-color: var(--color-yellow-350) !important;
 }
 
 .highlighter-yellow-350 {
@@ -8922,7 +8922,7 @@ template {
 }
 
 .backcolor-yellow-400 {
-  color: var(--color-yellow-400) !important;
+  background-color: var(--color-yellow-400) !important;
 }
 
 .highlighter-yellow-400 {
@@ -8934,7 +8934,7 @@ template {
 }
 
 .backcolor-yellow-450 {
-  color: var(--color-yellow-450) !important;
+  background-color: var(--color-yellow-450) !important;
 }
 
 .highlighter-yellow-450 {
@@ -8946,7 +8946,7 @@ template {
 }
 
 .backcolor-yellow-500 {
-  color: var(--color-yellow-500) !important;
+  background-color: var(--color-yellow-500) !important;
 }
 
 .highlighter-yellow-500 {
@@ -8958,7 +8958,7 @@ template {
 }
 
 .backcolor-yellow-550 {
-  color: var(--color-yellow-550) !important;
+  background-color: var(--color-yellow-550) !important;
 }
 
 .highlighter-yellow-550 {
@@ -8970,7 +8970,7 @@ template {
 }
 
 .backcolor-yellow-600 {
-  color: var(--color-yellow-600) !important;
+  background-color: var(--color-yellow-600) !important;
 }
 
 .highlighter-yellow-600 {
@@ -8982,7 +8982,7 @@ template {
 }
 
 .backcolor-yellow-650 {
-  color: var(--color-yellow-650) !important;
+  background-color: var(--color-yellow-650) !important;
 }
 
 .highlighter-yellow-650 {
@@ -8994,7 +8994,7 @@ template {
 }
 
 .backcolor-yellow-700 {
-  color: var(--color-yellow-700) !important;
+  background-color: var(--color-yellow-700) !important;
 }
 
 .highlighter-yellow-700 {
@@ -9006,7 +9006,7 @@ template {
 }
 
 .backcolor-yellow-750 {
-  color: var(--color-yellow-750) !important;
+  background-color: var(--color-yellow-750) !important;
 }
 
 .highlighter-yellow-750 {
@@ -9018,7 +9018,7 @@ template {
 }
 
 .backcolor-yellow-800 {
-  color: var(--color-yellow-800) !important;
+  background-color: var(--color-yellow-800) !important;
 }
 
 .highlighter-yellow-800 {
@@ -9030,7 +9030,7 @@ template {
 }
 
 .backcolor-yellow-850 {
-  color: var(--color-yellow-850) !important;
+  background-color: var(--color-yellow-850) !important;
 }
 
 .highlighter-yellow-850 {
@@ -9042,7 +9042,7 @@ template {
 }
 
 .backcolor-yellow-900 {
-  color: var(--color-yellow-900) !important;
+  background-color: var(--color-yellow-900) !important;
 }
 
 .highlighter-yellow-900 {
@@ -9054,7 +9054,7 @@ template {
 }
 
 .backcolor-yellow-950 {
-  color: var(--color-yellow-950) !important;
+  background-color: var(--color-yellow-950) !important;
 }
 
 .highlighter-yellow-950 {
@@ -9066,7 +9066,7 @@ template {
 }
 
 .backcolor-green-100 {
-  color: var(--color-green-100) !important;
+  background-color: var(--color-green-100) !important;
 }
 
 .highlighter-green-100 {
@@ -9078,7 +9078,7 @@ template {
 }
 
 .backcolor-green-150 {
-  color: var(--color-green-150) !important;
+  background-color: var(--color-green-150) !important;
 }
 
 .highlighter-green-150 {
@@ -9090,7 +9090,7 @@ template {
 }
 
 .backcolor-green-200 {
-  color: var(--color-green-200) !important;
+  background-color: var(--color-green-200) !important;
 }
 
 .highlighter-green-200 {
@@ -9102,7 +9102,7 @@ template {
 }
 
 .backcolor-green-250 {
-  color: var(--color-green-250) !important;
+  background-color: var(--color-green-250) !important;
 }
 
 .highlighter-green-250 {
@@ -9114,7 +9114,7 @@ template {
 }
 
 .backcolor-green-300 {
-  color: var(--color-green-300) !important;
+  background-color: var(--color-green-300) !important;
 }
 
 .highlighter-green-300 {
@@ -9126,7 +9126,7 @@ template {
 }
 
 .backcolor-green-350 {
-  color: var(--color-green-350) !important;
+  background-color: var(--color-green-350) !important;
 }
 
 .highlighter-green-350 {
@@ -9138,7 +9138,7 @@ template {
 }
 
 .backcolor-green-400 {
-  color: var(--color-green-400) !important;
+  background-color: var(--color-green-400) !important;
 }
 
 .highlighter-green-400 {
@@ -9150,7 +9150,7 @@ template {
 }
 
 .backcolor-green-450 {
-  color: var(--color-green-450) !important;
+  background-color: var(--color-green-450) !important;
 }
 
 .highlighter-green-450 {
@@ -9162,7 +9162,7 @@ template {
 }
 
 .backcolor-green-500 {
-  color: var(--color-green-500) !important;
+  background-color: var(--color-green-500) !important;
 }
 
 .highlighter-green-500 {
@@ -9174,7 +9174,7 @@ template {
 }
 
 .backcolor-green-550 {
-  color: var(--color-green-550) !important;
+  background-color: var(--color-green-550) !important;
 }
 
 .highlighter-green-550 {
@@ -9186,7 +9186,7 @@ template {
 }
 
 .backcolor-green-600 {
-  color: var(--color-green-600) !important;
+  background-color: var(--color-green-600) !important;
 }
 
 .highlighter-green-600 {
@@ -9198,7 +9198,7 @@ template {
 }
 
 .backcolor-green-650 {
-  color: var(--color-green-650) !important;
+  background-color: var(--color-green-650) !important;
 }
 
 .highlighter-green-650 {
@@ -9210,7 +9210,7 @@ template {
 }
 
 .backcolor-green-700 {
-  color: var(--color-green-700) !important;
+  background-color: var(--color-green-700) !important;
 }
 
 .highlighter-green-700 {
@@ -9222,7 +9222,7 @@ template {
 }
 
 .backcolor-green-750 {
-  color: var(--color-green-750) !important;
+  background-color: var(--color-green-750) !important;
 }
 
 .highlighter-green-750 {
@@ -9234,7 +9234,7 @@ template {
 }
 
 .backcolor-green-800 {
-  color: var(--color-green-800) !important;
+  background-color: var(--color-green-800) !important;
 }
 
 .highlighter-green-800 {
@@ -9246,7 +9246,7 @@ template {
 }
 
 .backcolor-green-850 {
-  color: var(--color-green-850) !important;
+  background-color: var(--color-green-850) !important;
 }
 
 .highlighter-green-850 {
@@ -9258,7 +9258,7 @@ template {
 }
 
 .backcolor-green-900 {
-  color: var(--color-green-900) !important;
+  background-color: var(--color-green-900) !important;
 }
 
 .highlighter-green-900 {
@@ -9270,7 +9270,7 @@ template {
 }
 
 .backcolor-green-950 {
-  color: var(--color-green-950) !important;
+  background-color: var(--color-green-950) !important;
 }
 
 .highlighter-green-950 {
@@ -9282,7 +9282,7 @@ template {
 }
 
 .backcolor-cyan-100 {
-  color: var(--color-cyan-100) !important;
+  background-color: var(--color-cyan-100) !important;
 }
 
 .highlighter-cyan-100 {
@@ -9294,7 +9294,7 @@ template {
 }
 
 .backcolor-cyan-150 {
-  color: var(--color-cyan-150) !important;
+  background-color: var(--color-cyan-150) !important;
 }
 
 .highlighter-cyan-150 {
@@ -9306,7 +9306,7 @@ template {
 }
 
 .backcolor-cyan-200 {
-  color: var(--color-cyan-200) !important;
+  background-color: var(--color-cyan-200) !important;
 }
 
 .highlighter-cyan-200 {
@@ -9318,7 +9318,7 @@ template {
 }
 
 .backcolor-cyan-250 {
-  color: var(--color-cyan-250) !important;
+  background-color: var(--color-cyan-250) !important;
 }
 
 .highlighter-cyan-250 {
@@ -9330,7 +9330,7 @@ template {
 }
 
 .backcolor-cyan-300 {
-  color: var(--color-cyan-300) !important;
+  background-color: var(--color-cyan-300) !important;
 }
 
 .highlighter-cyan-300 {
@@ -9342,7 +9342,7 @@ template {
 }
 
 .backcolor-cyan-350 {
-  color: var(--color-cyan-350) !important;
+  background-color: var(--color-cyan-350) !important;
 }
 
 .highlighter-cyan-350 {
@@ -9354,7 +9354,7 @@ template {
 }
 
 .backcolor-cyan-400 {
-  color: var(--color-cyan-400) !important;
+  background-color: var(--color-cyan-400) !important;
 }
 
 .highlighter-cyan-400 {
@@ -9366,7 +9366,7 @@ template {
 }
 
 .backcolor-cyan-450 {
-  color: var(--color-cyan-450) !important;
+  background-color: var(--color-cyan-450) !important;
 }
 
 .highlighter-cyan-450 {
@@ -9378,7 +9378,7 @@ template {
 }
 
 .backcolor-cyan-500 {
-  color: var(--color-cyan-500) !important;
+  background-color: var(--color-cyan-500) !important;
 }
 
 .highlighter-cyan-500 {
@@ -9390,7 +9390,7 @@ template {
 }
 
 .backcolor-cyan-550 {
-  color: var(--color-cyan-550) !important;
+  background-color: var(--color-cyan-550) !important;
 }
 
 .highlighter-cyan-550 {
@@ -9402,7 +9402,7 @@ template {
 }
 
 .backcolor-cyan-600 {
-  color: var(--color-cyan-600) !important;
+  background-color: var(--color-cyan-600) !important;
 }
 
 .highlighter-cyan-600 {
@@ -9414,7 +9414,7 @@ template {
 }
 
 .backcolor-cyan-650 {
-  color: var(--color-cyan-650) !important;
+  background-color: var(--color-cyan-650) !important;
 }
 
 .highlighter-cyan-650 {
@@ -9426,7 +9426,7 @@ template {
 }
 
 .backcolor-cyan-700 {
-  color: var(--color-cyan-700) !important;
+  background-color: var(--color-cyan-700) !important;
 }
 
 .highlighter-cyan-700 {
@@ -9438,7 +9438,7 @@ template {
 }
 
 .backcolor-cyan-750 {
-  color: var(--color-cyan-750) !important;
+  background-color: var(--color-cyan-750) !important;
 }
 
 .highlighter-cyan-750 {
@@ -9450,7 +9450,7 @@ template {
 }
 
 .backcolor-cyan-800 {
-  color: var(--color-cyan-800) !important;
+  background-color: var(--color-cyan-800) !important;
 }
 
 .highlighter-cyan-800 {
@@ -9462,7 +9462,7 @@ template {
 }
 
 .backcolor-cyan-850 {
-  color: var(--color-cyan-850) !important;
+  background-color: var(--color-cyan-850) !important;
 }
 
 .highlighter-cyan-850 {
@@ -9474,7 +9474,7 @@ template {
 }
 
 .backcolor-cyan-900 {
-  color: var(--color-cyan-900) !important;
+  background-color: var(--color-cyan-900) !important;
 }
 
 .highlighter-cyan-900 {
@@ -9486,7 +9486,7 @@ template {
 }
 
 .backcolor-cyan-950 {
-  color: var(--color-cyan-950) !important;
+  background-color: var(--color-cyan-950) !important;
 }
 
 .highlighter-cyan-950 {
@@ -9498,7 +9498,7 @@ template {
 }
 
 .backcolor-blue-100 {
-  color: var(--color-blue-100) !important;
+  background-color: var(--color-blue-100) !important;
 }
 
 .highlighter-blue-100 {
@@ -9510,7 +9510,7 @@ template {
 }
 
 .backcolor-blue-150 {
-  color: var(--color-blue-150) !important;
+  background-color: var(--color-blue-150) !important;
 }
 
 .highlighter-blue-150 {
@@ -9522,7 +9522,7 @@ template {
 }
 
 .backcolor-blue-200 {
-  color: var(--color-blue-200) !important;
+  background-color: var(--color-blue-200) !important;
 }
 
 .highlighter-blue-200 {
@@ -9534,7 +9534,7 @@ template {
 }
 
 .backcolor-blue-250 {
-  color: var(--color-blue-250) !important;
+  background-color: var(--color-blue-250) !important;
 }
 
 .highlighter-blue-250 {
@@ -9546,7 +9546,7 @@ template {
 }
 
 .backcolor-blue-300 {
-  color: var(--color-blue-300) !important;
+  background-color: var(--color-blue-300) !important;
 }
 
 .highlighter-blue-300 {
@@ -9558,7 +9558,7 @@ template {
 }
 
 .backcolor-blue-350 {
-  color: var(--color-blue-350) !important;
+  background-color: var(--color-blue-350) !important;
 }
 
 .highlighter-blue-350 {
@@ -9570,7 +9570,7 @@ template {
 }
 
 .backcolor-blue-400 {
-  color: var(--color-blue-400) !important;
+  background-color: var(--color-blue-400) !important;
 }
 
 .highlighter-blue-400 {
@@ -9582,7 +9582,7 @@ template {
 }
 
 .backcolor-blue-450 {
-  color: var(--color-blue-450) !important;
+  background-color: var(--color-blue-450) !important;
 }
 
 .highlighter-blue-450 {
@@ -9594,7 +9594,7 @@ template {
 }
 
 .backcolor-blue-500 {
-  color: var(--color-blue-500) !important;
+  background-color: var(--color-blue-500) !important;
 }
 
 .highlighter-blue-500 {
@@ -9606,7 +9606,7 @@ template {
 }
 
 .backcolor-blue-550 {
-  color: var(--color-blue-550) !important;
+  background-color: var(--color-blue-550) !important;
 }
 
 .highlighter-blue-550 {
@@ -9618,7 +9618,7 @@ template {
 }
 
 .backcolor-blue-600 {
-  color: var(--color-blue-600) !important;
+  background-color: var(--color-blue-600) !important;
 }
 
 .highlighter-blue-600 {
@@ -9630,7 +9630,7 @@ template {
 }
 
 .backcolor-blue-650 {
-  color: var(--color-blue-650) !important;
+  background-color: var(--color-blue-650) !important;
 }
 
 .highlighter-blue-650 {
@@ -9642,7 +9642,7 @@ template {
 }
 
 .backcolor-blue-700 {
-  color: var(--color-blue-700) !important;
+  background-color: var(--color-blue-700) !important;
 }
 
 .highlighter-blue-700 {
@@ -9654,7 +9654,7 @@ template {
 }
 
 .backcolor-blue-750 {
-  color: var(--color-blue-750) !important;
+  background-color: var(--color-blue-750) !important;
 }
 
 .highlighter-blue-750 {
@@ -9666,7 +9666,7 @@ template {
 }
 
 .backcolor-blue-800 {
-  color: var(--color-blue-800) !important;
+  background-color: var(--color-blue-800) !important;
 }
 
 .highlighter-blue-800 {
@@ -9678,7 +9678,7 @@ template {
 }
 
 .backcolor-blue-850 {
-  color: var(--color-blue-850) !important;
+  background-color: var(--color-blue-850) !important;
 }
 
 .highlighter-blue-850 {
@@ -9690,7 +9690,7 @@ template {
 }
 
 .backcolor-blue-900 {
-  color: var(--color-blue-900) !important;
+  background-color: var(--color-blue-900) !important;
 }
 
 .highlighter-blue-900 {
@@ -9702,7 +9702,7 @@ template {
 }
 
 .backcolor-blue-950 {
-  color: var(--color-blue-950) !important;
+  background-color: var(--color-blue-950) !important;
 }
 
 .highlighter-blue-950 {
@@ -9714,7 +9714,7 @@ template {
 }
 
 .backcolor-violet-100 {
-  color: var(--color-violet-100) !important;
+  background-color: var(--color-violet-100) !important;
 }
 
 .highlighter-violet-100 {
@@ -9726,7 +9726,7 @@ template {
 }
 
 .backcolor-violet-150 {
-  color: var(--color-violet-150) !important;
+  background-color: var(--color-violet-150) !important;
 }
 
 .highlighter-violet-150 {
@@ -9738,7 +9738,7 @@ template {
 }
 
 .backcolor-violet-200 {
-  color: var(--color-violet-200) !important;
+  background-color: var(--color-violet-200) !important;
 }
 
 .highlighter-violet-200 {
@@ -9750,7 +9750,7 @@ template {
 }
 
 .backcolor-violet-250 {
-  color: var(--color-violet-250) !important;
+  background-color: var(--color-violet-250) !important;
 }
 
 .highlighter-violet-250 {
@@ -9762,7 +9762,7 @@ template {
 }
 
 .backcolor-violet-300 {
-  color: var(--color-violet-300) !important;
+  background-color: var(--color-violet-300) !important;
 }
 
 .highlighter-violet-300 {
@@ -9774,7 +9774,7 @@ template {
 }
 
 .backcolor-violet-350 {
-  color: var(--color-violet-350) !important;
+  background-color: var(--color-violet-350) !important;
 }
 
 .highlighter-violet-350 {
@@ -9786,7 +9786,7 @@ template {
 }
 
 .backcolor-violet-400 {
-  color: var(--color-violet-400) !important;
+  background-color: var(--color-violet-400) !important;
 }
 
 .highlighter-violet-400 {
@@ -9798,7 +9798,7 @@ template {
 }
 
 .backcolor-violet-450 {
-  color: var(--color-violet-450) !important;
+  background-color: var(--color-violet-450) !important;
 }
 
 .highlighter-violet-450 {
@@ -9810,7 +9810,7 @@ template {
 }
 
 .backcolor-violet-500 {
-  color: var(--color-violet-500) !important;
+  background-color: var(--color-violet-500) !important;
 }
 
 .highlighter-violet-500 {
@@ -9822,7 +9822,7 @@ template {
 }
 
 .backcolor-violet-550 {
-  color: var(--color-violet-550) !important;
+  background-color: var(--color-violet-550) !important;
 }
 
 .highlighter-violet-550 {
@@ -9834,7 +9834,7 @@ template {
 }
 
 .backcolor-violet-600 {
-  color: var(--color-violet-600) !important;
+  background-color: var(--color-violet-600) !important;
 }
 
 .highlighter-violet-600 {
@@ -9846,7 +9846,7 @@ template {
 }
 
 .backcolor-violet-650 {
-  color: var(--color-violet-650) !important;
+  background-color: var(--color-violet-650) !important;
 }
 
 .highlighter-violet-650 {
@@ -9858,7 +9858,7 @@ template {
 }
 
 .backcolor-violet-700 {
-  color: var(--color-violet-700) !important;
+  background-color: var(--color-violet-700) !important;
 }
 
 .highlighter-violet-700 {
@@ -9870,7 +9870,7 @@ template {
 }
 
 .backcolor-violet-750 {
-  color: var(--color-violet-750) !important;
+  background-color: var(--color-violet-750) !important;
 }
 
 .highlighter-violet-750 {
@@ -9882,7 +9882,7 @@ template {
 }
 
 .backcolor-violet-800 {
-  color: var(--color-violet-800) !important;
+  background-color: var(--color-violet-800) !important;
 }
 
 .highlighter-violet-800 {
@@ -9894,7 +9894,7 @@ template {
 }
 
 .backcolor-violet-850 {
-  color: var(--color-violet-850) !important;
+  background-color: var(--color-violet-850) !important;
 }
 
 .highlighter-violet-850 {
@@ -9906,7 +9906,7 @@ template {
 }
 
 .backcolor-violet-900 {
-  color: var(--color-violet-900) !important;
+  background-color: var(--color-violet-900) !important;
 }
 
 .highlighter-violet-900 {
@@ -9918,7 +9918,7 @@ template {
 }
 
 .backcolor-violet-950 {
-  color: var(--color-violet-950) !important;
+  background-color: var(--color-violet-950) !important;
 }
 
 .highlighter-violet-950 {
