@@ -1398,7 +1398,6 @@ template {
 .nav {
   min-height: 4rem;
   padding: 0.25rem 0;
-  background-color: var(--color-default-back);
 }
 .nav .nav-mobile {
   display: none;
@@ -1416,6 +1415,9 @@ template {
 .nav .nav-mobile .nav-brand {
   display: flex;
 }
+.nav .nav-mobile .nav-brand .nav-brand-left,
+.nav .nav-mobile .nav-brand .nav-brand-center,
+.nav .nav-mobile .nav-brand .nav-brand-right,
 .nav .nav-mobile .nav-brand .left,
 .nav .nav-mobile .nav-brand .center,
 .nav .nav-mobile .nav-brand .right {
@@ -1427,14 +1429,17 @@ template {
   margin: auto;
   position: relative;
 }
+.nav .nav-mobile .nav-brand .nav-brand-left,
 .nav .nav-mobile .nav-brand .left {
   margin: auto auto auto 0;
   text-align: left;
 }
+.nav .nav-mobile .nav-brand .nav-brand-center,
 .nav .nav-mobile .nav-brand .center {
   margin: auto;
   text-align: center;
 }
+.nav .nav-mobile .nav-brand .nav-brand-right,
 .nav .nav-mobile .nav-brand .right {
   margin: auto 0 auto auto;
   text-align: right;
@@ -1447,7 +1452,6 @@ template {
   display: block;
 }
 .nav .nav-mobile .nav-menu .nav-menu-item {
-  background-color: var(--color-default-back);
   color: var(--color-default-fore);
   width: 100%;
   display: block;
@@ -1492,6 +1496,9 @@ template {
   margin: auto;
   position: relative;
 }
+.nav .nav-desktop .nav-brand .nav-brand-left,
+.nav .nav-desktop .nav-brand .nav-brand-center,
+.nav .nav-desktop .nav-brand .nav-brand-right,
 .nav .nav-desktop .nav-brand .left,
 .nav .nav-desktop .nav-brand .center,
 .nav .nav-desktop .nav-brand .right {
@@ -1503,6 +1510,7 @@ template {
   margin: auto;
   position: relative;
 }
+.nav .nav-desktop .nav-brand .nav-brand-left,
 .nav .nav-desktop .nav-brand .left {
   margin: auto auto auto 0;
   text-align: left;
@@ -1510,6 +1518,7 @@ template {
   max-width: 30%;
   width: 30%;
 }
+.nav .nav-desktop .nav-brand .nav-brand-right,
 .nav .nav-desktop .nav-brand .right {
   margin: auto 0 auto auto;
   text-align: right;
@@ -1535,7 +1544,6 @@ template {
   padding: 0.5rem;
   position: relative;
   text-decoration: none;
-  background-color: var(--color-default-back);
   color: var(--color-default-fore);
 }
 .nav .nav-desktop .nav-menu .nav-menu-item:hover {
