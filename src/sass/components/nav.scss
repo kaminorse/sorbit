@@ -19,6 +19,9 @@
     }
     .nav-brand {
       display: flex;
+      .nav-brand-left,
+      .nav-brand-center,
+      .nav-brand-right
       .left,
       .center,
       .right {
@@ -30,14 +33,17 @@
         margin: auto;
         position: relative;
       }
+      .nav-brand-left,
       .left {
         margin: auto auto auto 0;
         text-align: left;
       }
+      .nav-brand-center,
       .center {
         margin: auto;
         text-align: center;
       }
+      .nav-brand-right,
       .right {
         margin: auto 0 auto auto;
         text-align: right;
@@ -89,6 +95,9 @@
       max-width: 100%;
       margin: auto;
       position: relative;
+      .nav-brand-left,
+      .nav-brand-center,
+      .nav-brand-right
       .left,
       .center,
       .right {
@@ -100,6 +109,7 @@
         margin: auto;
         position: relative;
       }
+      .nav-brand-left,
       .left {
         margin: auto auto auto 0;
         text-align: left;
@@ -107,6 +117,7 @@
         max-width: 30%;
         width: 30%;
       }
+      .nav-brand-right,
       .right {
         margin: auto 0 auto auto;
         text-align: right;
