@@ -55,7 +55,6 @@
         display: block;
       }
       .nav-menu-item {
-        background-color: var(--color-default-back);
         color: var(--color-default-fore);
         width: 100%;
         display: block;
@@ -142,7 +141,6 @@
         padding: 0.5rem;
         position: relative;
         text-decoration: none;
-        background-color: var(--color-default-back);
         color: var(--color-default-fore);
         &:hover {
           color: var(--color-default-fore-hover);
