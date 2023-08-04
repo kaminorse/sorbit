@@ -8,7 +8,6 @@
 .nav {
   min-height: 4rem;
   padding: 0.25rem 0;
-  background-color: var(--color-default-back);
   .nav-mobile {
     display: none;
     @include mixins.mobile() {
