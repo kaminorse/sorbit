@@ -1548,12 +1548,256 @@ template {
   position: relative;
   text-decoration: none;
   color: var(--color-default-fore);
+  text-shadow: 2px 2px 1px var(--color-default-shadow), -2px 2px 1px var(--color-default-shadow), 2px -2px 1px var(--color-default-shadow), -2px -2px 1px var(--color-default-shadow), 2px 0px 1px var(--color-default-shadow), 0px 2px 1px var(--color-default-shadow), -2px 0px 1px var(--color-default-shadow), 0px -2px 1px var(--color-default-shadow);
 }
 .nav .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-default-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-default-shadow-hover), -2px 2px 1px var(--color-default-shadow-hover), 2px -2px 1px var(--color-default-shadow-hover), -2px -2px 1px var(--color-default-shadow-hover), 2px 0px 1px var(--color-default-shadow-hover), 0px 2px 1px var(--color-default-shadow-hover), -2px 0px 1px var(--color-default-shadow-hover), 0px -2px 1px var(--color-default-shadow-hover);
+  opacity: 0.8;
 }
 .nav .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-default-fore-active);
+  text-shadow: 2px 2px 1px var(--color-default-shadow-active), -2px 2px 1px var(--color-default-shadow-active), 2px -2px 1px var(--color-default-shadow-active), -2px -2px 1px var(--color-default-shadow-active), 2px 0px 1px var(--color-default-shadow-active), 0px 2px 1px var(--color-default-shadow-active), -2px 0px 1px var(--color-default-shadow-active), 0px -2px 1px var(--color-default-shadow-active);
+}
+.nav.is-gray {
+  background-color: var(--color-gray-back);
+  color: var(--color-gray-fore);
+}
+.nav.is-gray .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-gray-fore);
+  text-shadow: 2px 2px 1px var(--color-gray-shadow), -2px 2px 1px var(--color-gray-shadow), 2px -2px 1px var(--color-gray-shadow), -2px -2px 1px var(--color-gray-shadow), 2px 0px 1px var(--color-gray-shadow), 0px 2px 1px var(--color-gray-shadow), -2px 0px 1px var(--color-gray-shadow), 0px -2px 1px var(--color-gray-shadow);
+}
+.nav.is-gray .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-gray-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-gray-shadow-hover), -2px 2px 1px var(--color-gray-shadow-hover), 2px -2px 1px var(--color-gray-shadow-hover), -2px -2px 1px var(--color-gray-shadow-hover), 2px 0px 1px var(--color-gray-shadow-hover), 0px 2px 1px var(--color-gray-shadow-hover), -2px 0px 1px var(--color-gray-shadow-hover), 0px -2px 1px var(--color-gray-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-gray .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-gray-fore-active);
+  text-shadow: 2px 2px 1px var(--color-gray-shadow-active), -2px 2px 1px var(--color-gray-shadow-active), 2px -2px 1px var(--color-gray-shadow-active), -2px -2px 1px var(--color-gray-shadow-active), 2px 0px 1px var(--color-gray-shadow-active), 0px 2px 1px var(--color-gray-shadow-active), -2px 0px 1px var(--color-gray-shadow-active), 0px -2px 1px var(--color-gray-shadow-active);
+}
+.nav.is-gray .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-gray-fore);
+  text-shadow: 2px 2px 1px var(--color-gray-shadow), -2px 2px 1px var(--color-gray-shadow), 2px -2px 1px var(--color-gray-shadow), -2px -2px 1px var(--color-gray-shadow), 2px 0px 1px var(--color-gray-shadow), 0px 2px 1px var(--color-gray-shadow), -2px 0px 1px var(--color-gray-shadow), 0px -2px 1px var(--color-gray-shadow);
+}
+.nav.is-gray .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-gray-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-gray-shadow-hover), -2px 2px 1px var(--color-gray-shadow-hover), 2px -2px 1px var(--color-gray-shadow-hover), -2px -2px 1px var(--color-gray-shadow-hover), 2px 0px 1px var(--color-gray-shadow-hover), 0px 2px 1px var(--color-gray-shadow-hover), -2px 0px 1px var(--color-gray-shadow-hover), 0px -2px 1px var(--color-gray-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-gray .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-gray-fore-active);
+  text-shadow: 2px 2px 1px var(--color-gray-shadow-active), -2px 2px 1px var(--color-gray-shadow-active), 2px -2px 1px var(--color-gray-shadow-active), -2px -2px 1px var(--color-gray-shadow-active), 2px 0px 1px var(--color-gray-shadow-active), 0px 2px 1px var(--color-gray-shadow-active), -2px 0px 1px var(--color-gray-shadow-active), 0px -2px 1px var(--color-gray-shadow-active);
+}
+.nav.is-red {
+  background-color: var(--color-red-back);
+  color: var(--color-red-fore);
+}
+.nav.is-red .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-red-fore);
+  text-shadow: 2px 2px 1px var(--color-red-shadow), -2px 2px 1px var(--color-red-shadow), 2px -2px 1px var(--color-red-shadow), -2px -2px 1px var(--color-red-shadow), 2px 0px 1px var(--color-red-shadow), 0px 2px 1px var(--color-red-shadow), -2px 0px 1px var(--color-red-shadow), 0px -2px 1px var(--color-red-shadow);
+}
+.nav.is-red .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-red-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-red-shadow-hover), -2px 2px 1px var(--color-red-shadow-hover), 2px -2px 1px var(--color-red-shadow-hover), -2px -2px 1px var(--color-red-shadow-hover), 2px 0px 1px var(--color-red-shadow-hover), 0px 2px 1px var(--color-red-shadow-hover), -2px 0px 1px var(--color-red-shadow-hover), 0px -2px 1px var(--color-red-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-red .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-red-fore-active);
+  text-shadow: 2px 2px 1px var(--color-red-shadow-active), -2px 2px 1px var(--color-red-shadow-active), 2px -2px 1px var(--color-red-shadow-active), -2px -2px 1px var(--color-red-shadow-active), 2px 0px 1px var(--color-red-shadow-active), 0px 2px 1px var(--color-red-shadow-active), -2px 0px 1px var(--color-red-shadow-active), 0px -2px 1px var(--color-red-shadow-active);
+}
+.nav.is-red .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-red-fore);
+  text-shadow: 2px 2px 1px var(--color-red-shadow), -2px 2px 1px var(--color-red-shadow), 2px -2px 1px var(--color-red-shadow), -2px -2px 1px var(--color-red-shadow), 2px 0px 1px var(--color-red-shadow), 0px 2px 1px var(--color-red-shadow), -2px 0px 1px var(--color-red-shadow), 0px -2px 1px var(--color-red-shadow);
+}
+.nav.is-red .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-red-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-red-shadow-hover), -2px 2px 1px var(--color-red-shadow-hover), 2px -2px 1px var(--color-red-shadow-hover), -2px -2px 1px var(--color-red-shadow-hover), 2px 0px 1px var(--color-red-shadow-hover), 0px 2px 1px var(--color-red-shadow-hover), -2px 0px 1px var(--color-red-shadow-hover), 0px -2px 1px var(--color-red-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-red .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-red-fore-active);
+  text-shadow: 2px 2px 1px var(--color-red-shadow-active), -2px 2px 1px var(--color-red-shadow-active), 2px -2px 1px var(--color-red-shadow-active), -2px -2px 1px var(--color-red-shadow-active), 2px 0px 1px var(--color-red-shadow-active), 0px 2px 1px var(--color-red-shadow-active), -2px 0px 1px var(--color-red-shadow-active), 0px -2px 1px var(--color-red-shadow-active);
+}
+.nav.is-orange {
+  background-color: var(--color-orange-back);
+  color: var(--color-orange-fore);
+}
+.nav.is-orange .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-orange-fore);
+  text-shadow: 2px 2px 1px var(--color-orange-shadow), -2px 2px 1px var(--color-orange-shadow), 2px -2px 1px var(--color-orange-shadow), -2px -2px 1px var(--color-orange-shadow), 2px 0px 1px var(--color-orange-shadow), 0px 2px 1px var(--color-orange-shadow), -2px 0px 1px var(--color-orange-shadow), 0px -2px 1px var(--color-orange-shadow);
+}
+.nav.is-orange .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-orange-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-orange-shadow-hover), -2px 2px 1px var(--color-orange-shadow-hover), 2px -2px 1px var(--color-orange-shadow-hover), -2px -2px 1px var(--color-orange-shadow-hover), 2px 0px 1px var(--color-orange-shadow-hover), 0px 2px 1px var(--color-orange-shadow-hover), -2px 0px 1px var(--color-orange-shadow-hover), 0px -2px 1px var(--color-orange-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-orange .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-orange-fore-active);
+  text-shadow: 2px 2px 1px var(--color-orange-shadow-active), -2px 2px 1px var(--color-orange-shadow-active), 2px -2px 1px var(--color-orange-shadow-active), -2px -2px 1px var(--color-orange-shadow-active), 2px 0px 1px var(--color-orange-shadow-active), 0px 2px 1px var(--color-orange-shadow-active), -2px 0px 1px var(--color-orange-shadow-active), 0px -2px 1px var(--color-orange-shadow-active);
+}
+.nav.is-orange .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-orange-fore);
+  text-shadow: 2px 2px 1px var(--color-orange-shadow), -2px 2px 1px var(--color-orange-shadow), 2px -2px 1px var(--color-orange-shadow), -2px -2px 1px var(--color-orange-shadow), 2px 0px 1px var(--color-orange-shadow), 0px 2px 1px var(--color-orange-shadow), -2px 0px 1px var(--color-orange-shadow), 0px -2px 1px var(--color-orange-shadow);
+}
+.nav.is-orange .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-orange-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-orange-shadow-hover), -2px 2px 1px var(--color-orange-shadow-hover), 2px -2px 1px var(--color-orange-shadow-hover), -2px -2px 1px var(--color-orange-shadow-hover), 2px 0px 1px var(--color-orange-shadow-hover), 0px 2px 1px var(--color-orange-shadow-hover), -2px 0px 1px var(--color-orange-shadow-hover), 0px -2px 1px var(--color-orange-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-orange .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-orange-fore-active);
+  text-shadow: 2px 2px 1px var(--color-orange-shadow-active), -2px 2px 1px var(--color-orange-shadow-active), 2px -2px 1px var(--color-orange-shadow-active), -2px -2px 1px var(--color-orange-shadow-active), 2px 0px 1px var(--color-orange-shadow-active), 0px 2px 1px var(--color-orange-shadow-active), -2px 0px 1px var(--color-orange-shadow-active), 0px -2px 1px var(--color-orange-shadow-active);
+}
+.nav.is-yellow {
+  background-color: var(--color-yellow-back);
+  color: var(--color-yellow-fore);
+}
+.nav.is-yellow .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-yellow-fore);
+  text-shadow: 2px 2px 1px var(--color-yellow-shadow), -2px 2px 1px var(--color-yellow-shadow), 2px -2px 1px var(--color-yellow-shadow), -2px -2px 1px var(--color-yellow-shadow), 2px 0px 1px var(--color-yellow-shadow), 0px 2px 1px var(--color-yellow-shadow), -2px 0px 1px var(--color-yellow-shadow), 0px -2px 1px var(--color-yellow-shadow);
+}
+.nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-yellow-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-yellow-shadow-hover), -2px 2px 1px var(--color-yellow-shadow-hover), 2px -2px 1px var(--color-yellow-shadow-hover), -2px -2px 1px var(--color-yellow-shadow-hover), 2px 0px 1px var(--color-yellow-shadow-hover), 0px 2px 1px var(--color-yellow-shadow-hover), -2px 0px 1px var(--color-yellow-shadow-hover), 0px -2px 1px var(--color-yellow-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-yellow-fore-active);
+  text-shadow: 2px 2px 1px var(--color-yellow-shadow-active), -2px 2px 1px var(--color-yellow-shadow-active), 2px -2px 1px var(--color-yellow-shadow-active), -2px -2px 1px var(--color-yellow-shadow-active), 2px 0px 1px var(--color-yellow-shadow-active), 0px 2px 1px var(--color-yellow-shadow-active), -2px 0px 1px var(--color-yellow-shadow-active), 0px -2px 1px var(--color-yellow-shadow-active);
+}
+.nav.is-yellow .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-yellow-fore);
+  text-shadow: 2px 2px 1px var(--color-yellow-shadow), -2px 2px 1px var(--color-yellow-shadow), 2px -2px 1px var(--color-yellow-shadow), -2px -2px 1px var(--color-yellow-shadow), 2px 0px 1px var(--color-yellow-shadow), 0px 2px 1px var(--color-yellow-shadow), -2px 0px 1px var(--color-yellow-shadow), 0px -2px 1px var(--color-yellow-shadow);
+}
+.nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-yellow-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-yellow-shadow-hover), -2px 2px 1px var(--color-yellow-shadow-hover), 2px -2px 1px var(--color-yellow-shadow-hover), -2px -2px 1px var(--color-yellow-shadow-hover), 2px 0px 1px var(--color-yellow-shadow-hover), 0px 2px 1px var(--color-yellow-shadow-hover), -2px 0px 1px var(--color-yellow-shadow-hover), 0px -2px 1px var(--color-yellow-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-yellow-fore-active);
+  text-shadow: 2px 2px 1px var(--color-yellow-shadow-active), -2px 2px 1px var(--color-yellow-shadow-active), 2px -2px 1px var(--color-yellow-shadow-active), -2px -2px 1px var(--color-yellow-shadow-active), 2px 0px 1px var(--color-yellow-shadow-active), 0px 2px 1px var(--color-yellow-shadow-active), -2px 0px 1px var(--color-yellow-shadow-active), 0px -2px 1px var(--color-yellow-shadow-active);
+}
+.nav.is-green {
+  background-color: var(--color-green-back);
+  color: var(--color-green-fore);
+}
+.nav.is-green .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-green-fore);
+  text-shadow: 2px 2px 1px var(--color-green-shadow), -2px 2px 1px var(--color-green-shadow), 2px -2px 1px var(--color-green-shadow), -2px -2px 1px var(--color-green-shadow), 2px 0px 1px var(--color-green-shadow), 0px 2px 1px var(--color-green-shadow), -2px 0px 1px var(--color-green-shadow), 0px -2px 1px var(--color-green-shadow);
+}
+.nav.is-green .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-green-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-green-shadow-hover), -2px 2px 1px var(--color-green-shadow-hover), 2px -2px 1px var(--color-green-shadow-hover), -2px -2px 1px var(--color-green-shadow-hover), 2px 0px 1px var(--color-green-shadow-hover), 0px 2px 1px var(--color-green-shadow-hover), -2px 0px 1px var(--color-green-shadow-hover), 0px -2px 1px var(--color-green-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-green .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-green-fore-active);
+  text-shadow: 2px 2px 1px var(--color-green-shadow-active), -2px 2px 1px var(--color-green-shadow-active), 2px -2px 1px var(--color-green-shadow-active), -2px -2px 1px var(--color-green-shadow-active), 2px 0px 1px var(--color-green-shadow-active), 0px 2px 1px var(--color-green-shadow-active), -2px 0px 1px var(--color-green-shadow-active), 0px -2px 1px var(--color-green-shadow-active);
+}
+.nav.is-green .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-green-fore);
+  text-shadow: 2px 2px 1px var(--color-green-shadow), -2px 2px 1px var(--color-green-shadow), 2px -2px 1px var(--color-green-shadow), -2px -2px 1px var(--color-green-shadow), 2px 0px 1px var(--color-green-shadow), 0px 2px 1px var(--color-green-shadow), -2px 0px 1px var(--color-green-shadow), 0px -2px 1px var(--color-green-shadow);
+}
+.nav.is-green .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-green-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-green-shadow-hover), -2px 2px 1px var(--color-green-shadow-hover), 2px -2px 1px var(--color-green-shadow-hover), -2px -2px 1px var(--color-green-shadow-hover), 2px 0px 1px var(--color-green-shadow-hover), 0px 2px 1px var(--color-green-shadow-hover), -2px 0px 1px var(--color-green-shadow-hover), 0px -2px 1px var(--color-green-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-green .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-green-fore-active);
+  text-shadow: 2px 2px 1px var(--color-green-shadow-active), -2px 2px 1px var(--color-green-shadow-active), 2px -2px 1px var(--color-green-shadow-active), -2px -2px 1px var(--color-green-shadow-active), 2px 0px 1px var(--color-green-shadow-active), 0px 2px 1px var(--color-green-shadow-active), -2px 0px 1px var(--color-green-shadow-active), 0px -2px 1px var(--color-green-shadow-active);
+}
+.nav.is-cyan {
+  background-color: var(--color-cyan-back);
+  color: var(--color-cyan-fore);
+}
+.nav.is-cyan .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-cyan-fore);
+  text-shadow: 2px 2px 1px var(--color-cyan-shadow), -2px 2px 1px var(--color-cyan-shadow), 2px -2px 1px var(--color-cyan-shadow), -2px -2px 1px var(--color-cyan-shadow), 2px 0px 1px var(--color-cyan-shadow), 0px 2px 1px var(--color-cyan-shadow), -2px 0px 1px var(--color-cyan-shadow), 0px -2px 1px var(--color-cyan-shadow);
+}
+.nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-cyan-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-cyan-shadow-hover), -2px 2px 1px var(--color-cyan-shadow-hover), 2px -2px 1px var(--color-cyan-shadow-hover), -2px -2px 1px var(--color-cyan-shadow-hover), 2px 0px 1px var(--color-cyan-shadow-hover), 0px 2px 1px var(--color-cyan-shadow-hover), -2px 0px 1px var(--color-cyan-shadow-hover), 0px -2px 1px var(--color-cyan-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-cyan-fore-active);
+  text-shadow: 2px 2px 1px var(--color-cyan-shadow-active), -2px 2px 1px var(--color-cyan-shadow-active), 2px -2px 1px var(--color-cyan-shadow-active), -2px -2px 1px var(--color-cyan-shadow-active), 2px 0px 1px var(--color-cyan-shadow-active), 0px 2px 1px var(--color-cyan-shadow-active), -2px 0px 1px var(--color-cyan-shadow-active), 0px -2px 1px var(--color-cyan-shadow-active);
+}
+.nav.is-cyan .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-cyan-fore);
+  text-shadow: 2px 2px 1px var(--color-cyan-shadow), -2px 2px 1px var(--color-cyan-shadow), 2px -2px 1px var(--color-cyan-shadow), -2px -2px 1px var(--color-cyan-shadow), 2px 0px 1px var(--color-cyan-shadow), 0px 2px 1px var(--color-cyan-shadow), -2px 0px 1px var(--color-cyan-shadow), 0px -2px 1px var(--color-cyan-shadow);
+}
+.nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-cyan-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-cyan-shadow-hover), -2px 2px 1px var(--color-cyan-shadow-hover), 2px -2px 1px var(--color-cyan-shadow-hover), -2px -2px 1px var(--color-cyan-shadow-hover), 2px 0px 1px var(--color-cyan-shadow-hover), 0px 2px 1px var(--color-cyan-shadow-hover), -2px 0px 1px var(--color-cyan-shadow-hover), 0px -2px 1px var(--color-cyan-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-cyan-fore-active);
+  text-shadow: 2px 2px 1px var(--color-cyan-shadow-active), -2px 2px 1px var(--color-cyan-shadow-active), 2px -2px 1px var(--color-cyan-shadow-active), -2px -2px 1px var(--color-cyan-shadow-active), 2px 0px 1px var(--color-cyan-shadow-active), 0px 2px 1px var(--color-cyan-shadow-active), -2px 0px 1px var(--color-cyan-shadow-active), 0px -2px 1px var(--color-cyan-shadow-active);
+}
+.nav.is-blue {
+  background-color: var(--color-blue-back);
+  color: var(--color-blue-fore);
+}
+.nav.is-blue .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-blue-fore);
+  text-shadow: 2px 2px 1px var(--color-blue-shadow), -2px 2px 1px var(--color-blue-shadow), 2px -2px 1px var(--color-blue-shadow), -2px -2px 1px var(--color-blue-shadow), 2px 0px 1px var(--color-blue-shadow), 0px 2px 1px var(--color-blue-shadow), -2px 0px 1px var(--color-blue-shadow), 0px -2px 1px var(--color-blue-shadow);
+}
+.nav.is-blue .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-blue-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-blue-shadow-hover), -2px 2px 1px var(--color-blue-shadow-hover), 2px -2px 1px var(--color-blue-shadow-hover), -2px -2px 1px var(--color-blue-shadow-hover), 2px 0px 1px var(--color-blue-shadow-hover), 0px 2px 1px var(--color-blue-shadow-hover), -2px 0px 1px var(--color-blue-shadow-hover), 0px -2px 1px var(--color-blue-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-blue .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-blue-fore-active);
+  text-shadow: 2px 2px 1px var(--color-blue-shadow-active), -2px 2px 1px var(--color-blue-shadow-active), 2px -2px 1px var(--color-blue-shadow-active), -2px -2px 1px var(--color-blue-shadow-active), 2px 0px 1px var(--color-blue-shadow-active), 0px 2px 1px var(--color-blue-shadow-active), -2px 0px 1px var(--color-blue-shadow-active), 0px -2px 1px var(--color-blue-shadow-active);
+}
+.nav.is-blue .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-blue-fore);
+  text-shadow: 2px 2px 1px var(--color-blue-shadow), -2px 2px 1px var(--color-blue-shadow), 2px -2px 1px var(--color-blue-shadow), -2px -2px 1px var(--color-blue-shadow), 2px 0px 1px var(--color-blue-shadow), 0px 2px 1px var(--color-blue-shadow), -2px 0px 1px var(--color-blue-shadow), 0px -2px 1px var(--color-blue-shadow);
+}
+.nav.is-blue .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-blue-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-blue-shadow-hover), -2px 2px 1px var(--color-blue-shadow-hover), 2px -2px 1px var(--color-blue-shadow-hover), -2px -2px 1px var(--color-blue-shadow-hover), 2px 0px 1px var(--color-blue-shadow-hover), 0px 2px 1px var(--color-blue-shadow-hover), -2px 0px 1px var(--color-blue-shadow-hover), 0px -2px 1px var(--color-blue-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-blue .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-blue-fore-active);
+  text-shadow: 2px 2px 1px var(--color-blue-shadow-active), -2px 2px 1px var(--color-blue-shadow-active), 2px -2px 1px var(--color-blue-shadow-active), -2px -2px 1px var(--color-blue-shadow-active), 2px 0px 1px var(--color-blue-shadow-active), 0px 2px 1px var(--color-blue-shadow-active), -2px 0px 1px var(--color-blue-shadow-active), 0px -2px 1px var(--color-blue-shadow-active);
+}
+.nav.is-violet {
+  background-color: var(--color-violet-back);
+  color: var(--color-violet-fore);
+}
+.nav.is-violet .nav-mobile .nav-menu .nav-menu-item {
+  color: var(--color-violet-fore);
+  text-shadow: 2px 2px 1px var(--color-violet-shadow), -2px 2px 1px var(--color-violet-shadow), 2px -2px 1px var(--color-violet-shadow), -2px -2px 1px var(--color-violet-shadow), 2px 0px 1px var(--color-violet-shadow), 0px 2px 1px var(--color-violet-shadow), -2px 0px 1px var(--color-violet-shadow), 0px -2px 1px var(--color-violet-shadow);
+}
+.nav.is-violet .nav-mobile .nav-menu .nav-menu-item:hover {
+  color: var(--color-violet-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-violet-shadow-hover), -2px 2px 1px var(--color-violet-shadow-hover), 2px -2px 1px var(--color-violet-shadow-hover), -2px -2px 1px var(--color-violet-shadow-hover), 2px 0px 1px var(--color-violet-shadow-hover), 0px 2px 1px var(--color-violet-shadow-hover), -2px 0px 1px var(--color-violet-shadow-hover), 0px -2px 1px var(--color-violet-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-violet .nav-mobile .nav-menu .nav-menu-item:active {
+  color: var(--color-violet-fore-active);
+  text-shadow: 2px 2px 1px var(--color-violet-shadow-active), -2px 2px 1px var(--color-violet-shadow-active), 2px -2px 1px var(--color-violet-shadow-active), -2px -2px 1px var(--color-violet-shadow-active), 2px 0px 1px var(--color-violet-shadow-active), 0px 2px 1px var(--color-violet-shadow-active), -2px 0px 1px var(--color-violet-shadow-active), 0px -2px 1px var(--color-violet-shadow-active);
+}
+.nav.is-violet .nav-desktop .nav-menu .nav-menu-item {
+  color: var(--color-violet-fore);
+  text-shadow: 2px 2px 1px var(--color-violet-shadow), -2px 2px 1px var(--color-violet-shadow), 2px -2px 1px var(--color-violet-shadow), -2px -2px 1px var(--color-violet-shadow), 2px 0px 1px var(--color-violet-shadow), 0px 2px 1px var(--color-violet-shadow), -2px 0px 1px var(--color-violet-shadow), 0px -2px 1px var(--color-violet-shadow);
+}
+.nav.is-violet .nav-desktop .nav-menu .nav-menu-item:hover {
+  color: var(--color-violet-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-violet-shadow-hover), -2px 2px 1px var(--color-violet-shadow-hover), 2px -2px 1px var(--color-violet-shadow-hover), -2px -2px 1px var(--color-violet-shadow-hover), 2px 0px 1px var(--color-violet-shadow-hover), 0px 2px 1px var(--color-violet-shadow-hover), -2px 0px 1px var(--color-violet-shadow-hover), 0px -2px 1px var(--color-violet-shadow-hover);
+  opacity: 0.8;
+}
+.nav.is-violet .nav-desktop .nav-menu .nav-menu-item:active {
+  color: var(--color-violet-fore-active);
+  text-shadow: 2px 2px 1px var(--color-violet-shadow-active), -2px 2px 1px var(--color-violet-shadow-active), 2px -2px 1px var(--color-violet-shadow-active), -2px -2px 1px var(--color-violet-shadow-active), 2px 0px 1px var(--color-violet-shadow-active), 0px 2px 1px var(--color-violet-shadow-active), -2px 0px 1px var(--color-violet-shadow-active), 0px -2px 1px var(--color-violet-shadow-active);
 }
 
 /**
