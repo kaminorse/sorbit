@@ -308,14 +308,14 @@
   --color-default-disabled-back: var(--color-gray-700);
   --color-default-disabled-border: var(--color-gray-600);
   --color-default-disabled-shadow: var(--color-gray-850);
-  --color-default-hovered-fore: var(--color-black);
-  --color-default-hovered-back: var(--color-gray-800);
-  --color-default-hovered-border: var(--color-gray-600);
-  --color-default-hovered-shadow: var(--color-gray-850);
-  --color-default-focused-fore: var(--color-black);
-  --color-default-focused-back: var(--color-gray-800);
-  --color-default-focused-border: var(--color-gray-600);
-  --color-default-focused-shadow: var(--color-gray-850);
+  --color-default-hover-fore: var(--color-black);
+  --color-default-hover-back: var(--color-gray-800);
+  --color-default-hover-border: var(--color-gray-600);
+  --color-default-hover-shadow: var(--color-gray-850);
+  --color-default-focus-fore: var(--color-black);
+  --color-default-focus-back: var(--color-gray-800);
+  --color-default-focus-border: var(--color-gray-600);
+  --color-default-focus-shadow: var(--color-gray-850);
   --color-default-active-fore: var(--color-black);
   --color-default-active-back: var(--color-gray-700);
   --color-default-active-border: var(--color-gray-600);
@@ -328,14 +328,14 @@
   --color-gray-disabled-back: var(--color-gray-700);
   --color-gray-disabled-border: var(--color-gray-600);
   --color-gray-disabled-shadow: var(--color-gray-850);
-  --color-gray-hovered-fore: var(--color-gray-200);
-  --color-gray-hovered-back: var(--color-gray-800);
-  --color-gray-hovered-border: var(--color-gray-600);
-  --color-gray-hovered-shadow: var(--color-gray-850);
-  --color-gray-focused-fore: var(--color-gray-200);
-  --color-gray-focused-back: var(--color-gray-800);
-  --color-gray-focused-border: var(--color-gray-600);
-  --color-gray-focused-shadow: var(--color-gray-850);
+  --color-gray-hover-fore: var(--color-gray-200);
+  --color-gray-hover-back: var(--color-gray-800);
+  --color-gray-hover-border: var(--color-gray-600);
+  --color-gray-hover-shadow: var(--color-gray-850);
+  --color-gray-focus-fore: var(--color-gray-200);
+  --color-gray-focus-back: var(--color-gray-800);
+  --color-gray-focus-border: var(--color-gray-600);
+  --color-gray-focus-shadow: var(--color-gray-850);
   --color-gray-active-fore: var(--color-gray-200);
   --color-gray-active-back: var(--color-gray-700);
   --color-gray-active-border: var(--color-gray-600);
@@ -348,14 +348,14 @@
   --color-red-disabled-back: var(--color-red-700);
   --color-red-disabled-border: var(--color-red-600);
   --color-red-disabled-shadow: var(--color-red-850);
-  --color-red-hovered-fore: var(--color-red-200);
-  --color-red-hovered-back: var(--color-red-800);
-  --color-red-hovered-border: var(--color-red-600);
-  --color-red-hovered-shadow: var(--color-red-850);
-  --color-red-focused-fore: var(--color-red-200);
-  --color-red-focused-back: var(--color-red-800);
-  --color-red-focused-border: var(--color-red-600);
-  --color-red-focused-shadow: var(--color-red-850);
+  --color-red-hover-fore: var(--color-red-200);
+  --color-red-hover-back: var(--color-red-800);
+  --color-red-hover-border: var(--color-red-600);
+  --color-red-hover-shadow: var(--color-red-850);
+  --color-red-focus-fore: var(--color-red-200);
+  --color-red-focus-back: var(--color-red-800);
+  --color-red-focus-border: var(--color-red-600);
+  --color-red-focus-shadow: var(--color-red-850);
   --color-red-active-fore: var(--color-red-200);
   --color-red-active-back: var(--color-red-700);
   --color-red-active-border: var(--color-red-600);
@@ -368,14 +368,14 @@
   --color-orange-disabled-back: var(--color-orange-700);
   --color-orange-disabled-border: var(--color-orange-600);
   --color-orange-disabled-shadow: var(--color-orange-850);
-  --color-orange-hovered-fore: var(--color-orange-200);
-  --color-orange-hovered-back: var(--color-orange-800);
-  --color-orange-hovered-border: var(--color-orange-600);
-  --color-orange-hovered-shadow: var(--color-orange-850);
-  --color-orange-focused-fore: var(--color-orange-200);
-  --color-orange-focused-back: var(--color-orange-800);
-  --color-orange-focused-border: var(--color-orange-600);
-  --color-orange-focused-shadow: var(--color-orange-850);
+  --color-orange-hover-fore: var(--color-orange-200);
+  --color-orange-hover-back: var(--color-orange-800);
+  --color-orange-hover-border: var(--color-orange-600);
+  --color-orange-hover-shadow: var(--color-orange-850);
+  --color-orange-focus-fore: var(--color-orange-200);
+  --color-orange-focus-back: var(--color-orange-800);
+  --color-orange-focus-border: var(--color-orange-600);
+  --color-orange-focus-shadow: var(--color-orange-850);
   --color-orange-active-fore: var(--color-orange-200);
   --color-orange-active-back: var(--color-orange-700);
   --color-orange-active-border: var(--color-orange-600);
@@ -388,14 +388,14 @@
   --color-yellow-disabled-back: var(--color-yellow-700);
   --color-yellow-disabled-border: var(--color-yellow-600);
   --color-yellow-disabled-shadow: var(--color-yellow-850);
-  --color-yellow-hovered-fore: var(--color-yellow-200);
-  --color-yellow-hovered-back: var(--color-yellow-800);
-  --color-yellow-hovered-border: var(--color-yellow-600);
-  --color-yellow-hovered-shadow: var(--color-yellow-850);
-  --color-yellow-focused-fore: var(--color-yellow-200);
-  --color-yellow-focused-back: var(--color-yellow-800);
-  --color-yellow-focused-border: var(--color-yellow-600);
-  --color-yellow-focused-shadow: var(--color-yellow-850);
+  --color-yellow-hover-fore: var(--color-yellow-200);
+  --color-yellow-hover-back: var(--color-yellow-800);
+  --color-yellow-hover-border: var(--color-yellow-600);
+  --color-yellow-hover-shadow: var(--color-yellow-850);
+  --color-yellow-focus-fore: var(--color-yellow-200);
+  --color-yellow-focus-back: var(--color-yellow-800);
+  --color-yellow-focus-border: var(--color-yellow-600);
+  --color-yellow-focus-shadow: var(--color-yellow-850);
   --color-yellow-active-fore: var(--color-yellow-200);
   --color-yellow-active-back: var(--color-yellow-700);
   --color-yellow-active-border: var(--color-yellow-600);
@@ -408,14 +408,14 @@
   --color-green-disabled-back: var(--color-green-700);
   --color-green-disabled-border: var(--color-green-600);
   --color-green-disabled-shadow: var(--color-green-850);
-  --color-green-hovered-fore: var(--color-green-200);
-  --color-green-hovered-back: var(--color-green-800);
-  --color-green-hovered-border: var(--color-green-600);
-  --color-green-hovered-shadow: var(--color-green-850);
-  --color-green-focused-fore: var(--color-green-200);
-  --color-green-focused-back: var(--color-green-800);
-  --color-green-focused-border: var(--color-green-600);
-  --color-green-focused-shadow: var(--color-green-850);
+  --color-green-hover-fore: var(--color-green-200);
+  --color-green-hover-back: var(--color-green-800);
+  --color-green-hover-border: var(--color-green-600);
+  --color-green-hover-shadow: var(--color-green-850);
+  --color-green-focus-fore: var(--color-green-200);
+  --color-green-focus-back: var(--color-green-800);
+  --color-green-focus-border: var(--color-green-600);
+  --color-green-focus-shadow: var(--color-green-850);
   --color-green-active-fore: var(--color-green-200);
   --color-green-active-back: var(--color-green-700);
   --color-green-active-border: var(--color-green-600);
@@ -428,14 +428,14 @@
   --color-cyan-disabled-back: var(--color-cyan-700);
   --color-cyan-disabled-border: var(--color-cyan-600);
   --color-cyan-disabled-shadow: var(--color-cyan-850);
-  --color-cyan-hovered-fore: var(--color-cyan-200);
-  --color-cyan-hovered-back: var(--color-cyan-800);
-  --color-cyan-hovered-border: var(--color-cyan-600);
-  --color-cyan-hovered-shadow: var(--color-cyan-850);
-  --color-cyan-focused-fore: var(--color-cyan-200);
-  --color-cyan-focused-back: var(--color-cyan-800);
-  --color-cyan-focused-border: var(--color-cyan-600);
-  --color-cyan-focused-shadow: var(--color-cyan-850);
+  --color-cyan-hover-fore: var(--color-cyan-200);
+  --color-cyan-hover-back: var(--color-cyan-800);
+  --color-cyan-hover-border: var(--color-cyan-600);
+  --color-cyan-hover-shadow: var(--color-cyan-850);
+  --color-cyan-focus-fore: var(--color-cyan-200);
+  --color-cyan-focus-back: var(--color-cyan-800);
+  --color-cyan-focus-border: var(--color-cyan-600);
+  --color-cyan-focus-shadow: var(--color-cyan-850);
   --color-cyan-active-fore: var(--color-cyan-200);
   --color-cyan-active-back: var(--color-cyan-700);
   --color-cyan-active-border: var(--color-cyan-600);
@@ -448,14 +448,14 @@
   --color-blue-disabled-back: var(--color-blue-700);
   --color-blue-disabled-border: var(--color-blue-600);
   --color-blue-disabled-shadow: var(--color-blue-850);
-  --color-blue-hovered-fore: var(--color-blue-200);
-  --color-blue-hovered-back: var(--color-blue-800);
-  --color-blue-hovered-border: var(--color-blue-600);
-  --color-blue-hovered-shadow: var(--color-blue-850);
-  --color-blue-focused-fore: var(--color-blue-200);
-  --color-blue-focused-back: var(--color-blue-800);
-  --color-blue-focused-border: var(--color-blue-600);
-  --color-blue-focused-shadow: var(--color-blue-850);
+  --color-blue-hover-fore: var(--color-blue-200);
+  --color-blue-hover-back: var(--color-blue-800);
+  --color-blue-hover-border: var(--color-blue-600);
+  --color-blue-hover-shadow: var(--color-blue-850);
+  --color-blue-focus-fore: var(--color-blue-200);
+  --color-blue-focus-back: var(--color-blue-800);
+  --color-blue-focus-border: var(--color-blue-600);
+  --color-blue-focus-shadow: var(--color-blue-850);
   --color-blue-active-fore: var(--color-blue-200);
   --color-blue-active-back: var(--color-blue-700);
   --color-blue-active-border: var(--color-blue-600);
@@ -468,14 +468,14 @@
   --color-violet-disabled-back: var(--color-violet-700);
   --color-violet-disabled-border: var(--color-violet-600);
   --color-violet-disabled-shadow: var(--color-violet-850);
-  --color-violet-hovered-fore: var(--color-violet-200);
-  --color-violet-hovered-back: var(--color-violet-800);
-  --color-violet-hovered-border: var(--color-violet-600);
-  --color-violet-hovered-shadow: var(--color-violet-850);
-  --color-violet-focused-fore: var(--color-violet-200);
-  --color-violet-focused-back: var(--color-violet-800);
-  --color-violet-focused-border: var(--color-violet-600);
-  --color-violet-focused-shadow: var(--color-violet-850);
+  --color-violet-hover-fore: var(--color-violet-200);
+  --color-violet-hover-back: var(--color-violet-800);
+  --color-violet-hover-border: var(--color-violet-600);
+  --color-violet-hover-shadow: var(--color-violet-850);
+  --color-violet-focus-fore: var(--color-violet-200);
+  --color-violet-focus-back: var(--color-violet-800);
+  --color-violet-focus-border: var(--color-violet-600);
+  --color-violet-focus-shadow: var(--color-violet-850);
   --color-violet-active-fore: var(--color-violet-200);
   --color-violet-active-back: var(--color-violet-700);
   --color-violet-active-border: var(--color-violet-600);
@@ -492,14 +492,14 @@
   --color-default-disabled-back: var(--color-gray-700);
   --color-default-disabled-border: var(--color-gray-600);
   --color-default-disabled-shadow: var(--color-gray-850);
-  --color-default-hovered-fore: var(--color-black);
-  --color-default-hovered-back: var(--color-gray-800);
-  --color-default-hovered-border: var(--color-gray-600);
-  --color-default-hovered-shadow: var(--color-gray-850);
-  --color-default-focused-fore: var(--color-black);
-  --color-default-focused-back: var(--color-gray-800);
-  --color-default-focused-border: var(--color-gray-600);
-  --color-default-focused-shadow: var(--color-gray-850);
+  --color-default-hover-fore: var(--color-black);
+  --color-default-hover-back: var(--color-gray-800);
+  --color-default-hover-border: var(--color-gray-600);
+  --color-default-hover-shadow: var(--color-gray-850);
+  --color-default-focus-fore: var(--color-black);
+  --color-default-focus-back: var(--color-gray-800);
+  --color-default-focus-border: var(--color-gray-600);
+  --color-default-focus-shadow: var(--color-gray-850);
   --color-default-active-fore: var(--color-black);
   --color-default-active-back: var(--color-gray-700);
   --color-default-active-border: var(--color-gray-600);
@@ -512,14 +512,14 @@
   --color-gray-disabled-back: var(--color-gray-700);
   --color-gray-disabled-border: var(--color-gray-600);
   --color-gray-disabled-shadow: var(--color-gray-850);
-  --color-gray-hovered-fore: var(--color-gray-200);
-  --color-gray-hovered-back: var(--color-gray-800);
-  --color-gray-hovered-border: var(--color-gray-600);
-  --color-gray-hovered-shadow: var(--color-gray-850);
-  --color-gray-focused-fore: var(--color-gray-200);
-  --color-gray-focused-back: var(--color-gray-800);
-  --color-gray-focused-border: var(--color-gray-600);
-  --color-gray-focused-shadow: var(--color-gray-850);
+  --color-gray-hover-fore: var(--color-gray-200);
+  --color-gray-hover-back: var(--color-gray-800);
+  --color-gray-hover-border: var(--color-gray-600);
+  --color-gray-hover-shadow: var(--color-gray-850);
+  --color-gray-focus-fore: var(--color-gray-200);
+  --color-gray-focus-back: var(--color-gray-800);
+  --color-gray-focus-border: var(--color-gray-600);
+  --color-gray-focus-shadow: var(--color-gray-850);
   --color-gray-active-fore: var(--color-gray-200);
   --color-gray-active-back: var(--color-gray-700);
   --color-gray-active-border: var(--color-gray-600);
@@ -532,14 +532,14 @@
   --color-red-disabled-back: var(--color-red-700);
   --color-red-disabled-border: var(--color-red-600);
   --color-red-disabled-shadow: var(--color-red-850);
-  --color-red-hovered-fore: var(--color-red-200);
-  --color-red-hovered-back: var(--color-red-800);
-  --color-red-hovered-border: var(--color-red-600);
-  --color-red-hovered-shadow: var(--color-red-850);
-  --color-red-focused-fore: var(--color-red-200);
-  --color-red-focused-back: var(--color-red-800);
-  --color-red-focused-border: var(--color-red-600);
-  --color-red-focused-shadow: var(--color-red-850);
+  --color-red-hover-fore: var(--color-red-200);
+  --color-red-hover-back: var(--color-red-800);
+  --color-red-hover-border: var(--color-red-600);
+  --color-red-hover-shadow: var(--color-red-850);
+  --color-red-focus-fore: var(--color-red-200);
+  --color-red-focus-back: var(--color-red-800);
+  --color-red-focus-border: var(--color-red-600);
+  --color-red-focus-shadow: var(--color-red-850);
   --color-red-active-fore: var(--color-red-200);
   --color-red-active-back: var(--color-red-700);
   --color-red-active-border: var(--color-red-600);
@@ -552,14 +552,14 @@
   --color-orange-disabled-back: var(--color-orange-700);
   --color-orange-disabled-border: var(--color-orange-600);
   --color-orange-disabled-shadow: var(--color-orange-850);
-  --color-orange-hovered-fore: var(--color-orange-200);
-  --color-orange-hovered-back: var(--color-orange-800);
-  --color-orange-hovered-border: var(--color-orange-600);
-  --color-orange-hovered-shadow: var(--color-orange-850);
-  --color-orange-focused-fore: var(--color-orange-200);
-  --color-orange-focused-back: var(--color-orange-800);
-  --color-orange-focused-border: var(--color-orange-600);
-  --color-orange-focused-shadow: var(--color-orange-850);
+  --color-orange-hover-fore: var(--color-orange-200);
+  --color-orange-hover-back: var(--color-orange-800);
+  --color-orange-hover-border: var(--color-orange-600);
+  --color-orange-hover-shadow: var(--color-orange-850);
+  --color-orange-focus-fore: var(--color-orange-200);
+  --color-orange-focus-back: var(--color-orange-800);
+  --color-orange-focus-border: var(--color-orange-600);
+  --color-orange-focus-shadow: var(--color-orange-850);
   --color-orange-active-fore: var(--color-orange-200);
   --color-orange-active-back: var(--color-orange-700);
   --color-orange-active-border: var(--color-orange-600);
@@ -572,14 +572,14 @@
   --color-yellow-disabled-back: var(--color-yellow-700);
   --color-yellow-disabled-border: var(--color-yellow-600);
   --color-yellow-disabled-shadow: var(--color-yellow-850);
-  --color-yellow-hovered-fore: var(--color-yellow-200);
-  --color-yellow-hovered-back: var(--color-yellow-800);
-  --color-yellow-hovered-border: var(--color-yellow-600);
-  --color-yellow-hovered-shadow: var(--color-yellow-850);
-  --color-yellow-focused-fore: var(--color-yellow-200);
-  --color-yellow-focused-back: var(--color-yellow-800);
-  --color-yellow-focused-border: var(--color-yellow-600);
-  --color-yellow-focused-shadow: var(--color-yellow-850);
+  --color-yellow-hover-fore: var(--color-yellow-200);
+  --color-yellow-hover-back: var(--color-yellow-800);
+  --color-yellow-hover-border: var(--color-yellow-600);
+  --color-yellow-hover-shadow: var(--color-yellow-850);
+  --color-yellow-focus-fore: var(--color-yellow-200);
+  --color-yellow-focus-back: var(--color-yellow-800);
+  --color-yellow-focus-border: var(--color-yellow-600);
+  --color-yellow-focus-shadow: var(--color-yellow-850);
   --color-yellow-active-fore: var(--color-yellow-200);
   --color-yellow-active-back: var(--color-yellow-700);
   --color-yellow-active-border: var(--color-yellow-600);
@@ -592,14 +592,14 @@
   --color-green-disabled-back: var(--color-green-700);
   --color-green-disabled-border: var(--color-green-600);
   --color-green-disabled-shadow: var(--color-green-850);
-  --color-green-hovered-fore: var(--color-green-200);
-  --color-green-hovered-back: var(--color-green-800);
-  --color-green-hovered-border: var(--color-green-600);
-  --color-green-hovered-shadow: var(--color-green-850);
-  --color-green-focused-fore: var(--color-green-200);
-  --color-green-focused-back: var(--color-green-800);
-  --color-green-focused-border: var(--color-green-600);
-  --color-green-focused-shadow: var(--color-green-850);
+  --color-green-hover-fore: var(--color-green-200);
+  --color-green-hover-back: var(--color-green-800);
+  --color-green-hover-border: var(--color-green-600);
+  --color-green-hover-shadow: var(--color-green-850);
+  --color-green-focus-fore: var(--color-green-200);
+  --color-green-focus-back: var(--color-green-800);
+  --color-green-focus-border: var(--color-green-600);
+  --color-green-focus-shadow: var(--color-green-850);
   --color-green-active-fore: var(--color-green-200);
   --color-green-active-back: var(--color-green-700);
   --color-green-active-border: var(--color-green-600);
@@ -612,14 +612,14 @@
   --color-cyan-disabled-back: var(--color-cyan-700);
   --color-cyan-disabled-border: var(--color-cyan-600);
   --color-cyan-disabled-shadow: var(--color-cyan-850);
-  --color-cyan-hovered-fore: var(--color-cyan-200);
-  --color-cyan-hovered-back: var(--color-cyan-800);
-  --color-cyan-hovered-border: var(--color-cyan-600);
-  --color-cyan-hovered-shadow: var(--color-cyan-850);
-  --color-cyan-focused-fore: var(--color-cyan-200);
-  --color-cyan-focused-back: var(--color-cyan-800);
-  --color-cyan-focused-border: var(--color-cyan-600);
-  --color-cyan-focused-shadow: var(--color-cyan-850);
+  --color-cyan-hover-fore: var(--color-cyan-200);
+  --color-cyan-hover-back: var(--color-cyan-800);
+  --color-cyan-hover-border: var(--color-cyan-600);
+  --color-cyan-hover-shadow: var(--color-cyan-850);
+  --color-cyan-focus-fore: var(--color-cyan-200);
+  --color-cyan-focus-back: var(--color-cyan-800);
+  --color-cyan-focus-border: var(--color-cyan-600);
+  --color-cyan-focus-shadow: var(--color-cyan-850);
   --color-cyan-active-fore: var(--color-cyan-200);
   --color-cyan-active-back: var(--color-cyan-700);
   --color-cyan-active-border: var(--color-cyan-600);
@@ -632,14 +632,14 @@
   --color-blue-disabled-back: var(--color-blue-700);
   --color-blue-disabled-border: var(--color-blue-600);
   --color-blue-disabled-shadow: var(--color-blue-850);
-  --color-blue-hovered-fore: var(--color-blue-200);
-  --color-blue-hovered-back: var(--color-blue-800);
-  --color-blue-hovered-border: var(--color-blue-600);
-  --color-blue-hovered-shadow: var(--color-blue-850);
-  --color-blue-focused-fore: var(--color-blue-200);
-  --color-blue-focused-back: var(--color-blue-800);
-  --color-blue-focused-border: var(--color-blue-600);
-  --color-blue-focused-shadow: var(--color-blue-850);
+  --color-blue-hover-fore: var(--color-blue-200);
+  --color-blue-hover-back: var(--color-blue-800);
+  --color-blue-hover-border: var(--color-blue-600);
+  --color-blue-hover-shadow: var(--color-blue-850);
+  --color-blue-focus-fore: var(--color-blue-200);
+  --color-blue-focus-back: var(--color-blue-800);
+  --color-blue-focus-border: var(--color-blue-600);
+  --color-blue-focus-shadow: var(--color-blue-850);
   --color-blue-active-fore: var(--color-blue-200);
   --color-blue-active-back: var(--color-blue-700);
   --color-blue-active-border: var(--color-blue-600);
@@ -652,14 +652,14 @@
   --color-violet-disabled-back: var(--color-violet-700);
   --color-violet-disabled-border: var(--color-violet-600);
   --color-violet-disabled-shadow: var(--color-violet-850);
-  --color-violet-hovered-fore: var(--color-violet-200);
-  --color-violet-hovered-back: var(--color-violet-800);
-  --color-violet-hovered-border: var(--color-violet-600);
-  --color-violet-hovered-shadow: var(--color-violet-850);
-  --color-violet-focused-fore: var(--color-violet-200);
-  --color-violet-focused-back: var(--color-violet-800);
-  --color-violet-focused-border: var(--color-violet-600);
-  --color-violet-focused-shadow: var(--color-violet-850);
+  --color-violet-hover-fore: var(--color-violet-200);
+  --color-violet-hover-back: var(--color-violet-800);
+  --color-violet-hover-border: var(--color-violet-600);
+  --color-violet-hover-shadow: var(--color-violet-850);
+  --color-violet-focus-fore: var(--color-violet-200);
+  --color-violet-focus-back: var(--color-violet-800);
+  --color-violet-focus-border: var(--color-violet-600);
+  --color-violet-focus-shadow: var(--color-violet-850);
   --color-violet-active-fore: var(--color-violet-200);
   --color-violet-active-back: var(--color-violet-700);
   --color-violet-active-border: var(--color-violet-600);
@@ -676,14 +676,14 @@
   --color-default-disabled-back: var(--color-gray-100);
   --color-default-disabled-border: var(--color-gray-600);
   --color-default-disabled-shadow: var(--color-gray-850);
-  --color-default-hovered-fore: var(--color-white);
-  --color-default-hovered-back: var(--color-gray-200);
-  --color-default-hovered-border: var(--color-gray-600);
-  --color-default-hovered-shadow: var(--color-gray-850);
-  --color-default-focused-fore: var(--color-white);
-  --color-default-focused-back: var(--color-gray-200);
-  --color-default-focused-border: var(--color-gray-600);
-  --color-default-focused-shadow: var(--color-gray-850);
+  --color-default-hover-fore: var(--color-white);
+  --color-default-hover-back: var(--color-gray-200);
+  --color-default-hover-border: var(--color-gray-600);
+  --color-default-hover-shadow: var(--color-gray-850);
+  --color-default-focus-fore: var(--color-white);
+  --color-default-focus-back: var(--color-gray-200);
+  --color-default-focus-border: var(--color-gray-600);
+  --color-default-focus-shadow: var(--color-gray-850);
   --color-default-active-fore: var(--color-white);
   --color-default-active-back: var(--color-gray-300);
   --color-default-active-border: var(--color-gray-600);
@@ -696,14 +696,14 @@
   --color-gray-disabled-back: var(--color-gray-100);
   --color-gray-disabled-border: var(--color-gray-600);
   --color-gray-disabled-shadow: var(--color-gray-850);
-  --color-gray-hovered-fore: var(--color-gray-850);
-  --color-gray-hovered-back: var(--color-gray-200);
-  --color-gray-hovered-border: var(--color-gray-600);
-  --color-gray-hovered-shadow: var(--color-gray-850);
-  --color-gray-focused-fore: var(--color-gray-850);
-  --color-gray-focused-back: var(--color-gray-200);
-  --color-gray-focused-border: var(--color-gray-600);
-  --color-gray-focused-shadow: var(--color-gray-850);
+  --color-gray-hover-fore: var(--color-gray-850);
+  --color-gray-hover-back: var(--color-gray-200);
+  --color-gray-hover-border: var(--color-gray-600);
+  --color-gray-hover-shadow: var(--color-gray-850);
+  --color-gray-focus-fore: var(--color-gray-850);
+  --color-gray-focus-back: var(--color-gray-200);
+  --color-gray-focus-border: var(--color-gray-600);
+  --color-gray-focus-shadow: var(--color-gray-850);
   --color-gray-active-fore: var(--color-gray-850);
   --color-gray-active-back: var(--color-gray-300);
   --color-gray-active-border: var(--color-gray-600);
@@ -716,14 +716,14 @@
   --color-red-disabled-back: var(--color-red-100);
   --color-red-disabled-border: var(--color-red-600);
   --color-red-disabled-shadow: var(--color-red-850);
-  --color-red-hovered-fore: var(--color-red-850);
-  --color-red-hovered-back: var(--color-red-200);
-  --color-red-hovered-border: var(--color-red-600);
-  --color-red-hovered-shadow: var(--color-red-850);
-  --color-red-focused-fore: var(--color-red-850);
-  --color-red-focused-back: var(--color-red-200);
-  --color-red-focused-border: var(--color-red-600);
-  --color-red-focused-shadow: var(--color-red-850);
+  --color-red-hover-fore: var(--color-red-850);
+  --color-red-hover-back: var(--color-red-200);
+  --color-red-hover-border: var(--color-red-600);
+  --color-red-hover-shadow: var(--color-red-850);
+  --color-red-focus-fore: var(--color-red-850);
+  --color-red-focus-back: var(--color-red-200);
+  --color-red-focus-border: var(--color-red-600);
+  --color-red-focus-shadow: var(--color-red-850);
   --color-red-active-fore: var(--color-red-850);
   --color-red-active-back: var(--color-red-300);
   --color-red-active-border: var(--color-red-600);
@@ -736,14 +736,14 @@
   --color-orange-disabled-back: var(--color-orange-100);
   --color-orange-disabled-border: var(--color-orange-600);
   --color-orange-disabled-shadow: var(--color-orange-850);
-  --color-orange-hovered-fore: var(--color-orange-850);
-  --color-orange-hovered-back: var(--color-orange-200);
-  --color-orange-hovered-border: var(--color-orange-600);
-  --color-orange-hovered-shadow: var(--color-orange-850);
-  --color-orange-focused-fore: var(--color-orange-850);
-  --color-orange-focused-back: var(--color-orange-200);
-  --color-orange-focused-border: var(--color-orange-600);
-  --color-orange-focused-shadow: var(--color-orange-850);
+  --color-orange-hover-fore: var(--color-orange-850);
+  --color-orange-hover-back: var(--color-orange-200);
+  --color-orange-hover-border: var(--color-orange-600);
+  --color-orange-hover-shadow: var(--color-orange-850);
+  --color-orange-focus-fore: var(--color-orange-850);
+  --color-orange-focus-back: var(--color-orange-200);
+  --color-orange-focus-border: var(--color-orange-600);
+  --color-orange-focus-shadow: var(--color-orange-850);
   --color-orange-active-fore: var(--color-orange-850);
   --color-orange-active-back: var(--color-orange-300);
   --color-orange-active-border: var(--color-orange-600);
@@ -756,14 +756,14 @@
   --color-yellow-disabled-back: var(--color-yellow-100);
   --color-yellow-disabled-border: var(--color-yellow-600);
   --color-yellow-disabled-shadow: var(--color-yellow-850);
-  --color-yellow-hovered-fore: var(--color-yellow-850);
-  --color-yellow-hovered-back: var(--color-yellow-200);
-  --color-yellow-hovered-border: var(--color-yellow-600);
-  --color-yellow-hovered-shadow: var(--color-yellow-850);
-  --color-yellow-focused-fore: var(--color-yellow-850);
-  --color-yellow-focused-back: var(--color-yellow-200);
-  --color-yellow-focused-border: var(--color-yellow-600);
-  --color-yellow-focused-shadow: var(--color-yellow-850);
+  --color-yellow-hover-fore: var(--color-yellow-850);
+  --color-yellow-hover-back: var(--color-yellow-200);
+  --color-yellow-hover-border: var(--color-yellow-600);
+  --color-yellow-hover-shadow: var(--color-yellow-850);
+  --color-yellow-focus-fore: var(--color-yellow-850);
+  --color-yellow-focus-back: var(--color-yellow-200);
+  --color-yellow-focus-border: var(--color-yellow-600);
+  --color-yellow-focus-shadow: var(--color-yellow-850);
   --color-yellow-active-fore: var(--color-yellow-850);
   --color-yellow-active-back: var(--color-yellow-300);
   --color-yellow-active-border: var(--color-yellow-600);
@@ -776,14 +776,14 @@
   --color-green-disabled-back: var(--color-green-100);
   --color-green-disabled-border: var(--color-green-600);
   --color-green-disabled-shadow: var(--color-green-850);
-  --color-green-hovered-fore: var(--color-green-850);
-  --color-green-hovered-back: var(--color-green-200);
-  --color-green-hovered-border: var(--color-green-600);
-  --color-green-hovered-shadow: var(--color-green-850);
-  --color-green-focused-fore: var(--color-green-850);
-  --color-green-focused-back: var(--color-green-200);
-  --color-green-focused-border: var(--color-green-600);
-  --color-green-focused-shadow: var(--color-green-850);
+  --color-green-hover-fore: var(--color-green-850);
+  --color-green-hover-back: var(--color-green-200);
+  --color-green-hover-border: var(--color-green-600);
+  --color-green-hover-shadow: var(--color-green-850);
+  --color-green-focus-fore: var(--color-green-850);
+  --color-green-focus-back: var(--color-green-200);
+  --color-green-focus-border: var(--color-green-600);
+  --color-green-focus-shadow: var(--color-green-850);
   --color-green-active-fore: var(--color-green-850);
   --color-green-active-back: var(--color-green-300);
   --color-green-active-border: var(--color-green-600);
@@ -796,14 +796,14 @@
   --color-cyan-disabled-back: var(--color-cyan-100);
   --color-cyan-disabled-border: var(--color-cyan-600);
   --color-cyan-disabled-shadow: var(--color-cyan-850);
-  --color-cyan-hovered-fore: var(--color-cyan-850);
-  --color-cyan-hovered-back: var(--color-cyan-200);
-  --color-cyan-hovered-border: var(--color-cyan-600);
-  --color-cyan-hovered-shadow: var(--color-cyan-850);
-  --color-cyan-focused-fore: var(--color-cyan-850);
-  --color-cyan-focused-back: var(--color-cyan-200);
-  --color-cyan-focused-border: var(--color-cyan-600);
-  --color-cyan-focused-shadow: var(--color-cyan-850);
+  --color-cyan-hover-fore: var(--color-cyan-850);
+  --color-cyan-hover-back: var(--color-cyan-200);
+  --color-cyan-hover-border: var(--color-cyan-600);
+  --color-cyan-hover-shadow: var(--color-cyan-850);
+  --color-cyan-focus-fore: var(--color-cyan-850);
+  --color-cyan-focus-back: var(--color-cyan-200);
+  --color-cyan-focus-border: var(--color-cyan-600);
+  --color-cyan-focus-shadow: var(--color-cyan-850);
   --color-cyan-active-fore: var(--color-cyan-850);
   --color-cyan-active-back: var(--color-cyan-300);
   --color-cyan-active-border: var(--color-cyan-600);
@@ -816,14 +816,14 @@
   --color-blue-disabled-back: var(--color-blue-100);
   --color-blue-disabled-border: var(--color-blue-600);
   --color-blue-disabled-shadow: var(--color-blue-850);
-  --color-blue-hovered-fore: var(--color-blue-850);
-  --color-blue-hovered-back: var(--color-blue-200);
-  --color-blue-hovered-border: var(--color-blue-600);
-  --color-blue-hovered-shadow: var(--color-blue-850);
-  --color-blue-focused-fore: var(--color-blue-850);
-  --color-blue-focused-back: var(--color-blue-200);
-  --color-blue-focused-border: var(--color-blue-600);
-  --color-blue-focused-shadow: var(--color-blue-850);
+  --color-blue-hover-fore: var(--color-blue-850);
+  --color-blue-hover-back: var(--color-blue-200);
+  --color-blue-hover-border: var(--color-blue-600);
+  --color-blue-hover-shadow: var(--color-blue-850);
+  --color-blue-focus-fore: var(--color-blue-850);
+  --color-blue-focus-back: var(--color-blue-200);
+  --color-blue-focus-border: var(--color-blue-600);
+  --color-blue-focus-shadow: var(--color-blue-850);
   --color-blue-active-fore: var(--color-blue-850);
   --color-blue-active-back: var(--color-blue-300);
   --color-blue-active-border: var(--color-blue-600);
@@ -836,14 +836,14 @@
   --color-violet-disabled-back: var(--color-violet-100);
   --color-violet-disabled-border: var(--color-violet-600);
   --color-violet-disabled-shadow: var(--color-violet-850);
-  --color-violet-hovered-fore: var(--color-violet-850);
-  --color-violet-hovered-back: var(--color-violet-200);
-  --color-violet-hovered-border: var(--color-violet-600);
-  --color-violet-hovered-shadow: var(--color-violet-850);
-  --color-violet-focused-fore: var(--color-violet-850);
-  --color-violet-focused-back: var(--color-violet-200);
-  --color-violet-focused-border: var(--color-violet-600);
-  --color-violet-focused-shadow: var(--color-violet-850);
+  --color-violet-hover-fore: var(--color-violet-850);
+  --color-violet-hover-back: var(--color-violet-200);
+  --color-violet-hover-border: var(--color-violet-600);
+  --color-violet-hover-shadow: var(--color-violet-850);
+  --color-violet-focus-fore: var(--color-violet-850);
+  --color-violet-focus-back: var(--color-violet-200);
+  --color-violet-focus-border: var(--color-violet-600);
+  --color-violet-focus-shadow: var(--color-violet-850);
   --color-violet-active-fore: var(--color-violet-850);
   --color-violet-active-back: var(--color-violet-300);
   --color-violet-active-border: var(--color-violet-600);
@@ -2601,13 +2601,13 @@ template {
   vertical-align: top;
   word-spacing: 0px;
 }
-.button:hover, .button.is-hovered {
-  background-color: var(--color-default-hovered-back);
-  border-color: var(--color-default-hovered-border);
+.button:hover, .button.is-hovered, .button.is-hovered {
+  background-color: var(--color-default-hover-back);
+  border-color: var(--color-default-hover-border);
 }
-.button:focus, .button.is-focused {
-  background-color: var(--color-default-focused-back);
-  border-color: var(--color-default-border-focused);
+.button:focus, .button.is-focus, .button.is-focused {
+  background-color: var(--color-default-focus-back);
+  border-color: var(--color-default-border-focus);
 }
 .button:active, .button.is-active {
   background-color: var(--color-default-active-back);
@@ -2623,13 +2623,13 @@ template {
   border-color: var(--color-gray-border);
   color: var(--color-gray-fore);
 }
-.button.is-gray:hover, .button.is-gray.is-hovered {
-  background-color: var(--color-gray-hovered-back);
-  border-color: var(--color-gray-hovered-border);
+.button.is-gray:hover, .button.is-gray.is-hover, .button.is-gray.is-hovered {
+  background-color: var(--color-gray-hover-back);
+  border-color: var(--color-gray-hover-border);
 }
-.button.is-gray:focus, .button.is-gray.is-focused {
-  background-color: var(--color-gray-focused-back);
-  border-color: var(--color-gray-focused-border);
+.button.is-gray:focus, .button.is-gray.is-focus, .button.is-gray.is-focused {
+  background-color: var(--color-gray-focus-back);
+  border-color: var(--color-gray-focus-border);
 }
 .button.is-gray:active, .button.is-gray.is-active {
   background-color: var(--color-gray-active-back);
@@ -2645,13 +2645,13 @@ template {
   border-color: var(--color-red-border);
   color: var(--color-red-fore);
 }
-.button.is-red:hover, .button.is-red.is-hovered {
-  background-color: var(--color-red-hovered-back);
-  border-color: var(--color-red-hovered-border);
+.button.is-red:hover, .button.is-red.is-hover, .button.is-red.is-hovered {
+  background-color: var(--color-red-hover-back);
+  border-color: var(--color-red-hover-border);
 }
-.button.is-red:focus, .button.is-red.is-focused {
-  background-color: var(--color-red-focused-back);
-  border-color: var(--color-red-focused-border);
+.button.is-red:focus, .button.is-red.is-focus, .button.is-red.is-focused {
+  background-color: var(--color-red-focus-back);
+  border-color: var(--color-red-focus-border);
 }
 .button.is-red:active, .button.is-red.is-active {
   background-color: var(--color-red-active-back);
@@ -2667,13 +2667,13 @@ template {
   border-color: var(--color-orange-border);
   color: var(--color-orange-fore);
 }
-.button.is-orange:hover, .button.is-orange.is-hovered {
-  background-color: var(--color-orange-hovered-back);
-  border-color: var(--color-orange-hovered-border);
+.button.is-orange:hover, .button.is-orange.is-hover, .button.is-orange.is-hovered {
+  background-color: var(--color-orange-hover-back);
+  border-color: var(--color-orange-hover-border);
 }
-.button.is-orange:focus, .button.is-orange.is-focused {
-  background-color: var(--color-orange-focused-back);
-  border-color: var(--color-orange-focused-border);
+.button.is-orange:focus, .button.is-orange.is-focus, .button.is-orange.is-focused {
+  background-color: var(--color-orange-focus-back);
+  border-color: var(--color-orange-focus-border);
 }
 .button.is-orange:active, .button.is-orange.is-active {
   background-color: var(--color-orange-active-back);
@@ -2689,13 +2689,13 @@ template {
   border-color: var(--color-yellow-border);
   color: var(--color-yellow-fore);
 }
-.button.is-yellow:hover, .button.is-yellow.is-hovered {
-  background-color: var(--color-yellow-hovered-back);
-  border-color: var(--color-yellow-hovered-border);
+.button.is-yellow:hover, .button.is-yellow.is-hover, .button.is-yellow.is-hovered {
+  background-color: var(--color-yellow-hover-back);
+  border-color: var(--color-yellow-hover-border);
 }
-.button.is-yellow:focus, .button.is-yellow.is-focused {
-  background-color: var(--color-yellow-focused-back);
-  border-color: var(--color-yellow-focused-border);
+.button.is-yellow:focus, .button.is-yellow.is-focus, .button.is-yellow.is-focused {
+  background-color: var(--color-yellow-focus-back);
+  border-color: var(--color-yellow-focus-border);
 }
 .button.is-yellow:active, .button.is-yellow.is-active {
   background-color: var(--color-yellow-active-back);
@@ -2711,13 +2711,13 @@ template {
   border-color: var(--color-green-border);
   color: var(--color-green-fore);
 }
-.button.is-green:hover, .button.is-green.is-hovered {
-  background-color: var(--color-green-hovered-back);
-  border-color: var(--color-green-hovered-border);
+.button.is-green:hover, .button.is-green.is-hover, .button.is-green.is-hovered {
+  background-color: var(--color-green-hover-back);
+  border-color: var(--color-green-hover-border);
 }
-.button.is-green:focus, .button.is-green.is-focused {
-  background-color: var(--color-green-focused-back);
-  border-color: var(--color-green-focused-border);
+.button.is-green:focus, .button.is-green.is-focus, .button.is-green.is-focused {
+  background-color: var(--color-green-focus-back);
+  border-color: var(--color-green-focus-border);
 }
 .button.is-green:active, .button.is-green.is-active {
   background-color: var(--color-green-active-back);
@@ -2733,13 +2733,13 @@ template {
   border-color: var(--color-cyan-border);
   color: var(--color-cyan-fore);
 }
-.button.is-cyan:hover, .button.is-cyan.is-hovered {
-  background-color: var(--color-cyan-hovered-back);
-  border-color: var(--color-cyan-hovered-border);
+.button.is-cyan:hover, .button.is-cyan.is-hover, .button.is-cyan.is-hovered {
+  background-color: var(--color-cyan-hover-back);
+  border-color: var(--color-cyan-hover-border);
 }
-.button.is-cyan:focus, .button.is-cyan.is-focused {
-  background-color: var(--color-cyan-focused-back);
-  border-color: var(--color-cyan-focused-border);
+.button.is-cyan:focus, .button.is-cyan.is-focus, .button.is-cyan.is-focused {
+  background-color: var(--color-cyan-focus-back);
+  border-color: var(--color-cyan-focus-border);
 }
 .button.is-cyan:active, .button.is-cyan.is-active {
   background-color: var(--color-cyan-active-back);
@@ -2755,13 +2755,13 @@ template {
   border-color: var(--color-blue-border);
   color: var(--color-blue-fore);
 }
-.button.is-blue:hover, .button.is-blue.is-hovered {
-  background-color: var(--color-blue-hovered-back);
-  border-color: var(--color-blue-hovered-border);
+.button.is-blue:hover, .button.is-blue.is-hover, .button.is-blue.is-hovered {
+  background-color: var(--color-blue-hover-back);
+  border-color: var(--color-blue-hover-border);
 }
-.button.is-blue:focus, .button.is-blue.is-focused {
-  background-color: var(--color-blue-focused-back);
-  border-color: var(--color-blue-focused-border);
+.button.is-blue:focus, .button.is-blue.is-focus, .button.is-blue.is-focused {
+  background-color: var(--color-blue-focus-back);
+  border-color: var(--color-blue-focus-border);
 }
 .button.is-blue:active, .button.is-blue.is-active {
   background-color: var(--color-blue-active-back);
@@ -2777,13 +2777,13 @@ template {
   border-color: var(--color-violet-border);
   color: var(--color-violet-fore);
 }
-.button.is-violet:hover, .button.is-violet.is-hovered {
-  background-color: var(--color-violet-hovered-back);
-  border-color: var(--color-violet-hovered-border);
+.button.is-violet:hover, .button.is-violet.is-hover, .button.is-violet.is-hovered {
+  background-color: var(--color-violet-hover-back);
+  border-color: var(--color-violet-hover-border);
 }
-.button.is-violet:focus, .button.is-violet.is-focused {
-  background-color: var(--color-violet-focused-back);
-  border-color: var(--color-violet-focused-border);
+.button.is-violet:focus, .button.is-violet.is-focus, .button.is-violet.is-focused {
+  background-color: var(--color-violet-focus-back);
+  border-color: var(--color-violet-focus-border);
 }
 .button.is-violet:active, .button.is-violet.is-active {
   background-color: var(--color-violet-active-back);

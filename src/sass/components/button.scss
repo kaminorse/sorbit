@@ -22,14 +22,16 @@
   vertical-align: top;
   word-spacing: 0px;
   &:hover,
+  &.is-hovered,
   &.is-hovered {
-    background-color: var(--color-default-hovered-back);
-    border-color: var(--color-default-hovered-border);
+    background-color: var(--color-default-hover-back);
+    border-color: var(--color-default-hover-border);
   }
   &:focus,
+  &.is-focus,
   &.is-focused {
-    background-color: var(--color-default-focused-back);
-    border-color: var(--color-default-border-focused);
+    background-color: var(--color-default-focus-back);
+    border-color: var(--color-default-border-focus);
   }
   &:active,
   &.is-active {
@@ -49,14 +51,16 @@
       border-color: var(--color-#{$color}-border);
       color: var(--color-#{$color}-fore);
       &:hover,
+      &.is-hover,
       &.is-hovered {
-        background-color: var(--color-#{$color}-hovered-back);
-        border-color: var(--color-#{$color}-hovered-border);
+        background-color: var(--color-#{$color}-hover-back);
+        border-color: var(--color-#{$color}-hover-border);
       }
       &:focus,
+      &.is-focus,
       &.is-focused {
-        background-color: var(--color-#{$color}-focused-back);
-        border-color: var(--color-#{$color}-focused-border);
+        background-color: var(--color-#{$color}-focus-back);
+        border-color: var(--color-#{$color}-focus-border);
       }
       &:active,
       &.is-active {
