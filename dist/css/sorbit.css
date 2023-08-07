@@ -302,12 +302,12 @@
 :root {
   --color-default-fore: var(--color-black);
   --color-default-back: var(--color-white);
-  --color-default-border: var(--color-gray-550);
-  --color-default-shadow: var(--color-gray-700);
+  --color-default-border: var(--color-gray-600);
+  --color-default-shadow: var(--color-gray-850);
   --color-default-disabled-fore: var(--color-black);
-  --color-default-disabled-back: var(--color-gray-800);
-  --color-default-disabled-border: var(--color-gray-700);
-  --color-default-disabled-shadow: var(--color-gray-700);
+  --color-default-disabled-back: var(--color-gray-700);
+  --color-default-disabled-border: var(--color-gray-600);
+  --color-default-disabled-shadow: var(--color-gray-850);
   --color-default-hovered-fore: var(--color-black);
   --color-default-hovered-back: var(--color-gray-800);
   --color-default-hovered-border: var(--color-gray-600);
@@ -486,12 +486,12 @@
 [data-color-scheme=light] {
   --color-default-fore: var(--color-black);
   --color-default-back: var(--color-white);
-  --color-default-border: var(--color-gray-550);
-  --color-default-shadow: var(--color-gray-700);
+  --color-default-border: var(--color-gray-600);
+  --color-default-shadow: var(--color-gray-850);
   --color-default-disabled-fore: var(--color-black);
-  --color-default-disabled-back: var(--color-gray-800);
-  --color-default-disabled-border: var(--color-gray-700);
-  --color-default-disabled-shadow: var(--color-gray-700);
+  --color-default-disabled-back: var(--color-gray-700);
+  --color-default-disabled-border: var(--color-gray-600);
+  --color-default-disabled-shadow: var(--color-gray-850);
   --color-default-hovered-fore: var(--color-black);
   --color-default-hovered-back: var(--color-gray-800);
   --color-default-hovered-border: var(--color-gray-600);
@@ -671,23 +671,23 @@
   --color-default-fore: var(--color-white);
   --color-default-back: var(--color-black);
   --color-default-border: var(--color-gray-500);
-  --color-default-shadow: var(--color-gray-250);
+  --color-default-shadow: var(--color-gray-350);
   --color-default-disabled-fore: var(--color-gray-850);
   --color-default-disabled-back: var(--color-gray-100);
   --color-default-disabled-border: var(--color-gray-600);
-  --color-default-disabled-shadow: var(--color-gray-350);
+  --color-default-disabled-shadow: var(--color-gray-850);
   --color-default-hovered-fore: var(--color-white);
   --color-default-hovered-back: var(--color-gray-200);
   --color-default-hovered-border: var(--color-gray-600);
-  --color-default-hovered-shadow: var(--color-gray-350);
+  --color-default-hovered-shadow: var(--color-gray-850);
   --color-default-focused-fore: var(--color-white);
   --color-default-focused-back: var(--color-gray-200);
   --color-default-focused-border: var(--color-gray-600);
-  --color-default-focused-shadow: var(--color-gray-350);
+  --color-default-focused-shadow: var(--color-gray-850);
   --color-default-active-fore: var(--color-white);
   --color-default-active-back: var(--color-gray-300);
   --color-default-active-border: var(--color-gray-600);
-  --color-default-active-shadow: var(--color-gray-350);
+  --color-default-active-shadow: var(--color-gray-850);
   --color-gray-fore: var(--color-gray-850);
   --color-gray-back: var(--color-gray-150);
   --color-gray-border: var(--color-gray-500);
@@ -1462,12 +1462,15 @@ template {
   padding: 0.5rem;
   position: relative;
   text-decoration: none;
+  text-shadow: 2px 2px 1px var(--color-default-shadow), -2px 2px 1px var(--color-default-shadow), 2px -2px 1px var(--color-default-shadow), -2px -2px 1px var(--color-default-shadow), 2px 0px 1px var(--color-default-shadow), 0px 2px 1px var(--color-default-shadow), -2px 0px 1px var(--color-default-shadow), 0px -2px 1px var(--color-default-shadow);
 }
 .nav .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-default-fore-hover);
+  text-shadow: 2px 2px 1px var(--color-default-shadow-hover), -2px 2px 1px var(--color-default-shadow-hover), 2px -2px 1px var(--color-default-shadow-hover), -2px -2px 1px var(--color-default-shadow-hover), 2px 0px 1px var(--color-default-shadow-hover), 0px 2px 1px var(--color-default-shadow-hover), -2px 0px 1px var(--color-default-shadow-hover), 0px -2px 1px var(--color-default-shadow-hover);
 }
 .nav .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-default-fore-active);
+  text-shadow: 2px 2px 1px var(--color-default-shadow-active), -2px 2px 1px var(--color-default-shadow-active), 2px -2px 1px var(--color-default-shadow-active), -2px -2px 1px var(--color-default-shadow-active), 2px 0px 1px var(--color-default-shadow-active), 0px 2px 1px var(--color-default-shadow-active), -2px 0px 1px var(--color-default-shadow-active), 0px -2px 1px var(--color-default-shadow-active);
 }
 .nav .nav-desktop {
   display: none;
