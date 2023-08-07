@@ -1466,11 +1466,11 @@ template {
 }
 .nav .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-default-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-default-shadow-hover), -2px 2px 1px var(--color-default-shadow-hover), 2px -2px 1px var(--color-default-shadow-hover), -2px -2px 1px var(--color-default-shadow-hover), 2px 0px 1px var(--color-default-shadow-hover), 0px 2px 1px var(--color-default-shadow-hover), -2px 0px 1px var(--color-default-shadow-hover), 0px -2px 1px var(--color-default-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-default-hover-shadow), -2px 2px 1px var(--color-default-hover-shadow), 2px -2px 1px var(--color-default-hover-shadow), -2px -2px 1px var(--color-default-hover-shadow), 2px 0px 1px var(--color-default-hover-shadow), 0px 2px 1px var(--color-default-hover-shadow), -2px 0px 1px var(--color-default-hover-shadow), 0px -2px 1px var(--color-default-hover-shadow);
 }
 .nav .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-default-fore-active);
-  text-shadow: 2px 2px 1px var(--color-default-shadow-active), -2px 2px 1px var(--color-default-shadow-active), 2px -2px 1px var(--color-default-shadow-active), -2px -2px 1px var(--color-default-shadow-active), 2px 0px 1px var(--color-default-shadow-active), 0px 2px 1px var(--color-default-shadow-active), -2px 0px 1px var(--color-default-shadow-active), 0px -2px 1px var(--color-default-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-default-active-shadow), -2px 2px 1px var(--color-default-active-shadow), 2px -2px 1px var(--color-default-active-shadow), -2px -2px 1px var(--color-default-active-shadow), 2px 0px 1px var(--color-default-active-shadow), 0px 2px 1px var(--color-default-active-shadow), -2px 0px 1px var(--color-default-active-shadow), 0px -2px 1px var(--color-default-active-shadow);
 }
 .nav .nav-desktop {
   display: none;
@@ -1552,12 +1552,12 @@ template {
 }
 .nav .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-default-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-default-shadow-hover), -2px 2px 1px var(--color-default-shadow-hover), 2px -2px 1px var(--color-default-shadow-hover), -2px -2px 1px var(--color-default-shadow-hover), 2px 0px 1px var(--color-default-shadow-hover), 0px 2px 1px var(--color-default-shadow-hover), -2px 0px 1px var(--color-default-shadow-hover), 0px -2px 1px var(--color-default-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-default-hover-shadow), -2px 2px 1px var(--color-default-hover-shadow), 2px -2px 1px var(--color-default-hover-shadow), -2px -2px 1px var(--color-default-hover-shadow), 2px 0px 1px var(--color-default-hover-shadow), 0px 2px 1px var(--color-default-hover-shadow), -2px 0px 1px var(--color-default-hover-shadow), 0px -2px 1px var(--color-default-hover-shadow);
   opacity: 0.8;
 }
 .nav .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-default-fore-active);
-  text-shadow: 2px 2px 1px var(--color-default-shadow-active), -2px 2px 1px var(--color-default-shadow-active), 2px -2px 1px var(--color-default-shadow-active), -2px -2px 1px var(--color-default-shadow-active), 2px 0px 1px var(--color-default-shadow-active), 0px 2px 1px var(--color-default-shadow-active), -2px 0px 1px var(--color-default-shadow-active), 0px -2px 1px var(--color-default-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-default-active-shadow), -2px 2px 1px var(--color-default-active-shadow), 2px -2px 1px var(--color-default-active-shadow), -2px -2px 1px var(--color-default-active-shadow), 2px 0px 1px var(--color-default-active-shadow), 0px 2px 1px var(--color-default-active-shadow), -2px 0px 1px var(--color-default-active-shadow), 0px -2px 1px var(--color-default-active-shadow);
 }
 .nav.is-gray {
   background-color: var(--color-gray-back);
@@ -1569,12 +1569,12 @@ template {
 }
 .nav.is-gray .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-gray-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-gray-shadow-hover), -2px 2px 1px var(--color-gray-shadow-hover), 2px -2px 1px var(--color-gray-shadow-hover), -2px -2px 1px var(--color-gray-shadow-hover), 2px 0px 1px var(--color-gray-shadow-hover), 0px 2px 1px var(--color-gray-shadow-hover), -2px 0px 1px var(--color-gray-shadow-hover), 0px -2px 1px var(--color-gray-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-gray-hover-shadow), -2px 2px 1px var(--color-gray-hover-shadow), 2px -2px 1px var(--color-gray-hover-shadow), -2px -2px 1px var(--color-gray-hover-shadow), 2px 0px 1px var(--color-gray-hover-shadow), 0px 2px 1px var(--color-gray-hover-shadow), -2px 0px 1px var(--color-gray-hover-shadow), 0px -2px 1px var(--color-gray-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-gray .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-gray-fore-active);
-  text-shadow: 2px 2px 1px var(--color-gray-shadow-active), -2px 2px 1px var(--color-gray-shadow-active), 2px -2px 1px var(--color-gray-shadow-active), -2px -2px 1px var(--color-gray-shadow-active), 2px 0px 1px var(--color-gray-shadow-active), 0px 2px 1px var(--color-gray-shadow-active), -2px 0px 1px var(--color-gray-shadow-active), 0px -2px 1px var(--color-gray-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-gray-active-shadow), -2px 2px 1px var(--color-gray-active-shadow), 2px -2px 1px var(--color-gray-active-shadow), -2px -2px 1px var(--color-gray-active-shadow), 2px 0px 1px var(--color-gray-active-shadow), 0px 2px 1px var(--color-gray-active-shadow), -2px 0px 1px var(--color-gray-active-shadow), 0px -2px 1px var(--color-gray-active-shadow);
 }
 .nav.is-gray .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-gray-fore);
@@ -1582,12 +1582,12 @@ template {
 }
 .nav.is-gray .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-gray-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-gray-shadow-hover), -2px 2px 1px var(--color-gray-shadow-hover), 2px -2px 1px var(--color-gray-shadow-hover), -2px -2px 1px var(--color-gray-shadow-hover), 2px 0px 1px var(--color-gray-shadow-hover), 0px 2px 1px var(--color-gray-shadow-hover), -2px 0px 1px var(--color-gray-shadow-hover), 0px -2px 1px var(--color-gray-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-gray-hover-shadow), -2px 2px 1px var(--color-gray-hover-shadow), 2px -2px 1px var(--color-gray-hover-shadow), -2px -2px 1px var(--color-gray-hover-shadow), 2px 0px 1px var(--color-gray-hover-shadow), 0px 2px 1px var(--color-gray-hover-shadow), -2px 0px 1px var(--color-gray-hover-shadow), 0px -2px 1px var(--color-gray-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-gray .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-gray-fore-active);
-  text-shadow: 2px 2px 1px var(--color-gray-shadow-active), -2px 2px 1px var(--color-gray-shadow-active), 2px -2px 1px var(--color-gray-shadow-active), -2px -2px 1px var(--color-gray-shadow-active), 2px 0px 1px var(--color-gray-shadow-active), 0px 2px 1px var(--color-gray-shadow-active), -2px 0px 1px var(--color-gray-shadow-active), 0px -2px 1px var(--color-gray-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-gray-active-shadow), -2px 2px 1px var(--color-gray-active-shadow), 2px -2px 1px var(--color-gray-active-shadow), -2px -2px 1px var(--color-gray-active-shadow), 2px 0px 1px var(--color-gray-active-shadow), 0px 2px 1px var(--color-gray-active-shadow), -2px 0px 1px var(--color-gray-active-shadow), 0px -2px 1px var(--color-gray-active-shadow);
 }
 .nav.is-red {
   background-color: var(--color-red-back);
@@ -1599,12 +1599,12 @@ template {
 }
 .nav.is-red .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-red-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-red-shadow-hover), -2px 2px 1px var(--color-red-shadow-hover), 2px -2px 1px var(--color-red-shadow-hover), -2px -2px 1px var(--color-red-shadow-hover), 2px 0px 1px var(--color-red-shadow-hover), 0px 2px 1px var(--color-red-shadow-hover), -2px 0px 1px var(--color-red-shadow-hover), 0px -2px 1px var(--color-red-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-red-hover-shadow), -2px 2px 1px var(--color-red-hover-shadow), 2px -2px 1px var(--color-red-hover-shadow), -2px -2px 1px var(--color-red-hover-shadow), 2px 0px 1px var(--color-red-hover-shadow), 0px 2px 1px var(--color-red-hover-shadow), -2px 0px 1px var(--color-red-hover-shadow), 0px -2px 1px var(--color-red-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-red .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-red-fore-active);
-  text-shadow: 2px 2px 1px var(--color-red-shadow-active), -2px 2px 1px var(--color-red-shadow-active), 2px -2px 1px var(--color-red-shadow-active), -2px -2px 1px var(--color-red-shadow-active), 2px 0px 1px var(--color-red-shadow-active), 0px 2px 1px var(--color-red-shadow-active), -2px 0px 1px var(--color-red-shadow-active), 0px -2px 1px var(--color-red-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-red-active-shadow), -2px 2px 1px var(--color-red-active-shadow), 2px -2px 1px var(--color-red-active-shadow), -2px -2px 1px var(--color-red-active-shadow), 2px 0px 1px var(--color-red-active-shadow), 0px 2px 1px var(--color-red-active-shadow), -2px 0px 1px var(--color-red-active-shadow), 0px -2px 1px var(--color-red-active-shadow);
 }
 .nav.is-red .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-red-fore);
@@ -1612,12 +1612,12 @@ template {
 }
 .nav.is-red .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-red-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-red-shadow-hover), -2px 2px 1px var(--color-red-shadow-hover), 2px -2px 1px var(--color-red-shadow-hover), -2px -2px 1px var(--color-red-shadow-hover), 2px 0px 1px var(--color-red-shadow-hover), 0px 2px 1px var(--color-red-shadow-hover), -2px 0px 1px var(--color-red-shadow-hover), 0px -2px 1px var(--color-red-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-red-hover-shadow), -2px 2px 1px var(--color-red-hover-shadow), 2px -2px 1px var(--color-red-hover-shadow), -2px -2px 1px var(--color-red-hover-shadow), 2px 0px 1px var(--color-red-hover-shadow), 0px 2px 1px var(--color-red-hover-shadow), -2px 0px 1px var(--color-red-hover-shadow), 0px -2px 1px var(--color-red-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-red .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-red-fore-active);
-  text-shadow: 2px 2px 1px var(--color-red-shadow-active), -2px 2px 1px var(--color-red-shadow-active), 2px -2px 1px var(--color-red-shadow-active), -2px -2px 1px var(--color-red-shadow-active), 2px 0px 1px var(--color-red-shadow-active), 0px 2px 1px var(--color-red-shadow-active), -2px 0px 1px var(--color-red-shadow-active), 0px -2px 1px var(--color-red-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-red-active-shadow), -2px 2px 1px var(--color-red-active-shadow), 2px -2px 1px var(--color-red-active-shadow), -2px -2px 1px var(--color-red-active-shadow), 2px 0px 1px var(--color-red-active-shadow), 0px 2px 1px var(--color-red-active-shadow), -2px 0px 1px var(--color-red-active-shadow), 0px -2px 1px var(--color-red-active-shadow);
 }
 .nav.is-orange {
   background-color: var(--color-orange-back);
@@ -1629,12 +1629,12 @@ template {
 }
 .nav.is-orange .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-orange-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-orange-shadow-hover), -2px 2px 1px var(--color-orange-shadow-hover), 2px -2px 1px var(--color-orange-shadow-hover), -2px -2px 1px var(--color-orange-shadow-hover), 2px 0px 1px var(--color-orange-shadow-hover), 0px 2px 1px var(--color-orange-shadow-hover), -2px 0px 1px var(--color-orange-shadow-hover), 0px -2px 1px var(--color-orange-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-orange-hover-shadow), -2px 2px 1px var(--color-orange-hover-shadow), 2px -2px 1px var(--color-orange-hover-shadow), -2px -2px 1px var(--color-orange-hover-shadow), 2px 0px 1px var(--color-orange-hover-shadow), 0px 2px 1px var(--color-orange-hover-shadow), -2px 0px 1px var(--color-orange-hover-shadow), 0px -2px 1px var(--color-orange-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-orange .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-orange-fore-active);
-  text-shadow: 2px 2px 1px var(--color-orange-shadow-active), -2px 2px 1px var(--color-orange-shadow-active), 2px -2px 1px var(--color-orange-shadow-active), -2px -2px 1px var(--color-orange-shadow-active), 2px 0px 1px var(--color-orange-shadow-active), 0px 2px 1px var(--color-orange-shadow-active), -2px 0px 1px var(--color-orange-shadow-active), 0px -2px 1px var(--color-orange-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-orange-active-shadow), -2px 2px 1px var(--color-orange-active-shadow), 2px -2px 1px var(--color-orange-active-shadow), -2px -2px 1px var(--color-orange-active-shadow), 2px 0px 1px var(--color-orange-active-shadow), 0px 2px 1px var(--color-orange-active-shadow), -2px 0px 1px var(--color-orange-active-shadow), 0px -2px 1px var(--color-orange-active-shadow);
 }
 .nav.is-orange .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-orange-fore);
@@ -1642,12 +1642,12 @@ template {
 }
 .nav.is-orange .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-orange-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-orange-shadow-hover), -2px 2px 1px var(--color-orange-shadow-hover), 2px -2px 1px var(--color-orange-shadow-hover), -2px -2px 1px var(--color-orange-shadow-hover), 2px 0px 1px var(--color-orange-shadow-hover), 0px 2px 1px var(--color-orange-shadow-hover), -2px 0px 1px var(--color-orange-shadow-hover), 0px -2px 1px var(--color-orange-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-orange-hover-shadow), -2px 2px 1px var(--color-orange-hover-shadow), 2px -2px 1px var(--color-orange-hover-shadow), -2px -2px 1px var(--color-orange-hover-shadow), 2px 0px 1px var(--color-orange-hover-shadow), 0px 2px 1px var(--color-orange-hover-shadow), -2px 0px 1px var(--color-orange-hover-shadow), 0px -2px 1px var(--color-orange-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-orange .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-orange-fore-active);
-  text-shadow: 2px 2px 1px var(--color-orange-shadow-active), -2px 2px 1px var(--color-orange-shadow-active), 2px -2px 1px var(--color-orange-shadow-active), -2px -2px 1px var(--color-orange-shadow-active), 2px 0px 1px var(--color-orange-shadow-active), 0px 2px 1px var(--color-orange-shadow-active), -2px 0px 1px var(--color-orange-shadow-active), 0px -2px 1px var(--color-orange-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-orange-active-shadow), -2px 2px 1px var(--color-orange-active-shadow), 2px -2px 1px var(--color-orange-active-shadow), -2px -2px 1px var(--color-orange-active-shadow), 2px 0px 1px var(--color-orange-active-shadow), 0px 2px 1px var(--color-orange-active-shadow), -2px 0px 1px var(--color-orange-active-shadow), 0px -2px 1px var(--color-orange-active-shadow);
 }
 .nav.is-yellow {
   background-color: var(--color-yellow-back);
@@ -1659,12 +1659,12 @@ template {
 }
 .nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-yellow-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-yellow-shadow-hover), -2px 2px 1px var(--color-yellow-shadow-hover), 2px -2px 1px var(--color-yellow-shadow-hover), -2px -2px 1px var(--color-yellow-shadow-hover), 2px 0px 1px var(--color-yellow-shadow-hover), 0px 2px 1px var(--color-yellow-shadow-hover), -2px 0px 1px var(--color-yellow-shadow-hover), 0px -2px 1px var(--color-yellow-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-yellow-hover-shadow), -2px 2px 1px var(--color-yellow-hover-shadow), 2px -2px 1px var(--color-yellow-hover-shadow), -2px -2px 1px var(--color-yellow-hover-shadow), 2px 0px 1px var(--color-yellow-hover-shadow), 0px 2px 1px var(--color-yellow-hover-shadow), -2px 0px 1px var(--color-yellow-hover-shadow), 0px -2px 1px var(--color-yellow-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-yellow-fore-active);
-  text-shadow: 2px 2px 1px var(--color-yellow-shadow-active), -2px 2px 1px var(--color-yellow-shadow-active), 2px -2px 1px var(--color-yellow-shadow-active), -2px -2px 1px var(--color-yellow-shadow-active), 2px 0px 1px var(--color-yellow-shadow-active), 0px 2px 1px var(--color-yellow-shadow-active), -2px 0px 1px var(--color-yellow-shadow-active), 0px -2px 1px var(--color-yellow-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-yellow-active-shadow), -2px 2px 1px var(--color-yellow-active-shadow), 2px -2px 1px var(--color-yellow-active-shadow), -2px -2px 1px var(--color-yellow-active-shadow), 2px 0px 1px var(--color-yellow-active-shadow), 0px 2px 1px var(--color-yellow-active-shadow), -2px 0px 1px var(--color-yellow-active-shadow), 0px -2px 1px var(--color-yellow-active-shadow);
 }
 .nav.is-yellow .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-yellow-fore);
@@ -1672,12 +1672,12 @@ template {
 }
 .nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-yellow-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-yellow-shadow-hover), -2px 2px 1px var(--color-yellow-shadow-hover), 2px -2px 1px var(--color-yellow-shadow-hover), -2px -2px 1px var(--color-yellow-shadow-hover), 2px 0px 1px var(--color-yellow-shadow-hover), 0px 2px 1px var(--color-yellow-shadow-hover), -2px 0px 1px var(--color-yellow-shadow-hover), 0px -2px 1px var(--color-yellow-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-yellow-hover-shadow), -2px 2px 1px var(--color-yellow-hover-shadow), 2px -2px 1px var(--color-yellow-hover-shadow), -2px -2px 1px var(--color-yellow-hover-shadow), 2px 0px 1px var(--color-yellow-hover-shadow), 0px 2px 1px var(--color-yellow-hover-shadow), -2px 0px 1px var(--color-yellow-hover-shadow), 0px -2px 1px var(--color-yellow-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-yellow-fore-active);
-  text-shadow: 2px 2px 1px var(--color-yellow-shadow-active), -2px 2px 1px var(--color-yellow-shadow-active), 2px -2px 1px var(--color-yellow-shadow-active), -2px -2px 1px var(--color-yellow-shadow-active), 2px 0px 1px var(--color-yellow-shadow-active), 0px 2px 1px var(--color-yellow-shadow-active), -2px 0px 1px var(--color-yellow-shadow-active), 0px -2px 1px var(--color-yellow-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-yellow-active-shadow), -2px 2px 1px var(--color-yellow-active-shadow), 2px -2px 1px var(--color-yellow-active-shadow), -2px -2px 1px var(--color-yellow-active-shadow), 2px 0px 1px var(--color-yellow-active-shadow), 0px 2px 1px var(--color-yellow-active-shadow), -2px 0px 1px var(--color-yellow-active-shadow), 0px -2px 1px var(--color-yellow-active-shadow);
 }
 .nav.is-green {
   background-color: var(--color-green-back);
@@ -1689,12 +1689,12 @@ template {
 }
 .nav.is-green .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-green-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-green-shadow-hover), -2px 2px 1px var(--color-green-shadow-hover), 2px -2px 1px var(--color-green-shadow-hover), -2px -2px 1px var(--color-green-shadow-hover), 2px 0px 1px var(--color-green-shadow-hover), 0px 2px 1px var(--color-green-shadow-hover), -2px 0px 1px var(--color-green-shadow-hover), 0px -2px 1px var(--color-green-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-green-hover-shadow), -2px 2px 1px var(--color-green-hover-shadow), 2px -2px 1px var(--color-green-hover-shadow), -2px -2px 1px var(--color-green-hover-shadow), 2px 0px 1px var(--color-green-hover-shadow), 0px 2px 1px var(--color-green-hover-shadow), -2px 0px 1px var(--color-green-hover-shadow), 0px -2px 1px var(--color-green-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-green .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-green-fore-active);
-  text-shadow: 2px 2px 1px var(--color-green-shadow-active), -2px 2px 1px var(--color-green-shadow-active), 2px -2px 1px var(--color-green-shadow-active), -2px -2px 1px var(--color-green-shadow-active), 2px 0px 1px var(--color-green-shadow-active), 0px 2px 1px var(--color-green-shadow-active), -2px 0px 1px var(--color-green-shadow-active), 0px -2px 1px var(--color-green-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-green-active-shadow), -2px 2px 1px var(--color-green-active-shadow), 2px -2px 1px var(--color-green-active-shadow), -2px -2px 1px var(--color-green-active-shadow), 2px 0px 1px var(--color-green-active-shadow), 0px 2px 1px var(--color-green-active-shadow), -2px 0px 1px var(--color-green-active-shadow), 0px -2px 1px var(--color-green-active-shadow);
 }
 .nav.is-green .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-green-fore);
@@ -1702,12 +1702,12 @@ template {
 }
 .nav.is-green .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-green-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-green-shadow-hover), -2px 2px 1px var(--color-green-shadow-hover), 2px -2px 1px var(--color-green-shadow-hover), -2px -2px 1px var(--color-green-shadow-hover), 2px 0px 1px var(--color-green-shadow-hover), 0px 2px 1px var(--color-green-shadow-hover), -2px 0px 1px var(--color-green-shadow-hover), 0px -2px 1px var(--color-green-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-green-hover-shadow), -2px 2px 1px var(--color-green-hover-shadow), 2px -2px 1px var(--color-green-hover-shadow), -2px -2px 1px var(--color-green-hover-shadow), 2px 0px 1px var(--color-green-hover-shadow), 0px 2px 1px var(--color-green-hover-shadow), -2px 0px 1px var(--color-green-hover-shadow), 0px -2px 1px var(--color-green-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-green .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-green-fore-active);
-  text-shadow: 2px 2px 1px var(--color-green-shadow-active), -2px 2px 1px var(--color-green-shadow-active), 2px -2px 1px var(--color-green-shadow-active), -2px -2px 1px var(--color-green-shadow-active), 2px 0px 1px var(--color-green-shadow-active), 0px 2px 1px var(--color-green-shadow-active), -2px 0px 1px var(--color-green-shadow-active), 0px -2px 1px var(--color-green-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-green-active-shadow), -2px 2px 1px var(--color-green-active-shadow), 2px -2px 1px var(--color-green-active-shadow), -2px -2px 1px var(--color-green-active-shadow), 2px 0px 1px var(--color-green-active-shadow), 0px 2px 1px var(--color-green-active-shadow), -2px 0px 1px var(--color-green-active-shadow), 0px -2px 1px var(--color-green-active-shadow);
 }
 .nav.is-cyan {
   background-color: var(--color-cyan-back);
@@ -1719,12 +1719,12 @@ template {
 }
 .nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-cyan-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-cyan-shadow-hover), -2px 2px 1px var(--color-cyan-shadow-hover), 2px -2px 1px var(--color-cyan-shadow-hover), -2px -2px 1px var(--color-cyan-shadow-hover), 2px 0px 1px var(--color-cyan-shadow-hover), 0px 2px 1px var(--color-cyan-shadow-hover), -2px 0px 1px var(--color-cyan-shadow-hover), 0px -2px 1px var(--color-cyan-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-cyan-hover-shadow), -2px 2px 1px var(--color-cyan-hover-shadow), 2px -2px 1px var(--color-cyan-hover-shadow), -2px -2px 1px var(--color-cyan-hover-shadow), 2px 0px 1px var(--color-cyan-hover-shadow), 0px 2px 1px var(--color-cyan-hover-shadow), -2px 0px 1px var(--color-cyan-hover-shadow), 0px -2px 1px var(--color-cyan-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-cyan-fore-active);
-  text-shadow: 2px 2px 1px var(--color-cyan-shadow-active), -2px 2px 1px var(--color-cyan-shadow-active), 2px -2px 1px var(--color-cyan-shadow-active), -2px -2px 1px var(--color-cyan-shadow-active), 2px 0px 1px var(--color-cyan-shadow-active), 0px 2px 1px var(--color-cyan-shadow-active), -2px 0px 1px var(--color-cyan-shadow-active), 0px -2px 1px var(--color-cyan-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-cyan-active-shadow), -2px 2px 1px var(--color-cyan-active-shadow), 2px -2px 1px var(--color-cyan-active-shadow), -2px -2px 1px var(--color-cyan-active-shadow), 2px 0px 1px var(--color-cyan-active-shadow), 0px 2px 1px var(--color-cyan-active-shadow), -2px 0px 1px var(--color-cyan-active-shadow), 0px -2px 1px var(--color-cyan-active-shadow);
 }
 .nav.is-cyan .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-cyan-fore);
@@ -1732,12 +1732,12 @@ template {
 }
 .nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-cyan-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-cyan-shadow-hover), -2px 2px 1px var(--color-cyan-shadow-hover), 2px -2px 1px var(--color-cyan-shadow-hover), -2px -2px 1px var(--color-cyan-shadow-hover), 2px 0px 1px var(--color-cyan-shadow-hover), 0px 2px 1px var(--color-cyan-shadow-hover), -2px 0px 1px var(--color-cyan-shadow-hover), 0px -2px 1px var(--color-cyan-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-cyan-hover-shadow), -2px 2px 1px var(--color-cyan-hover-shadow), 2px -2px 1px var(--color-cyan-hover-shadow), -2px -2px 1px var(--color-cyan-hover-shadow), 2px 0px 1px var(--color-cyan-hover-shadow), 0px 2px 1px var(--color-cyan-hover-shadow), -2px 0px 1px var(--color-cyan-hover-shadow), 0px -2px 1px var(--color-cyan-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-cyan-fore-active);
-  text-shadow: 2px 2px 1px var(--color-cyan-shadow-active), -2px 2px 1px var(--color-cyan-shadow-active), 2px -2px 1px var(--color-cyan-shadow-active), -2px -2px 1px var(--color-cyan-shadow-active), 2px 0px 1px var(--color-cyan-shadow-active), 0px 2px 1px var(--color-cyan-shadow-active), -2px 0px 1px var(--color-cyan-shadow-active), 0px -2px 1px var(--color-cyan-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-cyan-active-shadow), -2px 2px 1px var(--color-cyan-active-shadow), 2px -2px 1px var(--color-cyan-active-shadow), -2px -2px 1px var(--color-cyan-active-shadow), 2px 0px 1px var(--color-cyan-active-shadow), 0px 2px 1px var(--color-cyan-active-shadow), -2px 0px 1px var(--color-cyan-active-shadow), 0px -2px 1px var(--color-cyan-active-shadow);
 }
 .nav.is-blue {
   background-color: var(--color-blue-back);
@@ -1749,12 +1749,12 @@ template {
 }
 .nav.is-blue .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-blue-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-blue-shadow-hover), -2px 2px 1px var(--color-blue-shadow-hover), 2px -2px 1px var(--color-blue-shadow-hover), -2px -2px 1px var(--color-blue-shadow-hover), 2px 0px 1px var(--color-blue-shadow-hover), 0px 2px 1px var(--color-blue-shadow-hover), -2px 0px 1px var(--color-blue-shadow-hover), 0px -2px 1px var(--color-blue-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-blue-hover-shadow), -2px 2px 1px var(--color-blue-hover-shadow), 2px -2px 1px var(--color-blue-hover-shadow), -2px -2px 1px var(--color-blue-hover-shadow), 2px 0px 1px var(--color-blue-hover-shadow), 0px 2px 1px var(--color-blue-hover-shadow), -2px 0px 1px var(--color-blue-hover-shadow), 0px -2px 1px var(--color-blue-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-blue .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-blue-fore-active);
-  text-shadow: 2px 2px 1px var(--color-blue-shadow-active), -2px 2px 1px var(--color-blue-shadow-active), 2px -2px 1px var(--color-blue-shadow-active), -2px -2px 1px var(--color-blue-shadow-active), 2px 0px 1px var(--color-blue-shadow-active), 0px 2px 1px var(--color-blue-shadow-active), -2px 0px 1px var(--color-blue-shadow-active), 0px -2px 1px var(--color-blue-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-blue-active-shadow), -2px 2px 1px var(--color-blue-active-shadow), 2px -2px 1px var(--color-blue-active-shadow), -2px -2px 1px var(--color-blue-active-shadow), 2px 0px 1px var(--color-blue-active-shadow), 0px 2px 1px var(--color-blue-active-shadow), -2px 0px 1px var(--color-blue-active-shadow), 0px -2px 1px var(--color-blue-active-shadow);
 }
 .nav.is-blue .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-blue-fore);
@@ -1762,12 +1762,12 @@ template {
 }
 .nav.is-blue .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-blue-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-blue-shadow-hover), -2px 2px 1px var(--color-blue-shadow-hover), 2px -2px 1px var(--color-blue-shadow-hover), -2px -2px 1px var(--color-blue-shadow-hover), 2px 0px 1px var(--color-blue-shadow-hover), 0px 2px 1px var(--color-blue-shadow-hover), -2px 0px 1px var(--color-blue-shadow-hover), 0px -2px 1px var(--color-blue-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-blue-hover-shadow), -2px 2px 1px var(--color-blue-hover-shadow), 2px -2px 1px var(--color-blue-hover-shadow), -2px -2px 1px var(--color-blue-hover-shadow), 2px 0px 1px var(--color-blue-hover-shadow), 0px 2px 1px var(--color-blue-hover-shadow), -2px 0px 1px var(--color-blue-hover-shadow), 0px -2px 1px var(--color-blue-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-blue .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-blue-fore-active);
-  text-shadow: 2px 2px 1px var(--color-blue-shadow-active), -2px 2px 1px var(--color-blue-shadow-active), 2px -2px 1px var(--color-blue-shadow-active), -2px -2px 1px var(--color-blue-shadow-active), 2px 0px 1px var(--color-blue-shadow-active), 0px 2px 1px var(--color-blue-shadow-active), -2px 0px 1px var(--color-blue-shadow-active), 0px -2px 1px var(--color-blue-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-blue-active-shadow), -2px 2px 1px var(--color-blue-active-shadow), 2px -2px 1px var(--color-blue-active-shadow), -2px -2px 1px var(--color-blue-active-shadow), 2px 0px 1px var(--color-blue-active-shadow), 0px 2px 1px var(--color-blue-active-shadow), -2px 0px 1px var(--color-blue-active-shadow), 0px -2px 1px var(--color-blue-active-shadow);
 }
 .nav.is-violet {
   background-color: var(--color-violet-back);
@@ -1779,12 +1779,12 @@ template {
 }
 .nav.is-violet .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-violet-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-violet-shadow-hover), -2px 2px 1px var(--color-violet-shadow-hover), 2px -2px 1px var(--color-violet-shadow-hover), -2px -2px 1px var(--color-violet-shadow-hover), 2px 0px 1px var(--color-violet-shadow-hover), 0px 2px 1px var(--color-violet-shadow-hover), -2px 0px 1px var(--color-violet-shadow-hover), 0px -2px 1px var(--color-violet-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-violet-hover-shadow), -2px 2px 1px var(--color-violet-hover-shadow), 2px -2px 1px var(--color-violet-hover-shadow), -2px -2px 1px var(--color-violet-hover-shadow), 2px 0px 1px var(--color-violet-hover-shadow), 0px 2px 1px var(--color-violet-hover-shadow), -2px 0px 1px var(--color-violet-hover-shadow), 0px -2px 1px var(--color-violet-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-violet .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-violet-fore-active);
-  text-shadow: 2px 2px 1px var(--color-violet-shadow-active), -2px 2px 1px var(--color-violet-shadow-active), 2px -2px 1px var(--color-violet-shadow-active), -2px -2px 1px var(--color-violet-shadow-active), 2px 0px 1px var(--color-violet-shadow-active), 0px 2px 1px var(--color-violet-shadow-active), -2px 0px 1px var(--color-violet-shadow-active), 0px -2px 1px var(--color-violet-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-violet-active-shadow), -2px 2px 1px var(--color-violet-active-shadow), 2px -2px 1px var(--color-violet-active-shadow), -2px -2px 1px var(--color-violet-active-shadow), 2px 0px 1px var(--color-violet-active-shadow), 0px 2px 1px var(--color-violet-active-shadow), -2px 0px 1px var(--color-violet-active-shadow), 0px -2px 1px var(--color-violet-active-shadow);
 }
 .nav.is-violet .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-violet-fore);
@@ -1792,12 +1792,12 @@ template {
 }
 .nav.is-violet .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-violet-fore-hover);
-  text-shadow: 2px 2px 1px var(--color-violet-shadow-hover), -2px 2px 1px var(--color-violet-shadow-hover), 2px -2px 1px var(--color-violet-shadow-hover), -2px -2px 1px var(--color-violet-shadow-hover), 2px 0px 1px var(--color-violet-shadow-hover), 0px 2px 1px var(--color-violet-shadow-hover), -2px 0px 1px var(--color-violet-shadow-hover), 0px -2px 1px var(--color-violet-shadow-hover);
+  text-shadow: 2px 2px 1px var(--color-violet-hover-shadow), -2px 2px 1px var(--color-violet-hover-shadow), 2px -2px 1px var(--color-violet-hover-shadow), -2px -2px 1px var(--color-violet-hover-shadow), 2px 0px 1px var(--color-violet-hover-shadow), 0px 2px 1px var(--color-violet-hover-shadow), -2px 0px 1px var(--color-violet-hover-shadow), 0px -2px 1px var(--color-violet-hover-shadow);
   opacity: 0.8;
 }
 .nav.is-violet .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-violet-fore-active);
-  text-shadow: 2px 2px 1px var(--color-violet-shadow-active), -2px 2px 1px var(--color-violet-shadow-active), 2px -2px 1px var(--color-violet-shadow-active), -2px -2px 1px var(--color-violet-shadow-active), 2px 0px 1px var(--color-violet-shadow-active), 0px 2px 1px var(--color-violet-shadow-active), -2px 0px 1px var(--color-violet-shadow-active), 0px -2px 1px var(--color-violet-shadow-active);
+  text-shadow: 2px 2px 1px var(--color-violet-active-shadow), -2px 2px 1px var(--color-violet-active-shadow), 2px -2px 1px var(--color-violet-active-shadow), -2px -2px 1px var(--color-violet-active-shadow), 2px 0px 1px var(--color-violet-active-shadow), 0px 2px 1px var(--color-violet-active-shadow), -2px 0px 1px var(--color-violet-active-shadow), 0px -2px 1px var(--color-violet-active-shadow);
 }
 
 /**
