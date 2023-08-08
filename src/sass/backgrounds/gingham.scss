@@ -8,59 +8,42 @@
 .gingham {
   background-size: auto auto;
   @each $color in variables.$colors {
-    &.is-#{$color} {
-      background-color: var(--color-#{$color}-back);
-      background-image: repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 0.75rem,
-          hsla(var(--color-#{$color}-700-hsl), 0.5) 0.75rem,
-          hsla(var(--color-#{$color}-700-hsl), 0.5) 1.5rem
-        ),
-        repeating-linear-gradient(
-          90deg,
-          transparent,
-          transparent 0.75rem,
-          hsla(var(--color-#{$color}-700-hsl), 0.5) 0.75rem,
-          hsla(var(--color-#{$color}-700-hsl), 0.5) 1.5rem
-        );
-    }
-    @for $p from 1 through 8 {
-      &.is-#{$color}-#{$p}00 {
-        background-color: var(--color-#{$color}-#{$p + 1}50);
+    @for $p from 2 through 17 {
+      &.is-#{$color}-#{$p * 5}0 {
+        background-color: var(--color-#{$color}-#{($p + 2) * 5}0);
         background-image: repeating-linear-gradient(
             0deg,
             transparent,
             transparent 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}00-hsl), 0.5) 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}00-hsl), 0.5) 1.5rem
+            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
+            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
           ),
           repeating-linear-gradient(
             90deg,
             transparent,
             transparent 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}00-hsl), 0.5) 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}00-hsl), 0.5) 1.5rem
+            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
+            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
           );
-      }
-    }
-    @for $p from 1 through 7 {
-      &.is-#{$color}-#{$p}50 {
-        background-color: var(--color-#{$color}-#{$p + 2}00);
-        background-image: repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}50-hsl), 0.5) 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}50-hsl), 0.5) 1.5rem
-          ),
-          repeating-linear-gradient(
-            90deg,
-            transparent,
-            transparent 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}50-hsl), 0.5) 0.75rem,
-            hsla(var(--color-#{$color}-#{$p}50-hsl), 0.5) 1.5rem
-          );
+        @for $n from 0 through 4 {
+          $degree: $n * 45deg;
+          &.is-#{$degree} {
+            background-image: repeating-linear-gradient(
+                $degree,
+                transparent,
+                transparent 0.75rem,
+                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
+                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
+              ),
+              repeating-linear-gradient(
+                $degree + 90deg,
+                transparent,
+                transparent 0.75rem,
+                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
+                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
+              );
+          }
+        }
       }
     }
   }

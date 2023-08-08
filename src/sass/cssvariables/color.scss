@@ -321,6 +321,7 @@
 
   //#endregion color
 
+  color-scheme: light;
 }
 
 @mixin color_light() {
@@ -344,6 +345,10 @@
   --color-default-active-back: var(--color-gray-700);
   --color-default-active-border: var(--color-gray-600);
   --color-default-active-shadow: var(--color-gray-850);
+  --color-default-visited-fore: var(--color-violet-200);
+  --color-default-visited-back: var(--color-gray-700);
+  --color-default-visited-border: var(--color-gray-600);
+  --color-default-visited-shadow: var(--color-gray-850);
 
   @each $color in variables.$colors {
     --color-#{$color}-fore: var(--color-#{$color}-200);
@@ -366,6 +371,10 @@
     --color-#{$color}-active-back: var(--color-#{$color}-700);
     --color-#{$color}-active-border: var(--color-#{$color}-600);
     --color-#{$color}-active-shadow: var(--color-#{$color}-850);
+    --color-#{$color}-visited-fore: var(--color-#{$color}-200);
+    --color-#{$color}-visited-back: var(--color-#{$color}-850);
+    --color-#{$color}-visited-border: var(--color-#{$color}-600);
+    --color-#{$color}-visited-shadow: var(--color-#{$color}-850);
   }
   
   color-scheme: light;
@@ -379,19 +388,23 @@
   --color-default-disabled-fore: var(--color-gray-850);
   --color-default-disabled-back: var(--color-gray-100);
   --color-default-disabled-border: var(--color-gray-600);
-  --color-default-disabled-shadow: var(--color-gray-850);
+  --color-default-disabled-shadow: var(--color-gray-350);
   --color-default-hover-fore: var(--color-white);
   --color-default-hover-back: var(--color-gray-200);
   --color-default-hover-border: var(--color-gray-600);
-  --color-default-hover-shadow: var(--color-gray-850);
+  --color-default-hover-shadow: var(--color-gray-350);
   --color-default-focus-fore: var(--color-white);
   --color-default-focus-back: var(--color-gray-200);
   --color-default-focus-border: var(--color-gray-600);
-  --color-default-focus-shadow: var(--color-gray-850);
+  --color-default-focus-shadow: var(--color-gray-350);
   --color-default-active-fore: var(--color-white);
   --color-default-active-back: var(--color-gray-300);
   --color-default-active-border: var(--color-gray-600);
-  --color-default-active-shadow: var(--color-gray-850);
+  --color-default-active-shadow: var(--color-gray-350);
+  --color-default-visited-fore: var(--color-violet-700);
+  --color-default-visited-back: var(--color-violet-300);
+  --color-default-visited-border: var(--color-violet-600);
+  --color-default-visited-shadow: var(--color-violet-350);
 
   @each $color in variables.$colors {
     --color-#{$color}-fore: var(--color-#{$color}-850);
@@ -401,11 +414,11 @@
     --color-#{$color}-disabled-fore: var(--color-#{$color}-850);
     --color-#{$color}-disabled-back: var(--color-#{$color}-100);
     --color-#{$color}-disabled-border: var(--color-#{$color}-600);
-    --color-#{$color}-disabled-shadow: var(--color-#{$color}-850);
+    --color-#{$color}-disabled-shadow: var(--color-#{$color}-350);
     --color-#{$color}-hover-fore: var(--color-#{$color}-850);
     --color-#{$color}-hover-back: var(--color-#{$color}-200);
     --color-#{$color}-hover-border: var(--color-#{$color}-600);
-    --color-#{$color}-hover-shadow: var(--color-#{$color}-850);
+    --color-#{$color}-hover-shadow: var(--color-#{$color}-350);
     --color-#{$color}-focus-fore: var(--color-#{$color}-850);
     --color-#{$color}-focus-back: var(--color-#{$color}-200);
     --color-#{$color}-focus-border: var(--color-#{$color}-600);
@@ -413,7 +426,11 @@
     --color-#{$color}-active-fore: var(--color-#{$color}-850);
     --color-#{$color}-active-back: var(--color-#{$color}-300);
     --color-#{$color}-active-border: var(--color-#{$color}-600);
-    --color-#{$color}-active-shadow: var(--color-#{$color}-850);
+    --color-#{$color}-active-shadow: var(--color-#{$color}-350);
+    --color-#{$color}-visited-fore: var(--color-#{$color}-700);
+    --color-#{$color}-visited-back: var(--color-#{$color}-300);
+    --color-#{$color}-visited-border: var(--color-#{$color}-600);
+    --color-#{$color}-visited-shadow: var(--color-#{$color}-350);
   }
   
   color-scheme: dark;
@@ -421,6 +438,18 @@
 
 :root {
   @include color_light();
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    @include color_light();
+  }  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include color_dark();
+  }
 }
 
 [data-color-scheme="light"] {
