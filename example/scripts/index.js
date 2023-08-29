@@ -47,12 +47,20 @@ function changeColor(color) {
     elem.className = `checkbox ${color}`;
   });
 
+  document.querySelectorAll(".hamburger").forEach((elem) => {
+    elem.className = `hamburger ${color}`;
+  });
+
   document.querySelectorAll(".link").forEach((elem) => {
     elem.className = `link ${color}`;
   });
 
   document.querySelectorAll(".message").forEach((elem) => {
     elem.className = `message ${color}`;
+  });
+
+  document.querySelectorAll(".nav").forEach((elem) => {
+    elem.className = `nav ${color}`;
   });
 
   document.querySelectorAll(".gingham").forEach((elem) => {

@@ -1,14 +1,22 @@
 /**
- * variables/color.scss
+ * sorbit.scss
+ * @author kaminorse
+ */
+/**
+ * cssvariables/index.scss
  * @author kaminorse
  */
 /**
  * cssvariables/color.scss
  * @author kaminorse
  */
+/**
+ * variables/color.scss
+ * @author kaminorse
+ */
 :root {
-  --color-white: #f0f1f5;
-  --color-black: #32384d;
+  --color-white: hsl(228, 21%, 95%);
+  --color-black: hsl(228, 21%, 25%);
   --color-gray-950-hsl: 228, 21%, 103%;
   --color-gray-900-hsl: 228, 21%, 98%;
   --color-gray-850-hsl: 228, 21%, 93%;
@@ -153,150 +161,150 @@
   --color-violet-200-hsl: 270, 53%, 28%;
   --color-violet-150-hsl: 270, 53%, 23%;
   --color-violet-100-hsl: 270, 53%, 18%;
-  --color-gray-950: white;
-  --color-gray-900: #f9f9fb;
-  --color-gray-850: #e9ebf1;
-  --color-gray-800: #dadde7;
-  --color-gray-750: #cbcedd;
-  --color-gray-700: #bbc0d3;
-  --color-gray-650: #acb1c9;
-  --color-gray-600: #9ca3bf;
-  --color-gray-550: #8d95b4;
-  --color-gray-500: #7d86aa;
-  --color-gray-450: #6e78a0;
-  --color-gray-400: #616b94;
-  --color-gray-350: #576085;
-  --color-gray-300: #4d5575;
-  --color-gray-250: #424a66;
-  --color-gray-200: #383e56;
-  --color-gray-150: #2e3347;
-  --color-gray-100: #242838;
-  --color-red-950: white;
-  --color-red-900: #fdf7f7;
-  --color-red-850: #f7e4e4;
-  --color-red-800: #f1d0d0;
-  --color-red-750: #ebbdbd;
-  --color-red-700: #e5a9a9;
-  --color-red-650: #df9696;
-  --color-red-600: #d98282;
-  --color-red-550: #d36f6f;
-  --color-red-500: #cd5b5b;
-  --color-red-450: #c74848;
-  --color-red-400: #bb3a3a;
-  --color-red-350: #a83434;
-  --color-red-300: #942e2e;
-  --color-red-250: #812828;
-  --color-red-200: #6d2222;
-  --color-red-150: #5a1c1c;
-  --color-red-100: #461616;
-  --color-orange-950: white;
-  --color-orange-900: #fdfaf7;
-  --color-orange-850: #f7ece4;
-  --color-orange-800: #f1ded0;
-  --color-orange-750: #ebd1bd;
-  --color-orange-700: #e5c3a9;
-  --color-orange-650: #dfb596;
-  --color-orange-600: #d9a882;
-  --color-orange-550: #d39a6f;
-  --color-orange-500: #cd8c5b;
-  --color-orange-450: #c77f48;
-  --color-orange-400: #bb723a;
-  --color-orange-350: #a86634;
-  --color-orange-300: #945a2e;
-  --color-orange-250: #814e28;
-  --color-orange-200: #6d4222;
-  --color-orange-150: #5a371c;
-  --color-orange-100: #462b16;
-  --color-yellow-950: white;
-  --color-yellow-900: #fdfdf7;
-  --color-yellow-850: #f7f7e4;
-  --color-yellow-800: #f1f1d0;
-  --color-yellow-750: #ebebbd;
-  --color-yellow-700: #e5e5a9;
-  --color-yellow-650: #dfdf96;
-  --color-yellow-600: #d9d982;
-  --color-yellow-550: #d3d36f;
-  --color-yellow-500: #cdcd5b;
-  --color-yellow-450: #c7c748;
-  --color-yellow-400: #bbbb3a;
-  --color-yellow-350: #a8a834;
-  --color-yellow-300: #94942e;
-  --color-yellow-250: #818128;
-  --color-yellow-200: #6d6d22;
-  --color-yellow-150: #5a5a1c;
-  --color-yellow-100: #464616;
-  --color-green-950: white;
-  --color-green-900: #fafdf7;
-  --color-green-850: #edf7e4;
-  --color-green-800: #e0f1d0;
-  --color-green-750: #d4ebbd;
-  --color-green-700: #c7e5a9;
-  --color-green-650: #badf96;
-  --color-green-600: #add982;
-  --color-green-550: #a1d36f;
-  --color-green-500: #94cd5b;
-  --color-green-450: #87c748;
-  --color-green-400: #7abb3a;
-  --color-green-350: #6ea834;
-  --color-green-300: #61942e;
-  --color-green-250: #548128;
-  --color-green-200: #476d22;
-  --color-green-150: #3b5a1c;
-  --color-green-100: #2e4616;
-  --color-cyan-950: white;
-  --color-cyan-900: #f7fdfc;
-  --color-cyan-850: #e4f7f5;
-  --color-cyan-800: #d0f1ed;
-  --color-cyan-750: #bdebe6;
-  --color-cyan-700: #a9e5df;
-  --color-cyan-650: #96dfd7;
-  --color-cyan-600: #82d9d0;
-  --color-cyan-550: #6fd3c9;
-  --color-cyan-500: #5bcdc1;
-  --color-cyan-450: #48c7ba;
-  --color-cyan-400: #3abbae;
-  --color-cyan-350: #34a89c;
-  --color-cyan-300: #2e948a;
-  --color-cyan-250: #288178;
-  --color-cyan-200: #226d66;
-  --color-cyan-150: #1c5a54;
-  --color-cyan-100: #164641;
-  --color-blue-950: white;
-  --color-blue-900: #f7f8fd;
-  --color-blue-850: #e4e7f7;
-  --color-blue-800: #d0d7f1;
-  --color-blue-750: #bdc6eb;
-  --color-blue-700: #a9b5e5;
-  --color-blue-650: #96a4df;
-  --color-blue-600: #8293d9;
-  --color-blue-550: #6f83d3;
-  --color-blue-500: #5b72cd;
-  --color-blue-450: #4861c7;
-  --color-blue-400: #3a53bb;
-  --color-blue-350: #344ba8;
-  --color-blue-300: #2e4294;
-  --color-blue-250: #283981;
-  --color-blue-200: #22316d;
-  --color-blue-150: #1c285a;
-  --color-blue-100: #161f46;
-  --color-violet-950: white;
-  --color-violet-900: #faf7fd;
-  --color-violet-850: #ede4f7;
-  --color-violet-800: #e0d0f1;
-  --color-violet-750: #d4bdeb;
-  --color-violet-700: #c7a9e5;
-  --color-violet-650: #ba96df;
-  --color-violet-600: #ad82d9;
-  --color-violet-550: #a16fd3;
-  --color-violet-500: #945bcd;
-  --color-violet-450: #8748c7;
-  --color-violet-400: #7a3abb;
-  --color-violet-350: #6e34a8;
-  --color-violet-300: #612e94;
-  --color-violet-250: #542881;
-  --color-violet-200: #47226d;
-  --color-violet-150: #3b1c5a;
-  --color-violet-100: #2e1646;
+  --color-gray-950: hsl(228, 21%, 100%);
+  --color-gray-900: hsl(228, 21%, 98%);
+  --color-gray-850: hsl(228, 21%, 93%);
+  --color-gray-800: hsl(228, 21%, 88%);
+  --color-gray-750: hsl(228, 21%, 83%);
+  --color-gray-700: hsl(228, 21%, 78%);
+  --color-gray-650: hsl(228, 21%, 73%);
+  --color-gray-600: hsl(228, 21%, 68%);
+  --color-gray-550: hsl(228, 21%, 63%);
+  --color-gray-500: hsl(228, 21%, 58%);
+  --color-gray-450: hsl(228, 21%, 53%);
+  --color-gray-400: hsl(228, 21%, 48%);
+  --color-gray-350: hsl(228, 21%, 43%);
+  --color-gray-300: hsl(228, 21%, 38%);
+  --color-gray-250: hsl(228, 21%, 33%);
+  --color-gray-200: hsl(228, 21%, 28%);
+  --color-gray-150: hsl(228, 21%, 23%);
+  --color-gray-100: hsl(228, 21%, 18%);
+  --color-red-950: hsl(0, 53%, 100%);
+  --color-red-900: hsl(0, 53%, 98%);
+  --color-red-850: hsl(0, 53%, 93%);
+  --color-red-800: hsl(0, 53%, 88%);
+  --color-red-750: hsl(0, 53%, 83%);
+  --color-red-700: hsl(0, 53%, 78%);
+  --color-red-650: hsl(0, 53%, 73%);
+  --color-red-600: hsl(0, 53%, 68%);
+  --color-red-550: hsl(0, 53%, 63%);
+  --color-red-500: hsl(0, 53%, 58%);
+  --color-red-450: hsl(0, 53%, 53%);
+  --color-red-400: hsl(0, 53%, 48%);
+  --color-red-350: hsl(0, 53%, 43%);
+  --color-red-300: hsl(0, 53%, 38%);
+  --color-red-250: hsl(0, 53%, 33%);
+  --color-red-200: hsl(0, 53%, 28%);
+  --color-red-150: hsl(0, 53%, 23%);
+  --color-red-100: hsl(0, 53%, 18%);
+  --color-orange-950: hsl(26, 53%, 100%);
+  --color-orange-900: hsl(26, 53%, 98%);
+  --color-orange-850: hsl(26, 53%, 93%);
+  --color-orange-800: hsl(26, 53%, 88%);
+  --color-orange-750: hsl(26, 53%, 83%);
+  --color-orange-700: hsl(26, 53%, 78%);
+  --color-orange-650: hsl(26, 53%, 73%);
+  --color-orange-600: hsl(26, 53%, 68%);
+  --color-orange-550: hsl(26, 53%, 63%);
+  --color-orange-500: hsl(26, 53%, 58%);
+  --color-orange-450: hsl(26, 53%, 53%);
+  --color-orange-400: hsl(26, 53%, 48%);
+  --color-orange-350: hsl(26, 53%, 43%);
+  --color-orange-300: hsl(26, 53%, 38%);
+  --color-orange-250: hsl(26, 53%, 33%);
+  --color-orange-200: hsl(26, 53%, 28%);
+  --color-orange-150: hsl(26, 53%, 23%);
+  --color-orange-100: hsl(26, 53%, 18%);
+  --color-yellow-950: hsl(60, 53%, 100%);
+  --color-yellow-900: hsl(60, 53%, 98%);
+  --color-yellow-850: hsl(60, 53%, 93%);
+  --color-yellow-800: hsl(60, 53%, 88%);
+  --color-yellow-750: hsl(60, 53%, 83%);
+  --color-yellow-700: hsl(60, 53%, 78%);
+  --color-yellow-650: hsl(60, 53%, 73%);
+  --color-yellow-600: hsl(60, 53%, 68%);
+  --color-yellow-550: hsl(60, 53%, 63%);
+  --color-yellow-500: hsl(60, 53%, 58%);
+  --color-yellow-450: hsl(60, 53%, 53%);
+  --color-yellow-400: hsl(60, 53%, 48%);
+  --color-yellow-350: hsl(60, 53%, 43%);
+  --color-yellow-300: hsl(60, 53%, 38%);
+  --color-yellow-250: hsl(60, 53%, 33%);
+  --color-yellow-200: hsl(60, 53%, 28%);
+  --color-yellow-150: hsl(60, 53%, 23%);
+  --color-yellow-100: hsl(60, 53%, 18%);
+  --color-green-950: hsl(90, 53%, 100%);
+  --color-green-900: hsl(90, 53%, 98%);
+  --color-green-850: hsl(90, 53%, 93%);
+  --color-green-800: hsl(90, 53%, 88%);
+  --color-green-750: hsl(90, 53%, 83%);
+  --color-green-700: hsl(90, 53%, 78%);
+  --color-green-650: hsl(90, 53%, 73%);
+  --color-green-600: hsl(90, 53%, 68%);
+  --color-green-550: hsl(90, 53%, 63%);
+  --color-green-500: hsl(90, 53%, 58%);
+  --color-green-450: hsl(90, 53%, 53%);
+  --color-green-400: hsl(90, 53%, 48%);
+  --color-green-350: hsl(90, 53%, 43%);
+  --color-green-300: hsl(90, 53%, 38%);
+  --color-green-250: hsl(90, 53%, 33%);
+  --color-green-200: hsl(90, 53%, 28%);
+  --color-green-150: hsl(90, 53%, 23%);
+  --color-green-100: hsl(90, 53%, 18%);
+  --color-cyan-950: hsl(174, 53%, 100%);
+  --color-cyan-900: hsl(174, 53%, 98%);
+  --color-cyan-850: hsl(174, 53%, 93%);
+  --color-cyan-800: hsl(174, 53%, 88%);
+  --color-cyan-750: hsl(174, 53%, 83%);
+  --color-cyan-700: hsl(174, 53%, 78%);
+  --color-cyan-650: hsl(174, 53%, 73%);
+  --color-cyan-600: hsl(174, 53%, 68%);
+  --color-cyan-550: hsl(174, 53%, 63%);
+  --color-cyan-500: hsl(174, 53%, 58%);
+  --color-cyan-450: hsl(174, 53%, 53%);
+  --color-cyan-400: hsl(174, 53%, 48%);
+  --color-cyan-350: hsl(174, 53%, 43%);
+  --color-cyan-300: hsl(174, 53%, 38%);
+  --color-cyan-250: hsl(174, 53%, 33%);
+  --color-cyan-200: hsl(174, 53%, 28%);
+  --color-cyan-150: hsl(174, 53%, 23%);
+  --color-cyan-100: hsl(174, 53%, 18%);
+  --color-blue-950: hsl(228, 53%, 100%);
+  --color-blue-900: hsl(228, 53%, 98%);
+  --color-blue-850: hsl(228, 53%, 93%);
+  --color-blue-800: hsl(228, 53%, 88%);
+  --color-blue-750: hsl(228, 53%, 83%);
+  --color-blue-700: hsl(228, 53%, 78%);
+  --color-blue-650: hsl(228, 53%, 73%);
+  --color-blue-600: hsl(228, 53%, 68%);
+  --color-blue-550: hsl(228, 53%, 63%);
+  --color-blue-500: hsl(228, 53%, 58%);
+  --color-blue-450: hsl(228, 53%, 53%);
+  --color-blue-400: hsl(228, 53%, 48%);
+  --color-blue-350: hsl(228, 53%, 43%);
+  --color-blue-300: hsl(228, 53%, 38%);
+  --color-blue-250: hsl(228, 53%, 33%);
+  --color-blue-200: hsl(228, 53%, 28%);
+  --color-blue-150: hsl(228, 53%, 23%);
+  --color-blue-100: hsl(228, 53%, 18%);
+  --color-violet-950: hsl(270, 53%, 100%);
+  --color-violet-900: hsl(270, 53%, 98%);
+  --color-violet-850: hsl(270, 53%, 93%);
+  --color-violet-800: hsl(270, 53%, 88%);
+  --color-violet-750: hsl(270, 53%, 83%);
+  --color-violet-700: hsl(270, 53%, 78%);
+  --color-violet-650: hsl(270, 53%, 73%);
+  --color-violet-600: hsl(270, 53%, 68%);
+  --color-violet-550: hsl(270, 53%, 63%);
+  --color-violet-500: hsl(270, 53%, 58%);
+  --color-violet-450: hsl(270, 53%, 53%);
+  --color-violet-400: hsl(270, 53%, 48%);
+  --color-violet-350: hsl(270, 53%, 43%);
+  --color-violet-300: hsl(270, 53%, 38%);
+  --color-violet-250: hsl(270, 53%, 33%);
+  --color-violet-200: hsl(270, 53%, 28%);
+  --color-violet-150: hsl(270, 53%, 23%);
+  --color-violet-100: hsl(270, 53%, 18%);
   color-scheme: light;
 }
 
@@ -1418,10 +1426,6 @@
   --font-weight-bold: 700;
 }
 
-/**
- * cssvariables/index.scss
- * @author kaminorse
- */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1430,10 +1434,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -1468,12 +1470,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -1481,10 +1480,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -1501,13 +1498,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -1525,10 +1519,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -1578,14 +1570,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -1593,8 +1581,7 @@ textarea {
  * 1. Show the overflow in Edge.
  */
 button,
-input {
-  /* 1 */
+input { /* 1 */
   overflow: visible;
 }
 
@@ -1603,8 +1590,7 @@ input {
  * 1. Remove the inheritance of text transform in Firefox.
  */
 button,
-select {
-  /* 1 */
+select { /* 1 */
   text-transform: none;
 }
 
@@ -1653,18 +1639,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -1687,10 +1667,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -1706,10 +1684,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -1724,10 +1700,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -1768,7 +1742,11 @@ template {
 }
 
 /**
- * variables/breakpoint.scss
+ * components/index.scss
+ * @author kaminorse
+ */
+/**
+ * components/badge.scss
  * @author kaminorse
  */
 /**
@@ -1776,7 +1754,7 @@ template {
  * @author kaminorse
  */
 /**
- * components/badge.scss
+ * variables/breakpoint.scss
  * @author kaminorse
  */
 .badge {
@@ -1837,6 +1815,10 @@ template {
   color: var(--color-violet-fore);
 }
 
+/**
+ * components/badge.scss
+ * @author kaminorse
+ */
 /**
  * components/button.scss
  * @author kaminorse
@@ -2053,6 +2035,10 @@ template {
 }
 
 /**
+ * components/badge.scss
+ * @author kaminorse
+ */
+/**
  * components/card.scss
  * @author kaminorse
  */
@@ -2240,6 +2226,10 @@ template {
 }
 
 /**
+ * components/badge.scss
+ * @author kaminorse
+ */
+/**
  * components/checkbox.scss
  * @author kaminorse
  */
@@ -2372,6 +2362,10 @@ template {
 }
 
 /**
+ * components/badge.scss
+ * @author kaminorse
+ */
+/**
  * components/hamburger.scss
  * @author kaminorse
  */
@@ -2405,8 +2399,7 @@ template {
   width: 3.5rem;
 }
 .hamburger .upperpatty {
-  -webkit-animation: hamburger-upperpatty 0.75s forwards;
-          animation: hamburger-upperpatty 0.75s forwards;
+  animation: hamburger-upperpatty 0.75s forwards;
   background-color: var(--color-default-border);
   height: 0.2rem;
   top: calc((-1 * 0.2rem) - (3.5rem / 5) + 50%);
@@ -2420,8 +2413,7 @@ template {
   width: calc(3.5rem / 5 * 3);
 }
 .hamburger .lowerpatty {
-  -webkit-animation: hamburger-lowerpatty 0.75s forwards;
-          animation: hamburger-lowerpatty 0.75s forwards;
+  animation: hamburger-lowerpatty 0.75s forwards;
   background-color: var(--color-default-border);
   height: 0.2rem;
   top: calc((-1 * 0.2rem) + (3.5rem/ 5) + 50%);
@@ -2435,16 +2427,14 @@ template {
   width: 3.5rem;
 }
 .hamburger.is-active .upperpatty {
-  -webkit-animation: hamburger-upperpatty-is-active 0.75s forwards;
-          animation: hamburger-upperpatty-is-active 0.75s forwards;
+  animation: hamburger-upperpatty-is-active 0.75s forwards;
   top: 50%;
 }
 .hamburger.is-active .club {
   opacity: 0;
 }
 .hamburger.is-active .lowerpatty {
-  -webkit-animation: hamburger-lowerpatty-is-active 0.75s forwards;
-          animation: hamburger-lowerpatty-is-active 0.75s forwards;
+  animation: hamburger-lowerpatty-is-active 0.75s forwards;
   top: 50%;
 }
 .hamburger.is-gray {
@@ -2544,21 +2534,6 @@ template {
   background-color: var(--color-violet-border);
 }
 
-@-webkit-keyframes hamburger-upperpatty {
-  0% {
-    transform: rotate(45deg);
-    top: calc((-1 * 0.2rem) + 50%);
-  }
-  50% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) + 50%);
-  }
-  100% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) - (3.5rem / 5) + 50%);
-  }
-}
-
 @keyframes hamburger-upperpatty {
   0% {
     transform: rotate(45deg);
@@ -2571,20 +2546,6 @@ template {
   100% {
     transform: rotate(0deg);
     top: calc((-1 * 0.2rem) - (3.5rem / 5) + 50%);
-  }
-}
-@-webkit-keyframes hamburger-upperpatty-is-active {
-  0% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) - (3.5rem / 5) + 50%);
-  }
-  50% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) + 50%);
-  }
-  100% {
-    transform: rotate(45deg);
-    top: calc((-1 * 0.2rem) + 50%);
   }
 }
 @keyframes hamburger-upperpatty-is-active {
@@ -2601,20 +2562,6 @@ template {
     top: calc((-1 * 0.2rem) + 50%);
   }
 }
-@-webkit-keyframes hamburger-lowerpatty {
-  0% {
-    transform: rotate(-45deg);
-    top: calc((-1 * 0.2rem) + 50%);
-  }
-  50% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) + 50%);
-  }
-  100% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) + (3.5rem / 5) + 50%);
-  }
-}
 @keyframes hamburger-lowerpatty {
   0% {
     transform: rotate(-45deg);
@@ -2627,20 +2574,6 @@ template {
   100% {
     transform: rotate(0deg);
     top: calc((-1 * 0.2rem) + (3.5rem / 5) + 50%);
-  }
-}
-@-webkit-keyframes hamburger-lowerpatty-is-active {
-  0% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) + (3.5rem / 5) + 50%);
-  }
-  50% {
-    transform: rotate(0deg);
-    top: calc((-1 * 0.2rem) + 50%);
-  }
-  100% {
-    transform: rotate(-45deg);
-    top: calc((-1 * 0.2rem) + 50%);
   }
 }
 @keyframes hamburger-lowerpatty-is-active {
@@ -2669,7 +2602,6 @@ template {
           backdrop-filter: blur(0.25rem);
 }
 .header.is-sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -2677,6 +2609,10 @@ template {
   z-index: 100;
 }
 
+/**
+ * components/badge.scss
+ * @author kaminorse
+ */
 /**
  * components/icon.scss
  * @author kaminorse
@@ -2699,6 +2635,33 @@ template {
 .icon.is-large {
   min-height: 3em;
   min-width: 3em;
+}
+.icon.has-shadow {
+  filter: drop-shadow(2px 2px 1px var(--color-default-shadow)) drop-shadow(-2px 2px 1px var(--color-default-shadow)) drop-shadow(2px -2px 1px var(--color-default-shadow)) drop-shadow(-2px -2px 1px var(--color-default-shadow));
+}
+.icon.has-shadow-gray {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-shadow)) drop-shadow(2px -2px 1px var(--color-gray-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-shadow));
+}
+.icon.has-shadow-red {
+  filter: drop-shadow(2px 2px 1px var(--color-red-shadow)) drop-shadow(-2px 2px 1px var(--color-red-shadow)) drop-shadow(2px -2px 1px var(--color-red-shadow)) drop-shadow(-2px -2px 1px var(--color-red-shadow));
+}
+.icon.has-shadow-orange {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-shadow)) drop-shadow(2px -2px 1px var(--color-orange-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-shadow));
+}
+.icon.has-shadow-yellow {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-shadow));
+}
+.icon.has-shadow-green {
+  filter: drop-shadow(2px 2px 1px var(--color-green-shadow)) drop-shadow(-2px 2px 1px var(--color-green-shadow)) drop-shadow(2px -2px 1px var(--color-green-shadow)) drop-shadow(-2px -2px 1px var(--color-green-shadow));
+}
+.icon.has-shadow-cyan {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-shadow));
+}
+.icon.has-shadow-blue {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-shadow)) drop-shadow(2px -2px 1px var(--color-blue-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-shadow));
+}
+.icon.has-shadow-violet {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-shadow)) drop-shadow(2px -2px 1px var(--color-violet-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-shadow));
 }
 
 /**
@@ -2739,6 +2702,10 @@ template {
   display: list-item;
 }
 
+/**
+ * components/badge.scss
+ * @author kaminorse
+ */
 /**
  * components/link.scss
  * @author kaminorse
@@ -2836,6 +2803,10 @@ template {
   width: 100%;
 }
 
+/**
+ * components/badge.scss
+ * @author kaminorse
+ */
 /**
  * components/message.scss
  * @author kaminorse
@@ -2972,7 +2943,15 @@ template {
 }
 
 /**
+ * components/badge.scss
+ * @author kaminorse
+ */
+/**
  * components/nav.scss
+ * @author kaminorse
+ */
+/**
+ * components/badge.scss
  * @author kaminorse
  */
 .nav {
@@ -3044,13 +3023,22 @@ template {
   text-decoration: none;
   text-shadow: 2px 2px 1px var(--color-default-shadow), -2px 2px 1px var(--color-default-shadow), 2px -2px 1px var(--color-default-shadow), -2px -2px 1px var(--color-default-shadow), 2px 0px 1px var(--color-default-shadow), 0px 2px 1px var(--color-default-shadow), -2px 0px 1px var(--color-default-shadow), 0px -2px 1px var(--color-default-shadow);
 }
+.nav .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-default-shadow)) drop-shadow(-2px 2px 1px var(--color-default-shadow)) drop-shadow(2px -2px 1px var(--color-default-shadow)) drop-shadow(-2px -2px 1px var(--color-default-shadow));
+}
 .nav .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-default-fore-hover);
   text-shadow: 2px 2px 1px var(--color-default-hover-shadow), -2px 2px 1px var(--color-default-hover-shadow), 2px -2px 1px var(--color-default-hover-shadow), -2px -2px 1px var(--color-default-hover-shadow), 2px 0px 1px var(--color-default-hover-shadow), 0px 2px 1px var(--color-default-hover-shadow), -2px 0px 1px var(--color-default-hover-shadow), 0px -2px 1px var(--color-default-hover-shadow);
 }
+.nav .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-default-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-default-hover-shadow)) drop-shadow(2px -2px 1px var(--color-default-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-default-hover-shadow));
+}
 .nav .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-default-fore-active);
   text-shadow: 2px 2px 1px var(--color-default-active-shadow), -2px 2px 1px var(--color-default-active-shadow), 2px -2px 1px var(--color-default-active-shadow), -2px -2px 1px var(--color-default-active-shadow), 2px 0px 1px var(--color-default-active-shadow), 0px 2px 1px var(--color-default-active-shadow), -2px 0px 1px var(--color-default-active-shadow), 0px -2px 1px var(--color-default-active-shadow);
+}
+.nav .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-default-active-shadow)) drop-shadow(-2px 2px 1px var(--color-default-active-shadow)) drop-shadow(2px -2px 1px var(--color-default-active-shadow)) drop-shadow(-2px -2px 1px var(--color-default-active-shadow));
 }
 .nav .nav-desktop {
   display: none;
@@ -3130,256 +3118,405 @@ template {
   color: var(--color-default-fore);
   text-shadow: 2px 2px 1px var(--color-default-shadow), -2px 2px 1px var(--color-default-shadow), 2px -2px 1px var(--color-default-shadow), -2px -2px 1px var(--color-default-shadow), 2px 0px 1px var(--color-default-shadow), 0px 2px 1px var(--color-default-shadow), -2px 0px 1px var(--color-default-shadow), 0px -2px 1px var(--color-default-shadow);
 }
+.nav .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-default-shadow)) drop-shadow(-2px 2px 1px var(--color-default-shadow)) drop-shadow(2px -2px 1px var(--color-default-shadow)) drop-shadow(-2px -2px 1px var(--color-default-shadow));
+}
 .nav .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-default-fore-hover);
   text-shadow: 2px 2px 1px var(--color-default-hover-shadow), -2px 2px 1px var(--color-default-hover-shadow), 2px -2px 1px var(--color-default-hover-shadow), -2px -2px 1px var(--color-default-hover-shadow), 2px 0px 1px var(--color-default-hover-shadow), 0px 2px 1px var(--color-default-hover-shadow), -2px 0px 1px var(--color-default-hover-shadow), 0px -2px 1px var(--color-default-hover-shadow);
   opacity: 0.8;
 }
+.nav .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-default-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-default-hover-shadow)) drop-shadow(2px -2px 1px var(--color-default-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-default-hover-shadow));
+}
 .nav .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-default-fore-active);
   text-shadow: 2px 2px 1px var(--color-default-active-shadow), -2px 2px 1px var(--color-default-active-shadow), 2px -2px 1px var(--color-default-active-shadow), -2px -2px 1px var(--color-default-active-shadow), 2px 0px 1px var(--color-default-active-shadow), 0px 2px 1px var(--color-default-active-shadow), -2px 0px 1px var(--color-default-active-shadow), 0px -2px 1px var(--color-default-active-shadow);
 }
+.nav .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-default-active-shadow)) drop-shadow(-2px 2px 1px var(--color-default-active-shadow)) drop-shadow(2px -2px 1px var(--color-default-active-shadow)) drop-shadow(-2px -2px 1px var(--color-default-active-shadow));
+}
 .nav.is-gray {
-  background-color: var(--color-gray-back);
   color: var(--color-gray-fore);
 }
 .nav.is-gray .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-gray-fore);
   text-shadow: 2px 2px 1px var(--color-gray-shadow), -2px 2px 1px var(--color-gray-shadow), 2px -2px 1px var(--color-gray-shadow), -2px -2px 1px var(--color-gray-shadow), 2px 0px 1px var(--color-gray-shadow), 0px 2px 1px var(--color-gray-shadow), -2px 0px 1px var(--color-gray-shadow), 0px -2px 1px var(--color-gray-shadow);
 }
+.nav.is-gray .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-shadow)) drop-shadow(2px -2px 1px var(--color-gray-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-shadow));
+}
 .nav.is-gray .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-gray-fore-hover);
   text-shadow: 2px 2px 1px var(--color-gray-hover-shadow), -2px 2px 1px var(--color-gray-hover-shadow), 2px -2px 1px var(--color-gray-hover-shadow), -2px -2px 1px var(--color-gray-hover-shadow), 2px 0px 1px var(--color-gray-hover-shadow), 0px 2px 1px var(--color-gray-hover-shadow), -2px 0px 1px var(--color-gray-hover-shadow), 0px -2px 1px var(--color-gray-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-gray .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-hover-shadow)) drop-shadow(2px -2px 1px var(--color-gray-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-hover-shadow));
+}
 .nav.is-gray .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-gray-fore-active);
   text-shadow: 2px 2px 1px var(--color-gray-active-shadow), -2px 2px 1px var(--color-gray-active-shadow), 2px -2px 1px var(--color-gray-active-shadow), -2px -2px 1px var(--color-gray-active-shadow), 2px 0px 1px var(--color-gray-active-shadow), 0px 2px 1px var(--color-gray-active-shadow), -2px 0px 1px var(--color-gray-active-shadow), 0px -2px 1px var(--color-gray-active-shadow);
 }
+.nav.is-gray .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-active-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-active-shadow)) drop-shadow(2px -2px 1px var(--color-gray-active-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-active-shadow));
+}
 .nav.is-gray .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-gray-fore);
   text-shadow: 2px 2px 1px var(--color-gray-shadow), -2px 2px 1px var(--color-gray-shadow), 2px -2px 1px var(--color-gray-shadow), -2px -2px 1px var(--color-gray-shadow), 2px 0px 1px var(--color-gray-shadow), 0px 2px 1px var(--color-gray-shadow), -2px 0px 1px var(--color-gray-shadow), 0px -2px 1px var(--color-gray-shadow);
+}
+.nav.is-gray .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-shadow)) drop-shadow(2px -2px 1px var(--color-gray-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-shadow));
 }
 .nav.is-gray .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-gray-fore-hover);
   text-shadow: 2px 2px 1px var(--color-gray-hover-shadow), -2px 2px 1px var(--color-gray-hover-shadow), 2px -2px 1px var(--color-gray-hover-shadow), -2px -2px 1px var(--color-gray-hover-shadow), 2px 0px 1px var(--color-gray-hover-shadow), 0px 2px 1px var(--color-gray-hover-shadow), -2px 0px 1px var(--color-gray-hover-shadow), 0px -2px 1px var(--color-gray-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-gray .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-hover-shadow)) drop-shadow(2px -2px 1px var(--color-gray-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-hover-shadow));
+}
 .nav.is-gray .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-gray-fore-active);
   text-shadow: 2px 2px 1px var(--color-gray-active-shadow), -2px 2px 1px var(--color-gray-active-shadow), 2px -2px 1px var(--color-gray-active-shadow), -2px -2px 1px var(--color-gray-active-shadow), 2px 0px 1px var(--color-gray-active-shadow), 0px 2px 1px var(--color-gray-active-shadow), -2px 0px 1px var(--color-gray-active-shadow), 0px -2px 1px var(--color-gray-active-shadow);
 }
+.nav.is-gray .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-gray-active-shadow)) drop-shadow(-2px 2px 1px var(--color-gray-active-shadow)) drop-shadow(2px -2px 1px var(--color-gray-active-shadow)) drop-shadow(-2px -2px 1px var(--color-gray-active-shadow));
+}
 .nav.is-red {
-  background-color: var(--color-red-back);
   color: var(--color-red-fore);
 }
 .nav.is-red .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-red-fore);
   text-shadow: 2px 2px 1px var(--color-red-shadow), -2px 2px 1px var(--color-red-shadow), 2px -2px 1px var(--color-red-shadow), -2px -2px 1px var(--color-red-shadow), 2px 0px 1px var(--color-red-shadow), 0px 2px 1px var(--color-red-shadow), -2px 0px 1px var(--color-red-shadow), 0px -2px 1px var(--color-red-shadow);
 }
+.nav.is-red .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-red-shadow)) drop-shadow(-2px 2px 1px var(--color-red-shadow)) drop-shadow(2px -2px 1px var(--color-red-shadow)) drop-shadow(-2px -2px 1px var(--color-red-shadow));
+}
 .nav.is-red .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-red-fore-hover);
   text-shadow: 2px 2px 1px var(--color-red-hover-shadow), -2px 2px 1px var(--color-red-hover-shadow), 2px -2px 1px var(--color-red-hover-shadow), -2px -2px 1px var(--color-red-hover-shadow), 2px 0px 1px var(--color-red-hover-shadow), 0px 2px 1px var(--color-red-hover-shadow), -2px 0px 1px var(--color-red-hover-shadow), 0px -2px 1px var(--color-red-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-red .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-red-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-red-hover-shadow)) drop-shadow(2px -2px 1px var(--color-red-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-red-hover-shadow));
+}
 .nav.is-red .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-red-fore-active);
   text-shadow: 2px 2px 1px var(--color-red-active-shadow), -2px 2px 1px var(--color-red-active-shadow), 2px -2px 1px var(--color-red-active-shadow), -2px -2px 1px var(--color-red-active-shadow), 2px 0px 1px var(--color-red-active-shadow), 0px 2px 1px var(--color-red-active-shadow), -2px 0px 1px var(--color-red-active-shadow), 0px -2px 1px var(--color-red-active-shadow);
 }
+.nav.is-red .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-red-active-shadow)) drop-shadow(-2px 2px 1px var(--color-red-active-shadow)) drop-shadow(2px -2px 1px var(--color-red-active-shadow)) drop-shadow(-2px -2px 1px var(--color-red-active-shadow));
+}
 .nav.is-red .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-red-fore);
   text-shadow: 2px 2px 1px var(--color-red-shadow), -2px 2px 1px var(--color-red-shadow), 2px -2px 1px var(--color-red-shadow), -2px -2px 1px var(--color-red-shadow), 2px 0px 1px var(--color-red-shadow), 0px 2px 1px var(--color-red-shadow), -2px 0px 1px var(--color-red-shadow), 0px -2px 1px var(--color-red-shadow);
+}
+.nav.is-red .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-red-shadow)) drop-shadow(-2px 2px 1px var(--color-red-shadow)) drop-shadow(2px -2px 1px var(--color-red-shadow)) drop-shadow(-2px -2px 1px var(--color-red-shadow));
 }
 .nav.is-red .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-red-fore-hover);
   text-shadow: 2px 2px 1px var(--color-red-hover-shadow), -2px 2px 1px var(--color-red-hover-shadow), 2px -2px 1px var(--color-red-hover-shadow), -2px -2px 1px var(--color-red-hover-shadow), 2px 0px 1px var(--color-red-hover-shadow), 0px 2px 1px var(--color-red-hover-shadow), -2px 0px 1px var(--color-red-hover-shadow), 0px -2px 1px var(--color-red-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-red .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-red-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-red-hover-shadow)) drop-shadow(2px -2px 1px var(--color-red-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-red-hover-shadow));
+}
 .nav.is-red .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-red-fore-active);
   text-shadow: 2px 2px 1px var(--color-red-active-shadow), -2px 2px 1px var(--color-red-active-shadow), 2px -2px 1px var(--color-red-active-shadow), -2px -2px 1px var(--color-red-active-shadow), 2px 0px 1px var(--color-red-active-shadow), 0px 2px 1px var(--color-red-active-shadow), -2px 0px 1px var(--color-red-active-shadow), 0px -2px 1px var(--color-red-active-shadow);
 }
+.nav.is-red .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-red-active-shadow)) drop-shadow(-2px 2px 1px var(--color-red-active-shadow)) drop-shadow(2px -2px 1px var(--color-red-active-shadow)) drop-shadow(-2px -2px 1px var(--color-red-active-shadow));
+}
 .nav.is-orange {
-  background-color: var(--color-orange-back);
   color: var(--color-orange-fore);
 }
 .nav.is-orange .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-orange-fore);
   text-shadow: 2px 2px 1px var(--color-orange-shadow), -2px 2px 1px var(--color-orange-shadow), 2px -2px 1px var(--color-orange-shadow), -2px -2px 1px var(--color-orange-shadow), 2px 0px 1px var(--color-orange-shadow), 0px 2px 1px var(--color-orange-shadow), -2px 0px 1px var(--color-orange-shadow), 0px -2px 1px var(--color-orange-shadow);
 }
+.nav.is-orange .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-shadow)) drop-shadow(2px -2px 1px var(--color-orange-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-shadow));
+}
 .nav.is-orange .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-orange-fore-hover);
   text-shadow: 2px 2px 1px var(--color-orange-hover-shadow), -2px 2px 1px var(--color-orange-hover-shadow), 2px -2px 1px var(--color-orange-hover-shadow), -2px -2px 1px var(--color-orange-hover-shadow), 2px 0px 1px var(--color-orange-hover-shadow), 0px 2px 1px var(--color-orange-hover-shadow), -2px 0px 1px var(--color-orange-hover-shadow), 0px -2px 1px var(--color-orange-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-orange .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-hover-shadow)) drop-shadow(2px -2px 1px var(--color-orange-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-hover-shadow));
+}
 .nav.is-orange .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-orange-fore-active);
   text-shadow: 2px 2px 1px var(--color-orange-active-shadow), -2px 2px 1px var(--color-orange-active-shadow), 2px -2px 1px var(--color-orange-active-shadow), -2px -2px 1px var(--color-orange-active-shadow), 2px 0px 1px var(--color-orange-active-shadow), 0px 2px 1px var(--color-orange-active-shadow), -2px 0px 1px var(--color-orange-active-shadow), 0px -2px 1px var(--color-orange-active-shadow);
 }
+.nav.is-orange .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-active-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-active-shadow)) drop-shadow(2px -2px 1px var(--color-orange-active-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-active-shadow));
+}
 .nav.is-orange .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-orange-fore);
   text-shadow: 2px 2px 1px var(--color-orange-shadow), -2px 2px 1px var(--color-orange-shadow), 2px -2px 1px var(--color-orange-shadow), -2px -2px 1px var(--color-orange-shadow), 2px 0px 1px var(--color-orange-shadow), 0px 2px 1px var(--color-orange-shadow), -2px 0px 1px var(--color-orange-shadow), 0px -2px 1px var(--color-orange-shadow);
+}
+.nav.is-orange .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-shadow)) drop-shadow(2px -2px 1px var(--color-orange-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-shadow));
 }
 .nav.is-orange .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-orange-fore-hover);
   text-shadow: 2px 2px 1px var(--color-orange-hover-shadow), -2px 2px 1px var(--color-orange-hover-shadow), 2px -2px 1px var(--color-orange-hover-shadow), -2px -2px 1px var(--color-orange-hover-shadow), 2px 0px 1px var(--color-orange-hover-shadow), 0px 2px 1px var(--color-orange-hover-shadow), -2px 0px 1px var(--color-orange-hover-shadow), 0px -2px 1px var(--color-orange-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-orange .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-hover-shadow)) drop-shadow(2px -2px 1px var(--color-orange-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-hover-shadow));
+}
 .nav.is-orange .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-orange-fore-active);
   text-shadow: 2px 2px 1px var(--color-orange-active-shadow), -2px 2px 1px var(--color-orange-active-shadow), 2px -2px 1px var(--color-orange-active-shadow), -2px -2px 1px var(--color-orange-active-shadow), 2px 0px 1px var(--color-orange-active-shadow), 0px 2px 1px var(--color-orange-active-shadow), -2px 0px 1px var(--color-orange-active-shadow), 0px -2px 1px var(--color-orange-active-shadow);
 }
+.nav.is-orange .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-orange-active-shadow)) drop-shadow(-2px 2px 1px var(--color-orange-active-shadow)) drop-shadow(2px -2px 1px var(--color-orange-active-shadow)) drop-shadow(-2px -2px 1px var(--color-orange-active-shadow));
+}
 .nav.is-yellow {
-  background-color: var(--color-yellow-back);
   color: var(--color-yellow-fore);
 }
 .nav.is-yellow .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-yellow-fore);
   text-shadow: 2px 2px 1px var(--color-yellow-shadow), -2px 2px 1px var(--color-yellow-shadow), 2px -2px 1px var(--color-yellow-shadow), -2px -2px 1px var(--color-yellow-shadow), 2px 0px 1px var(--color-yellow-shadow), 0px 2px 1px var(--color-yellow-shadow), -2px 0px 1px var(--color-yellow-shadow), 0px -2px 1px var(--color-yellow-shadow);
 }
+.nav.is-yellow .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-shadow));
+}
 .nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-yellow-fore-hover);
   text-shadow: 2px 2px 1px var(--color-yellow-hover-shadow), -2px 2px 1px var(--color-yellow-hover-shadow), 2px -2px 1px var(--color-yellow-hover-shadow), -2px -2px 1px var(--color-yellow-hover-shadow), 2px 0px 1px var(--color-yellow-hover-shadow), 0px 2px 1px var(--color-yellow-hover-shadow), -2px 0px 1px var(--color-yellow-hover-shadow), 0px -2px 1px var(--color-yellow-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-hover-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-hover-shadow));
+}
 .nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-yellow-fore-active);
   text-shadow: 2px 2px 1px var(--color-yellow-active-shadow), -2px 2px 1px var(--color-yellow-active-shadow), 2px -2px 1px var(--color-yellow-active-shadow), -2px -2px 1px var(--color-yellow-active-shadow), 2px 0px 1px var(--color-yellow-active-shadow), 0px 2px 1px var(--color-yellow-active-shadow), -2px 0px 1px var(--color-yellow-active-shadow), 0px -2px 1px var(--color-yellow-active-shadow);
 }
+.nav.is-yellow .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-active-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-active-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-active-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-active-shadow));
+}
 .nav.is-yellow .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-yellow-fore);
   text-shadow: 2px 2px 1px var(--color-yellow-shadow), -2px 2px 1px var(--color-yellow-shadow), 2px -2px 1px var(--color-yellow-shadow), -2px -2px 1px var(--color-yellow-shadow), 2px 0px 1px var(--color-yellow-shadow), 0px 2px 1px var(--color-yellow-shadow), -2px 0px 1px var(--color-yellow-shadow), 0px -2px 1px var(--color-yellow-shadow);
+}
+.nav.is-yellow .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-shadow));
 }
 .nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-yellow-fore-hover);
   text-shadow: 2px 2px 1px var(--color-yellow-hover-shadow), -2px 2px 1px var(--color-yellow-hover-shadow), 2px -2px 1px var(--color-yellow-hover-shadow), -2px -2px 1px var(--color-yellow-hover-shadow), 2px 0px 1px var(--color-yellow-hover-shadow), 0px 2px 1px var(--color-yellow-hover-shadow), -2px 0px 1px var(--color-yellow-hover-shadow), 0px -2px 1px var(--color-yellow-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-hover-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-hover-shadow));
+}
 .nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-yellow-fore-active);
   text-shadow: 2px 2px 1px var(--color-yellow-active-shadow), -2px 2px 1px var(--color-yellow-active-shadow), 2px -2px 1px var(--color-yellow-active-shadow), -2px -2px 1px var(--color-yellow-active-shadow), 2px 0px 1px var(--color-yellow-active-shadow), 0px 2px 1px var(--color-yellow-active-shadow), -2px 0px 1px var(--color-yellow-active-shadow), 0px -2px 1px var(--color-yellow-active-shadow);
 }
+.nav.is-yellow .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-yellow-active-shadow)) drop-shadow(-2px 2px 1px var(--color-yellow-active-shadow)) drop-shadow(2px -2px 1px var(--color-yellow-active-shadow)) drop-shadow(-2px -2px 1px var(--color-yellow-active-shadow));
+}
 .nav.is-green {
-  background-color: var(--color-green-back);
   color: var(--color-green-fore);
 }
 .nav.is-green .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-green-fore);
   text-shadow: 2px 2px 1px var(--color-green-shadow), -2px 2px 1px var(--color-green-shadow), 2px -2px 1px var(--color-green-shadow), -2px -2px 1px var(--color-green-shadow), 2px 0px 1px var(--color-green-shadow), 0px 2px 1px var(--color-green-shadow), -2px 0px 1px var(--color-green-shadow), 0px -2px 1px var(--color-green-shadow);
 }
+.nav.is-green .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-green-shadow)) drop-shadow(-2px 2px 1px var(--color-green-shadow)) drop-shadow(2px -2px 1px var(--color-green-shadow)) drop-shadow(-2px -2px 1px var(--color-green-shadow));
+}
 .nav.is-green .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-green-fore-hover);
   text-shadow: 2px 2px 1px var(--color-green-hover-shadow), -2px 2px 1px var(--color-green-hover-shadow), 2px -2px 1px var(--color-green-hover-shadow), -2px -2px 1px var(--color-green-hover-shadow), 2px 0px 1px var(--color-green-hover-shadow), 0px 2px 1px var(--color-green-hover-shadow), -2px 0px 1px var(--color-green-hover-shadow), 0px -2px 1px var(--color-green-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-green .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-green-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-green-hover-shadow)) drop-shadow(2px -2px 1px var(--color-green-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-green-hover-shadow));
+}
 .nav.is-green .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-green-fore-active);
   text-shadow: 2px 2px 1px var(--color-green-active-shadow), -2px 2px 1px var(--color-green-active-shadow), 2px -2px 1px var(--color-green-active-shadow), -2px -2px 1px var(--color-green-active-shadow), 2px 0px 1px var(--color-green-active-shadow), 0px 2px 1px var(--color-green-active-shadow), -2px 0px 1px var(--color-green-active-shadow), 0px -2px 1px var(--color-green-active-shadow);
 }
+.nav.is-green .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-green-active-shadow)) drop-shadow(-2px 2px 1px var(--color-green-active-shadow)) drop-shadow(2px -2px 1px var(--color-green-active-shadow)) drop-shadow(-2px -2px 1px var(--color-green-active-shadow));
+}
 .nav.is-green .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-green-fore);
   text-shadow: 2px 2px 1px var(--color-green-shadow), -2px 2px 1px var(--color-green-shadow), 2px -2px 1px var(--color-green-shadow), -2px -2px 1px var(--color-green-shadow), 2px 0px 1px var(--color-green-shadow), 0px 2px 1px var(--color-green-shadow), -2px 0px 1px var(--color-green-shadow), 0px -2px 1px var(--color-green-shadow);
+}
+.nav.is-green .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-green-shadow)) drop-shadow(-2px 2px 1px var(--color-green-shadow)) drop-shadow(2px -2px 1px var(--color-green-shadow)) drop-shadow(-2px -2px 1px var(--color-green-shadow));
 }
 .nav.is-green .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-green-fore-hover);
   text-shadow: 2px 2px 1px var(--color-green-hover-shadow), -2px 2px 1px var(--color-green-hover-shadow), 2px -2px 1px var(--color-green-hover-shadow), -2px -2px 1px var(--color-green-hover-shadow), 2px 0px 1px var(--color-green-hover-shadow), 0px 2px 1px var(--color-green-hover-shadow), -2px 0px 1px var(--color-green-hover-shadow), 0px -2px 1px var(--color-green-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-green .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-green-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-green-hover-shadow)) drop-shadow(2px -2px 1px var(--color-green-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-green-hover-shadow));
+}
 .nav.is-green .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-green-fore-active);
   text-shadow: 2px 2px 1px var(--color-green-active-shadow), -2px 2px 1px var(--color-green-active-shadow), 2px -2px 1px var(--color-green-active-shadow), -2px -2px 1px var(--color-green-active-shadow), 2px 0px 1px var(--color-green-active-shadow), 0px 2px 1px var(--color-green-active-shadow), -2px 0px 1px var(--color-green-active-shadow), 0px -2px 1px var(--color-green-active-shadow);
 }
+.nav.is-green .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-green-active-shadow)) drop-shadow(-2px 2px 1px var(--color-green-active-shadow)) drop-shadow(2px -2px 1px var(--color-green-active-shadow)) drop-shadow(-2px -2px 1px var(--color-green-active-shadow));
+}
 .nav.is-cyan {
-  background-color: var(--color-cyan-back);
   color: var(--color-cyan-fore);
 }
 .nav.is-cyan .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-cyan-fore);
   text-shadow: 2px 2px 1px var(--color-cyan-shadow), -2px 2px 1px var(--color-cyan-shadow), 2px -2px 1px var(--color-cyan-shadow), -2px -2px 1px var(--color-cyan-shadow), 2px 0px 1px var(--color-cyan-shadow), 0px 2px 1px var(--color-cyan-shadow), -2px 0px 1px var(--color-cyan-shadow), 0px -2px 1px var(--color-cyan-shadow);
 }
+.nav.is-cyan .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-shadow));
+}
 .nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-cyan-fore-hover);
   text-shadow: 2px 2px 1px var(--color-cyan-hover-shadow), -2px 2px 1px var(--color-cyan-hover-shadow), 2px -2px 1px var(--color-cyan-hover-shadow), -2px -2px 1px var(--color-cyan-hover-shadow), 2px 0px 1px var(--color-cyan-hover-shadow), 0px 2px 1px var(--color-cyan-hover-shadow), -2px 0px 1px var(--color-cyan-hover-shadow), 0px -2px 1px var(--color-cyan-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-hover-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-hover-shadow));
+}
 .nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-cyan-fore-active);
   text-shadow: 2px 2px 1px var(--color-cyan-active-shadow), -2px 2px 1px var(--color-cyan-active-shadow), 2px -2px 1px var(--color-cyan-active-shadow), -2px -2px 1px var(--color-cyan-active-shadow), 2px 0px 1px var(--color-cyan-active-shadow), 0px 2px 1px var(--color-cyan-active-shadow), -2px 0px 1px var(--color-cyan-active-shadow), 0px -2px 1px var(--color-cyan-active-shadow);
 }
+.nav.is-cyan .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-active-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-active-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-active-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-active-shadow));
+}
 .nav.is-cyan .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-cyan-fore);
   text-shadow: 2px 2px 1px var(--color-cyan-shadow), -2px 2px 1px var(--color-cyan-shadow), 2px -2px 1px var(--color-cyan-shadow), -2px -2px 1px var(--color-cyan-shadow), 2px 0px 1px var(--color-cyan-shadow), 0px 2px 1px var(--color-cyan-shadow), -2px 0px 1px var(--color-cyan-shadow), 0px -2px 1px var(--color-cyan-shadow);
+}
+.nav.is-cyan .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-shadow));
 }
 .nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-cyan-fore-hover);
   text-shadow: 2px 2px 1px var(--color-cyan-hover-shadow), -2px 2px 1px var(--color-cyan-hover-shadow), 2px -2px 1px var(--color-cyan-hover-shadow), -2px -2px 1px var(--color-cyan-hover-shadow), 2px 0px 1px var(--color-cyan-hover-shadow), 0px 2px 1px var(--color-cyan-hover-shadow), -2px 0px 1px var(--color-cyan-hover-shadow), 0px -2px 1px var(--color-cyan-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-hover-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-hover-shadow));
+}
 .nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-cyan-fore-active);
   text-shadow: 2px 2px 1px var(--color-cyan-active-shadow), -2px 2px 1px var(--color-cyan-active-shadow), 2px -2px 1px var(--color-cyan-active-shadow), -2px -2px 1px var(--color-cyan-active-shadow), 2px 0px 1px var(--color-cyan-active-shadow), 0px 2px 1px var(--color-cyan-active-shadow), -2px 0px 1px var(--color-cyan-active-shadow), 0px -2px 1px var(--color-cyan-active-shadow);
 }
+.nav.is-cyan .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-cyan-active-shadow)) drop-shadow(-2px 2px 1px var(--color-cyan-active-shadow)) drop-shadow(2px -2px 1px var(--color-cyan-active-shadow)) drop-shadow(-2px -2px 1px var(--color-cyan-active-shadow));
+}
 .nav.is-blue {
-  background-color: var(--color-blue-back);
   color: var(--color-blue-fore);
 }
 .nav.is-blue .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-blue-fore);
   text-shadow: 2px 2px 1px var(--color-blue-shadow), -2px 2px 1px var(--color-blue-shadow), 2px -2px 1px var(--color-blue-shadow), -2px -2px 1px var(--color-blue-shadow), 2px 0px 1px var(--color-blue-shadow), 0px 2px 1px var(--color-blue-shadow), -2px 0px 1px var(--color-blue-shadow), 0px -2px 1px var(--color-blue-shadow);
 }
+.nav.is-blue .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-shadow)) drop-shadow(2px -2px 1px var(--color-blue-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-shadow));
+}
 .nav.is-blue .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-blue-fore-hover);
   text-shadow: 2px 2px 1px var(--color-blue-hover-shadow), -2px 2px 1px var(--color-blue-hover-shadow), 2px -2px 1px var(--color-blue-hover-shadow), -2px -2px 1px var(--color-blue-hover-shadow), 2px 0px 1px var(--color-blue-hover-shadow), 0px 2px 1px var(--color-blue-hover-shadow), -2px 0px 1px var(--color-blue-hover-shadow), 0px -2px 1px var(--color-blue-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-blue .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-hover-shadow)) drop-shadow(2px -2px 1px var(--color-blue-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-hover-shadow));
+}
 .nav.is-blue .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-blue-fore-active);
   text-shadow: 2px 2px 1px var(--color-blue-active-shadow), -2px 2px 1px var(--color-blue-active-shadow), 2px -2px 1px var(--color-blue-active-shadow), -2px -2px 1px var(--color-blue-active-shadow), 2px 0px 1px var(--color-blue-active-shadow), 0px 2px 1px var(--color-blue-active-shadow), -2px 0px 1px var(--color-blue-active-shadow), 0px -2px 1px var(--color-blue-active-shadow);
 }
+.nav.is-blue .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-active-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-active-shadow)) drop-shadow(2px -2px 1px var(--color-blue-active-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-active-shadow));
+}
 .nav.is-blue .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-blue-fore);
   text-shadow: 2px 2px 1px var(--color-blue-shadow), -2px 2px 1px var(--color-blue-shadow), 2px -2px 1px var(--color-blue-shadow), -2px -2px 1px var(--color-blue-shadow), 2px 0px 1px var(--color-blue-shadow), 0px 2px 1px var(--color-blue-shadow), -2px 0px 1px var(--color-blue-shadow), 0px -2px 1px var(--color-blue-shadow);
+}
+.nav.is-blue .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-shadow)) drop-shadow(2px -2px 1px var(--color-blue-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-shadow));
 }
 .nav.is-blue .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-blue-fore-hover);
   text-shadow: 2px 2px 1px var(--color-blue-hover-shadow), -2px 2px 1px var(--color-blue-hover-shadow), 2px -2px 1px var(--color-blue-hover-shadow), -2px -2px 1px var(--color-blue-hover-shadow), 2px 0px 1px var(--color-blue-hover-shadow), 0px 2px 1px var(--color-blue-hover-shadow), -2px 0px 1px var(--color-blue-hover-shadow), 0px -2px 1px var(--color-blue-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-blue .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-hover-shadow)) drop-shadow(2px -2px 1px var(--color-blue-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-hover-shadow));
+}
 .nav.is-blue .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-blue-fore-active);
   text-shadow: 2px 2px 1px var(--color-blue-active-shadow), -2px 2px 1px var(--color-blue-active-shadow), 2px -2px 1px var(--color-blue-active-shadow), -2px -2px 1px var(--color-blue-active-shadow), 2px 0px 1px var(--color-blue-active-shadow), 0px 2px 1px var(--color-blue-active-shadow), -2px 0px 1px var(--color-blue-active-shadow), 0px -2px 1px var(--color-blue-active-shadow);
 }
+.nav.is-blue .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-blue-active-shadow)) drop-shadow(-2px 2px 1px var(--color-blue-active-shadow)) drop-shadow(2px -2px 1px var(--color-blue-active-shadow)) drop-shadow(-2px -2px 1px var(--color-blue-active-shadow));
+}
 .nav.is-violet {
-  background-color: var(--color-violet-back);
   color: var(--color-violet-fore);
 }
 .nav.is-violet .nav-mobile .nav-menu .nav-menu-item {
   color: var(--color-violet-fore);
   text-shadow: 2px 2px 1px var(--color-violet-shadow), -2px 2px 1px var(--color-violet-shadow), 2px -2px 1px var(--color-violet-shadow), -2px -2px 1px var(--color-violet-shadow), 2px 0px 1px var(--color-violet-shadow), 0px 2px 1px var(--color-violet-shadow), -2px 0px 1px var(--color-violet-shadow), 0px -2px 1px var(--color-violet-shadow);
 }
+.nav.is-violet .nav-mobile .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-shadow)) drop-shadow(2px -2px 1px var(--color-violet-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-shadow));
+}
 .nav.is-violet .nav-mobile .nav-menu .nav-menu-item:hover {
   color: var(--color-violet-fore-hover);
   text-shadow: 2px 2px 1px var(--color-violet-hover-shadow), -2px 2px 1px var(--color-violet-hover-shadow), 2px -2px 1px var(--color-violet-hover-shadow), -2px -2px 1px var(--color-violet-hover-shadow), 2px 0px 1px var(--color-violet-hover-shadow), 0px 2px 1px var(--color-violet-hover-shadow), -2px 0px 1px var(--color-violet-hover-shadow), 0px -2px 1px var(--color-violet-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-violet .nav-mobile .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-hover-shadow)) drop-shadow(2px -2px 1px var(--color-violet-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-hover-shadow));
+}
 .nav.is-violet .nav-mobile .nav-menu .nav-menu-item:active {
   color: var(--color-violet-fore-active);
   text-shadow: 2px 2px 1px var(--color-violet-active-shadow), -2px 2px 1px var(--color-violet-active-shadow), 2px -2px 1px var(--color-violet-active-shadow), -2px -2px 1px var(--color-violet-active-shadow), 2px 0px 1px var(--color-violet-active-shadow), 0px 2px 1px var(--color-violet-active-shadow), -2px 0px 1px var(--color-violet-active-shadow), 0px -2px 1px var(--color-violet-active-shadow);
 }
+.nav.is-violet .nav-mobile .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-active-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-active-shadow)) drop-shadow(2px -2px 1px var(--color-violet-active-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-active-shadow));
+}
 .nav.is-violet .nav-desktop .nav-menu .nav-menu-item {
   color: var(--color-violet-fore);
   text-shadow: 2px 2px 1px var(--color-violet-shadow), -2px 2px 1px var(--color-violet-shadow), 2px -2px 1px var(--color-violet-shadow), -2px -2px 1px var(--color-violet-shadow), 2px 0px 1px var(--color-violet-shadow), 0px 2px 1px var(--color-violet-shadow), -2px 0px 1px var(--color-violet-shadow), 0px -2px 1px var(--color-violet-shadow);
+}
+.nav.is-violet .nav-desktop .nav-menu .nav-menu-item .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-shadow)) drop-shadow(2px -2px 1px var(--color-violet-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-shadow));
 }
 .nav.is-violet .nav-desktop .nav-menu .nav-menu-item:hover {
   color: var(--color-violet-fore-hover);
   text-shadow: 2px 2px 1px var(--color-violet-hover-shadow), -2px 2px 1px var(--color-violet-hover-shadow), 2px -2px 1px var(--color-violet-hover-shadow), -2px -2px 1px var(--color-violet-hover-shadow), 2px 0px 1px var(--color-violet-hover-shadow), 0px 2px 1px var(--color-violet-hover-shadow), -2px 0px 1px var(--color-violet-hover-shadow), 0px -2px 1px var(--color-violet-hover-shadow);
   opacity: 0.8;
 }
+.nav.is-violet .nav-desktop .nav-menu .nav-menu-item:hover .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-hover-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-hover-shadow)) drop-shadow(2px -2px 1px var(--color-violet-hover-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-hover-shadow));
+}
 .nav.is-violet .nav-desktop .nav-menu .nav-menu-item:active {
   color: var(--color-violet-fore-active);
   text-shadow: 2px 2px 1px var(--color-violet-active-shadow), -2px 2px 1px var(--color-violet-active-shadow), 2px -2px 1px var(--color-violet-active-shadow), -2px -2px 1px var(--color-violet-active-shadow), 2px 0px 1px var(--color-violet-active-shadow), 0px 2px 1px var(--color-violet-active-shadow), -2px 0px 1px var(--color-violet-active-shadow), 0px -2px 1px var(--color-violet-active-shadow);
 }
+.nav.is-violet .nav-desktop .nav-menu .nav-menu-item:active .icon {
+  filter: drop-shadow(2px 2px 1px var(--color-violet-active-shadow)) drop-shadow(-2px 2px 1px var(--color-violet-active-shadow)) drop-shadow(2px -2px 1px var(--color-violet-active-shadow)) drop-shadow(-2px -2px 1px var(--color-violet-active-shadow));
+}
 
+/**
+ * components/nav.scss
+ * @author kaminorse
+ */
 /**
  * components/tile.scss
  * @author kaminorse
@@ -3431,7 +3568,11 @@ template {
 }
 
 /**
- * components/index.scss
+ * backgrounds/index.scss
+ * @author kaminorse
+ */
+/**
+ * components/badge.scss
  * @author kaminorse
  */
 /**
@@ -5874,6 +6015,10 @@ template {
   background-image: repeating-linear-gradient(180deg, transparent, transparent 0.75rem, hsla(var(--color-violet-850-hsl), 0.5) 0.75rem, hsla(var(--color-violet-850-hsl), 0.5) 1.5rem), repeating-linear-gradient(270deg, transparent, transparent 0.75rem, hsla(var(--color-violet-850-hsl), 0.5) 0.75rem, hsla(var(--color-violet-850-hsl), 0.5) 1.5rem);
 }
 
+/**
+ * components/badge.scss
+ * @author kaminorse
+ */
 /**
  * background/stripe.scss
  * @author kaminorse
@@ -9851,7 +9996,15 @@ template {
 }
 
 /**
- * backgrounds/index.scss
+ * layouts/index.scss
+ * @author kaminorse
+ */
+/**
+ * components/badge.scss
+ * @author kaminorse
+ */
+/**
+ * components/nav.scss
  * @author kaminorse
  */
 /**
@@ -9880,6 +10033,10 @@ template {
   }
 }
 
+/**
+ * components/nav.scss
+ * @author kaminorse
+ */
 /**
  * layouts/columns.scss
  * @author kaminorse
@@ -10148,13 +10305,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-1, .columns .column.is-mobile-or-more-1, .columns .column.is-tablet-or-less-1, .columns .column.is-desktop-or-less-1, .columns .column.is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-mobile-1,
-.columns [class^=column-].is-mobile-or-more-1,
-.columns [class^=column-].is-tablet-or-less-1,
-.columns [class^=column-].is-desktop-or-less-1,
-.columns .column.is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1,
-.columns [class^=column-].is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1 {
+  .columns [class^=column-].is-mobile-1,
+  .columns [class^=column-].is-mobile-or-more-1,
+  .columns [class^=column-].is-tablet-or-less-1,
+  .columns [class^=column-].is-desktop-or-less-1,
+  .columns .column.is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1,
+  .columns [class^=column-].is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
+  .columns [class^=column-].is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
     width: 8.3333333333%;
@@ -10162,14 +10319,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-1, .columns .column.is-tablet-or-less-1, .columns .column.is-tablet-1, .columns .column.is-tablet-or-more-1, .columns .column.is-desktop-or-less-1, .columns .column.is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-mobile-or-more-1,
-.columns [class^=column-].is-tablet-or-less-1,
-.columns [class^=column-].is-tablet-1,
-.columns [class^=column-].is-tablet-or-more-1,
-.columns [class^=column-].is-desktop-or-less-1,
-.columns .column.is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1,
-.columns [class^=column-].is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1 {
+  .columns [class^=column-].is-mobile-or-more-1,
+  .columns [class^=column-].is-tablet-or-less-1,
+  .columns [class^=column-].is-tablet-1,
+  .columns [class^=column-].is-tablet-or-more-1,
+  .columns [class^=column-].is-desktop-or-less-1,
+  .columns .column.is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1,
+  .columns [class^=column-].is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
+  .columns [class^=column-].is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
     width: 8.3333333333%;
@@ -10177,14 +10334,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-1, .columns .column.is-tablet-or-more-1, .columns .column.is-desktop-or-less-1, .columns .column.is-desktop, .columns .column.is-desktop-or-more-1, .columns .column.is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-mobile-or-more-1,
-.columns [class^=column-].is-tablet-or-more-1,
-.columns [class^=column-].is-desktop-or-less-1,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-1,
-.columns .column.is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1,
-.columns [class^=column-].is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1 {
+  .columns [class^=column-].is-mobile-or-more-1,
+  .columns [class^=column-].is-tablet-or-more-1,
+  .columns [class^=column-].is-desktop-or-less-1,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-1,
+  .columns .column.is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1,
+  .columns [class^=column-].is-widescreen-or-less-1 .columns .column.is-fullhd-or-less-1,
+  .columns [class^=column-].is-widescreen-or-less-1 .columns [class^=column-].is-fullhd-or-less-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
     width: 8.3333333333%;
@@ -10192,13 +10349,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-1, .columns .column.is-tablet-or-more-1, .columns .column.is-desktop-or-more-1, .columns .column.is-widescreen-or-less-1, .columns .column.is-widescreen-1, .columns .column.is-widescreen-or-more-1, .columns .column.is-fullhd-or-less-1,
-.columns [class^=column-].is-mobile-or-more-1,
-.columns [class^=column-].is-tablet-or-more-1,
-.columns [class^=column-].is-desktop-or-more-1,
-.columns [class^=column-].is-widescreen-or-less-1,
-.columns [class^=column-].is-widescreen-1,
-.columns [class^=column-].is-widescreen-or-more-1,
-.columns [class^=column-].is-fullhd-or-less-1 {
+  .columns [class^=column-].is-mobile-or-more-1,
+  .columns [class^=column-].is-tablet-or-more-1,
+  .columns [class^=column-].is-desktop-or-more-1,
+  .columns [class^=column-].is-widescreen-or-less-1,
+  .columns [class^=column-].is-widescreen-1,
+  .columns [class^=column-].is-widescreen-or-more-1,
+  .columns [class^=column-].is-fullhd-or-less-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
     width: 8.3333333333%;
@@ -10206,12 +10363,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-1, .columns .column.is-tablet-or-more-1, .columns .column.is-desktop-or-more-1, .columns .column.is-widescreen-or-more-1, .columns .column.is-fullhd-or-less-1, .columns .column.is-fullhd-1,
-.columns [class^=column-].is-mobile-or-more-1,
-.columns [class^=column-].is-tablet-or-more-1,
-.columns [class^=column-].is-desktop-or-more-1,
-.columns [class^=column-].is-widescreen-or-more-1,
-.columns [class^=column-].is-fullhd-or-less-1,
-.columns [class^=column-].is-fullhd-1 {
+  .columns [class^=column-].is-mobile-or-more-1,
+  .columns [class^=column-].is-tablet-or-more-1,
+  .columns [class^=column-].is-desktop-or-more-1,
+  .columns [class^=column-].is-widescreen-or-more-1,
+  .columns [class^=column-].is-fullhd-or-less-1,
+  .columns [class^=column-].is-fullhd-1 {
     flex-basis: 8.3333333333%;
     max-width: 8.3333333333%;
     width: 8.3333333333%;
@@ -10219,13 +10376,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-2, .columns .column.is-mobile-or-more-2, .columns .column.is-tablet-or-less-2, .columns .column.is-desktop-or-less-2, .columns .column.is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-mobile-2,
-.columns [class^=column-].is-mobile-or-more-2,
-.columns [class^=column-].is-tablet-or-less-2,
-.columns [class^=column-].is-desktop-or-less-2,
-.columns .column.is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2,
-.columns [class^=column-].is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2 {
+  .columns [class^=column-].is-mobile-2,
+  .columns [class^=column-].is-mobile-or-more-2,
+  .columns [class^=column-].is-tablet-or-less-2,
+  .columns [class^=column-].is-desktop-or-less-2,
+  .columns .column.is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2,
+  .columns [class^=column-].is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
+  .columns [class^=column-].is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
     width: 16.6666666667%;
@@ -10233,14 +10390,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-2, .columns .column.is-tablet-or-less-2, .columns .column.is-tablet-2, .columns .column.is-tablet-or-more-2, .columns .column.is-desktop-or-less-2, .columns .column.is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-mobile-or-more-2,
-.columns [class^=column-].is-tablet-or-less-2,
-.columns [class^=column-].is-tablet-2,
-.columns [class^=column-].is-tablet-or-more-2,
-.columns [class^=column-].is-desktop-or-less-2,
-.columns .column.is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2,
-.columns [class^=column-].is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2 {
+  .columns [class^=column-].is-mobile-or-more-2,
+  .columns [class^=column-].is-tablet-or-less-2,
+  .columns [class^=column-].is-tablet-2,
+  .columns [class^=column-].is-tablet-or-more-2,
+  .columns [class^=column-].is-desktop-or-less-2,
+  .columns .column.is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2,
+  .columns [class^=column-].is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
+  .columns [class^=column-].is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
     width: 16.6666666667%;
@@ -10248,14 +10405,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-2, .columns .column.is-tablet-or-more-2, .columns .column.is-desktop-or-less-2, .columns .column.is-desktop, .columns .column.is-desktop-or-more-2, .columns .column.is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-mobile-or-more-2,
-.columns [class^=column-].is-tablet-or-more-2,
-.columns [class^=column-].is-desktop-or-less-2,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-2,
-.columns .column.is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2,
-.columns [class^=column-].is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2 {
+  .columns [class^=column-].is-mobile-or-more-2,
+  .columns [class^=column-].is-tablet-or-more-2,
+  .columns [class^=column-].is-desktop-or-less-2,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-2,
+  .columns .column.is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2,
+  .columns [class^=column-].is-widescreen-or-less-2 .columns .column.is-fullhd-or-less-2,
+  .columns [class^=column-].is-widescreen-or-less-2 .columns [class^=column-].is-fullhd-or-less-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
     width: 16.6666666667%;
@@ -10263,13 +10420,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-2, .columns .column.is-tablet-or-more-2, .columns .column.is-desktop-or-more-2, .columns .column.is-widescreen-or-less-2, .columns .column.is-widescreen-2, .columns .column.is-widescreen-or-more-2, .columns .column.is-fullhd-or-less-2,
-.columns [class^=column-].is-mobile-or-more-2,
-.columns [class^=column-].is-tablet-or-more-2,
-.columns [class^=column-].is-desktop-or-more-2,
-.columns [class^=column-].is-widescreen-or-less-2,
-.columns [class^=column-].is-widescreen-2,
-.columns [class^=column-].is-widescreen-or-more-2,
-.columns [class^=column-].is-fullhd-or-less-2 {
+  .columns [class^=column-].is-mobile-or-more-2,
+  .columns [class^=column-].is-tablet-or-more-2,
+  .columns [class^=column-].is-desktop-or-more-2,
+  .columns [class^=column-].is-widescreen-or-less-2,
+  .columns [class^=column-].is-widescreen-2,
+  .columns [class^=column-].is-widescreen-or-more-2,
+  .columns [class^=column-].is-fullhd-or-less-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
     width: 16.6666666667%;
@@ -10277,12 +10434,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-2, .columns .column.is-tablet-or-more-2, .columns .column.is-desktop-or-more-2, .columns .column.is-widescreen-or-more-2, .columns .column.is-fullhd-or-less-2, .columns .column.is-fullhd-2,
-.columns [class^=column-].is-mobile-or-more-2,
-.columns [class^=column-].is-tablet-or-more-2,
-.columns [class^=column-].is-desktop-or-more-2,
-.columns [class^=column-].is-widescreen-or-more-2,
-.columns [class^=column-].is-fullhd-or-less-2,
-.columns [class^=column-].is-fullhd-2 {
+  .columns [class^=column-].is-mobile-or-more-2,
+  .columns [class^=column-].is-tablet-or-more-2,
+  .columns [class^=column-].is-desktop-or-more-2,
+  .columns [class^=column-].is-widescreen-or-more-2,
+  .columns [class^=column-].is-fullhd-or-less-2,
+  .columns [class^=column-].is-fullhd-2 {
     flex-basis: 16.6666666667%;
     max-width: 16.6666666667%;
     width: 16.6666666667%;
@@ -10290,13 +10447,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-3, .columns .column.is-mobile-or-more-3, .columns .column.is-tablet-or-less-3, .columns .column.is-desktop-or-less-3, .columns .column.is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-mobile-3,
-.columns [class^=column-].is-mobile-or-more-3,
-.columns [class^=column-].is-tablet-or-less-3,
-.columns [class^=column-].is-desktop-or-less-3,
-.columns .column.is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3,
-.columns [class^=column-].is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3 {
+  .columns [class^=column-].is-mobile-3,
+  .columns [class^=column-].is-mobile-or-more-3,
+  .columns [class^=column-].is-tablet-or-less-3,
+  .columns [class^=column-].is-desktop-or-less-3,
+  .columns .column.is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3,
+  .columns [class^=column-].is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
+  .columns [class^=column-].is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3 {
     flex-basis: 25%;
     max-width: 25%;
     width: 25%;
@@ -10304,14 +10461,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-3, .columns .column.is-tablet-or-less-3, .columns .column.is-tablet-3, .columns .column.is-tablet-or-more-3, .columns .column.is-desktop-or-less-3, .columns .column.is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-mobile-or-more-3,
-.columns [class^=column-].is-tablet-or-less-3,
-.columns [class^=column-].is-tablet-3,
-.columns [class^=column-].is-tablet-or-more-3,
-.columns [class^=column-].is-desktop-or-less-3,
-.columns .column.is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3,
-.columns [class^=column-].is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3 {
+  .columns [class^=column-].is-mobile-or-more-3,
+  .columns [class^=column-].is-tablet-or-less-3,
+  .columns [class^=column-].is-tablet-3,
+  .columns [class^=column-].is-tablet-or-more-3,
+  .columns [class^=column-].is-desktop-or-less-3,
+  .columns .column.is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3,
+  .columns [class^=column-].is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
+  .columns [class^=column-].is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3 {
     flex-basis: 25%;
     max-width: 25%;
     width: 25%;
@@ -10319,14 +10476,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-3, .columns .column.is-tablet-or-more-3, .columns .column.is-desktop-or-less-3, .columns .column.is-desktop, .columns .column.is-desktop-or-more-3, .columns .column.is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-mobile-or-more-3,
-.columns [class^=column-].is-tablet-or-more-3,
-.columns [class^=column-].is-desktop-or-less-3,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-3,
-.columns .column.is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3,
-.columns [class^=column-].is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3 {
+  .columns [class^=column-].is-mobile-or-more-3,
+  .columns [class^=column-].is-tablet-or-more-3,
+  .columns [class^=column-].is-desktop-or-less-3,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-3,
+  .columns .column.is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3,
+  .columns [class^=column-].is-widescreen-or-less-3 .columns .column.is-fullhd-or-less-3,
+  .columns [class^=column-].is-widescreen-or-less-3 .columns [class^=column-].is-fullhd-or-less-3 {
     flex-basis: 25%;
     max-width: 25%;
     width: 25%;
@@ -10334,13 +10491,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-3, .columns .column.is-tablet-or-more-3, .columns .column.is-desktop-or-more-3, .columns .column.is-widescreen-or-less-3, .columns .column.is-widescreen-3, .columns .column.is-widescreen-or-more-3, .columns .column.is-fullhd-or-less-3,
-.columns [class^=column-].is-mobile-or-more-3,
-.columns [class^=column-].is-tablet-or-more-3,
-.columns [class^=column-].is-desktop-or-more-3,
-.columns [class^=column-].is-widescreen-or-less-3,
-.columns [class^=column-].is-widescreen-3,
-.columns [class^=column-].is-widescreen-or-more-3,
-.columns [class^=column-].is-fullhd-or-less-3 {
+  .columns [class^=column-].is-mobile-or-more-3,
+  .columns [class^=column-].is-tablet-or-more-3,
+  .columns [class^=column-].is-desktop-or-more-3,
+  .columns [class^=column-].is-widescreen-or-less-3,
+  .columns [class^=column-].is-widescreen-3,
+  .columns [class^=column-].is-widescreen-or-more-3,
+  .columns [class^=column-].is-fullhd-or-less-3 {
     flex-basis: 25%;
     max-width: 25%;
     width: 25%;
@@ -10348,12 +10505,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-3, .columns .column.is-tablet-or-more-3, .columns .column.is-desktop-or-more-3, .columns .column.is-widescreen-or-more-3, .columns .column.is-fullhd-or-less-3, .columns .column.is-fullhd-3,
-.columns [class^=column-].is-mobile-or-more-3,
-.columns [class^=column-].is-tablet-or-more-3,
-.columns [class^=column-].is-desktop-or-more-3,
-.columns [class^=column-].is-widescreen-or-more-3,
-.columns [class^=column-].is-fullhd-or-less-3,
-.columns [class^=column-].is-fullhd-3 {
+  .columns [class^=column-].is-mobile-or-more-3,
+  .columns [class^=column-].is-tablet-or-more-3,
+  .columns [class^=column-].is-desktop-or-more-3,
+  .columns [class^=column-].is-widescreen-or-more-3,
+  .columns [class^=column-].is-fullhd-or-less-3,
+  .columns [class^=column-].is-fullhd-3 {
     flex-basis: 25%;
     max-width: 25%;
     width: 25%;
@@ -10361,13 +10518,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-4, .columns .column.is-mobile-or-more-4, .columns .column.is-tablet-or-less-4, .columns .column.is-desktop-or-less-4, .columns .column.is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-mobile-4,
-.columns [class^=column-].is-mobile-or-more-4,
-.columns [class^=column-].is-tablet-or-less-4,
-.columns [class^=column-].is-desktop-or-less-4,
-.columns .column.is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4,
-.columns [class^=column-].is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4 {
+  .columns [class^=column-].is-mobile-4,
+  .columns [class^=column-].is-mobile-or-more-4,
+  .columns [class^=column-].is-tablet-or-less-4,
+  .columns [class^=column-].is-desktop-or-less-4,
+  .columns .column.is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4,
+  .columns [class^=column-].is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
+  .columns [class^=column-].is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     width: 33.3333333333%;
@@ -10375,14 +10532,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-4, .columns .column.is-tablet-or-less-4, .columns .column.is-tablet-4, .columns .column.is-tablet-or-more-4, .columns .column.is-desktop-or-less-4, .columns .column.is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-mobile-or-more-4,
-.columns [class^=column-].is-tablet-or-less-4,
-.columns [class^=column-].is-tablet-4,
-.columns [class^=column-].is-tablet-or-more-4,
-.columns [class^=column-].is-desktop-or-less-4,
-.columns .column.is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4,
-.columns [class^=column-].is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4 {
+  .columns [class^=column-].is-mobile-or-more-4,
+  .columns [class^=column-].is-tablet-or-less-4,
+  .columns [class^=column-].is-tablet-4,
+  .columns [class^=column-].is-tablet-or-more-4,
+  .columns [class^=column-].is-desktop-or-less-4,
+  .columns .column.is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4,
+  .columns [class^=column-].is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
+  .columns [class^=column-].is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     width: 33.3333333333%;
@@ -10390,14 +10547,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-4, .columns .column.is-tablet-or-more-4, .columns .column.is-desktop-or-less-4, .columns .column.is-desktop, .columns .column.is-desktop-or-more-4, .columns .column.is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-mobile-or-more-4,
-.columns [class^=column-].is-tablet-or-more-4,
-.columns [class^=column-].is-desktop-or-less-4,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-4,
-.columns .column.is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4,
-.columns [class^=column-].is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4 {
+  .columns [class^=column-].is-mobile-or-more-4,
+  .columns [class^=column-].is-tablet-or-more-4,
+  .columns [class^=column-].is-desktop-or-less-4,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-4,
+  .columns .column.is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4,
+  .columns [class^=column-].is-widescreen-or-less-4 .columns .column.is-fullhd-or-less-4,
+  .columns [class^=column-].is-widescreen-or-less-4 .columns [class^=column-].is-fullhd-or-less-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     width: 33.3333333333%;
@@ -10405,13 +10562,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-4, .columns .column.is-tablet-or-more-4, .columns .column.is-desktop-or-more-4, .columns .column.is-widescreen-or-less-4, .columns .column.is-widescreen-4, .columns .column.is-widescreen-or-more-4, .columns .column.is-fullhd-or-less-4,
-.columns [class^=column-].is-mobile-or-more-4,
-.columns [class^=column-].is-tablet-or-more-4,
-.columns [class^=column-].is-desktop-or-more-4,
-.columns [class^=column-].is-widescreen-or-less-4,
-.columns [class^=column-].is-widescreen-4,
-.columns [class^=column-].is-widescreen-or-more-4,
-.columns [class^=column-].is-fullhd-or-less-4 {
+  .columns [class^=column-].is-mobile-or-more-4,
+  .columns [class^=column-].is-tablet-or-more-4,
+  .columns [class^=column-].is-desktop-or-more-4,
+  .columns [class^=column-].is-widescreen-or-less-4,
+  .columns [class^=column-].is-widescreen-4,
+  .columns [class^=column-].is-widescreen-or-more-4,
+  .columns [class^=column-].is-fullhd-or-less-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     width: 33.3333333333%;
@@ -10419,12 +10576,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-4, .columns .column.is-tablet-or-more-4, .columns .column.is-desktop-or-more-4, .columns .column.is-widescreen-or-more-4, .columns .column.is-fullhd-or-less-4, .columns .column.is-fullhd-4,
-.columns [class^=column-].is-mobile-or-more-4,
-.columns [class^=column-].is-tablet-or-more-4,
-.columns [class^=column-].is-desktop-or-more-4,
-.columns [class^=column-].is-widescreen-or-more-4,
-.columns [class^=column-].is-fullhd-or-less-4,
-.columns [class^=column-].is-fullhd-4 {
+  .columns [class^=column-].is-mobile-or-more-4,
+  .columns [class^=column-].is-tablet-or-more-4,
+  .columns [class^=column-].is-desktop-or-more-4,
+  .columns [class^=column-].is-widescreen-or-more-4,
+  .columns [class^=column-].is-fullhd-or-less-4,
+  .columns [class^=column-].is-fullhd-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
     width: 33.3333333333%;
@@ -10432,13 +10589,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-5, .columns .column.is-mobile-or-more-5, .columns .column.is-tablet-or-less-5, .columns .column.is-desktop-or-less-5, .columns .column.is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-mobile-5,
-.columns [class^=column-].is-mobile-or-more-5,
-.columns [class^=column-].is-tablet-or-less-5,
-.columns [class^=column-].is-desktop-or-less-5,
-.columns .column.is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5,
-.columns [class^=column-].is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5 {
+  .columns [class^=column-].is-mobile-5,
+  .columns [class^=column-].is-mobile-or-more-5,
+  .columns [class^=column-].is-tablet-or-less-5,
+  .columns [class^=column-].is-desktop-or-less-5,
+  .columns .column.is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5,
+  .columns [class^=column-].is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
+  .columns [class^=column-].is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5 {
     flex-basis: 41.6666666667%;
     max-width: 41.6666666667%;
     width: 41.6666666667%;
@@ -10446,14 +10603,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-5, .columns .column.is-tablet-or-less-5, .columns .column.is-tablet-5, .columns .column.is-tablet-or-more-5, .columns .column.is-desktop-or-less-5, .columns .column.is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-mobile-or-more-5,
-.columns [class^=column-].is-tablet-or-less-5,
-.columns [class^=column-].is-tablet-5,
-.columns [class^=column-].is-tablet-or-more-5,
-.columns [class^=column-].is-desktop-or-less-5,
-.columns .column.is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5,
-.columns [class^=column-].is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5 {
+  .columns [class^=column-].is-mobile-or-more-5,
+  .columns [class^=column-].is-tablet-or-less-5,
+  .columns [class^=column-].is-tablet-5,
+  .columns [class^=column-].is-tablet-or-more-5,
+  .columns [class^=column-].is-desktop-or-less-5,
+  .columns .column.is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5,
+  .columns [class^=column-].is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
+  .columns [class^=column-].is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5 {
     flex-basis: 41.6666666667%;
     max-width: 41.6666666667%;
     width: 41.6666666667%;
@@ -10461,14 +10618,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-5, .columns .column.is-tablet-or-more-5, .columns .column.is-desktop-or-less-5, .columns .column.is-desktop, .columns .column.is-desktop-or-more-5, .columns .column.is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-mobile-or-more-5,
-.columns [class^=column-].is-tablet-or-more-5,
-.columns [class^=column-].is-desktop-or-less-5,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-5,
-.columns .column.is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5,
-.columns [class^=column-].is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5 {
+  .columns [class^=column-].is-mobile-or-more-5,
+  .columns [class^=column-].is-tablet-or-more-5,
+  .columns [class^=column-].is-desktop-or-less-5,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-5,
+  .columns .column.is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5,
+  .columns [class^=column-].is-widescreen-or-less-5 .columns .column.is-fullhd-or-less-5,
+  .columns [class^=column-].is-widescreen-or-less-5 .columns [class^=column-].is-fullhd-or-less-5 {
     flex-basis: 41.6666666667%;
     max-width: 41.6666666667%;
     width: 41.6666666667%;
@@ -10476,13 +10633,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-5, .columns .column.is-tablet-or-more-5, .columns .column.is-desktop-or-more-5, .columns .column.is-widescreen-or-less-5, .columns .column.is-widescreen-5, .columns .column.is-widescreen-or-more-5, .columns .column.is-fullhd-or-less-5,
-.columns [class^=column-].is-mobile-or-more-5,
-.columns [class^=column-].is-tablet-or-more-5,
-.columns [class^=column-].is-desktop-or-more-5,
-.columns [class^=column-].is-widescreen-or-less-5,
-.columns [class^=column-].is-widescreen-5,
-.columns [class^=column-].is-widescreen-or-more-5,
-.columns [class^=column-].is-fullhd-or-less-5 {
+  .columns [class^=column-].is-mobile-or-more-5,
+  .columns [class^=column-].is-tablet-or-more-5,
+  .columns [class^=column-].is-desktop-or-more-5,
+  .columns [class^=column-].is-widescreen-or-less-5,
+  .columns [class^=column-].is-widescreen-5,
+  .columns [class^=column-].is-widescreen-or-more-5,
+  .columns [class^=column-].is-fullhd-or-less-5 {
     flex-basis: 41.6666666667%;
     max-width: 41.6666666667%;
     width: 41.6666666667%;
@@ -10490,12 +10647,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-5, .columns .column.is-tablet-or-more-5, .columns .column.is-desktop-or-more-5, .columns .column.is-widescreen-or-more-5, .columns .column.is-fullhd-or-less-5, .columns .column.is-fullhd-5,
-.columns [class^=column-].is-mobile-or-more-5,
-.columns [class^=column-].is-tablet-or-more-5,
-.columns [class^=column-].is-desktop-or-more-5,
-.columns [class^=column-].is-widescreen-or-more-5,
-.columns [class^=column-].is-fullhd-or-less-5,
-.columns [class^=column-].is-fullhd-5 {
+  .columns [class^=column-].is-mobile-or-more-5,
+  .columns [class^=column-].is-tablet-or-more-5,
+  .columns [class^=column-].is-desktop-or-more-5,
+  .columns [class^=column-].is-widescreen-or-more-5,
+  .columns [class^=column-].is-fullhd-or-less-5,
+  .columns [class^=column-].is-fullhd-5 {
     flex-basis: 41.6666666667%;
     max-width: 41.6666666667%;
     width: 41.6666666667%;
@@ -10503,13 +10660,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-6, .columns .column.is-mobile-or-more-6, .columns .column.is-tablet-or-less-6, .columns .column.is-desktop-or-less-6, .columns .column.is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-mobile-6,
-.columns [class^=column-].is-mobile-or-more-6,
-.columns [class^=column-].is-tablet-or-less-6,
-.columns [class^=column-].is-desktop-or-less-6,
-.columns .column.is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6,
-.columns [class^=column-].is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6 {
+  .columns [class^=column-].is-mobile-6,
+  .columns [class^=column-].is-mobile-or-more-6,
+  .columns [class^=column-].is-tablet-or-less-6,
+  .columns [class^=column-].is-desktop-or-less-6,
+  .columns .column.is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6,
+  .columns [class^=column-].is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
+  .columns [class^=column-].is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6 {
     flex-basis: 50%;
     max-width: 50%;
     width: 50%;
@@ -10517,14 +10674,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-6, .columns .column.is-tablet-or-less-6, .columns .column.is-tablet-6, .columns .column.is-tablet-or-more-6, .columns .column.is-desktop-or-less-6, .columns .column.is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-mobile-or-more-6,
-.columns [class^=column-].is-tablet-or-less-6,
-.columns [class^=column-].is-tablet-6,
-.columns [class^=column-].is-tablet-or-more-6,
-.columns [class^=column-].is-desktop-or-less-6,
-.columns .column.is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6,
-.columns [class^=column-].is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6 {
+  .columns [class^=column-].is-mobile-or-more-6,
+  .columns [class^=column-].is-tablet-or-less-6,
+  .columns [class^=column-].is-tablet-6,
+  .columns [class^=column-].is-tablet-or-more-6,
+  .columns [class^=column-].is-desktop-or-less-6,
+  .columns .column.is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6,
+  .columns [class^=column-].is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
+  .columns [class^=column-].is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6 {
     flex-basis: 50%;
     max-width: 50%;
     width: 50%;
@@ -10532,14 +10689,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-6, .columns .column.is-tablet-or-more-6, .columns .column.is-desktop-or-less-6, .columns .column.is-desktop, .columns .column.is-desktop-or-more-6, .columns .column.is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-mobile-or-more-6,
-.columns [class^=column-].is-tablet-or-more-6,
-.columns [class^=column-].is-desktop-or-less-6,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-6,
-.columns .column.is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6,
-.columns [class^=column-].is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6 {
+  .columns [class^=column-].is-mobile-or-more-6,
+  .columns [class^=column-].is-tablet-or-more-6,
+  .columns [class^=column-].is-desktop-or-less-6,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-6,
+  .columns .column.is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6,
+  .columns [class^=column-].is-widescreen-or-less-6 .columns .column.is-fullhd-or-less-6,
+  .columns [class^=column-].is-widescreen-or-less-6 .columns [class^=column-].is-fullhd-or-less-6 {
     flex-basis: 50%;
     max-width: 50%;
     width: 50%;
@@ -10547,13 +10704,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-6, .columns .column.is-tablet-or-more-6, .columns .column.is-desktop-or-more-6, .columns .column.is-widescreen-or-less-6, .columns .column.is-widescreen-6, .columns .column.is-widescreen-or-more-6, .columns .column.is-fullhd-or-less-6,
-.columns [class^=column-].is-mobile-or-more-6,
-.columns [class^=column-].is-tablet-or-more-6,
-.columns [class^=column-].is-desktop-or-more-6,
-.columns [class^=column-].is-widescreen-or-less-6,
-.columns [class^=column-].is-widescreen-6,
-.columns [class^=column-].is-widescreen-or-more-6,
-.columns [class^=column-].is-fullhd-or-less-6 {
+  .columns [class^=column-].is-mobile-or-more-6,
+  .columns [class^=column-].is-tablet-or-more-6,
+  .columns [class^=column-].is-desktop-or-more-6,
+  .columns [class^=column-].is-widescreen-or-less-6,
+  .columns [class^=column-].is-widescreen-6,
+  .columns [class^=column-].is-widescreen-or-more-6,
+  .columns [class^=column-].is-fullhd-or-less-6 {
     flex-basis: 50%;
     max-width: 50%;
     width: 50%;
@@ -10561,12 +10718,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-6, .columns .column.is-tablet-or-more-6, .columns .column.is-desktop-or-more-6, .columns .column.is-widescreen-or-more-6, .columns .column.is-fullhd-or-less-6, .columns .column.is-fullhd-6,
-.columns [class^=column-].is-mobile-or-more-6,
-.columns [class^=column-].is-tablet-or-more-6,
-.columns [class^=column-].is-desktop-or-more-6,
-.columns [class^=column-].is-widescreen-or-more-6,
-.columns [class^=column-].is-fullhd-or-less-6,
-.columns [class^=column-].is-fullhd-6 {
+  .columns [class^=column-].is-mobile-or-more-6,
+  .columns [class^=column-].is-tablet-or-more-6,
+  .columns [class^=column-].is-desktop-or-more-6,
+  .columns [class^=column-].is-widescreen-or-more-6,
+  .columns [class^=column-].is-fullhd-or-less-6,
+  .columns [class^=column-].is-fullhd-6 {
     flex-basis: 50%;
     max-width: 50%;
     width: 50%;
@@ -10574,13 +10731,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-7, .columns .column.is-mobile-or-more-7, .columns .column.is-tablet-or-less-7, .columns .column.is-desktop-or-less-7, .columns .column.is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-mobile-7,
-.columns [class^=column-].is-mobile-or-more-7,
-.columns [class^=column-].is-tablet-or-less-7,
-.columns [class^=column-].is-desktop-or-less-7,
-.columns .column.is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7,
-.columns [class^=column-].is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7 {
+  .columns [class^=column-].is-mobile-7,
+  .columns [class^=column-].is-mobile-or-more-7,
+  .columns [class^=column-].is-tablet-or-less-7,
+  .columns [class^=column-].is-desktop-or-less-7,
+  .columns .column.is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7,
+  .columns [class^=column-].is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
+  .columns [class^=column-].is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
     width: 58.3333333333%;
@@ -10588,14 +10745,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-7, .columns .column.is-tablet-or-less-7, .columns .column.is-tablet-7, .columns .column.is-tablet-or-more-7, .columns .column.is-desktop-or-less-7, .columns .column.is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-mobile-or-more-7,
-.columns [class^=column-].is-tablet-or-less-7,
-.columns [class^=column-].is-tablet-7,
-.columns [class^=column-].is-tablet-or-more-7,
-.columns [class^=column-].is-desktop-or-less-7,
-.columns .column.is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7,
-.columns [class^=column-].is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7 {
+  .columns [class^=column-].is-mobile-or-more-7,
+  .columns [class^=column-].is-tablet-or-less-7,
+  .columns [class^=column-].is-tablet-7,
+  .columns [class^=column-].is-tablet-or-more-7,
+  .columns [class^=column-].is-desktop-or-less-7,
+  .columns .column.is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7,
+  .columns [class^=column-].is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
+  .columns [class^=column-].is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
     width: 58.3333333333%;
@@ -10603,14 +10760,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-7, .columns .column.is-tablet-or-more-7, .columns .column.is-desktop-or-less-7, .columns .column.is-desktop, .columns .column.is-desktop-or-more-7, .columns .column.is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-mobile-or-more-7,
-.columns [class^=column-].is-tablet-or-more-7,
-.columns [class^=column-].is-desktop-or-less-7,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-7,
-.columns .column.is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7,
-.columns [class^=column-].is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7 {
+  .columns [class^=column-].is-mobile-or-more-7,
+  .columns [class^=column-].is-tablet-or-more-7,
+  .columns [class^=column-].is-desktop-or-less-7,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-7,
+  .columns .column.is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7,
+  .columns [class^=column-].is-widescreen-or-less-7 .columns .column.is-fullhd-or-less-7,
+  .columns [class^=column-].is-widescreen-or-less-7 .columns [class^=column-].is-fullhd-or-less-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
     width: 58.3333333333%;
@@ -10618,13 +10775,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-7, .columns .column.is-tablet-or-more-7, .columns .column.is-desktop-or-more-7, .columns .column.is-widescreen-or-less-7, .columns .column.is-widescreen-7, .columns .column.is-widescreen-or-more-7, .columns .column.is-fullhd-or-less-7,
-.columns [class^=column-].is-mobile-or-more-7,
-.columns [class^=column-].is-tablet-or-more-7,
-.columns [class^=column-].is-desktop-or-more-7,
-.columns [class^=column-].is-widescreen-or-less-7,
-.columns [class^=column-].is-widescreen-7,
-.columns [class^=column-].is-widescreen-or-more-7,
-.columns [class^=column-].is-fullhd-or-less-7 {
+  .columns [class^=column-].is-mobile-or-more-7,
+  .columns [class^=column-].is-tablet-or-more-7,
+  .columns [class^=column-].is-desktop-or-more-7,
+  .columns [class^=column-].is-widescreen-or-less-7,
+  .columns [class^=column-].is-widescreen-7,
+  .columns [class^=column-].is-widescreen-or-more-7,
+  .columns [class^=column-].is-fullhd-or-less-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
     width: 58.3333333333%;
@@ -10632,12 +10789,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-7, .columns .column.is-tablet-or-more-7, .columns .column.is-desktop-or-more-7, .columns .column.is-widescreen-or-more-7, .columns .column.is-fullhd-or-less-7, .columns .column.is-fullhd-7,
-.columns [class^=column-].is-mobile-or-more-7,
-.columns [class^=column-].is-tablet-or-more-7,
-.columns [class^=column-].is-desktop-or-more-7,
-.columns [class^=column-].is-widescreen-or-more-7,
-.columns [class^=column-].is-fullhd-or-less-7,
-.columns [class^=column-].is-fullhd-7 {
+  .columns [class^=column-].is-mobile-or-more-7,
+  .columns [class^=column-].is-tablet-or-more-7,
+  .columns [class^=column-].is-desktop-or-more-7,
+  .columns [class^=column-].is-widescreen-or-more-7,
+  .columns [class^=column-].is-fullhd-or-less-7,
+  .columns [class^=column-].is-fullhd-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
     width: 58.3333333333%;
@@ -10645,13 +10802,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-8, .columns .column.is-mobile-or-more-8, .columns .column.is-tablet-or-less-8, .columns .column.is-desktop-or-less-8, .columns .column.is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-mobile-8,
-.columns [class^=column-].is-mobile-or-more-8,
-.columns [class^=column-].is-tablet-or-less-8,
-.columns [class^=column-].is-desktop-or-less-8,
-.columns .column.is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8,
-.columns [class^=column-].is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8 {
+  .columns [class^=column-].is-mobile-8,
+  .columns [class^=column-].is-mobile-or-more-8,
+  .columns [class^=column-].is-tablet-or-less-8,
+  .columns [class^=column-].is-desktop-or-less-8,
+  .columns .column.is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8,
+  .columns [class^=column-].is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
+  .columns [class^=column-].is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8 {
     flex-basis: 66.6666666667%;
     max-width: 66.6666666667%;
     width: 66.6666666667%;
@@ -10659,14 +10816,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-8, .columns .column.is-tablet-or-less-8, .columns .column.is-tablet-8, .columns .column.is-tablet-or-more-8, .columns .column.is-desktop-or-less-8, .columns .column.is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-mobile-or-more-8,
-.columns [class^=column-].is-tablet-or-less-8,
-.columns [class^=column-].is-tablet-8,
-.columns [class^=column-].is-tablet-or-more-8,
-.columns [class^=column-].is-desktop-or-less-8,
-.columns .column.is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8,
-.columns [class^=column-].is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8 {
+  .columns [class^=column-].is-mobile-or-more-8,
+  .columns [class^=column-].is-tablet-or-less-8,
+  .columns [class^=column-].is-tablet-8,
+  .columns [class^=column-].is-tablet-or-more-8,
+  .columns [class^=column-].is-desktop-or-less-8,
+  .columns .column.is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8,
+  .columns [class^=column-].is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
+  .columns [class^=column-].is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8 {
     flex-basis: 66.6666666667%;
     max-width: 66.6666666667%;
     width: 66.6666666667%;
@@ -10674,14 +10831,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-8, .columns .column.is-tablet-or-more-8, .columns .column.is-desktop-or-less-8, .columns .column.is-desktop, .columns .column.is-desktop-or-more-8, .columns .column.is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-mobile-or-more-8,
-.columns [class^=column-].is-tablet-or-more-8,
-.columns [class^=column-].is-desktop-or-less-8,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-8,
-.columns .column.is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8,
-.columns [class^=column-].is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8 {
+  .columns [class^=column-].is-mobile-or-more-8,
+  .columns [class^=column-].is-tablet-or-more-8,
+  .columns [class^=column-].is-desktop-or-less-8,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-8,
+  .columns .column.is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8,
+  .columns [class^=column-].is-widescreen-or-less-8 .columns .column.is-fullhd-or-less-8,
+  .columns [class^=column-].is-widescreen-or-less-8 .columns [class^=column-].is-fullhd-or-less-8 {
     flex-basis: 66.6666666667%;
     max-width: 66.6666666667%;
     width: 66.6666666667%;
@@ -10689,13 +10846,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-8, .columns .column.is-tablet-or-more-8, .columns .column.is-desktop-or-more-8, .columns .column.is-widescreen-or-less-8, .columns .column.is-widescreen-8, .columns .column.is-widescreen-or-more-8, .columns .column.is-fullhd-or-less-8,
-.columns [class^=column-].is-mobile-or-more-8,
-.columns [class^=column-].is-tablet-or-more-8,
-.columns [class^=column-].is-desktop-or-more-8,
-.columns [class^=column-].is-widescreen-or-less-8,
-.columns [class^=column-].is-widescreen-8,
-.columns [class^=column-].is-widescreen-or-more-8,
-.columns [class^=column-].is-fullhd-or-less-8 {
+  .columns [class^=column-].is-mobile-or-more-8,
+  .columns [class^=column-].is-tablet-or-more-8,
+  .columns [class^=column-].is-desktop-or-more-8,
+  .columns [class^=column-].is-widescreen-or-less-8,
+  .columns [class^=column-].is-widescreen-8,
+  .columns [class^=column-].is-widescreen-or-more-8,
+  .columns [class^=column-].is-fullhd-or-less-8 {
     flex-basis: 66.6666666667%;
     max-width: 66.6666666667%;
     width: 66.6666666667%;
@@ -10703,12 +10860,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-8, .columns .column.is-tablet-or-more-8, .columns .column.is-desktop-or-more-8, .columns .column.is-widescreen-or-more-8, .columns .column.is-fullhd-or-less-8, .columns .column.is-fullhd-8,
-.columns [class^=column-].is-mobile-or-more-8,
-.columns [class^=column-].is-tablet-or-more-8,
-.columns [class^=column-].is-desktop-or-more-8,
-.columns [class^=column-].is-widescreen-or-more-8,
-.columns [class^=column-].is-fullhd-or-less-8,
-.columns [class^=column-].is-fullhd-8 {
+  .columns [class^=column-].is-mobile-or-more-8,
+  .columns [class^=column-].is-tablet-or-more-8,
+  .columns [class^=column-].is-desktop-or-more-8,
+  .columns [class^=column-].is-widescreen-or-more-8,
+  .columns [class^=column-].is-fullhd-or-less-8,
+  .columns [class^=column-].is-fullhd-8 {
     flex-basis: 66.6666666667%;
     max-width: 66.6666666667%;
     width: 66.6666666667%;
@@ -10716,13 +10873,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-9, .columns .column.is-mobile-or-more-9, .columns .column.is-tablet-or-less-9, .columns .column.is-desktop-or-less-9, .columns .column.is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-mobile-9,
-.columns [class^=column-].is-mobile-or-more-9,
-.columns [class^=column-].is-tablet-or-less-9,
-.columns [class^=column-].is-desktop-or-less-9,
-.columns .column.is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9,
-.columns [class^=column-].is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9 {
+  .columns [class^=column-].is-mobile-9,
+  .columns [class^=column-].is-mobile-or-more-9,
+  .columns [class^=column-].is-tablet-or-less-9,
+  .columns [class^=column-].is-desktop-or-less-9,
+  .columns .column.is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9,
+  .columns [class^=column-].is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
+  .columns [class^=column-].is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9 {
     flex-basis: 75%;
     max-width: 75%;
     width: 75%;
@@ -10730,14 +10887,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-9, .columns .column.is-tablet-or-less-9, .columns .column.is-tablet-9, .columns .column.is-tablet-or-more-9, .columns .column.is-desktop-or-less-9, .columns .column.is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-mobile-or-more-9,
-.columns [class^=column-].is-tablet-or-less-9,
-.columns [class^=column-].is-tablet-9,
-.columns [class^=column-].is-tablet-or-more-9,
-.columns [class^=column-].is-desktop-or-less-9,
-.columns .column.is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9,
-.columns [class^=column-].is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9 {
+  .columns [class^=column-].is-mobile-or-more-9,
+  .columns [class^=column-].is-tablet-or-less-9,
+  .columns [class^=column-].is-tablet-9,
+  .columns [class^=column-].is-tablet-or-more-9,
+  .columns [class^=column-].is-desktop-or-less-9,
+  .columns .column.is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9,
+  .columns [class^=column-].is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
+  .columns [class^=column-].is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9 {
     flex-basis: 75%;
     max-width: 75%;
     width: 75%;
@@ -10745,14 +10902,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-9, .columns .column.is-tablet-or-more-9, .columns .column.is-desktop-or-less-9, .columns .column.is-desktop, .columns .column.is-desktop-or-more-9, .columns .column.is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-mobile-or-more-9,
-.columns [class^=column-].is-tablet-or-more-9,
-.columns [class^=column-].is-desktop-or-less-9,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-9,
-.columns .column.is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9,
-.columns [class^=column-].is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9 {
+  .columns [class^=column-].is-mobile-or-more-9,
+  .columns [class^=column-].is-tablet-or-more-9,
+  .columns [class^=column-].is-desktop-or-less-9,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-9,
+  .columns .column.is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9,
+  .columns [class^=column-].is-widescreen-or-less-9 .columns .column.is-fullhd-or-less-9,
+  .columns [class^=column-].is-widescreen-or-less-9 .columns [class^=column-].is-fullhd-or-less-9 {
     flex-basis: 75%;
     max-width: 75%;
     width: 75%;
@@ -10760,13 +10917,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-9, .columns .column.is-tablet-or-more-9, .columns .column.is-desktop-or-more-9, .columns .column.is-widescreen-or-less-9, .columns .column.is-widescreen-9, .columns .column.is-widescreen-or-more-9, .columns .column.is-fullhd-or-less-9,
-.columns [class^=column-].is-mobile-or-more-9,
-.columns [class^=column-].is-tablet-or-more-9,
-.columns [class^=column-].is-desktop-or-more-9,
-.columns [class^=column-].is-widescreen-or-less-9,
-.columns [class^=column-].is-widescreen-9,
-.columns [class^=column-].is-widescreen-or-more-9,
-.columns [class^=column-].is-fullhd-or-less-9 {
+  .columns [class^=column-].is-mobile-or-more-9,
+  .columns [class^=column-].is-tablet-or-more-9,
+  .columns [class^=column-].is-desktop-or-more-9,
+  .columns [class^=column-].is-widescreen-or-less-9,
+  .columns [class^=column-].is-widescreen-9,
+  .columns [class^=column-].is-widescreen-or-more-9,
+  .columns [class^=column-].is-fullhd-or-less-9 {
     flex-basis: 75%;
     max-width: 75%;
     width: 75%;
@@ -10774,12 +10931,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-9, .columns .column.is-tablet-or-more-9, .columns .column.is-desktop-or-more-9, .columns .column.is-widescreen-or-more-9, .columns .column.is-fullhd-or-less-9, .columns .column.is-fullhd-9,
-.columns [class^=column-].is-mobile-or-more-9,
-.columns [class^=column-].is-tablet-or-more-9,
-.columns [class^=column-].is-desktop-or-more-9,
-.columns [class^=column-].is-widescreen-or-more-9,
-.columns [class^=column-].is-fullhd-or-less-9,
-.columns [class^=column-].is-fullhd-9 {
+  .columns [class^=column-].is-mobile-or-more-9,
+  .columns [class^=column-].is-tablet-or-more-9,
+  .columns [class^=column-].is-desktop-or-more-9,
+  .columns [class^=column-].is-widescreen-or-more-9,
+  .columns [class^=column-].is-fullhd-or-less-9,
+  .columns [class^=column-].is-fullhd-9 {
     flex-basis: 75%;
     max-width: 75%;
     width: 75%;
@@ -10787,13 +10944,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-10, .columns .column.is-mobile-or-more-10, .columns .column.is-tablet-or-less-10, .columns .column.is-desktop-or-less-10, .columns .column.is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-mobile-10,
-.columns [class^=column-].is-mobile-or-more-10,
-.columns [class^=column-].is-tablet-or-less-10,
-.columns [class^=column-].is-desktop-or-less-10,
-.columns .column.is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10,
-.columns [class^=column-].is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10 {
+  .columns [class^=column-].is-mobile-10,
+  .columns [class^=column-].is-mobile-or-more-10,
+  .columns [class^=column-].is-tablet-or-less-10,
+  .columns [class^=column-].is-desktop-or-less-10,
+  .columns .column.is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10,
+  .columns [class^=column-].is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
+  .columns [class^=column-].is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10 {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
     width: 83.3333333333%;
@@ -10801,14 +10958,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-10, .columns .column.is-tablet-or-less-10, .columns .column.is-tablet-10, .columns .column.is-tablet-or-more-10, .columns .column.is-desktop-or-less-10, .columns .column.is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-mobile-or-more-10,
-.columns [class^=column-].is-tablet-or-less-10,
-.columns [class^=column-].is-tablet-10,
-.columns [class^=column-].is-tablet-or-more-10,
-.columns [class^=column-].is-desktop-or-less-10,
-.columns .column.is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10,
-.columns [class^=column-].is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10 {
+  .columns [class^=column-].is-mobile-or-more-10,
+  .columns [class^=column-].is-tablet-or-less-10,
+  .columns [class^=column-].is-tablet-10,
+  .columns [class^=column-].is-tablet-or-more-10,
+  .columns [class^=column-].is-desktop-or-less-10,
+  .columns .column.is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10,
+  .columns [class^=column-].is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
+  .columns [class^=column-].is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10 {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
     width: 83.3333333333%;
@@ -10816,14 +10973,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-10, .columns .column.is-tablet-or-more-10, .columns .column.is-desktop-or-less-10, .columns .column.is-desktop, .columns .column.is-desktop-or-more-10, .columns .column.is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-mobile-or-more-10,
-.columns [class^=column-].is-tablet-or-more-10,
-.columns [class^=column-].is-desktop-or-less-10,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-10,
-.columns .column.is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10,
-.columns [class^=column-].is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10 {
+  .columns [class^=column-].is-mobile-or-more-10,
+  .columns [class^=column-].is-tablet-or-more-10,
+  .columns [class^=column-].is-desktop-or-less-10,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-10,
+  .columns .column.is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10,
+  .columns [class^=column-].is-widescreen-or-less-10 .columns .column.is-fullhd-or-less-10,
+  .columns [class^=column-].is-widescreen-or-less-10 .columns [class^=column-].is-fullhd-or-less-10 {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
     width: 83.3333333333%;
@@ -10831,13 +10988,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-10, .columns .column.is-tablet-or-more-10, .columns .column.is-desktop-or-more-10, .columns .column.is-widescreen-or-less-10, .columns .column.is-widescreen-10, .columns .column.is-widescreen-or-more-10, .columns .column.is-fullhd-or-less-10,
-.columns [class^=column-].is-mobile-or-more-10,
-.columns [class^=column-].is-tablet-or-more-10,
-.columns [class^=column-].is-desktop-or-more-10,
-.columns [class^=column-].is-widescreen-or-less-10,
-.columns [class^=column-].is-widescreen-10,
-.columns [class^=column-].is-widescreen-or-more-10,
-.columns [class^=column-].is-fullhd-or-less-10 {
+  .columns [class^=column-].is-mobile-or-more-10,
+  .columns [class^=column-].is-tablet-or-more-10,
+  .columns [class^=column-].is-desktop-or-more-10,
+  .columns [class^=column-].is-widescreen-or-less-10,
+  .columns [class^=column-].is-widescreen-10,
+  .columns [class^=column-].is-widescreen-or-more-10,
+  .columns [class^=column-].is-fullhd-or-less-10 {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
     width: 83.3333333333%;
@@ -10845,12 +11002,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-10, .columns .column.is-tablet-or-more-10, .columns .column.is-desktop-or-more-10, .columns .column.is-widescreen-or-more-10, .columns .column.is-fullhd-or-less-10, .columns .column.is-fullhd-10,
-.columns [class^=column-].is-mobile-or-more-10,
-.columns [class^=column-].is-tablet-or-more-10,
-.columns [class^=column-].is-desktop-or-more-10,
-.columns [class^=column-].is-widescreen-or-more-10,
-.columns [class^=column-].is-fullhd-or-less-10,
-.columns [class^=column-].is-fullhd-10 {
+  .columns [class^=column-].is-mobile-or-more-10,
+  .columns [class^=column-].is-tablet-or-more-10,
+  .columns [class^=column-].is-desktop-or-more-10,
+  .columns [class^=column-].is-widescreen-or-more-10,
+  .columns [class^=column-].is-fullhd-or-less-10,
+  .columns [class^=column-].is-fullhd-10 {
     flex-basis: 83.3333333333%;
     max-width: 83.3333333333%;
     width: 83.3333333333%;
@@ -10858,13 +11015,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-11, .columns .column.is-mobile-or-more-11, .columns .column.is-tablet-or-less-11, .columns .column.is-desktop-or-less-11, .columns .column.is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-mobile-11,
-.columns [class^=column-].is-mobile-or-more-11,
-.columns [class^=column-].is-tablet-or-less-11,
-.columns [class^=column-].is-desktop-or-less-11,
-.columns .column.is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11,
-.columns [class^=column-].is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11 {
+  .columns [class^=column-].is-mobile-11,
+  .columns [class^=column-].is-mobile-or-more-11,
+  .columns [class^=column-].is-tablet-or-less-11,
+  .columns [class^=column-].is-desktop-or-less-11,
+  .columns .column.is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11,
+  .columns [class^=column-].is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
+  .columns [class^=column-].is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11 {
     flex-basis: 91.6666666667%;
     max-width: 91.6666666667%;
     width: 91.6666666667%;
@@ -10872,14 +11029,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-11, .columns .column.is-tablet-or-less-11, .columns .column.is-tablet-11, .columns .column.is-tablet-or-more-11, .columns .column.is-desktop-or-less-11, .columns .column.is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-mobile-or-more-11,
-.columns [class^=column-].is-tablet-or-less-11,
-.columns [class^=column-].is-tablet-11,
-.columns [class^=column-].is-tablet-or-more-11,
-.columns [class^=column-].is-desktop-or-less-11,
-.columns .column.is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11,
-.columns [class^=column-].is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11 {
+  .columns [class^=column-].is-mobile-or-more-11,
+  .columns [class^=column-].is-tablet-or-less-11,
+  .columns [class^=column-].is-tablet-11,
+  .columns [class^=column-].is-tablet-or-more-11,
+  .columns [class^=column-].is-desktop-or-less-11,
+  .columns .column.is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11,
+  .columns [class^=column-].is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
+  .columns [class^=column-].is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11 {
     flex-basis: 91.6666666667%;
     max-width: 91.6666666667%;
     width: 91.6666666667%;
@@ -10887,14 +11044,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-11, .columns .column.is-tablet-or-more-11, .columns .column.is-desktop-or-less-11, .columns .column.is-desktop, .columns .column.is-desktop-or-more-11, .columns .column.is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-mobile-or-more-11,
-.columns [class^=column-].is-tablet-or-more-11,
-.columns [class^=column-].is-desktop-or-less-11,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-11,
-.columns .column.is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11,
-.columns [class^=column-].is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11 {
+  .columns [class^=column-].is-mobile-or-more-11,
+  .columns [class^=column-].is-tablet-or-more-11,
+  .columns [class^=column-].is-desktop-or-less-11,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-11,
+  .columns .column.is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11,
+  .columns [class^=column-].is-widescreen-or-less-11 .columns .column.is-fullhd-or-less-11,
+  .columns [class^=column-].is-widescreen-or-less-11 .columns [class^=column-].is-fullhd-or-less-11 {
     flex-basis: 91.6666666667%;
     max-width: 91.6666666667%;
     width: 91.6666666667%;
@@ -10902,13 +11059,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-11, .columns .column.is-tablet-or-more-11, .columns .column.is-desktop-or-more-11, .columns .column.is-widescreen-or-less-11, .columns .column.is-widescreen-11, .columns .column.is-widescreen-or-more-11, .columns .column.is-fullhd-or-less-11,
-.columns [class^=column-].is-mobile-or-more-11,
-.columns [class^=column-].is-tablet-or-more-11,
-.columns [class^=column-].is-desktop-or-more-11,
-.columns [class^=column-].is-widescreen-or-less-11,
-.columns [class^=column-].is-widescreen-11,
-.columns [class^=column-].is-widescreen-or-more-11,
-.columns [class^=column-].is-fullhd-or-less-11 {
+  .columns [class^=column-].is-mobile-or-more-11,
+  .columns [class^=column-].is-tablet-or-more-11,
+  .columns [class^=column-].is-desktop-or-more-11,
+  .columns [class^=column-].is-widescreen-or-less-11,
+  .columns [class^=column-].is-widescreen-11,
+  .columns [class^=column-].is-widescreen-or-more-11,
+  .columns [class^=column-].is-fullhd-or-less-11 {
     flex-basis: 91.6666666667%;
     max-width: 91.6666666667%;
     width: 91.6666666667%;
@@ -10916,12 +11073,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-11, .columns .column.is-tablet-or-more-11, .columns .column.is-desktop-or-more-11, .columns .column.is-widescreen-or-more-11, .columns .column.is-fullhd-or-less-11, .columns .column.is-fullhd-11,
-.columns [class^=column-].is-mobile-or-more-11,
-.columns [class^=column-].is-tablet-or-more-11,
-.columns [class^=column-].is-desktop-or-more-11,
-.columns [class^=column-].is-widescreen-or-more-11,
-.columns [class^=column-].is-fullhd-or-less-11,
-.columns [class^=column-].is-fullhd-11 {
+  .columns [class^=column-].is-mobile-or-more-11,
+  .columns [class^=column-].is-tablet-or-more-11,
+  .columns [class^=column-].is-desktop-or-more-11,
+  .columns [class^=column-].is-widescreen-or-more-11,
+  .columns [class^=column-].is-fullhd-or-less-11,
+  .columns [class^=column-].is-fullhd-11 {
     flex-basis: 91.6666666667%;
     max-width: 91.6666666667%;
     width: 91.6666666667%;
@@ -10929,13 +11086,13 @@ template {
 }
 @media screen and (max-width: 767px) {
   .columns .column.is-mobile-12, .columns .column.is-mobile-or-more-12, .columns .column.is-tablet-or-less-12, .columns .column.is-desktop-or-less-12, .columns .column.is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-mobile-12,
-.columns [class^=column-].is-mobile-or-more-12,
-.columns [class^=column-].is-tablet-or-less-12,
-.columns [class^=column-].is-desktop-or-less-12,
-.columns .column.is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12,
-.columns [class^=column-].is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12 {
+  .columns [class^=column-].is-mobile-12,
+  .columns [class^=column-].is-mobile-or-more-12,
+  .columns [class^=column-].is-tablet-or-less-12,
+  .columns [class^=column-].is-desktop-or-less-12,
+  .columns .column.is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12,
+  .columns [class^=column-].is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
+  .columns [class^=column-].is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12 {
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
@@ -10943,14 +11100,14 @@ template {
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .columns .column.is-mobile-or-more-12, .columns .column.is-tablet-or-less-12, .columns .column.is-tablet-12, .columns .column.is-tablet-or-more-12, .columns .column.is-desktop-or-less-12, .columns .column.is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-mobile-or-more-12,
-.columns [class^=column-].is-tablet-or-less-12,
-.columns [class^=column-].is-tablet-12,
-.columns [class^=column-].is-tablet-or-more-12,
-.columns [class^=column-].is-desktop-or-less-12,
-.columns .column.is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12,
-.columns [class^=column-].is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12 {
+  .columns [class^=column-].is-mobile-or-more-12,
+  .columns [class^=column-].is-tablet-or-less-12,
+  .columns [class^=column-].is-tablet-12,
+  .columns [class^=column-].is-tablet-or-more-12,
+  .columns [class^=column-].is-desktop-or-less-12,
+  .columns .column.is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12,
+  .columns [class^=column-].is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
+  .columns [class^=column-].is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12 {
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
@@ -10958,14 +11115,14 @@ template {
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
   .columns .column.is-mobile-or-more-12, .columns .column.is-tablet-or-more-12, .columns .column.is-desktop-or-less-12, .columns .column.is-desktop, .columns .column.is-desktop-or-more-12, .columns .column.is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-mobile-or-more-12,
-.columns [class^=column-].is-tablet-or-more-12,
-.columns [class^=column-].is-desktop-or-less-12,
-.columns [class^=column-].is-desktop,
-.columns [class^=column-].is-desktop-or-more-12,
-.columns .column.is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12,
-.columns [class^=column-].is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12 {
+  .columns [class^=column-].is-mobile-or-more-12,
+  .columns [class^=column-].is-tablet-or-more-12,
+  .columns [class^=column-].is-desktop-or-less-12,
+  .columns [class^=column-].is-desktop,
+  .columns [class^=column-].is-desktop-or-more-12,
+  .columns .column.is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12,
+  .columns [class^=column-].is-widescreen-or-less-12 .columns .column.is-fullhd-or-less-12,
+  .columns [class^=column-].is-widescreen-or-less-12 .columns [class^=column-].is-fullhd-or-less-12 {
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
@@ -10973,13 +11130,13 @@ template {
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
   .columns .column.is-mobile-or-more-12, .columns .column.is-tablet-or-more-12, .columns .column.is-desktop-or-more-12, .columns .column.is-widescreen-or-less-12, .columns .column.is-widescreen-12, .columns .column.is-widescreen-or-more-12, .columns .column.is-fullhd-or-less-12,
-.columns [class^=column-].is-mobile-or-more-12,
-.columns [class^=column-].is-tablet-or-more-12,
-.columns [class^=column-].is-desktop-or-more-12,
-.columns [class^=column-].is-widescreen-or-less-12,
-.columns [class^=column-].is-widescreen-12,
-.columns [class^=column-].is-widescreen-or-more-12,
-.columns [class^=column-].is-fullhd-or-less-12 {
+  .columns [class^=column-].is-mobile-or-more-12,
+  .columns [class^=column-].is-tablet-or-more-12,
+  .columns [class^=column-].is-desktop-or-more-12,
+  .columns [class^=column-].is-widescreen-or-less-12,
+  .columns [class^=column-].is-widescreen-12,
+  .columns [class^=column-].is-widescreen-or-more-12,
+  .columns [class^=column-].is-fullhd-or-less-12 {
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
@@ -10987,12 +11144,12 @@ template {
 }
 @media screen and (min-width: 1408px) {
   .columns .column.is-mobile-or-more-12, .columns .column.is-tablet-or-more-12, .columns .column.is-desktop-or-more-12, .columns .column.is-widescreen-or-more-12, .columns .column.is-fullhd-or-less-12, .columns .column.is-fullhd-12,
-.columns [class^=column-].is-mobile-or-more-12,
-.columns [class^=column-].is-tablet-or-more-12,
-.columns [class^=column-].is-desktop-or-more-12,
-.columns [class^=column-].is-widescreen-or-more-12,
-.columns [class^=column-].is-fullhd-or-less-12,
-.columns [class^=column-].is-fullhd-12 {
+  .columns [class^=column-].is-mobile-or-more-12,
+  .columns [class^=column-].is-tablet-or-more-12,
+  .columns [class^=column-].is-desktop-or-more-12,
+  .columns [class^=column-].is-widescreen-or-more-12,
+  .columns [class^=column-].is-fullhd-or-less-12,
+  .columns [class^=column-].is-fullhd-12 {
     flex-basis: 100%;
     max-width: 100%;
     width: 100%;
@@ -11000,7 +11157,11 @@ template {
 }
 
 /**
- * layouts/index.scss
+ * utilities/index.scss
+ * @author kaminorse
+ */
+/**
+ * components/badge.scss
  * @author kaminorse
  */
 /**
@@ -12736,7 +12897,7 @@ template {
 }
 
 /**
- * layouts/string.scss
+ * utilities/spacing.scss
  * @author kaminorse
  */
 /**
@@ -12744,7 +12905,7 @@ template {
  * @author kaminorse
  */
 /**
- * utilities/spacing.scss
+ * layouts/string.scss
  * @author kaminorse
  */
 .display-block {
@@ -19894,14 +20055,5 @@ template {
 .is-white-space-nowrap {
   white-space: nowrap;
 }
-
-/**
- * utilities/index.scss
- * @author kaminorse
- */
-/**
- * sorbit.scss
- * @author kaminorse
- */
 
 /*# sourceMappingURL=sorbit.css.map */
