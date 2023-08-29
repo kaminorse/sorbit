@@ -1,0 +1,28 @@
+/**
+ * components/link.scss
+ * @author kaminorse
+ */
+
+@use "../variables/index.scss" as variables;
+
+.link {
+  color: var(--color-default-fore);
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+  &:visited {
+    color: var(--color-default-visited-fore);
+  }
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      color: var(--color-#{$color}-fore);
+      &:hover {
+        color: var(--color-#{$color}-hover-fore);
+      }
+      &:visited {
+        color: var(--color-#{$color}-visited-fore);
+      }
+    }
+  }
+}

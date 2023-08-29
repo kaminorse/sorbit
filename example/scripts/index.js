@@ -27,33 +27,48 @@ function changeColorScheme(colorScheme) {
 }
 
 function changeColor(color) {
-  let header = document.querySelector(".header");
-  if (header) {
-    header.className = `header is-sticky ${color}`;
-  }
+  document.querySelectorAll(".header").forEach((elem) => {
+    elem.className = `header is-sticky ${color}`;
+  });
 
-  let badge = document.querySelector(".badge");
-  if (badge) {
-    badge.className = `badge ${color}`;
-  }
+  document.querySelectorAll(".badge").forEach((elem) => {
+    elem.className = `badge ${color}`;
+  });
 
-  let button = document.querySelector(".button");
-  if (button) {
-    button.className = `button ${color}`;
-  }
+  document.querySelectorAll(".button").forEach((elem) => {
+    elem.className = `button ${color}`;
+  });
 
-  let checkbox = document.querySelector(".checkbox");
-  if (checkbox) {
-    checkbox.className = `checkbox ${color}`;
-  }
+  document.querySelectorAll(".card").forEach((elem) => {
+    elem.className = `card ${color}`;
+  });
 
-  let message = document.querySelector(".message");
-  if (message) {
-    message.className = `message ${color}`;
-  }
+  document.querySelectorAll(".checkbox").forEach((elem) => {
+    elem.className = `checkbox ${color}`;
+  });
 
-  let card = document.querySelector(".card");
-  if (card) {
-    card.className = `card ${color}`;
-  }
+  document.querySelectorAll(".hamburger").forEach((elem) => {
+    elem.className = `hamburger ${color}`;
+  });
+
+  document.querySelectorAll(".link").forEach((elem) => {
+    elem.className = `link ${color}`;
+  });
+
+  document.querySelectorAll(".message").forEach((elem) => {
+    elem.className = `message ${color}`;
+  });
+
+  document.querySelectorAll(".nav").forEach((elem) => {
+    elem.className = `nav ${color}`;
+  });
+
+  document.querySelectorAll(".gingham").forEach((elem) => {
+    elem.className = `gingham ${color}-600`;
+  });
+
+  document.querySelectorAll(".stripe").forEach((elem) => {
+    elem.className = `stripe ${color}-600`;
+  });
+
 }

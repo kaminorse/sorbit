@@ -3,6 +3,7 @@
  * @author kaminorse
  */
 
+@use "../variables/index.scss" as variables;
 @use "../mixins/index.scss" as mixins;
 
 .nav {
@@ -55,7 +56,6 @@
         display: block;
       }
       .nav-menu-item {
-        background-color: var(--color-default-back);
         color: var(--color-default-fore);
         width: 100%;
         display: block;
@@ -66,11 +66,53 @@
         padding: 0.5rem;
         position: relative;
         text-decoration: none;
+        text-shadow: 2px 2px 1px var(--color-default-shadow),
+          -2px 2px 1px var(--color-default-shadow),
+          2px -2px 1px var(--color-default-shadow),
+          -2px -2px 1px var(--color-default-shadow),
+          2px 0px 1px var(--color-default-shadow),
+          0px 2px 1px var(--color-default-shadow),
+          -2px 0px 1px var(--color-default-shadow),
+          0px -2px 1px var(--color-default-shadow);
+        .icon {
+          filter: drop-shadow(2px 2px 1px var(--color-default-shadow))
+            drop-shadow(-2px 2px 1px var(--color-default-shadow))
+            drop-shadow(2px -2px 1px var(--color-default-shadow))
+            drop-shadow(-2px -2px 1px var(--color-default-shadow));
+        }
         &:hover {
           color: var(--color-default-fore-hover);
+          text-shadow: 2px 2px 1px var(--color-default-hover-shadow),
+            -2px 2px 1px var(--color-default-hover-shadow),
+            2px -2px 1px var(--color-default-hover-shadow),
+            -2px -2px 1px var(--color-default-hover-shadow),
+            2px 0px 1px var(--color-default-hover-shadow),
+            0px 2px 1px var(--color-default-hover-shadow),
+            -2px 0px 1px var(--color-default-hover-shadow),
+            0px -2px 1px var(--color-default-hover-shadow);
+          .icon {
+            filter: drop-shadow(2px 2px 1px var(--color-default-hover-shadow))
+              drop-shadow(-2px 2px 1px var(--color-default-hover-shadow))
+              drop-shadow(2px -2px 1px var(--color-default-hover-shadow))
+              drop-shadow(-2px -2px 1px var(--color-default-hover-shadow));
+          }
         }
         &:active {
           color: var(--color-default-fore-active);
+          text-shadow: 2px 2px 1px var(--color-default-active-shadow),
+            -2px 2px 1px var(--color-default-active-shadow),
+            2px -2px 1px var(--color-default-active-shadow),
+            -2px -2px 1px var(--color-default-active-shadow),
+            2px 0px 1px var(--color-default-active-shadow),
+            0px 2px 1px var(--color-default-active-shadow),
+            -2px 0px 1px var(--color-default-active-shadow),
+            0px -2px 1px var(--color-default-active-shadow);
+          .icon {
+            filter: drop-shadow(2px 2px 1px var(--color-default-active-shadow))
+              drop-shadow(-2px 2px 1px var(--color-default-active-shadow))
+              drop-shadow(2px -2px 1px var(--color-default-active-shadow))
+              drop-shadow(-2px -2px 1px var(--color-default-active-shadow));
+          }
         }
       }
     }
@@ -142,13 +184,189 @@
         padding: 0.5rem;
         position: relative;
         text-decoration: none;
-        background-color: var(--color-default-back);
         color: var(--color-default-fore);
+        text-shadow: 2px 2px 1px var(--color-default-shadow),
+          -2px 2px 1px var(--color-default-shadow),
+          2px -2px 1px var(--color-default-shadow),
+          -2px -2px 1px var(--color-default-shadow),
+          2px 0px 1px var(--color-default-shadow),
+          0px 2px 1px var(--color-default-shadow),
+          -2px 0px 1px var(--color-default-shadow),
+          0px -2px 1px var(--color-default-shadow);
+        .icon {
+          filter: drop-shadow(2px 2px 1px var(--color-default-shadow))
+            drop-shadow(-2px 2px 1px var(--color-default-shadow))
+            drop-shadow(2px -2px 1px var(--color-default-shadow))
+            drop-shadow(-2px -2px 1px var(--color-default-shadow));
+        }
         &:hover {
           color: var(--color-default-fore-hover);
+          text-shadow: 2px 2px 1px var(--color-default-hover-shadow),
+            -2px 2px 1px var(--color-default-hover-shadow),
+            2px -2px 1px var(--color-default-hover-shadow),
+            -2px -2px 1px var(--color-default-hover-shadow),
+            2px 0px 1px var(--color-default-hover-shadow),
+            0px 2px 1px var(--color-default-hover-shadow),
+            -2px 0px 1px var(--color-default-hover-shadow),
+            0px -2px 1px var(--color-default-hover-shadow);
+          opacity: 0.8;
+          .icon {
+            filter: drop-shadow(2px 2px 1px var(--color-default-hover-shadow))
+              drop-shadow(-2px 2px 1px var(--color-default-hover-shadow))
+              drop-shadow(2px -2px 1px var(--color-default-hover-shadow))
+              drop-shadow(-2px -2px 1px var(--color-default-hover-shadow));
+          }
         }
         &:active {
           color: var(--color-default-fore-active);
+          text-shadow: 2px 2px 1px var(--color-default-active-shadow),
+            -2px 2px 1px var(--color-default-active-shadow),
+            2px -2px 1px var(--color-default-active-shadow),
+            -2px -2px 1px var(--color-default-active-shadow),
+            2px 0px 1px var(--color-default-active-shadow),
+            0px 2px 1px var(--color-default-active-shadow),
+            -2px 0px 1px var(--color-default-active-shadow),
+            0px -2px 1px var(--color-default-active-shadow);
+          .icon {
+            filter: drop-shadow(2px 2px 1px var(--color-default-active-shadow))
+              drop-shadow(-2px 2px 1px var(--color-default-active-shadow))
+              drop-shadow(2px -2px 1px var(--color-default-active-shadow))
+              drop-shadow(-2px -2px 1px var(--color-default-active-shadow));
+          }
+        }
+      }
+    }
+  }
+
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      color: var(--color-#{$color}-fore);
+      .nav-mobile {
+        .nav-menu {
+          .nav-menu-item {
+            color: var(--color-#{$color}-fore);
+            text-shadow: 2px 2px 1px var(--color-#{$color}-shadow),
+              -2px 2px 1px var(--color-#{$color}-shadow),
+              2px -2px 1px var(--color-#{$color}-shadow),
+              -2px -2px 1px var(--color-#{$color}-shadow),
+              2px 0px 1px var(--color-#{$color}-shadow),
+              0px 2px 1px var(--color-#{$color}-shadow),
+              -2px 0px 1px var(--color-#{$color}-shadow),
+              0px -2px 1px var(--color-#{$color}-shadow);
+            .icon {
+              filter: drop-shadow(2px 2px 1px var(--color-#{$color}-shadow))
+                drop-shadow(-2px 2px 1px var(--color-#{$color}-shadow))
+                drop-shadow(2px -2px 1px var(--color-#{$color}-shadow))
+                drop-shadow(-2px -2px 1px var(--color-#{$color}-shadow));
+            }
+            &:hover {
+              color: var(--color-#{$color}-fore-hover);
+              text-shadow: 2px 2px 1px var(--color-#{$color}-hover-shadow),
+                -2px 2px 1px var(--color-#{$color}-hover-shadow),
+                2px -2px 1px var(--color-#{$color}-hover-shadow),
+                -2px -2px 1px var(--color-#{$color}-hover-shadow),
+                2px 0px 1px var(--color-#{$color}-hover-shadow),
+                0px 2px 1px var(--color-#{$color}-hover-shadow),
+                -2px 0px 1px var(--color-#{$color}-hover-shadow),
+                0px -2px 1px var(--color-#{$color}-hover-shadow);
+              opacity: 0.8;
+              .icon {
+                filter: drop-shadow(
+                    2px 2px 1px var(--color-#{$color}-hover-shadow)
+                  )
+                  drop-shadow(-2px 2px 1px var(--color-#{$color}-hover-shadow))
+                  drop-shadow(2px -2px 1px var(--color-#{$color}-hover-shadow))
+                  drop-shadow(
+                    -2px -2px 1px var(--color-#{$color}-hover-shadow)
+                  );
+              }
+            }
+            &:active {
+              color: var(--color-#{$color}-fore-active);
+              text-shadow: 2px 2px 1px var(--color-#{$color}-active-shadow),
+                -2px 2px 1px var(--color-#{$color}-active-shadow),
+                2px -2px 1px var(--color-#{$color}-active-shadow),
+                -2px -2px 1px var(--color-#{$color}-active-shadow),
+                2px 0px 1px var(--color-#{$color}-active-shadow),
+                0px 2px 1px var(--color-#{$color}-active-shadow),
+                -2px 0px 1px var(--color-#{$color}-active-shadow),
+                0px -2px 1px var(--color-#{$color}-active-shadow);
+              .icon {
+                filter: drop-shadow(
+                    2px 2px 1px var(--color-#{$color}-active-shadow)
+                  )
+                  drop-shadow(-2px 2px 1px var(--color-#{$color}-active-shadow))
+                  drop-shadow(2px -2px 1px var(--color-#{$color}-active-shadow))
+                  drop-shadow(
+                    -2px -2px 1px var(--color-#{$color}-active-shadow)
+                  );
+              }
+            }
+          }
+        }
+      }
+      .nav-desktop {
+        .nav-menu {
+          .nav-menu-item {
+            color: var(--color-#{$color}-fore);
+            text-shadow: 2px 2px 1px var(--color-#{$color}-shadow),
+              -2px 2px 1px var(--color-#{$color}-shadow),
+              2px -2px 1px var(--color-#{$color}-shadow),
+              -2px -2px 1px var(--color-#{$color}-shadow),
+              2px 0px 1px var(--color-#{$color}-shadow),
+              0px 2px 1px var(--color-#{$color}-shadow),
+              -2px 0px 1px var(--color-#{$color}-shadow),
+              0px -2px 1px var(--color-#{$color}-shadow);
+            .icon {
+              filter: drop-shadow(2px 2px 1px var(--color-#{$color}-shadow))
+                drop-shadow(-2px 2px 1px var(--color-#{$color}-shadow))
+                drop-shadow(2px -2px 1px var(--color-#{$color}-shadow))
+                drop-shadow(-2px -2px 1px var(--color-#{$color}-shadow));
+            }
+            &:hover {
+              color: var(--color-#{$color}-fore-hover);
+              text-shadow: 2px 2px 1px var(--color-#{$color}-hover-shadow),
+                -2px 2px 1px var(--color-#{$color}-hover-shadow),
+                2px -2px 1px var(--color-#{$color}-hover-shadow),
+                -2px -2px 1px var(--color-#{$color}-hover-shadow),
+                2px 0px 1px var(--color-#{$color}-hover-shadow),
+                0px 2px 1px var(--color-#{$color}-hover-shadow),
+                -2px 0px 1px var(--color-#{$color}-hover-shadow),
+                0px -2px 1px var(--color-#{$color}-hover-shadow);
+              opacity: 0.8;
+              .icon {
+                filter: drop-shadow(
+                    2px 2px 1px var(--color-#{$color}-hover-shadow)
+                  )
+                  drop-shadow(-2px 2px 1px var(--color-#{$color}-hover-shadow))
+                  drop-shadow(2px -2px 1px var(--color-#{$color}-hover-shadow))
+                  drop-shadow(
+                    -2px -2px 1px var(--color-#{$color}-hover-shadow)
+                  );
+              }
+            }
+            &:active {
+              color: var(--color-#{$color}-fore-active);
+              text-shadow: 2px 2px 1px var(--color-#{$color}-active-shadow),
+                -2px 2px 1px var(--color-#{$color}-active-shadow),
+                2px -2px 1px var(--color-#{$color}-active-shadow),
+                -2px -2px 1px var(--color-#{$color}-active-shadow),
+                2px 0px 1px var(--color-#{$color}-active-shadow),
+                0px 2px 1px var(--color-#{$color}-active-shadow),
+                -2px 0px 1px var(--color-#{$color}-active-shadow),
+                0px -2px 1px var(--color-#{$color}-active-shadow);
+              .icon {
+                filter: drop-shadow(
+                    2px 2px 1px var(--color-#{$color}-active-shadow)
+                  )
+                  drop-shadow(-2px 2px 1px var(--color-#{$color}-active-shadow))
+                  drop-shadow(2px -2px 1px var(--color-#{$color}-active-shadow))
+                  drop-shadow(
+                    -2px -2px 1px var(--color-#{$color}-active-shadow)
+                  );
+              }
+            }
+          }
         }
       }
     }
