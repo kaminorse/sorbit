@@ -7,14 +7,16 @@
 
 .card {
   display: block;
-  border: 0.125rem solid var(--color-default-border);
+  border-color: var(--color-default-border);
+  border-style: solid;
+  border-width: var(--border-width-medium);
   border-radius: 0;
   box-shadow: 0 0.5rem 0.5rem var(--color-default-shadow);
   padding: 0.5rem;
 
   .card-header {
     font-weight: var(--font-weight-semibold);
-    border-bottom: 0.125rem solid var(--color-default-border);
+    border-bottom: var(--border-width-medium) solid var(--color-default-border);
     margin: 0.125rem;
     padding: 0.125rem;
   }
@@ -24,7 +26,7 @@
   }
 
   .card-footer {
-    border-top: 0.125rem solid var(--color-default-border);
+    border-top: var(--border-width-medium) solid var(--color-default-border);
     margin: 0.125rem;
     padding: 0.125rem;
   }
