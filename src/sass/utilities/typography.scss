@@ -3,34 +3,98 @@
  * @author kaminorse
  */
 
-.is-italic{
+.is-italic {
   font-style: italic !important;
 }
 
-.is-oblique{
+.is-oblique {
   font-style: italic !important;
 }
 
-.is-capitalized{
+.is-capitalized {
   text-transform: capitalize !important;
 }
 
-.is-lowercase{
+.is-lowercase {
   text-transform: lowercase !important;
 }
 
-.is-uppercase{
+.is-uppercase {
   text-transform: uppercase !important;
 }
 
-.is-text-align-left{
-  text-align: left;
+.is-text-align-left {
+  text-align: left !important;
 }
 
-.is-text-align-right{
-  text-align: right;
+.is-text-align-right {
+  text-align: right !important;
+}
+
+.is-text-align-center {
+  text-align: center !important;
+}
+
+.is-text-align-unset {
+  text-align: unset !important;
 }
 
 .is-white-space-nowrap {
-  white-space: nowrap;
+  white-space: nowrap !important;
+}
+
+.is-font-size-small {
+  font-size: var(--font-size-small) !important;
+}
+
+.is-font-size-normal {
+  font-size: var(--font-size-normal) !important;
+}
+
+.is-font-size-medium {
+  font-size: var(--font-size-medium) !important;
+}
+
+.is-font-size-large {
+  font-size: var(--font-size-large) !important;
+}
+
+.is-font-size-xlarge {
+  font-size: var(--font-size-xlarge) !important;
+}
+
+.is-font-size-xxlarge {
+  font-size: var(--font-size-xxlarge) !important;
+}
+
+.is-font-size-xxxlarge {
+  font-size: var(--font-size-xxxlarge) !important;
+}
+
+.is-font-size-xxxxlarge {
+  font-size: var(--font-size-xxxxlarge) !important;
+}
+
+.is-font-size-xxxxxlarge {
+  font-size: var(--font-size-xxxxxlarge) !important;
+}
+
+.is-font-weight-light {
+  font-size: var(--font-weight-light) !important;
+}
+
+.is-font-weight-normal {
+  font-size: var(--font-weight-normal) !important;
+}
+
+.is-font-weight-medium {
+  font-size: var(--font-weight-medium) !important;
+}
+
+.is-font-weight-semibold {
+  font-size: var(--font-weight-semibold) !important;
+}
+
+.is-font-weight-bold {
+  font-size: var(--font-weight-bold) !important;
 }

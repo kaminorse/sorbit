@@ -47,6 +47,10 @@ function changeColor(color) {
     elem.className = `checkbox ${color}`;
   });
 
+  document.querySelectorAll(".input-text").forEach((elem) => {
+    elem.className = `input-text ${color}`;
+  });
+
   document.querySelectorAll(".hamburger").forEach((elem) => {
     elem.className = `hamburger ${color}`;
   });
