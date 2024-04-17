@@ -18,9 +18,14 @@
   border-width: var(--border-width-medium);
 }
 
+.is-border-width-xthin,
+.border-width-xthin {
+  border-width: var(--border-width-xthin);
+}
+
 .is-border-width-thin,
 .border-width-thin {
-  border-width: var(--border-width-medium);
+  border-width: var(--border-width-thin);
 }
 
 .is-border-width-medium,
@@ -30,7 +35,12 @@
 
 .is-border-width-thick,
 .border-width-thick {
-  border-width: var(--border-width-medium);
+  border-width: var(--border-width-thick);
+}
+
+.is-border-width-xthick,
+.border-width-xthick {
+  border-width: var(--border-width-xthick);
 }
 
 .is-border-radius-bit-rounded,
