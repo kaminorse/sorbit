@@ -1,0 +1,20 @@
+/**
+ * utilities/sizing.scss
+ * @author kaminorse
+ */
+
+@use "sass:string";
+@use "../functions/index.scss" as functions;
+
+@for $p from 0 through 100 {
+  $suffix: functions.str-replace(#{($p * 0.1)}, ".", "\\.");
+
+  .is-width-#{$suffix}rem,
+  .width-#{$suffix}rem {
+    width: $p * 0.1rem;
+  }
+  .is-height-#{$suffix}rem,
+  .height-#{$suffix}rem {
+    height: $p * 0.1rem;
+  }
+}

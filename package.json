@@ -32,11 +32,11 @@
   },
   "homepage": "https://github.com/kaminorse/sorbit#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.15",
-    "clean-css-cli": "^5.6.2",
-    "postcss": "^8.4.28",
-    "postcss-cli": "^10.1.0",
-    "rimraf": "^5.0.1",
-    "sass": "^1.66.1"
+    "autoprefixer": "^10.4.19",
+    "clean-css-cli": "^5.6.3",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
+    "rimraf": "^5.0.5",
+    "sass": "^1.75.0"
   }
 }

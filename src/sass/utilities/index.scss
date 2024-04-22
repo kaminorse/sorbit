@@ -3,7 +3,9 @@
  * @author kaminorse
  */
 
+@forward "./border.scss";
 @forward "./color.scss";
+@forward "./positioning.scss";
+@forward "./sizing.scss";
 @forward "./spacing.scss";
 @forward "./typography.scss";
-@forward "./border.scss";
