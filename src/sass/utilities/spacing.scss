@@ -6,23 +6,6 @@
 @use "sass:string";
 @use "../functions/index.scss" as functions;
 
-.display-block {
-  display: block;
-}
-
-.centering {
-  display: flex;
-  height: auto;
-  justify-content: flex-start;
-  width: 100%;
-  &>* {
-    margin: 0 auto
-  }
-  &.is-fullheight {
-    height: 100%;
-  }
-}
-
 .margin-auto,
 .m-auto {
   margin: auto;

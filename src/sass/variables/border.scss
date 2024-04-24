@@ -1,0 +1,32 @@
+/**
+ * variables/border.scss
+ * @author kaminorse
+ */
+
+$borderSides: (
+  "top",
+  "right",
+  "bottom",
+  "left",
+);
+
+$borderStyles: (
+  "solid",
+  "dashed",
+  "dotted",
+);
+
+$borderWidths: (
+  "xthin",
+  "thin",
+  "medium",
+  "thick",
+  "xthick",
+);
+
+$borderRadiuses: (
+  "bit-rounded",
+  "rounded",
+  "quite-rounded",
+  "circle",
+);

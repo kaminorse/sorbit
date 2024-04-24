@@ -3,64 +3,27 @@
  * @author kaminorse
  */
 
-.has-border-solid {
-  border-style: solid;
-  border-width: var(--border-width-medium);
+@use "../variables/index.scss" as variables;
+
+@each $borderStyle in variables.$borderStyles {
+  .has-border-#{$borderStyle} {
+    border-style: #{$borderStyle};
+    border-width: var(--border-width-medium);
+  }
 }
 
-.has-border-dashed {
-  border-style: dashed;
-  border-width: var(--border-width-medium);
+@each $borderWidth in variables.$borderWidths {
+  .is-border-width-#{$borderWidth},
+  .border-width-#{$borderWidth} {
+    border-width: var(--border-width-#{$borderWidth});
+  }
 }
 
-.has-border-dotted {
-  border-style: dotted;
-  border-width: var(--border-width-medium);
-}
-
-.is-border-width-xthin,
-.border-width-xthin {
-  border-width: var(--border-width-xthin);
-}
-
-.is-border-width-thin,
-.border-width-thin {
-  border-width: var(--border-width-thin);
-}
-
-.is-border-width-medium,
-.border-width-medium {
-  border-width: var(--border-width-medium);
-}
-
-.is-border-width-thick,
-.border-width-thick {
-  border-width: var(--border-width-thick);
-}
-
-.is-border-width-xthick,
-.border-width-xthick {
-  border-width: var(--border-width-xthick);
-}
-
-.is-border-radius-bit-rounded,
-.border-radius-bit-rounded {
-  border-radius: 0.5rem;
-}
-
-.is-border-radius-rounded,
-.border-radius-rounded {
-  border-radius: 1rem;
-}
-
-.is-border-radius-quite-rounded,
-.border-radius-quite-rounded {
-  border-radius: 2rem;
-}
-
-.is-border-radius-circle,
-.border-radius-circle {
-  border-radius: 50%;
+@each $borderRadius in variables.$borderRadiuses {
+  .is-border-radius-#{$borderRadius},
+  .border-radius-#{$borderRadius} {
+    border-radius: var(--border-radius-#{$borderRadius});
+  }
 }
 
 .is-border-sepalated {
@@ -69,4 +32,19 @@
 
 .is-border-collapted {
   border-collapse: collapse;
+}
+
+@each $borderSide in variables.$borderSides {
+  @each $borderStyle in variables.$borderStyles {
+    .has-border-#{$borderSide}-#{$borderStyle} {
+      border-#{$borderSide}-style: #{$borderStyle};
+      border-#{$borderSide}-width: var(--border-width-medium);
+    }
+  }
+  @each $borderWidth in variables.$borderWidths {
+    .is-border-#{$borderSide}-width-#{$borderWidth},
+    .border-#{$borderSide}-width-#{$borderWidth} {
+      border-#{$borderSide}-width: var(--border-width-#{$borderWidth});
+    }
+  }
 }
