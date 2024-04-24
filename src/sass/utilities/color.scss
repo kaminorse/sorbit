@@ -16,14 +16,14 @@
     .forecolor-#{$color}-#{$p}50 {
       color: var(--color-#{$color}-#{$p}50) !important;
     }
-    .is-forecolor-#{$color}-hover-#{$p}00,
-    .forecolor-#{$color}-hover-#{$p}00 {
-      &:hover{
+    .is-forecolor-hover-#{$color}-#{$p}00,
+    .forecolor-hover-#{$color}-#{$p}00 {
+      &:hover {
         color: var(--color-#{$color}-#{$p}00) !important;
       }
     }
-    .is-forecolor-#{$color}-hover-#{$p}50,
-    .forecolor-#{$color}-hover-#{$p}50 {
+    .is-forecolor-hover-#{$color}-#{$p}50,
+    .forecolor-hover-#{$color}-#{$p}50 {
       &:hover {
         color: var(--color-#{$color}-#{$p}50) !important;
       }
@@ -89,14 +89,14 @@
     .backcolor-#{$color}-#{$p}50 {
       background-color: var(--color-#{$color}-#{$p}50) !important;
     }
-    .is-backcolor-#{$color}-hover-#{$p}00,
-    .backcolor-#{$color}-hover-#{$p}00 {
+    .is-backcolor-hover-#{$color}-#{$p}00,
+    .backcolor-hover-#{$color}-#{$p}00 {
       &:hover {
         background-color: var(--color-#{$color}-#{$p}00) !important;
       }
     }
-    .is-backcolor-#{$color}-hover-#{$p}50,
-    .backcolor-#{$color}-hover-#{$p}50 {
+    .is-backcolor-hover-#{$color}-#{$p}50,
+    .backcolor-hover-#{$color}-#{$p}50 {
       &:hover {
         background-color: var(--color-#{$color}-#{$p}50) !important;
       }
@@ -150,14 +150,14 @@
     .bordercolor-#{$color}-#{$p}50 {
       border-color: var(--color-#{$color}-#{$p}50) !important;
     }
-    .is-bordercolor-#{$color}-hover-#{$p}00,
-    .bordercolor-#{$color}-hover-#{$p}00 {
+    .is-bordercolor-hover-#{$color}-#{$p}00,
+    .bordercolor-hover-#{$color}-#{$p}00 {
       &:hover {
         border-color: var(--color-#{$color}-#{$p}00) !important;
       }
     }
-    .is-bordercolor-#{$color}-hover-#{$p}50,
-    .bordercolor-#{$color}-hover-#{$p}50 {
+    .is-bordercolor-hover-#{$color}-#{$p}50,
+    .bordercolor-hover-#{$color}-#{$p}50 {
       &:hover {
         border-color: var(--color-#{$color}-#{$p}50) !important;
       }
@@ -200,6 +200,79 @@
         border-color: var(--color-#{$color}-#{$p}50) !important;
       }
     }
+
+    @each $borderSide in variables.$borderSides {
+      .is-bordercolor-#{$borderSide}-#{$color}-#{$p}00,
+      .bordercolor-#{$borderSide}-#{$color}-#{$p}00 {
+        border-#{$borderSide}-color: var(--color-#{$color}-#{$p}00) !important;
+      }
+      .is-bordercolor-#{$color}-#{$p}50,
+      .bordercolor-#{$color}-#{$p}50 {
+        border-#{$borderSide}-color: var(--color-#{$color}-#{$p}50) !important;
+      }
+      .is-bordercolor-#{$borderSide}-hover-#{$color}-#{$p}00,
+      .bordercolor-#{$borderSide}-hover-#{$color}-#{$p}00 {
+        &:hover {
+          border-#{$borderSide}-color: var(
+            --color-#{$color}-#{$p}00
+          ) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-hover-#{$color}-#{$p}50,
+      .bordercolor-#{$borderSide}-hover-#{$color}-#{$p}50 {
+        &:hover {
+          border-#{$borderSide}-color: var(
+            --color-#{$color}-#{$p}50
+          ) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-#{$color}-focus-#{$p}00,
+      .bordercolor-#{$borderSide}-#{$color}-focus-#{$p}00 {
+        &:focus {
+          border-#{$borderSide}-color: var(
+            --color-#{$color}-#{$p}00
+          ) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-#{$color}-focus-#{$p}50,
+      .bordercolor-#{$borderSide}-#{$color}-focus-#{$p}50 {
+        &:focus {
+          border-color: var(--color-#{$color}-#{$p}50) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-#{$color}-active-#{$p}00,
+      .bordercolor-#{$borderSide}-#{$color}-active-#{$p}00 {
+        &:active {
+          border-color: var(--color-#{$color}-#{$p}00) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-#{$color}-active-#{$p}50,
+      .bordercolor-#{$borderSide}-#{$color}-active-#{$p}50 {
+        &:active {
+          border-#{$borderSide}-color: var(
+            --color-#{$color}-#{$p}50
+          ) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-#{$color}-disabled-#{$p}00,
+      .bordercolor-#{$borderSide}-#{$color}-disabled-#{$p}00 {
+        &[disabled],
+        fieldset[disabled] {
+          border-#{$borderSide}-color: var(
+            --color-#{$color}-#{$p}50
+          ) !important;
+        }
+      }
+      .is-bordercolor-#{$borderSide}-#{$color}-disabled-#{$p}50,
+      .bordercolor-#{$borderSide}-#{$color}-disabled-#{$p}50 {
+        &[disabled],
+        fieldset[disabled] {
+          border-#{$borderSide}-color: var(
+            --color-#{$color}-#{$p}50
+          ) !important;
+        }
+      }
+    }
     //#endregion bordercolor
 
     //#region highlighter
@@ -217,8 +290,8 @@
         var(--color-#{$color}-#{$p}50) 33.33%
       ) !important;
     }
-    .is-highlighter-#{$color}-hover-#{$p}00,
-    .highlighter-#{$color}-hover-#{$p}00 {
+    .is-highlighter-hover-#{$color}-#{$p}00,
+    .highlighter-hover-#{$color}-#{$p}00 {
       &:hover {
         background: linear-gradient(
           transparent 66.66%,
@@ -226,8 +299,8 @@
         ) !important;
       }
     }
-    .is-highlighter-#{$color}-hover-#{$p}50,
-    .highlighter-#{$color}-hover-#{$p}50 {
+    .is-highlighter-hover-#{$color}-#{$p}50,
+    .highlighter-hover-#{$color}-#{$p}50 {
       &:hover {
         background: linear-gradient(
           transparent 66.66%,
