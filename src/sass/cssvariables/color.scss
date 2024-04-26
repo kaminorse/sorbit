@@ -3,7 +3,8 @@
  * @author kaminorse
  */
 
-@use "../variables/color.scss" as variables;
+@use "../variables/index.scss" as variables;
+@use "../mixins/index.scss" as mixins;
 
 :root {
   --color-white: #{variables.$color-white};
@@ -324,7 +325,7 @@
   color-scheme: light;
 }
 
-@mixin color_light() {
+@mixin colorLight() {
   --color-default-fore: var(--color-black);
   --color-default-back: var(--color-white);
   --color-default-border: var(--color-gray-600);
@@ -406,7 +407,7 @@
   color-scheme: light;
 }
 
-@mixin color_dark() {
+@mixin colorDark() {
   --color-default-fore: var(--color-white);
   --color-default-back: var(--color-black);
   --color-default-border: var(--color-gray-500);
@@ -489,25 +490,13 @@
 }
 
 :root {
-  @include color_light();
+  @include colorLight();
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    @include color_light();
-  }  
+@include mixins.setCssVariableColorScheme("light") {
+  @include colorLight();
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    @include color_dark();
-  }
-}
-
-[data-color-scheme="light"] {
-  @include color_light();
-}
-
-[data-color-scheme="dark"] {
-  @include color_dark();
+@include mixins.setCssVariableColorScheme("dark") {
+  @include colorDark();
 }
