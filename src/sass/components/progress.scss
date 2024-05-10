@@ -1,0 +1,42 @@
+/**
+ * components/progress.scss
+ * @author kaminorse
+ */
+
+@use "../variables/index.scss" as variables;
+@use "../mixins/index.scss" as mixins;
+
+.progress {
+  @include mixins.animation() {
+    border-radius: var(--border-radius-rounded);
+    border-style: solid;
+    border-width: var(--border-width-medium);
+    color: var(--color-default-border);
+    height: 1rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      margin: 0.125rem;
+      inset: 0 100% 0 0;
+      border-radius: inherit;
+      background: currentColor;
+    }
+
+    @for $p from 0 through 100 {
+      &.is-#{$p}-percent {
+        $val: ((100 - $p) * 1%);
+        &::before {
+          inset: 0 $val 0 0;
+        }
+      }
+    }
+  
+    @each $color in variables.$colors {
+      &.is-#{$color} {
+        background-color: var(--color-#{$color}-back);
+        color: var(--color-#{$color}-border);
+      }
+    }
+  }
+}

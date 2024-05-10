@@ -26,6 +26,17 @@ function changeColorScheme(colorScheme) {
   }
 }
 
+function toggleModal() {
+  let modal = document.querySelector(".modal");
+  if (modal) {
+    if (modal.classList.contains("is-active")) {
+      modal.classList.remove("is-active");
+    } else {
+      modal.classList.add("is-active");
+    }
+  }
+}
+
 function changeColor(color) {
   document.querySelectorAll(".header").forEach((elem) => {
     elem.className = `header is-sticky ${color}`;
@@ -63,12 +74,20 @@ function changeColor(color) {
     elem.className = `link ${color}`;
   });
 
+  document.querySelectorAll(".loader").forEach((elem) => {
+    elem.className = `loader ${color}`;
+  });
+
   document.querySelectorAll(".message").forEach((elem) => {
     elem.className = `message ${color}`;
   });
 
   document.querySelectorAll(".nav").forEach((elem) => {
     elem.className = `nav ${color}`;
+  });
+
+  document.querySelectorAll(".progress").forEach((elem) => {
+    elem.className = `progress ${color} is-50-percent`;
   });
 
   document.querySelectorAll(".gingham").forEach((elem) => {
