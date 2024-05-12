@@ -7,7 +7,10 @@
 @use "../mixins/index.scss" as mixins;
 
 :root {
+  --color-white-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-white};
   --color-white: #{variables.$color-white};
+
+  --color-black-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-black};
   --color-black: #{variables.$color-black};
 
   //#region hsl values
@@ -327,7 +330,9 @@
 
 @mixin colorLight() {
   --color-default-fore: var(--color-black);
+  --color-default-fore-hsl: var(--color-black-hsl);
   --color-default-back: var(--color-white);
+  --color-default-back-hsl: var(--color-white-hsl);
   --color-default-border: var(--color-gray-600);
   --color-default-placeholder: var(--color-gray-650);
   --color-default-shadow: var(--color-gray-850);
@@ -409,7 +414,9 @@
 
 @mixin colorDark() {
   --color-default-fore: var(--color-white);
+  --color-default-fore-hsl: var(--color-white-hsl);
   --color-default-back: var(--color-black);
+  --color-default-back-hsl: var(--color-black-hsl);
   --color-default-border: var(--color-gray-500);
   --color-default-placeholder: var(--color-gray-450);
   --color-default-shadow: var(--color-gray-350);

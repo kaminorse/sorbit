@@ -36,7 +36,7 @@
 }
 
 @mixin reducemotion() {
-  @media (print), (prefers-reduced-motion: reduce){
+  @media (print), (prefers-reduced-motion: reduce) {
     @content;
   }
 }
@@ -47,8 +47,7 @@
     &.is-mobile-or-more#{$suffix},
     &.is-tablet-or-less#{$suffix},
     &.is-desktop-or-less#{$suffix},
-    &.is-widescreen-or-less#{$suffix}
-    &.is-fullhd-or-less#{$suffix} {
+    &.is-widescreen-or-less#{$suffix} &.is-fullhd-or-less#{$suffix} {
       @content;
     }
   }
@@ -58,8 +57,7 @@
     &.is-tablet#{$suffix},
     &.is-tablet-or-more#{$suffix},
     &.is-desktop-or-less#{$suffix},
-    &.is-widescreen-or-less#{$suffix}
-    &.is-fullhd-or-less#{$suffix} {
+    &.is-widescreen-or-less#{$suffix} &.is-fullhd-or-less#{$suffix} {
       @content;
     }
   }
@@ -69,8 +67,7 @@
     &.is-desktop-or-less#{$suffix},
     &.is-desktop,
     &.is-desktop-or-more#{$suffix},
-    &.is-widescreen-or-less#{$suffix}
-    &.is-fullhd-or-less#{$suffix} {
+    &.is-widescreen-or-less#{$suffix} &.is-fullhd-or-less#{$suffix} {
       @content;
     }
   }

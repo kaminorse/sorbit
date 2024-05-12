@@ -40,8 +40,11 @@ $color-lightness-200: $color-lightness-500 - 30% !default;
 $color-lightness-150: $color-lightness-500 - 35% !default;
 $color-lightness-100: $color-lightness-500 - 40% !default;
 
-$color-white: hsl($color-hue-gray, $color-saturation-gray, 95%) !default;
-$color-black: hsl($color-hue-gray, $color-saturation-gray, 25%) !default;
+$color-lightness-white: 95% !default;
+$color-lightness-black: 25% !default;
+
+$color-white: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-white) !default;
+$color-black: hsl($color-hue-gray, $color-saturation-gray, $color-lightness-black) !default;
 
 //#endregion define color settings
 

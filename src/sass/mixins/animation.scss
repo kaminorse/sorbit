@@ -1,0 +1,77 @@
+/**
+ * background/animation.scss
+ * @author kaminorse
+ */
+
+@mixin animation() {
+  animation-fill-mode: both;
+  animation-duration: var(--animation-speed-normal);
+
+  &.is-infinite {
+    animation-iteration-count: infinite;
+  }
+
+  &.is-heavy {
+    animation-duration: var(--animation-speed-heavy);
+  }
+
+  &.is-slower {
+    animation-duration: var(--animation-speed-slower);
+  }
+
+  &.is-slow {
+    animation-duration: var(--animation-speed-slow);
+  }
+
+  &.is-fast {
+    animation-duration: var(--animation-speed-fast);
+  }
+
+  &.is-faster {
+    animation-duration: var(--animation-speed-faster);
+  }
+
+  &.is-flash {
+    animation-duration: var(--animation-speed-flash);
+  }
+
+  //#region direction
+  &.is-alternate {
+    animation-direction: alternate;
+  }
+
+  &.is-reverse {
+    animation-direction: reverse;
+  }
+  //#endregion direction
+
+  //#region timing-function
+  &.is-linear {
+    animation-timing-function: cubic-bezier(0, 0, 1, 1);
+  }
+
+  &.is-ease {
+    animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  }
+
+  &.is-ease-in {
+    animation-timing-function: cubic-bezier(0.42, 0, 1, 1);
+  }
+
+  &.is-ease-out {
+    animation-timing-function: cubic-bezier(0, 0, 0.58, 1);
+  }
+
+  &.is-ease-in-out {
+    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+  }
+  //#endregion timing-function
+
+  @for $sec from 1 through 10 {
+    &.is-delay-#{$sec} {
+      animation-delay: 1s * $sec;
+    }
+  }
+
+  @content;
+}
