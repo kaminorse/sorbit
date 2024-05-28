@@ -2,342 +2,62 @@
  * cssvariables/color.scss
  * @author kaminorse
  */
-
+@use "sass:map";
+@use "sass:string";
 @use "../variables/index.scss" as variables;
 @use "../mixins/index.scss" as mixins;
 
 :root {
-  --color-white-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-white};
-  --color-white: #{variables.$color-white};
+  $white-oklch: #{variables.$color-lightness-white} #{variables.$color-chroma-gray} #{variables.$color-hue-gray};
+  --color-white-oklch: #{$white-oklch};
+  --color-white: oklch(#{$white-oklch});
 
-  --color-black-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-black};
-  --color-black: #{variables.$color-black};
+  $black-oklch: #{variables.$color-lightness-black} #{variables.$color-chroma-gray} #{variables.$color-hue-gray};
+  --color-black-oklch: #{$black-oklch};
+  --color-black: oklch(#{$black-oklch});
 
-  //#region hsl values
+  @each $colorProperties in variables.$colorsWithProperties {
+    $name: map.get($colorProperties, "name");
+    $hue: map.get($colorProperties, "hue");
+    $chroma: map.get($colorProperties, "chroma");
+    $p: "000" !default;
+    @for $i from 1 through 19  {
+      $p: ($i * 5) + "0";
+      @if (string.length($p) == 2) {
+        $p: "0" + $p;
+      }
+      $lightness: variables.$color-lightness-500 !default;
+      @if ($i < 10) {
+        $lightness-offset: (10 - $i) * variables.$color-lightness-offset;
+        $lightness: variables.$color-lightness-500 - $lightness-offset;
+      } @else if ($i > 10) {
+        $lightness-offset: ($i - 10) * variables.$color-lightness-offset;
+        $lightness: variables.$color-lightness-500 + $lightness-offset;
+      } @else if ($i == 10) {
+        $lightness: variables.$color-lightness-500;
+      }
+      
+      $oklch: #{$lightness} #{$chroma} #{$hue};
 
-  --color-gray-950-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-950};
-  --color-gray-900-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-900};
-  --color-gray-850-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-850};
-  --color-gray-800-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-800};
-  --color-gray-750-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-750};
-  --color-gray-700-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-700};
-  --color-gray-650-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-650};
-  --color-gray-600-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-600};
-  --color-gray-550-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-550};
-  --color-gray-500-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-500};
-  --color-gray-450-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-450};
-  --color-gray-400-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-400};
-  --color-gray-350-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-350};
-  --color-gray-300-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-300};
-  --color-gray-250-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-250};
-  --color-gray-200-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-200};
-  --color-gray-150-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-150};
-  --color-gray-100-hsl: #{variables.$color-hue-gray}, #{variables.$color-saturation-gray}, #{variables.$color-lightness-100};
-
-  --color-red-950-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-red-900-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-red-850-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-red-800-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-red-750-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-red-700-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-red-650-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-red-600-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-red-550-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-red-500-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-red-450-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-red-400-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-red-350-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-red-300-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-red-250-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-red-200-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-red-150-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-red-100-hsl: #{variables.$color-hue-red}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  --color-orange-950-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-orange-900-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-orange-850-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-orange-800-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-orange-750-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-orange-700-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-orange-650-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-orange-600-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-orange-550-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-orange-500-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-orange-450-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-orange-400-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-orange-350-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-orange-300-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-orange-250-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-orange-200-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-orange-150-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-orange-100-hsl: #{variables.$color-hue-orange}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  --color-yellow-950-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-yellow-900-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-yellow-850-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-yellow-800-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-yellow-750-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-yellow-700-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-yellow-650-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-yellow-600-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-yellow-550-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-yellow-500-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-yellow-450-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-yellow-400-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-yellow-350-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-yellow-300-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-yellow-250-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-yellow-200-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-yellow-150-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-yellow-100-hsl: #{variables.$color-hue-yellow}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  --color-green-950-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-green-900-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-green-850-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-green-800-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-green-750-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-green-700-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-green-650-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-green-600-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-green-550-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-green-500-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-green-450-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-green-400-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-green-350-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-green-300-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-green-250-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-green-200-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-green-150-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-green-100-hsl: #{variables.$color-hue-green}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  --color-cyan-950-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-cyan-900-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-cyan-850-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-cyan-800-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-cyan-750-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-cyan-700-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-cyan-650-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-cyan-600-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-cyan-550-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-cyan-500-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-cyan-450-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-cyan-400-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-cyan-350-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-cyan-300-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-cyan-250-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-cyan-200-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-cyan-150-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-cyan-100-hsl: #{variables.$color-hue-cyan}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  --color-blue-950-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-blue-900-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-blue-850-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-blue-800-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-blue-750-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-blue-700-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-blue-650-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-blue-600-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-blue-550-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-blue-500-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-blue-450-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-blue-400-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-blue-350-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-blue-300-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-blue-250-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-blue-200-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-blue-150-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-blue-100-hsl: #{variables.$color-hue-blue}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  --color-violet-950-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-950};
-  --color-violet-900-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-900};
-  --color-violet-850-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-850};
-  --color-violet-800-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-800};
-  --color-violet-750-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-750};
-  --color-violet-700-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-700};
-  --color-violet-650-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-650};
-  --color-violet-600-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-600};
-  --color-violet-550-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-550};
-  --color-violet-500-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-500};
-  --color-violet-450-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-450};
-  --color-violet-400-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-400};
-  --color-violet-350-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-350};
-  --color-violet-300-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-300};
-  --color-violet-250-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-250};
-  --color-violet-200-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-200};
-  --color-violet-150-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-150};
-  --color-violet-100-hsl: #{variables.$color-hue-violet}, #{variables.$color-saturation-colorful}, #{variables.$color-lightness-100};
-
-  //#endregion hsl values
-
-  //#region color
-
-  --color-gray-950: #{variables.$color-gray-950};
-  --color-gray-900: #{variables.$color-gray-900};
-  --color-gray-850: #{variables.$color-gray-850};
-  --color-gray-800: #{variables.$color-gray-800};
-  --color-gray-750: #{variables.$color-gray-750};
-  --color-gray-700: #{variables.$color-gray-700};
-  --color-gray-650: #{variables.$color-gray-650};
-  --color-gray-600: #{variables.$color-gray-600};
-  --color-gray-550: #{variables.$color-gray-550};
-  --color-gray-500: #{variables.$color-gray-500};
-  --color-gray-450: #{variables.$color-gray-450};
-  --color-gray-400: #{variables.$color-gray-400};
-  --color-gray-350: #{variables.$color-gray-350};
-  --color-gray-300: #{variables.$color-gray-300};
-  --color-gray-250: #{variables.$color-gray-250};
-  --color-gray-200: #{variables.$color-gray-200};
-  --color-gray-150: #{variables.$color-gray-150};
-  --color-gray-100: #{variables.$color-gray-100};
-
-  --color-red-950: #{variables.$color-red-950};
-  --color-red-900: #{variables.$color-red-900};
-  --color-red-850: #{variables.$color-red-850};
-  --color-red-800: #{variables.$color-red-800};
-  --color-red-750: #{variables.$color-red-750};
-  --color-red-700: #{variables.$color-red-700};
-  --color-red-650: #{variables.$color-red-650};
-  --color-red-600: #{variables.$color-red-600};
-  --color-red-550: #{variables.$color-red-550};
-  --color-red-500: #{variables.$color-red-500};
-  --color-red-450: #{variables.$color-red-450};
-  --color-red-400: #{variables.$color-red-400};
-  --color-red-350: #{variables.$color-red-350};
-  --color-red-300: #{variables.$color-red-300};
-  --color-red-250: #{variables.$color-red-250};
-  --color-red-200: #{variables.$color-red-200};
-  --color-red-150: #{variables.$color-red-150};
-  --color-red-100: #{variables.$color-red-100};
-
-  --color-orange-950: #{variables.$color-orange-950};
-  --color-orange-900: #{variables.$color-orange-900};
-  --color-orange-850: #{variables.$color-orange-850};
-  --color-orange-800: #{variables.$color-orange-800};
-  --color-orange-750: #{variables.$color-orange-750};
-  --color-orange-700: #{variables.$color-orange-700};
-  --color-orange-650: #{variables.$color-orange-650};
-  --color-orange-600: #{variables.$color-orange-600};
-  --color-orange-550: #{variables.$color-orange-550};
-  --color-orange-500: #{variables.$color-orange-500};
-  --color-orange-450: #{variables.$color-orange-450};
-  --color-orange-400: #{variables.$color-orange-400};
-  --color-orange-350: #{variables.$color-orange-350};
-  --color-orange-300: #{variables.$color-orange-300};
-  --color-orange-250: #{variables.$color-orange-250};
-  --color-orange-200: #{variables.$color-orange-200};
-  --color-orange-150: #{variables.$color-orange-150};
-  --color-orange-100: #{variables.$color-orange-100};
-
-  --color-yellow-950: #{variables.$color-yellow-950};
-  --color-yellow-900: #{variables.$color-yellow-900};
-  --color-yellow-850: #{variables.$color-yellow-850};
-  --color-yellow-800: #{variables.$color-yellow-800};
-  --color-yellow-750: #{variables.$color-yellow-750};
-  --color-yellow-700: #{variables.$color-yellow-700};
-  --color-yellow-650: #{variables.$color-yellow-650};
-  --color-yellow-600: #{variables.$color-yellow-600};
-  --color-yellow-550: #{variables.$color-yellow-550};
-  --color-yellow-500: #{variables.$color-yellow-500};
-  --color-yellow-450: #{variables.$color-yellow-450};
-  --color-yellow-400: #{variables.$color-yellow-400};
-  --color-yellow-350: #{variables.$color-yellow-350};
-  --color-yellow-300: #{variables.$color-yellow-300};
-  --color-yellow-250: #{variables.$color-yellow-250};
-  --color-yellow-200: #{variables.$color-yellow-200};
-  --color-yellow-150: #{variables.$color-yellow-150};
-  --color-yellow-100: #{variables.$color-yellow-100};
-
-  --color-green-950: #{variables.$color-green-950};
-  --color-green-900: #{variables.$color-green-900};
-  --color-green-850: #{variables.$color-green-850};
-  --color-green-800: #{variables.$color-green-800};
-  --color-green-750: #{variables.$color-green-750};
-  --color-green-700: #{variables.$color-green-700};
-  --color-green-650: #{variables.$color-green-650};
-  --color-green-600: #{variables.$color-green-600};
-  --color-green-550: #{variables.$color-green-550};
-  --color-green-500: #{variables.$color-green-500};
-  --color-green-450: #{variables.$color-green-450};
-  --color-green-400: #{variables.$color-green-400};
-  --color-green-350: #{variables.$color-green-350};
-  --color-green-300: #{variables.$color-green-300};
-  --color-green-250: #{variables.$color-green-250};
-  --color-green-200: #{variables.$color-green-200};
-  --color-green-150: #{variables.$color-green-150};
-  --color-green-100: #{variables.$color-green-100};
-
-  --color-cyan-950: #{variables.$color-cyan-950};
-  --color-cyan-900: #{variables.$color-cyan-900};
-  --color-cyan-850: #{variables.$color-cyan-850};
-  --color-cyan-800: #{variables.$color-cyan-800};
-  --color-cyan-750: #{variables.$color-cyan-750};
-  --color-cyan-700: #{variables.$color-cyan-700};
-  --color-cyan-650: #{variables.$color-cyan-650};
-  --color-cyan-600: #{variables.$color-cyan-600};
-  --color-cyan-550: #{variables.$color-cyan-550};
-  --color-cyan-500: #{variables.$color-cyan-500};
-  --color-cyan-450: #{variables.$color-cyan-450};
-  --color-cyan-400: #{variables.$color-cyan-400};
-  --color-cyan-350: #{variables.$color-cyan-350};
-  --color-cyan-300: #{variables.$color-cyan-300};
-  --color-cyan-250: #{variables.$color-cyan-250};
-  --color-cyan-200: #{variables.$color-cyan-200};
-  --color-cyan-150: #{variables.$color-cyan-150};
-  --color-cyan-100: #{variables.$color-cyan-100};
-
-  --color-blue-950: #{variables.$color-blue-950};
-  --color-blue-900: #{variables.$color-blue-900};
-  --color-blue-850: #{variables.$color-blue-850};
-  --color-blue-800: #{variables.$color-blue-800};
-  --color-blue-750: #{variables.$color-blue-750};
-  --color-blue-700: #{variables.$color-blue-700};
-  --color-blue-650: #{variables.$color-blue-650};
-  --color-blue-600: #{variables.$color-blue-600};
-  --color-blue-550: #{variables.$color-blue-550};
-  --color-blue-500: #{variables.$color-blue-500};
-  --color-blue-450: #{variables.$color-blue-450};
-  --color-blue-400: #{variables.$color-blue-400};
-  --color-blue-350: #{variables.$color-blue-350};
-  --color-blue-300: #{variables.$color-blue-300};
-  --color-blue-250: #{variables.$color-blue-250};
-  --color-blue-200: #{variables.$color-blue-200};
-  --color-blue-150: #{variables.$color-blue-150};
-  --color-blue-100: #{variables.$color-blue-100};
-
-  --color-violet-950: #{variables.$color-violet-950};
-  --color-violet-900: #{variables.$color-violet-900};
-  --color-violet-850: #{variables.$color-violet-850};
-  --color-violet-800: #{variables.$color-violet-800};
-  --color-violet-750: #{variables.$color-violet-750};
-  --color-violet-700: #{variables.$color-violet-700};
-  --color-violet-650: #{variables.$color-violet-650};
-  --color-violet-600: #{variables.$color-violet-600};
-  --color-violet-550: #{variables.$color-violet-550};
-  --color-violet-500: #{variables.$color-violet-500};
-  --color-violet-450: #{variables.$color-violet-450};
-  --color-violet-400: #{variables.$color-violet-400};
-  --color-violet-350: #{variables.$color-violet-350};
-  --color-violet-300: #{variables.$color-violet-300};
-  --color-violet-250: #{variables.$color-violet-250};
-  --color-violet-200: #{variables.$color-violet-200};
-  --color-violet-150: #{variables.$color-violet-150};
-  --color-violet-100: #{variables.$color-violet-100};
-
-  //#endregion color
+      --color-#{$name}-#{$p}-oklch: #{$oklch};
+      --color-#{$name}-#{$p}: oklch(#{$oklch});
+    }
+  }
 
   color-scheme: light;
 }
 
 @mixin colorLight() {
   --color-default-fore: var(--color-black);
-  --color-default-fore-hsl: var(--color-black-hsl);
+  --color-default-fore-oklch: var(--color-black-oklch);
   --color-default-back: var(--color-white);
-  --color-default-back-hsl: var(--color-white-hsl);
+  --color-default-back-oklch: var(--color-white-oklch);
   --color-default-border: var(--color-gray-600);
   --color-default-placeholder: var(--color-gray-650);
   --color-default-shadow: var(--color-gray-850);
   --color-default-button-back: var(--color-gray-600);
   --color-default-button-border: var(--color-gray-600);
+  --color-default-code-back: var(--color-gray-800);
   --color-default-disabled-fore: var(--color-black);
   --color-default-disabled-back: var(--color-gray-700);
   --color-default-disabled-border: var(--color-gray-600);
@@ -370,38 +90,39 @@
   --color-default-visited-button-border: var(--color-gray-600);
 
   @each $color in variables.$colors {
-    --color-#{$color}-fore: var(--color-#{$color}-200);
+    --color-#{$color}-fore: var(--color-#{$color}-100);
     --color-#{$color}-back: var(--color-#{$color}-850);
     --color-#{$color}-border: var(--color-#{$color}-600);
     --color-#{$color}-placeholder: var(--color-#{$color}-650);
     --color-#{$color}-shadow: var(--color-#{$color}-850);
     --color-#{$color}-button-back: var(--color-#{$color}-600);
     --color-#{$color}-button-border: var(--color-#{$color}-600);
+    --color-#{$color}-code-back: var(--color-#{$color}-800);
     --color-#{$color}-disabled-fore: var(--color-#{$color}-850);
     --color-#{$color}-disabled-back: var(--color-#{$color}-700);
     --color-#{$color}-disabled-border: var(--color-#{$color}-600);
     --color-#{$color}-disabled-shadow: var(--color-#{$color}-850);
     --color-#{$color}-disabled-button-back: var(--color-#{$color}-700);
     --color-#{$color}-disabled-button-border: var(--color-#{$color}-700);
-    --color-#{$color}-hover-fore: var(--color-#{$color}-200);
+    --color-#{$color}-hover-fore: var(--color-#{$color}-100);
     --color-#{$color}-hover-back: var(--color-#{$color}-800);
     --color-#{$color}-hover-border: var(--color-#{$color}-600);
     --color-#{$color}-hover-shadow: var(--color-#{$color}-850);
     --color-#{$color}-hover-button-back: var(--color-#{$color}-650);
     --color-#{$color}-hover-button-border: var(--color-#{$color}-650);
-    --color-#{$color}-focus-fore: var(--color-#{$color}-200);
+    --color-#{$color}-focus-fore: var(--color-#{$color}-100);
     --color-#{$color}-focus-back: var(--color-#{$color}-850);
     --color-#{$color}-focus-border: var(--color-#{$color}-650);
     --color-#{$color}-focus-shadow: var(--color-#{$color}-850);
     --color-#{$color}-focus-button-back: var(--color-#{$color}-600);
     --color-#{$color}-focus-button-border: var(--color-#{$color}-650);
-    --color-#{$color}-active-fore: var(--color-#{$color}-200);
+    --color-#{$color}-active-fore: var(--color-#{$color}-100);
     --color-#{$color}-active-back: var(--color-#{$color}-700);
     --color-#{$color}-active-border: var(--color-#{$color}-550);
     --color-#{$color}-active-shadow: var(--color-#{$color}-850);
     --color-#{$color}-active-button-back: var(--color-#{$color}-550);
     --color-#{$color}-active-button-border: var(--color-#{$color}-550);
-    --color-#{$color}-visited-fore: var(--color-#{$color}-200);
+    --color-#{$color}-visited-fore: var(--color-#{$color}-100);
     --color-#{$color}-visited-back: var(--color-#{$color}-850);
     --color-#{$color}-visited-border: var(--color-#{$color}-600);
     --color-#{$color}-visited-shadow: var(--color-#{$color}-850);
@@ -414,14 +135,15 @@
 
 @mixin colorDark() {
   --color-default-fore: var(--color-white);
-  --color-default-fore-hsl: var(--color-white-hsl);
+  --color-default-fore-oklch: var(--color-white-oklch);
   --color-default-back: var(--color-black);
-  --color-default-back-hsl: var(--color-black-hsl);
+  --color-default-back-oklch: var(--color-black-oklch);
   --color-default-border: var(--color-gray-500);
   --color-default-placeholder: var(--color-gray-450);
   --color-default-shadow: var(--color-gray-350);
   --color-default-button-back: var(--color-gray-450);
   --color-default-button-border: var(--color-gray-450);
+  --color-default-code-back: var(--color-gray-100);
   --color-default-disabled-fore: var(--color-gray-850);
   --color-default-disabled-back: var(--color-gray-100);
   --color-default-disabled-border: var(--color-gray-700);
@@ -454,38 +176,39 @@
   --color-default-visited-button-border: var(--color-gray-450);
 
   @each $color in variables.$colors {
-    --color-#{$color}-fore: var(--color-#{$color}-850);
+    --color-#{$color}-fore: var(--color-#{$color}-900);
     --color-#{$color}-back: var(--color-#{$color}-150);
     --color-#{$color}-border: var(--color-#{$color}-500);
     --color-#{$color}-placeholder: var(--color-#{$color}-450);
     --color-#{$color}-shadow: var(--color-#{$color}-350);
     --color-#{$color}-button-back: var(--color-#{$color}-450);
     --color-#{$color}-button-border: var(--color-#{$color}-450);
-    --color-#{$color}-disabled-fore: var(--color-#{$color}-850);
+    --color-#{$color}-code-back: var(--color-#{$color}-100);
+    --color-#{$color}-disabled-fore: var(--color-#{$color}-900);
     --color-#{$color}-disabled-back: var(--color-#{$color}-100);
     --color-#{$color}-disabled-border: var(--color-#{$color}-700);
     --color-#{$color}-disabled-shadow: var(--color-#{$color}-350);
     --color-#{$color}-disabled-button-back: var(--color-#{$color}-550);
     --color-#{$color}-disabled-button-border: var(--color-#{$color}-550);
-    --color-#{$color}-hover-fore: var(--color-#{$color}-850);
+    --color-#{$color}-hover-fore: var(--color-#{$color}-900);
     --color-#{$color}-hover-back: var(--color-#{$color}-200);
     --color-#{$color}-hover-border: var(--color-#{$color}-600);
     --color-#{$color}-hover-shadow: var(--color-#{$color}-350);
     --color-#{$color}-hover-button-back: var(--color-#{$color}-500);
     --color-#{$color}-hover-button-border: var(--color-#{$color}-500);
-    --color-#{$color}-focus-fore: var(--color-#{$color}-850);
+    --color-#{$color}-focus-fore: var(--color-#{$color}-900);
     --color-#{$color}-focus-back: var(--color-#{$color}-150);
     --color-#{$color}-focus-border: var(--color-#{$color}-650);
     --color-#{$color}-focus-shadow: var(--color-#{$color}-850);
     --color-#{$color}-focus-button-back: var(--color-#{$color}-450);
     --color-#{$color}-focus-button-border: var(--color-#{$color}-500);
-    --color-#{$color}-active-fore: var(--color-#{$color}-850);
+    --color-#{$color}-active-fore: var(--color-#{$color}-900);
     --color-#{$color}-active-back: var(--color-#{$color}-300);
     --color-#{$color}-active-border: var(--color-#{$color}-400);
     --color-#{$color}-active-shadow: var(--color-#{$color}-350);
     --color-#{$color}-active-button-back: var(--color-#{$color}-400);
     --color-#{$color}-active-button-border: var(--color-#{$color}-400);
-    --color-#{$color}-visited-fore: var(--color-#{$color}-700);
+    --color-#{$color}-visited-fore: var(--color-#{$color}-900);
     --color-#{$color}-visited-back: var(--color-#{$color}-300);
     --color-#{$color}-visited-border: var(--color-#{$color}-600);
     --color-#{$color}-visited-shadow: var(--color-#{$color}-350);

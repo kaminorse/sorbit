@@ -1,0 +1,14 @@
+
+@use "../variables/index.scss" as variables;
+
+
+.code {
+  font-family: var(--font-family-monospace);
+  background-color: var(--color-default-code-back);
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      background-color: var(--color-#{$color}-code-back);
+      color: var(--color-#{$color}-fore);
+    }
+  }
+}
