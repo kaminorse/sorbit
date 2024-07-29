@@ -25,9 +25,10 @@ $color-chroma-gray: 0.04 !default;
 $color-chroma-colorful: 0.12 !default;
 
 $color-lightness-500: 70% !default;
-$color-lightness-offset: 2.75%;
+$color-lightness-offset-lighter: 3.25%;
+$color-lightness-offset-darker: 6.5%;
 
-$color-lightness-white: 95% !default;
+$color-lightness-white: 98% !default;
 $color-lightness-black: 35% !default;
 
 $color-white: oklch(

@@ -28,10 +28,10 @@
       }
       $lightness: variables.$color-lightness-500 !default;
       @if ($i < 10) {
-        $lightness-offset: (10 - $i) * variables.$color-lightness-offset;
+        $lightness-offset: (10 - $i) * variables.$color-lightness-offset-darker;
         $lightness: variables.$color-lightness-500 - $lightness-offset;
       } @else if ($i > 10) {
-        $lightness-offset: ($i - 10) * variables.$color-lightness-offset;
+        $lightness-offset: ($i - 10) * variables.$color-lightness-offset-lighter;
         $lightness: variables.$color-lightness-500 + $lightness-offset;
       } @else if ($i == 10) {
         $lightness: variables.$color-lightness-500;

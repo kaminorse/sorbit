@@ -8,7 +8,7 @@
 
 .progress {
   @include mixins.animation() {
-    border-radius: var(--border-radius-rounded);
+    border-radius: var(--border-radius-medium);
     border-style: solid;
     border-width: var(--border-width-medium);
     color: var(--color-default-border);

@@ -8,11 +8,14 @@
 .message {
   display: block;
   background-color: var(--color-default-back);
-  border-radius: 0.25rem;
-  border: 0.25rem solid var(--color-default-border);
+  border-style: solid;
+  border-radius: var(--border-radius-medium);
+  border-width: var(--border-width-medium);
+  border-color: var(--color-default-border);
   .message-header {
-    border-color: 0.25rem solid var(--color-default-border);
-    border-radius: 0.25rem;
+    background-color: var(--color-default-border);
+    border-width: var(--border-width-medium);
+    border-color: var(--color-default-border);
     padding: 0.5rem;
     display: block;
     font-size: var(--font-size-medium);
@@ -29,9 +32,9 @@
       border-color: var(--color-#{$color}-border);
       color: var(--color-#{$color}-fore);
       .message-header {
-        background-color: var(--color-#{$color}-back);
+        background-color: var(--color-#{$color}-border);
         border-color: var(--color-#{$color}-border);
-        color: var(--color-#{$color}-fore);
+        color: var(--color-default-fore);
       }
       .message-body {
         background-color: var(--color-#{$color}-back);
