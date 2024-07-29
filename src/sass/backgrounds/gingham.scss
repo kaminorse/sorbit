@@ -15,15 +15,15 @@
             0deg,
             transparent,
             transparent 0.75rem,
-            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
-            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
+            oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
+            oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
           ),
           repeating-linear-gradient(
             90deg,
             transparent,
             transparent 0.75rem,
-            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
-            hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
+            oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
+            oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
           );
         @for $n from 0 through 4 {
           $degree: $n * 45deg;
@@ -32,15 +32,15 @@
                 $degree,
                 transparent,
                 transparent 0.75rem,
-                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
-                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
+                oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
+                oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
               ),
               repeating-linear-gradient(
                 $degree + 90deg,
                 transparent,
                 transparent 0.75rem,
-                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 0.75rem,
-                hsla(var(--color-#{$color}-#{$p * 5}0-hsl), 0.5) 1.5rem
+                oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
+                oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
               );
           }
         }

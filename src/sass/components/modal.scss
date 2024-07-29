@@ -2,7 +2,7 @@
 
 .modal {
   align-items: center;
-  background-color: hsla(var(--color-default-back-hsl), 0.75);
+  background-color: oklch(var(--color-default-back-oklch) / 0.75);
   display: none;
   flex-direction: column;
   height: 100vh;

@@ -58,6 +58,10 @@ function changeColor(color) {
     elem.className = `checkbox ${color}`;
   });
 
+  document.querySelectorAll(".code").forEach((elem) => {
+    elem.className = `code ${color}`;
+  });
+
   document.querySelectorAll(".input").forEach((elem) => {
     elem.className = `input ${color}`;
   });
@@ -84,6 +88,10 @@ function changeColor(color) {
 
   document.querySelectorAll(".nav").forEach((elem) => {
     elem.className = `nav ${color}`;
+  });
+
+  document.querySelectorAll(".pre").forEach((elem) => {
+    elem.className = `pre ${color}`;
   });
 
   document.querySelectorAll(".progress").forEach((elem) => {

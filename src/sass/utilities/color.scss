@@ -2,7 +2,7 @@
  * utilities/color.scss
  * @author kaminorse
  */
-
+@use "sass:string";
 @use "../variables/index.scss" as variables;
 @use "../mixins/index.scss" as mixins;
 
@@ -13,257 +13,145 @@
   }
 
   @each $color in variables.$colors {
-    @for $p from 1 through 9 {
+    $numStr: "000" !default;
+    @for $p from 1 through 19 {
+      $numStr: ($p * 5) + "0";
+      @if (string.length($numStr) == 2) {
+        $numStr: "0" + $numStr;
+      }
+
       //#region forecolor
-      .is-forecolor#{$derived}-#{$color}-#{$p}00,
-      .forecolor#{$derived}-#{$color}-#{$p}00 {
-        color: var(--color-#{$color}-#{$p}00) !important;
+      .is-forecolor#{$derived}-#{$color}-#{$numStr},
+      .forecolor#{$derived}-#{$color}-#{$numStr} {
+        color: var(--color-#{$color}-#{$numStr}) !important;
       }
-      .is-forecolor#{$derived}-#{$color}-#{$p}50,
-      .forecolor#{$derived}-#{$color}-#{$p}50 {
-        color: var(--color-#{$color}-#{$p}50) !important;
-      }
-      .is-forecolor#{$derived}-hover-#{$color}-#{$p}00,
-      .forecolor#{$derived}-hover-#{$color}-#{$p}00 {
+      .is-forecolor#{$derived}-hover-#{$color}-#{$numStr},
+      .forecolor#{$derived}-hover-#{$color}-#{$numStr} {
         &:hover {
-          color: var(--color-#{$color}-#{$p}00) !important;
+          color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-forecolor#{$derived}-hover-#{$color}-#{$p}50,
-      .forecolor#{$derived}-hover-#{$color}-#{$p}50 {
-        &:hover {
-          color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-forecolor#{$derived}-#{$color}-focus-#{$p}00,
-      .forecolor#{$derived}-#{$color}-focus-#{$p}00 {
+      .is-forecolor#{$derived}-#{$color}-focus-#{$numStr},
+      .forecolor#{$derived}-#{$color}-focus-#{$numStr} {
         &:focus {
-          color: var(--color-#{$color}-#{$p}00) !important;
+          color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-forecolor#{$derived}-#{$color}-focus-#{$p}50,
-      .forecolor#{$derived}-#{$color}-focus-#{$p}50 {
-        &:focus {
-          color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-forecolor#{$derived}-#{$color}-active-#{$p}00,
-      .forecolor#{$derived}-#{$color}-active-#{$p}00 {
+      .is-forecolor#{$derived}-#{$color}-active-#{$numStr},
+      .forecolor#{$derived}-#{$color}-active-#{$numStr} {
         &:active {
-          color: var(--color-#{$color}-#{$p}00) !important;
+          color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-forecolor#{$derived}-#{$color}-active-#{$p}50,
-      .forecolor#{$derived}-#{$color}-active-#{$p}50 {
-        &:active {
-          color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-forecolor#{$derived}-#{$color}-disabled-#{$p}00,
-      .forecolor#{$derived}-#{$color}-disabled-#{$p}00 {
+      .is-forecolor#{$derived}-#{$color}-disabled-#{$numStr},
+      .forecolor#{$derived}-#{$color}-disabled-#{$numStr} {
         &[disabled],
         fieldset[disabled] {
-          color: var(--color-#{$color}-#{$p}00) !important;
-        }
-      }
-      .is-forecolor#{$derived}-#{$color}-disabled-#{$p}50,
-      .forecolor#{$derived}-#{$color}-disabled-#{$p}50 {
-        &[disabled],
-        fieldset[disabled] {
-          color: var(--color-#{$color}-#{$p}50) !important;
+          color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
       //#endregion forecolor
   
       //#region backcolor
-      .is-backcolor#{$derived}-#{$color}-#{$p}00,
-      .backcolor#{$derived}-#{$color}-#{$p}00 {
-        background-color: var(--color-#{$color}-#{$p}00) !important;
+      .is-backcolor#{$derived}-#{$color}-#{$numStr},
+      .backcolor#{$derived}-#{$color}-#{$numStr} {
+        background-color: var(--color-#{$color}-#{$numStr}) !important;
       }
-      .is-backcolor#{$derived}-#{$color}-#{$p}50,
-      .backcolor#{$derived}-#{$color}-#{$p}50 {
-        background-color: var(--color-#{$color}-#{$p}50) !important;
-      }
-      .is-backcolor#{$derived}-hover-#{$color}-#{$p}00,
-      .backcolor#{$derived}-hover-#{$color}-#{$p}00 {
+      .is-backcolor#{$derived}-hover-#{$color}-#{$numStr},
+      .backcolor#{$derived}-hover-#{$color}-#{$numStr} {
         &:hover {
-          background-color: var(--color-#{$color}-#{$p}00) !important;
+          background-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-backcolor#{$derived}-hover-#{$color}-#{$p}50,
-      .backcolor#{$derived}-hover-#{$color}-#{$p}50 {
-        &:hover {
-          background-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-backcolor#{$derived}-#{$color}-focus-#{$p}00,
-      .backcolor#{$derived}-#{$color}-focus-#{$p}00 {
+      .is-backcolor#{$derived}-#{$color}-focus-#{$numStr},
+      .backcolor#{$derived}-#{$color}-focus-#{$numStr} {
         &:focus {
-          background-color: var(--color-#{$color}-#{$p}00) !important;
+          background-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-backcolor#{$derived}-#{$color}-focus-#{$p}50,
-      .backcolor#{$derived}-#{$color}-focus-#{$p}50 {
-        &:focus {
-          background-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-backcolor#{$derived}-#{$color}-active-#{$p}00,
-      .backcolor#{$derived}-#{$color}-active-#{$p}00 {
+      .is-backcolor#{$derived}-#{$color}-active-#{$numStr},
+      .backcolor#{$derived}-#{$color}-active-#{$numStr} {
         &:active {
-          background-color: var(--color-#{$color}-#{$p}00) !important;
+          background-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-backcolor#{$derived}-#{$color}-active-#{$p}50,
-      .backcolor#{$derived}-#{$color}-active-#{$p}50 {
-        &:active {
-          background-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-backcolor#{$derived}-#{$color}-disabled-#{$p}00,
-      .backcolor#{$derived}-#{$color}-disabled-#{$p}00 {
+      .is-backcolor#{$derived}-#{$color}-disabled-#{$numStr},
+      .backcolor#{$derived}-#{$color}-disabled-#{$numStr} {
         &[disabled],
         fieldset[disabled] {
-          background-color: var(--color-#{$color}-#{$p}00) !important;
-        }
-      }
-      .is-backcolor#{$derived}-#{$color}-disabled-#{$p}50,
-      .backcolor#{$derived}-#{$color}-disabled-#{$p}50 {
-        &[disabled],
-        fieldset[disabled] {
-          background-color: var(--color-#{$color}-#{$p}50) !important;
+          background-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
       //#endregion backcolor
   
       //#region bordercolor
-      .is-bordercolor#{$derived}-#{$color}-#{$p}00,
-      .bordercolor#{$derived}-#{$color}-#{$p}00 {
-        border-color: var(--color-#{$color}-#{$p}00) !important;
+      .is-bordercolor#{$derived}-#{$color}-#{$numStr},
+      .bordercolor#{$derived}-#{$color}-#{$numStr} {
+        border-color: var(--color-#{$color}-#{$numStr}) !important;
       }
-      .is-bordercolor#{$derived}-#{$color}-#{$p}50,
-      .bordercolor#{$derived}-#{$color}-#{$p}50 {
-        border-color: var(--color-#{$color}-#{$p}50) !important;
+      .is-bordercolor#{$derived}-#{$color}-#{$numStr},
+      .bordercolor#{$derived}-#{$color}-#{$numStr} {
+        border-color: var(--color-#{$color}-#{$numStr}) !important;
       }
-      .is-bordercolor#{$derived}-hover-#{$color}-#{$p}00,
-      .bordercolor#{$derived}-hover-#{$color}-#{$p}00 {
+      .is-bordercolor#{$derived}-hover-#{$color}-#{$numStr},
+      .bordercolor#{$derived}-hover-#{$color}-#{$numStr} {
         &:hover {
-          border-color: var(--color-#{$color}-#{$p}00) !important;
+          border-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-bordercolor#{$derived}-hover-#{$color}-#{$p}50,
-      .bordercolor#{$derived}-hover-#{$color}-#{$p}50 {
-        &:hover {
-          border-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-bordercolor#{$derived}-#{$color}-focus-#{$p}00,
-      .bordercolor#{$derived}-#{$color}-focus-#{$p}00 {
+      .is-bordercolor#{$derived}-#{$color}-focus-#{$numStr},
+      .bordercolor#{$derived}-#{$color}-focus-#{$numStr} {
         &:focus {
-          border-color: var(--color-#{$color}-#{$p}00) !important;
+          border-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-bordercolor#{$derived}-#{$color}-focus-#{$p}50,
-      .bordercolor#{$derived}-#{$color}-focus-#{$p}50 {
-        &:focus {
-          border-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-bordercolor#{$derived}-#{$color}-active-#{$p}00,
-      .bordercolor#{$derived}-#{$color}-active-#{$p}00 {
+      .is-bordercolor#{$derived}-#{$color}-active-#{$numStr},
+      .bordercolor#{$derived}-#{$color}-active-#{$numStr} {
         &:active {
-          border-color: var(--color-#{$color}-#{$p}00) !important;
+          border-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
-      .is-bordercolor#{$derived}-#{$color}-active-#{$p}50,
-      .bordercolor#{$derived}-#{$color}-active-#{$p}50 {
-        &:active {
-          border-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-bordercolor#{$derived}-#{$color}-disabled-#{$p}00,
-      .bordercolor#{$derived}-#{$color}-disabled-#{$p}00 {
+      .is-bordercolor#{$derived}-#{$color}-disabled-#{$numStr},
+      .bordercolor#{$derived}-#{$color}-disabled-#{$numStr} {
         &[disabled],
         fieldset[disabled] {
-          border-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-      }
-      .is-bordercolor#{$derived}-#{$color}-disabled-#{$p}50,
-      .bordercolor#{$derived}-#{$color}-disabled-#{$p}50 {
-        &[disabled],
-        fieldset[disabled] {
-          border-color: var(--color-#{$color}-#{$p}50) !important;
+          border-color: var(--color-#{$color}-#{$numStr}) !important;
         }
       }
   
       @each $borderSide in variables.$borderSides {
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-#{$p}00,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-#{$p}00 {
-          border-#{$borderSide}-color: var(--color-#{$color}-#{$p}00) !important;
+        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-#{$numStr},
+        .bordercolor#{$derived}-#{$borderSide}-#{$color}-#{$numStr} {
+          border-#{$borderSide}-color: var(--color-#{$color}-#{$numStr}) !important;
         }
-        .is-bordercolor#{$derived}-#{$color}-#{$p}50,
-        .bordercolor#{$derived}-#{$color}-#{$p}50 {
-          border-#{$borderSide}-color: var(--color-#{$color}-#{$p}50) !important;
-        }
-        .is-bordercolor#{$derived}-#{$borderSide}-hover-#{$color}-#{$p}00,
-        .bordercolor#{$derived}-#{$borderSide}-hover-#{$color}-#{$p}00 {
+        .is-bordercolor#{$derived}-#{$borderSide}-hover-#{$color}-#{$numStr},
+        .bordercolor#{$derived}-#{$borderSide}-hover-#{$color}-#{$numStr} {
           &:hover {
             border-#{$borderSide}-color: var(
-              --color-#{$color}-#{$p}00
+              --color-#{$color}-#{$numStr}
             ) !important;
           }
         }
-        .is-bordercolor#{$derived}-#{$borderSide}-hover-#{$color}-#{$p}50,
-        .bordercolor#{$derived}-#{$borderSide}-hover-#{$color}-#{$p}50 {
-          &:hover {
-            border-#{$borderSide}-color: var(
-              --color-#{$color}-#{$p}50
-            ) !important;
-          }
-        }
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-focus-#{$p}00,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-focus-#{$p}00 {
+        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-focus-#{$numStr},
+        .bordercolor#{$derived}-#{$borderSide}-#{$color}-focus-#{$numStr} {
           &:focus {
             border-#{$borderSide}-color: var(
-              --color-#{$color}-#{$p}00
+              --color-#{$color}-#{$numStr}
             ) !important;
           }
         }
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-focus-#{$p}50,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-focus-#{$p}50 {
-          &:focus {
-            border-color: var(--color-#{$color}-#{$p}50) !important;
-          }
-        }
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-active-#{$p}00,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-active-#{$p}00 {
+        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-active-#{$numStr},
+        .bordercolor#{$derived}-#{$borderSide}-#{$color}-active-#{$numStr} {
           &:active {
-            border-color: var(--color-#{$color}-#{$p}00) !important;
+            border-color: var(--color-#{$color}-#{$numStr}) !important;
           }
         }
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-active-#{$p}50,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-active-#{$p}50 {
-          &:active {
-            border-#{$borderSide}-color: var(
-              --color-#{$color}-#{$p}50
-            ) !important;
-          }
-        }
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-disabled-#{$p}00,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-disabled-#{$p}00 {
+        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-disabled-#{$numStr},
+        .bordercolor#{$derived}-#{$borderSide}-#{$color}-disabled-#{$numStr} {
           &[disabled],
           fieldset[disabled] {
             border-#{$borderSide}-color: var(
-              --color-#{$color}-#{$p}50
-            ) !important;
-          }
-        }
-        .is-bordercolor#{$derived}-#{$borderSide}-#{$color}-disabled-#{$p}50,
-        .bordercolor#{$derived}-#{$borderSide}-#{$color}-disabled-#{$p}50 {
-          &[disabled],
-          fieldset[disabled] {
-            border-#{$borderSide}-color: var(
-              --color-#{$color}-#{$p}50
+              --color-#{$color}-#{$numStr}
             ) !important;
           }
         }
@@ -271,91 +159,47 @@
       //#endregion bordercolor
   
       //#region highlighter
-      .is-highlighter#{$derived}-#{$color}-#{$p}00,
-      .highlighter#{$derived}-#{$color}-#{$p}00 {
+      .is-highlighter#{$derived}-#{$color}-#{$numStr},
+      .highlighter#{$derived}-#{$color}-#{$numStr} {
         background: linear-gradient(
           transparent 66.66%,
-          var(--color-#{$color}-#{$p}00) 33.33%
+          var(--color-#{$color}-#{$numStr}) 33.33%
         ) !important;
       }
-      .is-highlighter#{$derived}-#{$color}-#{$p}50,
-      .highlighter#{$derived}-#{$color}-#{$p}50 {
-        background: linear-gradient(
-          transparent 66.66%,
-          var(--color-#{$color}-#{$p}50) 33.33%
-        ) !important;
-      }
-      .is-highlighter#{$derived}-hover-#{$color}-#{$p}00,
-      .highlighter#{$derived}-hover-#{$color}-#{$p}00 {
+      .is-highlighter#{$derived}-hover-#{$color}-#{$numStr},
+      .highlighter#{$derived}-hover-#{$color}-#{$numStr} {
         &:hover {
           background: linear-gradient(
             transparent 66.66%,
-            var(--color-#{$color}-#{$p}00) 33.33%
+            var(--color-#{$color}-#{$numStr}) 33.33%
           ) !important;
         }
       }
-      .is-highlighter#{$derived}-hover-#{$color}-#{$p}50,
-      .highlighter#{$derived}-hover-#{$color}-#{$p}50 {
-        &:hover {
-          background: linear-gradient(
-            transparent 66.66%,
-            var(--color-#{$color}-#{$p}50) 33.33%
-          ) !important;
-        }
-      }
-      .is-highlighter#{$derived}-#{$color}-focus-#{$p}00,
-      .highlighter#{$derived}-#{$color}-focus-#{$p}00 {
+      .is-highlighter#{$derived}-#{$color}-focus-#{$numStr},
+      .highlighter#{$derived}-#{$color}-focus-#{$numStr} {
         &:focus {
           background: linear-gradient(
             transparent 66.66%,
-            var(--color-#{$color}-#{$p}00) 33.33%
+            var(--color-#{$color}-#{$numStr}) 33.33%
           ) !important;
         }
       }
-      .is-highlighter#{$derived}-#{$color}-focus-#{$p}50,
-      .highlighter#{$derived}-#{$color}-focus-#{$p}50 {
-        &:focus {
-          background: linear-gradient(
-            transparent 66.66%,
-            var(--color-#{$color}-#{$p}50) 33.33%
-          ) !important;
-        }
-      }
-      .is-highlighter#{$derived}-#{$color}-active-#{$p}00,
-      .highlighter#{$derived}-#{$color}-active-#{$p}00 {
+      .is-highlighter#{$derived}-#{$color}-active-#{$numStr},
+      .highlighter#{$derived}-#{$color}-active-#{$numStr} {
         &:active {
           background: linear-gradient(
             transparent 66.66%,
-            var(--color-#{$color}-#{$p}00) 33.33%
+            var(--color-#{$color}-#{$numStr}) 33.33%
           ) !important;
         }
       }
-      .is-highlighter#{$derived}-#{$color}-active-#{$p}50,
-      .highlighter#{$derived}-#{$color}-active-#{$p}50 {
-        &:active {
-          background: linear-gradient(
-            transparent 66.66%,
-            var(--color-#{$color}-#{$p}50) 33.33%
-          ) !important;
-        }
-      }
-      .is-highlighter#{$derived}-#{$color}-disabled-#{$p}00,
-      .highlighter#{$derived}-#{$color}-disabled-#{$p}00 {
+      .is-highlighter#{$derived}-#{$color}-disabled-#{$numStr},
+      .highlighter#{$derived}-#{$color}-disabled-#{$numStr} {
         &[disabled],
         fieldset[disabled] {
           background: linear-gradient(
             transparent 66.66%,
-            var(--color-#{$color}-#{$p}00) 33.33%
-          ) !important;
-        }
-      }
-      .is-highlighter#{$derived}-#{$color}-disabled-#{$p}50,
-      .highlighter#{$derived}-#{$color}-disabled-#{$p}50 {
-        &[disabled],
-        fieldset[disabled] {
-          background: linear-gradient(
-            transparent 66.66%,
-            var(--color-#{$color}-#{$p}50) 33.33%
+            var(--color-#{$color}-#{$numStr}) 33.33%
           ) !important;
         }
       }
@@ -366,9 +210,11 @@
 }
 
 @include colorUtilities();
+
 @include mixins.setColorScheme("light") {
   @include colorUtilities("light");
 }
+
 @include mixins.setColorScheme("dark") {
   @include colorUtilities("dark");
 }
