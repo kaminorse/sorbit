@@ -94,6 +94,128 @@
   }
 }
 
+@mixin add-responsible-visible() {
+  @content;
+  &.is-mobile {
+    @include tablet() {
+      display: none !important;
+    }
+    @include desktop() {
+      display: none !important;
+    }
+    @include widescreen() {
+      display: none !important;
+    }
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-tablet-or-less {
+    @include desktop() {
+      display: none !important;
+    }
+    @include widescreen() {
+      display: none !important;
+    }
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-tablet {
+    @include mobile() {
+      display: none !important;
+    }
+    @include desktop() {
+      display: none !important;
+    }
+    @include widescreen() {
+      display: none !important;
+    }
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-tablet-or-more {
+    @include mobile() {
+      display: none !important;
+    }
+  }
+  &.is-desktop-or-less {
+    @include widescreen() {
+      display: none !important;
+    }
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-desktop {
+    @include mobile() {
+      display: none !important;
+    }
+    @include tablet() {
+      display: none !important;
+    }
+    @include widescreen() {
+      display: none !important;
+    }
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-desktop-or-more {
+    @include mobile() {
+      display: none !important;
+    }
+    @include tablet() {
+      display: none !important;
+    }
+  }
+  &.is-widescreen-or-less {
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-widescreen {
+    @include mobile() {
+      display: none !important;
+    }
+    @include tablet() {
+      display: none !important;
+    }
+    @include desktop() {
+      display: none !important;
+    }
+    @include fullhd() {
+      display: none !important;
+    }
+  }
+  &.is-widescreen-or-more {
+    @include mobile() {
+      display: none !important;
+    }
+    @include tablet() {
+      display: none !important;
+    }
+    @include desktop() {
+      display: none !important;
+    }
+  }
+  &.is-fullhd {
+    @include mobile() {
+      display: none !important;
+    }
+    @include tablet() {
+      display: none !important;
+    }
+    @include desktop() {
+      display: none !important;
+    }
+    @include widescreen() {
+      display: none !important;
+    }
+  }
+}
+
 @mixin column() {
   display: block;
   flex-basis: 0;

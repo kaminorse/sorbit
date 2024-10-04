@@ -13,18 +13,18 @@
       media="all"
       href="https://unpkg.com/sorbit/dist/css/sorbit.min.css"
     />
-    <!-- <link
+    <link
       rel="stylesheet"
       type="text/css"
       media="all"
       href="../dist/css/sorbit.min.css"
-    /> -->
+    />
   </head>
   <body class="tabula">
     <header class="header is-sticky">
       <div class="container">
         <nav class="nav" role="navigation" aria-label="main navigation">
-          <div class="nav-mobile">
+          <div class="nav-accordion is-tablet-or-less">
             <div class="nav-brand">
               <div class="left">
                 <div
@@ -85,7 +85,7 @@
               </a>
             </div>
           </div>
-          <div class="nav-desktop">
+          <div class="nav-static is-tablet-or-more">
             <div class="nav-brand">
               <div class="left">
                 <a aria-current="page" hreflang="ja" href="/" class="link"
@@ -890,6 +890,14 @@
               </div>
             </div>
           </div>
+        </section>
+        <section class="my-1rem">
+          <details class="accordion">
+            <summary class="accordion-summary">
+              accordion-summary
+            </summary>
+            <div class="accordion-details">accordion-details</div>
+          </details>
         </section>
       </div>
     </main>
