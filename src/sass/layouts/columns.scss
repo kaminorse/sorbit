@@ -25,16 +25,16 @@ $columns-count: 12;
     flex-direction: column-reverse;
   }
 
-  @include mixins.is_responsive("-direction-row") {
+  @include mixins.is-responsive("-direction-row") {
     flex-direction: row;
   }
-  @include mixins.is_responsive("-direction-row-reverse") {
+  @include mixins.is-responsive("-direction-row-reverse") {
     flex-direction: row-reverse;
   }
-  @include mixins.is_responsive("-direction-column") {
+  @include mixins.is-responsive("-direction-column") {
     flex-direction: column;
   }
-  @include mixins.is_responsive("-direction-column-reverse") {
+  @include mixins.is-responsive("-direction-column-reverse") {
     flex-direction: column-reverse;
   }
 
@@ -57,7 +57,7 @@ $columns-count: 12;
   .column,
   [class^="column-"] {
     @for $num from 1 through $columns-count {
-      @include mixins.is_responsive("-" + $num) {
+      @include mixins.is-responsive("-" + $num) {
         flex-basis: percentage(math.div($num, $columns-count));
         max-width: percentage(math.div($num, $columns-count));
         width: percentage(math.div($num, $columns-count));

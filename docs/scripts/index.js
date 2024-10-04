@@ -106,4 +106,8 @@ function changeColor(color) {
     elem.className = `stripe ${color}-600`;
   });
 
+  document.querySelectorAll(".accordion").forEach((elem) => {
+    elem.className = `accordion ${color}`;
+  });
+
 }

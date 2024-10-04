@@ -69,7 +69,7 @@
   --color-default-hover-border: var(--color-gray-600);
   --color-default-hover-shadow: var(--color-gray-850);
   --color-default-hover-button-back: var(--color-gray-650);
-  --color-default-hover-button-border: var(--color-gray-650);
+  --color-default-hover-button-border: var(--color-gray-600);
   --color-default-focus-fore: var(--color-black);
   --color-default-focus-back: var(--color-white);
   --color-default-focus-border: var(--color-gray-600);
@@ -89,6 +89,28 @@
   --color-default-visited-button-back: var(--color-gray-600);
   --color-default-visited-button-border: var(--color-gray-600);
 
+    //#region accordion
+    --color-default-accordion-fore: var(--color-default-fore);
+    --color-default-accordion-back: var(--color-default-back);
+    --color-default-accordion-border: var(--color-gray-600);
+    --color-default-accordion-summary-fore: var(--color-default-fore);
+    --color-default-accordion-summary-back: var(--color-gray-600);
+    --color-default-accordion-summary-border: var(--color-gray-600);
+    --color-default-hover-accordion-summary-fore: var(--color-default-fore);
+    --color-default-hover-accordion-summary-back: var(--color-gray-650);
+    --color-default-hover-accordion-summary-border: var(--color-gray-600);
+    --color-default-focus-accordion-summary-fore: var(--color-default-fore);
+    --color-default-focus-accordion-summary-back: var(--color-gray-600);
+    --color-default-focus-accordion-summary-border: var(--color-gray-650);
+    --color-default-active-accordion-summary-fore: var(--color-default-fore);
+    --color-default-active-accordion-summary-back: var(--color-gray-550);
+    --color-default-active-accordion-summary-border: var(--color-gray-550);
+    --color-default-disabled-accordion-summary-fore: var(--color-default-fore);
+    --color-default-disabled-accordion-summary-back: var(--color-gray-700);
+    --color-default-disabled-accordion-summary-border: var(--color-gray-700);
+    --color-default-accordion-summary-chevron: var(--color-default-fore);
+    //#endregion accordion
+  
   @each $color in variables.$colors {
     --color-#{$color}-fore: var(--color-#{$color}-100);
     --color-#{$color}-back: var(--color-#{$color}-850);
@@ -128,6 +150,25 @@
     --color-#{$color}-visited-shadow: var(--color-#{$color}-850);
     --color-#{$color}-visited-button-back: var(--color-#{$color}-600);
     --color-#{$color}-visited-button-border: var(--color-#{$color}-600);
+
+    //#region accordion
+    --color-#{$color}-accordion-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-accordion-back: var(--color-#{$color}-back);
+    --color-#{$color}-accordion-border: var(--color-#{$color}-600);
+    --color-#{$color}-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-accordion-summary-back: var(--color-#{$color}-600);
+    --color-#{$color}-accordion-summary-border: var(--color-#{$color}-600);
+    --color-#{$color}-focus-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-focus-accordion-summary-back: var(--color-#{$color}-600);
+    --color-#{$color}-focus-accordion-summary-border: var(--color-#{$color}-650);
+    --color-#{$color}-active-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-active-accordion-summary-back: var(--color-#{$color}-550);
+    --color-#{$color}-active-accordion-summary-border: var(--color-#{$color}-550);
+    --color-#{$color}-disabled-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-disabled-accordion-summary-back: var(--color-#{$color}-700);
+    --color-#{$color}-disabled-accordion-summary-border: var(--color-#{$color}-700);
+    --color-#{$color}-accordion-summary-chevron: var(--color-#{$color}-fore);
+    //#endregion accordion
   }
   
   color-scheme: light;
@@ -175,6 +216,28 @@
   --color-default-visited-button-back: var(--color-gray-450);
   --color-default-visited-button-border: var(--color-gray-450);
 
+    //#region accordion
+    --color-default-accordion-fore: var(--color-default-fore);
+    --color-default-accordion-back: var(--color-default-back);
+    --color-default-accordion-border: var(--color-gray-450);
+    --color-default-accordion-summary-fore: var(--color-default-fore);
+    --color-default-accordion-summary-back: var(--color-gray-450);
+    --color-default-accordion-summary-border: var(--color-gray-450);
+    --color-default-hover-accordion-summary-fore: var(--color-default-fore);
+    --color-default-hover-accordion-summary-back: var(--color-gray-500);
+    --color-default-hover-accordion-summary-border: var(--color-gray-500);
+    --color-default-focus-accordion-summary-fore: var(--color-default-fore);
+    --color-default-focus-accordion-summary-back: var(--color-gray-450);
+    --color-default-focus-accordion-summary-border: var(--color-gray-500);
+    --color-default-active-accordion-summary-fore: var(--color-default-fore);
+    --color-default-active-accordion-summary-back: var(--color-gray-400);
+    --color-default-active-accordion-summary-border: var(--color-gray-400);
+    --color-default-disabled-accordion-summary-fore: var(--color-default-fore);
+    --color-default-disabled-accordion-summary-back: var(--color-gray-550);
+    --color-default-disabled-accordion-summary-border: var(--color-gray-550);
+    --color-default-accordion-summary-chevron: var(--color-default-fore);
+    //#endregion accordion
+
   @each $color in variables.$colors {
     --color-#{$color}-fore: var(--color-#{$color}-900);
     --color-#{$color}-back: var(--color-#{$color}-150);
@@ -204,7 +267,7 @@
     --color-#{$color}-focus-button-border: var(--color-#{$color}-500);
     --color-#{$color}-active-fore: var(--color-#{$color}-900);
     --color-#{$color}-active-back: var(--color-#{$color}-300);
-    --color-#{$color}-active-border: var(--color-#{$color}-400);
+    --color-#{$color}-active-border: var(--color-#{$color}-350);
     --color-#{$color}-active-shadow: var(--color-#{$color}-350);
     --color-#{$color}-active-button-back: var(--color-#{$color}-400);
     --color-#{$color}-active-button-border: var(--color-#{$color}-400);
@@ -214,6 +277,28 @@
     --color-#{$color}-visited-shadow: var(--color-#{$color}-350);
     --color-#{$color}-visited-button-back: var(--color-#{$color}-350);
     --color-#{$color}-visited-button-border: var(--color-#{$color}-350);
+
+    //#region accordion
+    --color-#{$color}-accordion-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-accordion-back: var(--color-#{$color}-back);
+    --color-#{$color}-accordion-border: var(--color-#{$color}-450);
+    --color-#{$color}-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-accordion-summary-back: var(--color-#{$color}-450);
+    --color-#{$color}-accordion-summary-border: var(--color-#{$color}-450);
+    --color-#{$color}-hover-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-hover-accordion-summary-back: var(--color-#{$color}-500);
+    --color-#{$color}-hover-accordion-summary-border: var(--color-#{$color}-500);
+    --color-#{$color}-focus-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-focus-accordion-summary-back: var(--color-#{$color}-450);
+    --color-#{$color}-focus-accordion-summary-border: var(--color-#{$color}-500);
+    --color-#{$color}-active-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-active-accordion-summary-back: var(--color-#{$color}-400);
+    --color-#{$color}-active-accordion-summary-border: var(--color-#{$color}-400);
+    --color-#{$color}-disabled-accordion-summary-fore: var(--color-#{$color}-fore);
+    --color-#{$color}-disabled-accordion-summary-back: var(--color-#{$color}-550);
+    --color-#{$color}-disabled-accordion-summary-border: var(--color-#{$color}-550);
+    --color-#{$color}-accordion-summary-chevron: var(--color-#{$color}-fore);
+    //#endregion accordion
   }
   
   color-scheme: dark;
