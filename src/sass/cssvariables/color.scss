@@ -113,7 +113,9 @@
   
   @each $color in variables.$colors {
     --color-#{$color}-fore: var(--color-#{$color}-100);
+    --color-#{$color}-fore-oklch: var(--color-#{$color}-100-oklch);
     --color-#{$color}-back: var(--color-#{$color}-850);
+    --color-#{$color}-back-oklch: var(--color-#{$color}-850-oklch);
     --color-#{$color}-border: var(--color-#{$color}-600);
     --color-#{$color}-placeholder: var(--color-#{$color}-650);
     --color-#{$color}-shadow: var(--color-#{$color}-850);
@@ -240,7 +242,9 @@
 
   @each $color in variables.$colors {
     --color-#{$color}-fore: var(--color-#{$color}-900);
+    --color-#{$color}-fore-oklch: var(--color-#{$color}-100-oklch);
     --color-#{$color}-back: var(--color-#{$color}-150);
+    --color-#{$color}-back-oklch: var(--color-#{$color}-150-oklch);
     --color-#{$color}-border: var(--color-#{$color}-500);
     --color-#{$color}-placeholder: var(--color-#{$color}-450);
     --color-#{$color}-shadow: var(--color-#{$color}-350);

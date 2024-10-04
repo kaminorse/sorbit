@@ -3,6 +3,8 @@
  * @author kaminorse
  */
 
+@use "../variables/index.scss" as variables;
+
 .header {
   display: block;
   width: 100%;
@@ -14,5 +16,12 @@
     left: 0;
     width: 100%;
     z-index: 100;
+  }
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      color: var(--color-#{$color}-fore);
+      background-color: oklch(var(--color-#{$color}-back-oklch) / 0.75);
+      box-shadow: 0 0 0.5rem var(--color-#{$color}-shadow);
+    }
   }
 }
