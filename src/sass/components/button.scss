@@ -11,7 +11,7 @@
   border-radius: 0.5rem;
   border-style: solid;
   box-sizing: border-box;
-  color: var(--color-default-fore);
+  color: var(--color-default-button-fore);
   cursor: pointer;
   display: inline-block;
   height: auto;
@@ -22,57 +22,65 @@
   user-select: none;
   vertical-align: top;
   word-spacing: 0px;
-  &:hover,
-  &.is-hovered,
-  &.is-hovered {
-    background-color: var(--color-default-hover-button-back);
-    border-color: var(--color-default-hover-button-border);
-  }
   &:focus,
   &.is-focus,
   &.is-focused {
     background-color: var(--color-default-focus-button-back);
     border-color: var(--color-default-focus-button-border);
+    color: var(--color-default-focus-button-fore);
   }
   &:active,
   &.is-active {
     background-color: var(--color-default-active-button-back);
     border-color: var(--color-default-active-button-border);
+    color: var(--color-default-active-button-fore);
+  }
+  &:hover,
+  &.is-hovered,
+  &.is-hovered {
+    background-color: var(--color-default-hover-button-back);
+    border-color: var(--color-default-hover-button-border);
+    color: var(--color-default-hover-button-fore);
   }
   &[disabled],
   fieldset[disabled],
   &.is-disabled {
     background-color: var(--color-default-disabled-button-back);
     border-color: var(--color-default-disabled-button-border);
+    color: var(--color-default-disabled-button-fore);
   }
 
   @each $color in variables.$colors {
     &.is-#{$color} {
       background-color: var(--color-#{$color}-button-back);
       border-color: var(--color-#{$color}-button-border);
-      color: var(--color-#{$color}-fore);
-      &:hover,
-      &.is-hover,
-      &.is-hovered {
-        background-color: var(--color-#{$color}-hover-button-back);
-        border-color: var(--color-#{$color}-hover-button-border);
-      }
+      color: var(--color-#{$color}-button-fore);
       &:focus,
       &.is-focus,
       &.is-focused {
         background-color: var(--color-#{$color}-focus-button-back);
         border-color: var(--color-#{$color}-focus-button-border);
+        color: var(--color-#{$color}-focus-button-fore);
+      }
+      &:hover,
+      &.is-hover,
+      &.is-hovered {
+        background-color: var(--color-#{$color}-hover-button-back);
+        border-color: var(--color-#{$color}-hover-button-border);
+        color: var(--color-#{$color}-hover-button-fore);
       }
       &:active,
       &.is-active {
         background-color: var(--color-#{$color}-active-button-back);
         border-color: var(--color-#{$color}-active-button-border);
+        color: var(--color-#{$color}-active-button-fore);
       }
       &[disabled],
       fieldset[disabled],
       &.is-disabled {
         background-color: var(--color-#{$color}-disabled-button-back);
         border-color: var(--color-#{$color}-disabled-button-border);
+        color: var(--color-#{$color}-disabled-button-fore);
       }
     }
   }

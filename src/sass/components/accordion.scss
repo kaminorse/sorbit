@@ -15,6 +15,7 @@
   .accordion-summary {
     background-color: var(--color-default-accordion-summary-back);
     border-color: var(--color-default-accordion-summary-border);
+    color: var(--color-default-accordion-summary-fore);
     cursor: pointer;
     display: block;
     padding: 1rem;
@@ -32,12 +33,6 @@
         top: calc(50% - 0.25rem);
       }
     }
-    &:hover,
-    &.is-hovered,
-    &.is-hovered {
-      background-color: var(--color-default-hover-accordion-summary-back);
-      border-color: var(--color-default-hover-accordion-summary-border);
-    }
     &:focus,
     &.is-focus,
     &.is-focused {
@@ -49,6 +44,12 @@
       background-color: var(--color-default-active-accordion-summary-back);
       border-color: var(--color-default-active-accordion-summary-border);
     }
+    &:hover,
+    &.is-hovered,
+    &.is-hovered {
+      background-color: var(--color-default-hover-accordion-summary-back);
+      border-color: var(--color-default-hover-accordion-summary-border);
+    }
     &[disabled],
     fieldset[disabled],
     &.is-disabled {
@@ -57,7 +58,9 @@
     }
   }
   .accordion-details {
-    border-color: var(--color-gray-border);
+    background-color: var(--color-default-accordion-details-back);
+    border-color: var(--color-default-accordion-details-border);
+    color: var(--color-default-accordion-details-fore);
     height: 0;
     display: none;
     padding: 1rem;
@@ -81,14 +84,9 @@
       .accordion-summary {
         background-color: var(--color-#{$color}-accordion-summary-back);
         border-color: var(--color-#{$color}-accordion-summary-border);
+        color: var(--color-#{$color}-accordion-summary-fore);
         &:after {
           background: var(--color-#{$color}-accordion-fore);
-        }
-        &:hover,
-        &.is-hovered,
-        &.is-hovered {
-          background-color: var(--color-#{$color}-hover-accordion-summary-back);
-          border-color: var(--color-#{$color}-hover-accordion-summary-border);
         }
         &:focus,
         &.is-focus,
@@ -101,6 +99,12 @@
           background-color: var(--color-#{$color}-active-accordion-summary-back);
           border-color: var(--color-#{$color}-active-accordion-summary-border);
         }
+        &:hover,
+        &.is-hovered,
+        &.is-hovered {
+          background-color: var(--color-#{$color}-hover-accordion-summary-back);
+          border-color: var(--color-#{$color}-hover-accordion-summary-border);
+        }
         &[disabled],
         fieldset[disabled],
         &.is-disabled {
@@ -110,7 +114,9 @@
       }
       .accordion-details {
         width: 100%;
-        border-color: var(--color-#{$color}-accordion-summary-border);
+        background-color: var(--color-#{$color}-accordion-details-back);
+        border-color: var(--color-#{$color}-accordion-details-border);
+        color: var(--color-#{$color}-accordion-details-fore);
       }
     }
   }

@@ -23,10 +23,12 @@ $color-hue-magenta: 324 !default;
 
 $color-chroma-gray: 0.04 !default;
 $color-chroma-colorful: 0.12 !default;
+$color-chroma-colorful-offset-lighter: 0 !default;
+$color-chroma-colorful-offset-darker: 0 !default;
 
-$color-lightness-500: 70% !default;
-$color-lightness-offset-lighter: 3.25%;
-$color-lightness-offset-darker: 6.5%;
+$color-lightness-500: 60% !default;
+$color-lightness-offset-lighter: 4%;
+$color-lightness-offset-darker: 4%;
 
 $color-lightness-white: 98% !default;
 $color-lightness-black: 35% !default;
@@ -39,6 +41,230 @@ $color-black: oklch(
 ) !default;
 
 //#endregion define color settings
+
+$colorLightShades: (
+  (
+    name: "plain",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "600",
+    shadow: "700",
+    accordion: (
+      fore: "300",
+      back: "950",
+      border: "600",
+      accordionSummary: (
+        fore: "050",
+        back: "600",
+        border: "600",
+      ),
+      accordionDetails: (
+        fore: "050",
+        back: "950",
+        border: "600",
+      ),
+    ),
+    button: (
+      fore: "050",
+      back: "600",
+      border: "600",
+    ),
+  ),
+  (
+    name: "disabled",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    button: (
+      fore: "400",
+      back: "600",
+      border: "600",
+    ),
+  ),
+  (
+    name: "hover",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    accordion: (
+      accordionSummary: (
+        fore: "050",
+        back: "550",
+        border: "550",
+      ),
+    ),
+    button: (
+      fore: "050",
+      back: "550",
+      border: "550",
+    ),
+  ),
+  (
+    name: "focus",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    accordion: (
+      accordionSummary: (
+        fore: "050",
+        back: "600",
+        border: "600",
+      ),
+    ),
+    button: (
+      fore: "050",
+      back: "600",
+      border: "600",
+    ),
+  ),
+  (
+    name: "active",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    accordion: (
+      accordionSummary: (
+        fore: "050",
+        back: "500",
+        border: "500",
+      ),
+    ),
+    button: (
+      fore: "050",
+      back: "500",
+      border: "500",
+    ),
+  ),
+  (
+    name: "visited",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+  ),
+);
+
+$colorDarkShades: (
+  (
+    name: "plain",
+    fore: "950",
+    back: "050",
+    border: "400",
+    placeholder: "400",
+    shadow: "300",
+    accordion: (
+      fore: "950",
+      back: "050",
+      border: "400",
+      accordionSummary: (
+        fore: "950",
+        back: "400",
+        border: "400",
+      ),
+      accordionDetails: (
+        fore: "950",
+        back: "050",
+        border: "400",
+      ),
+    ),
+    button: (
+      fore: "950",
+      back: "400",
+      border: "400",
+    ),
+  ),
+  (
+    name: "disabled",
+    fore: "950",
+    back: "050",
+    border: "600",
+    placeholder: "600",
+    shadow: "600",
+    button: (
+      fore: "600",
+      back: "400",
+      border: "400",
+    ),
+  ),
+  (
+    name: "hover",
+    fore: "950",
+    back: "050",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    accordion: (
+      accordionSummary: (
+        fore: "950",
+        back: "350",
+        border: "350",
+      ),
+    ),
+    button: (
+      fore: "950",
+      back: "350",
+      border: "350",
+    ),
+  ),
+  (
+    name: "focus",
+    fore: "950",
+    back: "050",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    accordion: (
+      accordionSummary: (
+        fore: "950",
+        back: "400",
+        border: "400",
+      ),
+    ),
+    button: (
+      fore: "950",
+      back: "400",
+      border: "400",
+    ),
+  ),
+  (
+    name: "active",
+    fore: "050",
+    back: "950",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+    accordion: (
+      accordionSummary: (
+        fore: "950",
+        back: "300",
+        border: "300",
+      ),
+    ),
+    button: (
+      fore: "950",
+      back: "300",
+      border: "300",
+    ),
+  ),
+  (
+    name: "visited",
+    fore: "950",
+    back: "050",
+    border: "600",
+    placeholder: "650",
+    shadow: "700",
+  ),
+);
 
 //#region define colors array
 
@@ -58,47 +284,38 @@ $colorsWithProperties: (
   (
     "name": "gray",
     "hue": $color-hue-gray,
-    "chroma": $color-chroma-gray,
   ),
   (
     "name": "red",
     "hue": $color-hue-red,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "orange",
     "hue": $color-hue-orange,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "yellow",
     "hue": $color-hue-yellow,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "green",
     "hue": $color-hue-green,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "cyan",
     "hue": $color-hue-cyan,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "blue",
     "hue": $color-hue-blue,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "violet",
     "hue": $color-hue-violet,
-    "chroma": $color-chroma-colorful,
   ),
   (
     "name": "magenta",
     "hue": $color-hue-magenta,
-    "chroma": $color-chroma-colorful,
   )
 );
 

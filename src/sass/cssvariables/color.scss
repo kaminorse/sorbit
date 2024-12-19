@@ -8,304 +8,227 @@
 @use "../mixins/index.scss" as mixins;
 
 :root {
-  $white-oklch: #{variables.$color-lightness-white} #{variables.$color-chroma-gray} #{variables.$color-hue-gray};
+  $white-oklch: #{variables.$color-lightness-white} #{variables.$color-chroma-gray}
+    #{variables.$color-hue-gray};
   --color-white-oklch: #{$white-oklch};
   --color-white: oklch(#{$white-oklch});
 
-  $black-oklch: #{variables.$color-lightness-black} #{variables.$color-chroma-gray} #{variables.$color-hue-gray};
+  $black-oklch: #{variables.$color-lightness-black} #{variables.$color-chroma-gray}
+    #{variables.$color-hue-gray};
   --color-black-oklch: #{$black-oklch};
   --color-black: oklch(#{$black-oklch});
 
   @each $colorProperties in variables.$colorsWithProperties {
     $name: map.get($colorProperties, "name");
     $hue: map.get($colorProperties, "hue");
-    $chroma: map.get($colorProperties, "chroma");
+
     $p: "000" !default;
-    @for $i from 1 through 19  {
+    @for $i from 1 through 19 {
       $p: ($i * 5) + "0";
       @if (string.length($p) == 2) {
         $p: "0" + $p;
       }
-      $lightness: variables.$color-lightness-500 !default;
+      $lightness: variables.$color-lightness-500;
+      $chroma: variables.$color-chroma-gray;
       @if ($i < 10) {
         $lightness-offset: (10 - $i) * variables.$color-lightness-offset-darker;
         $lightness: variables.$color-lightness-500 - $lightness-offset;
+        @if ($name != "gray") {
+          $chroma-offset: (10 - $i) *
+            variables.$color-chroma-colorful-offset-darker;
+          $chroma: variables.$color-chroma-colorful + $chroma-offset;
+        }
       } @else if ($i > 10) {
-        $lightness-offset: ($i - 10) * variables.$color-lightness-offset-lighter;
+        $lightness-offset: ($i - 10) *
+          variables.$color-lightness-offset-lighter;
         $lightness: variables.$color-lightness-500 + $lightness-offset;
-      } @else if ($i == 10) {
-        $lightness: variables.$color-lightness-500;
+        @if ($name != "gray") {
+          $chroma-offset: ($i - 10) *
+            variables.$color-chroma-colorful-offset-lighter;
+          $chroma: variables.$color-chroma-colorful + $chroma-offset;
+        }
+      } @else {
+        @if ($name != "gray") {
+          $chroma: variables.$color-chroma-colorful;
+        }
       }
-      
+
       $oklch: #{$lightness} #{$chroma} #{$hue};
 
       --color-#{$name}-#{$p}-oklch: #{$oklch};
       --color-#{$name}-#{$p}: oklch(#{$oklch});
     }
   }
+}
 
-  color-scheme: light;
+@mixin setColor($colorObj, $colorName, $pseudoClassName, $componentName: "") {
+  $srcColorName: $colorName;
+  $destColorName: $colorName;
+
+  @if ($colorName == "default") {
+    $srcColorName: "gray";
+  }
+
+  $destPseudoClassName: "";
+  @if ($pseudoClassName != "plain") {
+    $destPseudoClassName: "-#{$pseudoClassName}";
+  }
+
+  $fore: map.get($colorObj, "fore");
+  @if ($fore != null) {
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-fore: var(
+      --color-#{$srcColorName}-#{$fore}
+    );
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-fore-oklch: var(
+      --color-#{$srcColorName}-#{$fore}-oklch
+    );
+  }
+
+  $back: map.get($colorObj, "back");
+  @if ($back != null) {
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-back: var(
+      --color-#{$srcColorName}-#{$back}
+    );
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-back-oklch: var(
+      --color-#{$srcColorName}-#{$back}-oklch
+    );
+  }
+
+  $border: map.get($colorObj, "border");
+  @if ($border != null) {
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-border: var(
+      --color-#{$srcColorName}-#{$border}
+    );
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-border-oklch: var(
+      --color-#{$srcColorName}-#{$border}-oklch
+    );
+  }
+  
+  $placeholder: map.get($colorObj, "placeholder");
+  @if ($placeholder != null) {
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-placeholder: var(
+      --color-#{$srcColorName}-#{$placeholder}
+    );
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-placeholder-oklch: var(
+      --color-#{$srcColorName}-#{$placeholder}-oklch
+    );
+  }
+
+  $shadow: map.get($colorObj, "shadow");
+  @if ($shadow != null) {
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-shadow: var(
+      --color-#{$srcColorName}-#{$shadow}
+    );
+    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-shadow-oklch: var(
+      --color-#{$srcColorName}-#{$shadow}-oklch
+    );
+  }
 }
 
 @mixin colorLight() {
-  --color-default-fore: var(--color-black);
-  --color-default-fore-oklch: var(--color-black-oklch);
-  --color-default-back: var(--color-white);
-  --color-default-back-oklch: var(--color-white-oklch);
-  --color-default-border: var(--color-gray-600);
-  --color-default-placeholder: var(--color-gray-650);
-  --color-default-shadow: var(--color-gray-850);
-  --color-default-button-back: var(--color-gray-600);
-  --color-default-button-border: var(--color-gray-600);
-  --color-default-code-back: var(--color-gray-800);
-  --color-default-disabled-fore: var(--color-black);
-  --color-default-disabled-back: var(--color-gray-700);
-  --color-default-disabled-border: var(--color-gray-600);
-  --color-default-disabled-shadow: var(--color-gray-850);
-  --color-default-disabled-button-back: var(--color-gray-700);
-  --color-default-disabled-button-border: var(--color-gray-700);
-  --color-default-hover-fore: var(--color-black);
-  --color-default-hover-back: var(--color-gray-800);
-  --color-default-hover-border: var(--color-gray-600);
-  --color-default-hover-shadow: var(--color-gray-850);
-  --color-default-hover-button-back: var(--color-gray-650);
-  --color-default-hover-button-border: var(--color-gray-600);
-  --color-default-focus-fore: var(--color-black);
-  --color-default-focus-back: var(--color-white);
-  --color-default-focus-border: var(--color-gray-600);
-  --color-default-focus-shadow: var(--color-gray-850);
-  --color-default-focus-button-back: var(--color-gray-600);
-  --color-default-focus-button-border: var(--color-gray-650);
-  --color-default-active-fore: var(--color-black);
-  --color-default-active-back: var(--color-gray-700);
-  --color-default-active-border: var(--color-gray-550);
-  --color-default-active-shadow: var(--color-gray-850);
-  --color-default-active-button-back: var(--color-gray-550);
-  --color-default-active-button-border: var(--color-gray-550);
-  --color-default-visited-fore: var(--color-violet-200);
-  --color-default-visited-back: var(--color-gray-700);
-  --color-default-visited-border: var(--color-gray-600);
-  --color-default-visited-shadow: var(--color-gray-850);
-  --color-default-visited-button-back: var(--color-gray-600);
-  --color-default-visited-button-border: var(--color-gray-600);
-
-    //#region accordion
-    --color-default-accordion-fore: var(--color-default-fore);
-    --color-default-accordion-back: var(--color-default-back);
-    --color-default-accordion-border: var(--color-gray-600);
-    --color-default-accordion-summary-fore: var(--color-default-fore);
-    --color-default-accordion-summary-back: var(--color-gray-600);
-    --color-default-accordion-summary-border: var(--color-gray-600);
-    --color-default-hover-accordion-summary-fore: var(--color-default-fore);
-    --color-default-hover-accordion-summary-back: var(--color-gray-650);
-    --color-default-hover-accordion-summary-border: var(--color-gray-600);
-    --color-default-focus-accordion-summary-fore: var(--color-default-fore);
-    --color-default-focus-accordion-summary-back: var(--color-gray-600);
-    --color-default-focus-accordion-summary-border: var(--color-gray-650);
-    --color-default-active-accordion-summary-fore: var(--color-default-fore);
-    --color-default-active-accordion-summary-back: var(--color-gray-550);
-    --color-default-active-accordion-summary-border: var(--color-gray-550);
-    --color-default-disabled-accordion-summary-fore: var(--color-default-fore);
-    --color-default-disabled-accordion-summary-back: var(--color-gray-700);
-    --color-default-disabled-accordion-summary-border: var(--color-gray-700);
-    --color-default-accordion-summary-chevron: var(--color-default-fore);
-    //#endregion accordion
-  
-  @each $color in variables.$colors {
-    --color-#{$color}-fore: var(--color-#{$color}-100);
-    --color-#{$color}-fore-oklch: var(--color-#{$color}-100-oklch);
-    --color-#{$color}-back: var(--color-#{$color}-850);
-    --color-#{$color}-back-oklch: var(--color-#{$color}-850-oklch);
-    --color-#{$color}-border: var(--color-#{$color}-600);
-    --color-#{$color}-placeholder: var(--color-#{$color}-650);
-    --color-#{$color}-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-button-back: var(--color-#{$color}-600);
-    --color-#{$color}-button-border: var(--color-#{$color}-600);
-    --color-#{$color}-code-back: var(--color-#{$color}-800);
-    --color-#{$color}-disabled-fore: var(--color-#{$color}-850);
-    --color-#{$color}-disabled-back: var(--color-#{$color}-700);
-    --color-#{$color}-disabled-border: var(--color-#{$color}-600);
-    --color-#{$color}-disabled-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-disabled-button-back: var(--color-#{$color}-700);
-    --color-#{$color}-disabled-button-border: var(--color-#{$color}-700);
-    --color-#{$color}-hover-fore: var(--color-#{$color}-100);
-    --color-#{$color}-hover-back: var(--color-#{$color}-800);
-    --color-#{$color}-hover-border: var(--color-#{$color}-600);
-    --color-#{$color}-hover-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-hover-button-back: var(--color-#{$color}-650);
-    --color-#{$color}-hover-button-border: var(--color-#{$color}-650);
-    --color-#{$color}-focus-fore: var(--color-#{$color}-100);
-    --color-#{$color}-focus-back: var(--color-#{$color}-850);
-    --color-#{$color}-focus-border: var(--color-#{$color}-650);
-    --color-#{$color}-focus-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-focus-button-back: var(--color-#{$color}-600);
-    --color-#{$color}-focus-button-border: var(--color-#{$color}-650);
-    --color-#{$color}-active-fore: var(--color-#{$color}-100);
-    --color-#{$color}-active-back: var(--color-#{$color}-700);
-    --color-#{$color}-active-border: var(--color-#{$color}-550);
-    --color-#{$color}-active-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-active-button-back: var(--color-#{$color}-550);
-    --color-#{$color}-active-button-border: var(--color-#{$color}-550);
-    --color-#{$color}-visited-fore: var(--color-#{$color}-100);
-    --color-#{$color}-visited-back: var(--color-#{$color}-850);
-    --color-#{$color}-visited-border: var(--color-#{$color}-600);
-    --color-#{$color}-visited-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-visited-button-back: var(--color-#{$color}-600);
-    --color-#{$color}-visited-button-border: var(--color-#{$color}-600);
-
-    //#region accordion
-    --color-#{$color}-accordion-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-accordion-back: var(--color-#{$color}-back);
-    --color-#{$color}-accordion-border: var(--color-#{$color}-600);
-    --color-#{$color}-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-accordion-summary-back: var(--color-#{$color}-600);
-    --color-#{$color}-accordion-summary-border: var(--color-#{$color}-600);
-    --color-#{$color}-focus-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-focus-accordion-summary-back: var(--color-#{$color}-600);
-    --color-#{$color}-focus-accordion-summary-border: var(--color-#{$color}-650);
-    --color-#{$color}-active-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-active-accordion-summary-back: var(--color-#{$color}-550);
-    --color-#{$color}-active-accordion-summary-border: var(--color-#{$color}-550);
-    --color-#{$color}-disabled-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-disabled-accordion-summary-back: var(--color-#{$color}-700);
-    --color-#{$color}-disabled-accordion-summary-border: var(--color-#{$color}-700);
-    --color-#{$color}-accordion-summary-chevron: var(--color-#{$color}-fore);
-    //#endregion accordion
-  }
-  
   color-scheme: light;
+  @each $colorShade in variables.$colorLightShades {
+    $pseudoName: map.get($colorShade, "name");
+
+    @include setColor($colorShade, "default", $pseudoName);
+
+    //#region accordion
+    $accordion: map.get($colorShade, "accordion");
+    @if ($accordion != null) {
+      @include setColor($accordion, "default", $pseudoName, "-accordion");
+      $accordionSummary: map.get($accordion, "accordionSummary");
+      @if ($accordionSummary != null) {
+        @include setColor($accordionSummary, "default", $pseudoName, "-accordion-summary");
+      }
+      $accordionDetails: map.get($accordion, "accordionDetails");
+      @if ($accordionDetails != null) {
+        @include setColor($accordionDetails, "default", $pseudoName, "-accordion-details");
+      }
+    }
+    //#endregion accordion
+  
+    $button: map.get($colorShade, "button");
+    @if ($button != null) {
+      @include setColor($button, "default", $pseudoName, "-button");
+    }
+
+    @each $colorName in variables.$colors {
+      @include setColor($colorShade, $colorName, $pseudoName);
+
+      //#region accordion
+      $accordion: map.get($colorShade, "accordion");
+      @if ($accordion != null) {
+        @include setColor($accordion, $colorName, $pseudoName, "-accordion");
+        $accordionSummary: map.get($accordion, "accordionSummary");
+        @if ($accordionSummary != null) {
+          @include setColor($accordionSummary, $colorName, $pseudoName, "-accordion-summary");
+        }
+        $accordionDetails: map.get($accordion, "accordionDetails");
+        @if ($accordionDetails != null) {
+          @include setColor($accordionDetails, $colorName, $pseudoName, "-accordion-details");
+        }
+      }
+      //#endregion accordion
+
+      $button: map.get($colorShade, "button");
+      @if ($button != null) {
+        @include setColor($button, $colorName, $pseudoName, "-button");
+      }
+    }
+  }
 }
 
 @mixin colorDark() {
-  --color-default-fore: var(--color-white);
-  --color-default-fore-oklch: var(--color-white-oklch);
-  --color-default-back: var(--color-black);
-  --color-default-back-oklch: var(--color-black-oklch);
-  --color-default-border: var(--color-gray-500);
-  --color-default-placeholder: var(--color-gray-450);
-  --color-default-shadow: var(--color-gray-350);
-  --color-default-button-back: var(--color-gray-450);
-  --color-default-button-border: var(--color-gray-450);
-  --color-default-code-back: var(--color-gray-100);
-  --color-default-disabled-fore: var(--color-gray-850);
-  --color-default-disabled-back: var(--color-gray-100);
-  --color-default-disabled-border: var(--color-gray-700);
-  --color-default-disabled-shadow: var(--color-gray-350);
-  --color-default-disabled-button-back: var(--color-gray-550);
-  --color-default-disabled-button-border: var(--color-gray-550);
-  --color-default-hover-fore: var(--color-white);
-  --color-default-hover-back: var(--color-gray-200);
-  --color-default-hover-border: var(--color-gray-600);
-  --color-default-hover-shadow: var(--color-gray-350);
-  --color-default-hover-button-back: var(--color-gray-500);
-  --color-default-hover-button-border: var(--color-gray-500);
-  --color-default-focus-fore: var(--color-white);
-  --color-default-focus-back: var(--color-black);
-  --color-default-focus-border: var(--color-gray-600);
-  --color-default-focus-shadow: var(--color-gray-350);
-  --color-default-focus-button-back: var(--color-gray-450);
-  --color-default-focus-button-border: var(--color-gray-500);
-  --color-default-active-fore: var(--color-white);
-  --color-default-active-back: var(--color-gray-300);
-  --color-default-active-border: var(--color-gray-400);
-  --color-default-active-shadow: var(--color-gray-350);
-  --color-default-active-button-back: var(--color-gray-400);
-  --color-default-active-button-border: var(--color-gray-400);
-  --color-default-visited-fore: var(--color-violet-700);
-  --color-default-visited-back: var(--color-violet-300);
-  --color-default-visited-border: var(--color-violet-600);
-  --color-default-visited-shadow: var(--color-violet-350);
-  --color-default-visited-button-back: var(--color-gray-450);
-  --color-default-visited-button-border: var(--color-gray-450);
-
-    //#region accordion
-    --color-default-accordion-fore: var(--color-default-fore);
-    --color-default-accordion-back: var(--color-default-back);
-    --color-default-accordion-border: var(--color-gray-450);
-    --color-default-accordion-summary-fore: var(--color-default-fore);
-    --color-default-accordion-summary-back: var(--color-gray-450);
-    --color-default-accordion-summary-border: var(--color-gray-450);
-    --color-default-hover-accordion-summary-fore: var(--color-default-fore);
-    --color-default-hover-accordion-summary-back: var(--color-gray-500);
-    --color-default-hover-accordion-summary-border: var(--color-gray-500);
-    --color-default-focus-accordion-summary-fore: var(--color-default-fore);
-    --color-default-focus-accordion-summary-back: var(--color-gray-450);
-    --color-default-focus-accordion-summary-border: var(--color-gray-500);
-    --color-default-active-accordion-summary-fore: var(--color-default-fore);
-    --color-default-active-accordion-summary-back: var(--color-gray-400);
-    --color-default-active-accordion-summary-border: var(--color-gray-400);
-    --color-default-disabled-accordion-summary-fore: var(--color-default-fore);
-    --color-default-disabled-accordion-summary-back: var(--color-gray-550);
-    --color-default-disabled-accordion-summary-border: var(--color-gray-550);
-    --color-default-accordion-summary-chevron: var(--color-default-fore);
-    //#endregion accordion
-
-  @each $color in variables.$colors {
-    --color-#{$color}-fore: var(--color-#{$color}-900);
-    --color-#{$color}-fore-oklch: var(--color-#{$color}-100-oklch);
-    --color-#{$color}-back: var(--color-#{$color}-150);
-    --color-#{$color}-back-oklch: var(--color-#{$color}-150-oklch);
-    --color-#{$color}-border: var(--color-#{$color}-500);
-    --color-#{$color}-placeholder: var(--color-#{$color}-450);
-    --color-#{$color}-shadow: var(--color-#{$color}-350);
-    --color-#{$color}-button-back: var(--color-#{$color}-450);
-    --color-#{$color}-button-border: var(--color-#{$color}-450);
-    --color-#{$color}-code-back: var(--color-#{$color}-100);
-    --color-#{$color}-disabled-fore: var(--color-#{$color}-900);
-    --color-#{$color}-disabled-back: var(--color-#{$color}-100);
-    --color-#{$color}-disabled-border: var(--color-#{$color}-700);
-    --color-#{$color}-disabled-shadow: var(--color-#{$color}-350);
-    --color-#{$color}-disabled-button-back: var(--color-#{$color}-550);
-    --color-#{$color}-disabled-button-border: var(--color-#{$color}-550);
-    --color-#{$color}-hover-fore: var(--color-#{$color}-900);
-    --color-#{$color}-hover-back: var(--color-#{$color}-200);
-    --color-#{$color}-hover-border: var(--color-#{$color}-600);
-    --color-#{$color}-hover-shadow: var(--color-#{$color}-350);
-    --color-#{$color}-hover-button-back: var(--color-#{$color}-500);
-    --color-#{$color}-hover-button-border: var(--color-#{$color}-500);
-    --color-#{$color}-focus-fore: var(--color-#{$color}-900);
-    --color-#{$color}-focus-back: var(--color-#{$color}-150);
-    --color-#{$color}-focus-border: var(--color-#{$color}-650);
-    --color-#{$color}-focus-shadow: var(--color-#{$color}-850);
-    --color-#{$color}-focus-button-back: var(--color-#{$color}-450);
-    --color-#{$color}-focus-button-border: var(--color-#{$color}-500);
-    --color-#{$color}-active-fore: var(--color-#{$color}-900);
-    --color-#{$color}-active-back: var(--color-#{$color}-300);
-    --color-#{$color}-active-border: var(--color-#{$color}-350);
-    --color-#{$color}-active-shadow: var(--color-#{$color}-350);
-    --color-#{$color}-active-button-back: var(--color-#{$color}-400);
-    --color-#{$color}-active-button-border: var(--color-#{$color}-400);
-    --color-#{$color}-visited-fore: var(--color-#{$color}-900);
-    --color-#{$color}-visited-back: var(--color-#{$color}-300);
-    --color-#{$color}-visited-border: var(--color-#{$color}-600);
-    --color-#{$color}-visited-shadow: var(--color-#{$color}-350);
-    --color-#{$color}-visited-button-back: var(--color-#{$color}-350);
-    --color-#{$color}-visited-button-border: var(--color-#{$color}-350);
-
-    //#region accordion
-    --color-#{$color}-accordion-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-accordion-back: var(--color-#{$color}-back);
-    --color-#{$color}-accordion-border: var(--color-#{$color}-450);
-    --color-#{$color}-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-accordion-summary-back: var(--color-#{$color}-450);
-    --color-#{$color}-accordion-summary-border: var(--color-#{$color}-450);
-    --color-#{$color}-hover-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-hover-accordion-summary-back: var(--color-#{$color}-500);
-    --color-#{$color}-hover-accordion-summary-border: var(--color-#{$color}-500);
-    --color-#{$color}-focus-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-focus-accordion-summary-back: var(--color-#{$color}-450);
-    --color-#{$color}-focus-accordion-summary-border: var(--color-#{$color}-500);
-    --color-#{$color}-active-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-active-accordion-summary-back: var(--color-#{$color}-400);
-    --color-#{$color}-active-accordion-summary-border: var(--color-#{$color}-400);
-    --color-#{$color}-disabled-accordion-summary-fore: var(--color-#{$color}-fore);
-    --color-#{$color}-disabled-accordion-summary-back: var(--color-#{$color}-550);
-    --color-#{$color}-disabled-accordion-summary-border: var(--color-#{$color}-550);
-    --color-#{$color}-accordion-summary-chevron: var(--color-#{$color}-fore);
-    //#endregion accordion
-  }
-  
   color-scheme: dark;
+  @each $colorShade in variables.$colorDarkShades {
+    $pseudoName: map.get($colorShade, "name");
+
+    @include setColor($colorShade, "default", $pseudoName);
+
+    //#region accordion
+    $accordion: map.get($colorShade, "accordion");
+    @if ($accordion != null) {
+      @include setColor($accordion, "default", $pseudoName, "-accordion");
+      $accordionSummary: map.get($accordion, "accordionSummary");
+      @if ($accordionSummary != null) {
+        @include setColor($accordionSummary, "default", $pseudoName, "-accordion-summary");
+      }
+      $accordionDetails: map.get($accordion, "accordionDetails");
+      @if ($accordionDetails != null) {
+        @include setColor($accordionDetails, "default", $pseudoName, "-accordion-details");
+      }
+    }
+    //#endregion accordion
+  
+    $button: map.get($colorShade, "button");
+    @if ($button != null) {
+      @include setColor($button, "default", $pseudoName, "-button");
+    }
+
+    @each $colorName in variables.$colors {
+      @include setColor($colorShade, $colorName, $pseudoName);
+
+      //#region accordion
+      $accordion: map.get($colorShade, "accordion");
+      @if ($accordion != null) {
+        @include setColor($accordion, $colorName, $pseudoName, "-accordion");
+        $accordionSummary: map.get($accordion, "accordionSummary");
+        @if ($accordionSummary != null) {
+          @include setColor($accordionSummary, $colorName, $pseudoName, "-accordion-summary");
+        }
+        $accordionDetails: map.get($accordion, "accordionDetails");
+        @if ($accordionDetails != null) {
+          @include setColor($accordionDetails, $colorName, $pseudoName, "-accordion-details");
+        }
+      }
+      //#endregion accordion
+
+      $button: map.get($colorShade, "button");
+      @if ($button != null) {
+        @include setColor($button, $colorName, $pseudoName, "-button");
+      }
+    }
+  }
 }
 
 :root {
