@@ -49,18 +49,18 @@ $columns-count: 12;
   @for $num from 1 through $columns-count {
     .column-#{$num} {
       @include mixins.column();
-      flex-basis: percentage(math.div($num, $columns-count));
-      max-width: percentage(math.div($num, $columns-count));
-      width: percentage(math.div($num, $columns-count));
+      flex-basis: math.percentage(math.div($num, $columns-count));
+      max-width: math.percentage(math.div($num, $columns-count));
+      width: math.percentage(math.div($num, $columns-count));
     }
   }
   .column,
   [class^="column-"] {
     @for $num from 1 through $columns-count {
       @include mixins.is-responsive("-" + $num) {
-        flex-basis: percentage(math.div($num, $columns-count));
-        max-width: percentage(math.div($num, $columns-count));
-        width: percentage(math.div($num, $columns-count));
+        flex-basis: math.percentage(math.div($num, $columns-count));
+        max-width: math.percentage(math.div($num, $columns-count));
+        width: math.percentage(math.div($num, $columns-count));
       }
     }
   }
