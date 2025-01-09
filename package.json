@@ -1,6 +1,6 @@
 {
   "name": "sorbit",
-  "version": "0.6.6",
+  "version": "0.6.7",
   "description": "sweet css written by scss",
   "main": "src/sass/sorbit.scss",
   "scripts": {
