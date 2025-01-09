@@ -1,15 +1,13 @@
-/**
- * components/tile.scss
- * @author kaminorse
- */
-
 @use "../mixins/index.scss" as mixins;
+@use "../variables/index.scss" as variables;
 
 .tile {
+  @include mixins.base();
   position: relative;
   min-height: 25rem;
   width: 100%;
   .tile-header {
+    @include mixins.base();
     position: absolute;
     display: block;
     top: 25%;
@@ -27,11 +25,12 @@
       top: 0;
     }
     .tile-title {
+      @include mixins.base();
       text-align: left;
       vertical-align: middle;
-      color: var(--color-default-fore);
-      font-size: var(--font-size-medium);
-      font-weight: var(--font-weight-semibold);
+      color: var(--#{variables.$prefix}color-default-fore);
+      font-size: var(--#{variables.$prefix}font-size-medium);
+      font-weight: var(--#{variables.$prefix}font-weight-semibold);
       text-decoration: none !important;
       position: absolute;
       top: 35%;
@@ -40,6 +39,7 @@
     }
   }
   .tile-image {
+    @include mixins.base();
     z-index: 1;
     inset: 0;
     display: block;

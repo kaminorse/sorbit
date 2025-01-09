@@ -1,23 +1,60 @@
-/**
- * layouts/container.scss
- * @author kaminorse
- */
-
 @use "../variables/index.scss" as variables;
+@use "../functions/index.scss" as functions;
 @use "../mixins/index.scss" as mixins;
 
 .container {
-  margin: 0 auto;
-  padding: 0 1rem;
-  position: relative;
+  --#{variables.$prefix}gutter-x: 0;
+  --#{variables.$prefix}gutter-y: 0;
+  @include mixins.base();
+  padding-top: calc(var(--#{variables.$prefix}gutter-y) * 0.5);
+  padding-bottom: calc(var(--#{variables.$prefix}gutter-y) * 0.5);
+  padding-right: calc(var(--#{variables.$prefix}gutter-x) * 0.5);
+  padding-left: calc(var(--#{variables.$prefix}gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
   width: auto;
+  position: relative;
+
+  @for $p from 0 through 16 {
+    $escapedQuarter: functions.strReplace(#{($p * 0.25)}, ".", "\\.");
+    &.has-gutter-#{$escapedQuarter}rem {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+    &.has-gutter-x-#{$escapedQuarter}rem {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+    }
+    &.has-gutter-y-#{$escapedQuarter}rem {
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+    @include mixins.is-responsive("-#{$escapedQuarter}rem", "has-gutter-") {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+    @include mixins.is-responsive("-#{$escapedQuarter}rem", "has-gutter-x") {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+    }
+    @include mixins.is-responsive("-#{$escapedQuarter}rem", "has-gutter-y") {
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+  }
+
   @include mixins.desktop() {
     max-width: variables.$breakpoint-desktop;
+    &.is-fluid {
+      max-width: unset;
+    }
   }
   @include mixins.widescreen() {
     max-width: variables.$breakpoint-widescreen;
+    &.is-fluid {
+      max-width: unset;
+    }
   }
   @include mixins.fullhd() {
     max-width: variables.$breakpoint-fullhd;
+    &.is-fluid {
+      max-width: unset;
+    }
   }
 }

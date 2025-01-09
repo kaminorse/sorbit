@@ -1,14 +1,11 @@
-/**
- * components/header.scss
- * @author kaminorse
- */
-
+@use "../mixins/index.scss" as mixins;
 @use "../variables/index.scss" as variables;
 
 .header {
+  @include mixins.base();
   display: block;
   width: 100%;
-  box-shadow: 0 0 0.5rem var(--color-default-shadow);
+  box-shadow: 0 0 0.5rem var(--#{variables.$prefix}color-default-shadow);
   backdrop-filter: blur(0.25rem);
   &.is-sticky {
     position: sticky;
@@ -19,9 +16,9 @@
   }
   @each $color in variables.$colors {
     &.is-#{$color} {
-      color: var(--color-#{$color}-fore);
-      background-color: oklch(var(--color-#{$color}-back-oklch) / 0.75);
-      box-shadow: 0 0 0.5rem var(--color-#{$color}-shadow);
+      color: var(--#{variables.$prefix}color-#{$color}-fore);
+      background-color: oklch(var(--#{variables.$prefix}color-#{$color}-back-oklch) / 0.75);
+      box-shadow: 0 0 0.5rem var(--#{variables.$prefix}color-#{$color}-shadow);
     }
   }
 }

@@ -1,22 +1,20 @@
-/**
- * components/hamburger.scss
- * @author kaminorse
- */
-
+@use "../mixins/index.scss" as mixins;
 @use "../variables/index.scss" as variables;
 
 $hamburger-size: 3.5rem;
 $hamburger-line-height: 0.2rem;
-$hamburger-line-color: var(--color-default-border);
+$hamburger-line-color: var(--#{variables.$prefix}color-default-border);
 
 .hamburger {
-  color: var(--color-default-fore);
+  @include mixins.base();
+  color: var(--#{variables.$prefix}color-default-fore);
   border-radius: 0.25rem;
   cursor: pointer;
   display: inline-block;
   height: $hamburger-size;
   position: relative;
   width: $hamburger-size;
+  touch-action: manipulation;
   .crown,
   .upperpatty,
   .club,
@@ -80,15 +78,15 @@ $hamburger-line-color: var(--color-default-border);
   }
   @each $color in variables.$colors {
     &.is-#{$color} {
-      color: var(--color-#{$color}-fore);
+      color: var(--#{variables.$prefix}color-#{$color}-fore);
       .upperpatty {
-        background-color: var(--color-#{$color}-border);
+        background-color: var(--#{variables.$prefix}color-#{$color}-border);
       }
       .club {
-        background-color: var(--color-#{$color}-border);
+        background-color: var(--#{variables.$prefix}color-#{$color}-border);
       }
       .lowerpatty {
-        background-color: var(--color-#{$color}-border);
+        background-color: var(--#{variables.$prefix}color-#{$color}-border);
       }
     }
   }

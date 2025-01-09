@@ -1,17 +1,13 @@
-/**
- * components/progress.scss
- * @author kaminorse
- */
-
 @use "../variables/index.scss" as variables;
 @use "../mixins/index.scss" as mixins;
 
 .progress {
+  @include mixins.base();
   @include mixins.animation() {
-    border-radius: calc(var(--border-radius-medium) + 0.125rem);
+    border-radius: calc(var(--#{variables.$prefix}border-radius-medium) + 0.125rem);
     border-style: solid;
-    border-width: var(--border-width-medium);
-    color: var(--color-default-border);
+    border-width: var(--#{variables.$prefix}border-width-medium);
+    color: var(--#{variables.$prefix}color-default-border);
     height: 1rem;
     position: relative;
     &::before {
@@ -19,7 +15,7 @@
       position: absolute;
       margin: 0.125rem;
       inset: 0 100% 0 0;
-      border-radius: var(--border-radius-medium);
+      border-radius: var(--#{variables.$prefix}border-radius-medium);
       background: currentColor;
     }
 
@@ -31,11 +27,11 @@
         }
       }
     }
-  
+
     @each $color in variables.$colors {
       &.is-#{$color} {
-        background-color: var(--color-#{$color}-back);
-        color: var(--color-#{$color}-border);
+        background-color: var(--#{variables.$prefix}color-#{$color}-back);
+        color: var(--#{variables.$prefix}color-#{$color}-border);
       }
     }
   }

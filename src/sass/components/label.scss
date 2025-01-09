@@ -1,8 +1,7 @@
-/**
- * components/label.scss
- * @author kaminorse
- */
+@use "../mixins/index.scss" as mixins;
+@use "../variables/index.scss" as variables;
 
 .label {
-  font-weight: var(--font-weight-semibold);
+  @include mixins.base();
+  font-weight: var(--#{variables.$prefix}font-weight-semibold);
 }

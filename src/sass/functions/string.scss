@@ -1,10 +1,6 @@
-/**
- * layouts/string.scss
- * @author kaminorse
- */
 @use "sass:string";
 
-@function str-replace($str, $substr, $newsubstr, $all: false) {
+@function strReplace($str, $substr, $newsubstr, $all: false) {
   $pos: string.index($str, $substr);
 
   @while $pos != null {

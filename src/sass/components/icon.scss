@@ -1,11 +1,8 @@
-/**
- * components/icon.scss
- * @author kaminorse
- */
-
+@use "../mixins/index.scss" as mixins;
 @use "../variables/index.scss" as variables;
 
 .icon {
+  @include mixins.base();
   align-items: center;
   display: inline-flex;
   justify-content: center;
@@ -24,17 +21,17 @@
     min-width: 3em;
   }
   &.has-shadow {
-    filter: drop-shadow(2px 2px 1px var(--color-default-shadow))
-      drop-shadow(-2px 2px 1px var(--color-default-shadow))
-      drop-shadow(2px -2px 1px var(--color-default-shadow))
-      drop-shadow(-2px -2px 1px var(--color-default-shadow));
+    filter: drop-shadow(2px 2px 1px var(--#{variables.$prefix}color-default-shadow))
+      drop-shadow(-2px 2px 1px var(--#{variables.$prefix}color-default-shadow))
+      drop-shadow(2px -2px 1px var(--#{variables.$prefix}color-default-shadow))
+      drop-shadow(-2px -2px 1px var(--#{variables.$prefix}color-default-shadow));
   }
   @each $color in variables.$colors {
     &.has-shadow-#{$color} {
-      filter: drop-shadow(2px 2px 1px var(--color-#{$color}-shadow))
-        drop-shadow(-2px 2px 1px var(--color-#{$color}-shadow))
-        drop-shadow(2px -2px 1px var(--color-#{$color}-shadow))
-        drop-shadow(-2px -2px 1px var(--color-#{$color}-shadow));
+      filter: drop-shadow(2px 2px 1px var(--#{variables.$prefix}color-#{$color}-shadow))
+        drop-shadow(-2px 2px 1px var(--#{variables.$prefix}color-#{$color}-shadow))
+        drop-shadow(2px -2px 1px var(--#{variables.$prefix}color-#{$color}-shadow))
+        drop-shadow(-2px -2px 1px var(--#{variables.$prefix}color-#{$color}-shadow));
     }
   }
 }

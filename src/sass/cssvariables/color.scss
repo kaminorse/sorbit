@@ -1,7 +1,3 @@
-/**
- * cssvariables/color.scss
- * @author kaminorse
- */
 @use "sass:map";
 @use "sass:string";
 @use "../variables/index.scss" as variables;
@@ -10,13 +6,13 @@
 :root {
   $white-oklch: #{variables.$color-lightness-white} #{variables.$color-chroma-gray}
     #{variables.$color-hue-gray};
-  --color-white-oklch: #{$white-oklch};
-  --color-white: oklch(#{$white-oklch});
+  --#{variables.$prefix}color-white-oklch: #{$white-oklch};
+  --#{variables.$prefix}color-white: oklch(#{$white-oklch});
 
   $black-oklch: #{variables.$color-lightness-black} #{variables.$color-chroma-gray}
     #{variables.$color-hue-gray};
-  --color-black-oklch: #{$black-oklch};
-  --color-black: oklch(#{$black-oklch});
+  --#{variables.$prefix}color-black-oklch: #{$black-oklch};
+  --#{variables.$prefix}color-black: oklch(#{$black-oklch});
 
   @each $colorProperties in variables.$colorsWithProperties {
     $name: map.get($colorProperties, "name");
@@ -55,8 +51,8 @@
 
       $oklch: #{$lightness} #{$chroma} #{$hue};
 
-      --color-#{$name}-#{$p}-oklch: #{$oklch};
-      --color-#{$name}-#{$p}: oklch(#{$oklch});
+      --#{variables.$prefix}color-#{$name}-#{$p}-oklch: #{$oklch};
+      --#{variables.$prefix}color-#{$name}-#{$p}: oklch(#{$oklch});
     }
   }
 }
@@ -76,51 +72,51 @@
 
   $fore: map.get($colorObj, "fore");
   @if ($fore != null) {
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-fore: var(
-      --color-#{$srcColorName}-#{$fore}
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-fore: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$fore}
     );
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-fore-oklch: var(
-      --color-#{$srcColorName}-#{$fore}-oklch
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-fore-oklch: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$fore}-oklch
     );
   }
 
   $back: map.get($colorObj, "back");
   @if ($back != null) {
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-back: var(
-      --color-#{$srcColorName}-#{$back}
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-back: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$back}
     );
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-back-oklch: var(
-      --color-#{$srcColorName}-#{$back}-oklch
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-back-oklch: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$back}-oklch
     );
   }
 
   $border: map.get($colorObj, "border");
   @if ($border != null) {
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-border: var(
-      --color-#{$srcColorName}-#{$border}
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-border: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$border}
     );
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-border-oklch: var(
-      --color-#{$srcColorName}-#{$border}-oklch
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-border-oklch: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$border}-oklch
     );
   }
-  
+
   $placeholder: map.get($colorObj, "placeholder");
   @if ($placeholder != null) {
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-placeholder: var(
-      --color-#{$srcColorName}-#{$placeholder}
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-placeholder: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$placeholder}
     );
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-placeholder-oklch: var(
-      --color-#{$srcColorName}-#{$placeholder}-oklch
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-placeholder-oklch: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$placeholder}-oklch
     );
   }
 
   $shadow: map.get($colorObj, "shadow");
   @if ($shadow != null) {
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-shadow: var(
-      --color-#{$srcColorName}-#{$shadow}
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-shadow: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$shadow}
     );
-    --color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-shadow-oklch: var(
-      --color-#{$srcColorName}-#{$shadow}-oklch
+    --#{variables.$prefix}color-#{$destColorName}#{$destPseudoClassName}#{$componentName}-shadow-oklch: var(
+      --#{variables.$prefix}color-#{$srcColorName}-#{$shadow}-oklch
     );
   }
 }
@@ -146,7 +142,7 @@
       }
     }
     //#endregion accordion
-  
+
     $button: map.get($colorShade, "button");
     @if ($button != null) {
       @include setColor($button, "default", $pseudoName, "-button");
@@ -199,7 +195,7 @@
       }
     }
     //#endregion accordion
-  
+
     $button: map.get($colorShade, "button");
     @if ($button != null) {
       @include setColor($button, "default", $pseudoName, "-button");

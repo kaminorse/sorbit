@@ -82,6 +82,10 @@ function changeColor(color) {
     elem.className = `loader ${color}`;
   });
 
+  document.querySelectorAll(".modal").forEach((elem) => {
+    elem.className = `modal ${color}`;
+  });
+
   document.querySelectorAll(".message").forEach((elem) => {
     elem.className = `message ${color}`;
   });

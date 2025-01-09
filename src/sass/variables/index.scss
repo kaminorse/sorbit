@@ -1,8 +1,4 @@
-/**
- * variables/index.scss
- * @author kaminorse
- */
-
+@forward "./misc.scss";
 @forward "./breakpoint.scss";
 @forward "./border.scss";
 @forward "./color.scss";

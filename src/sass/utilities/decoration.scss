@@ -1,8 +1,3 @@
-/**
- * utilities/decoration.scss
- * @author kaminorse
- */
-
 .box-shadow {
-  box-shadow: 0 0.5rem 0.5rem var(--color-default-shadow);
+  box-shadow: 0 0.5rem 0.5rem var(--#{variables.$prefix}color-default-shadow);
 }

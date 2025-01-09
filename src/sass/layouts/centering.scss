@@ -1,10 +1,13 @@
+@use "../mixins/index.scss" as mixins;
 
 .centering {
+  @include mixins.base();
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   & > * {
+    @include mixins.base();
     margin-left: auto;
     margin-right: auto;
   }

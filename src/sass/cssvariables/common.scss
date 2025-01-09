@@ -1,5 +1,7 @@
+@use "../variables/index.scss" as variables;
+
 :root {
-  --z-index-tabula: auto;
-  --z-index-modal: 100;
-  --z-index-modal-content: auto;
+  --#{variables.$prefix}z-index-tabula: auto;
+  --#{variables.$prefix}z-index-modal: 100;
+  --#{variables.$prefix}z-index-modal-content: auto;
 }

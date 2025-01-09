@@ -1,38 +1,35 @@
-/**
- * background/animation.scss
- * @author kaminorse
- */
+@use "../variables/index.scss" as variables;
 
 @mixin animation() {
   animation-fill-mode: both;
-  animation-duration: var(--animation-speed-normal);
+  animation-duration: var(--#{variables.$prefix}animation-speed-normal);
 
   &.is-infinite {
     animation-iteration-count: infinite;
   }
 
   &.is-heavy {
-    animation-duration: var(--animation-speed-heavy);
+    animation-duration: var(--#{variables.$prefix}animation-speed-heavy);
   }
 
   &.is-slower {
-    animation-duration: var(--animation-speed-slower);
+    animation-duration: var(--#{variables.$prefix}animation-speed-slower);
   }
 
   &.is-slow {
-    animation-duration: var(--animation-speed-slow);
+    animation-duration: var(--#{variables.$prefix}animation-speed-slow);
   }
 
   &.is-fast {
-    animation-duration: var(--animation-speed-fast);
+    animation-duration: var(--#{variables.$prefix}animation-speed-fast);
   }
 
   &.is-faster {
-    animation-duration: var(--animation-speed-faster);
+    animation-duration: var(--#{variables.$prefix}animation-speed-faster);
   }
 
   &.is-flash {
-    animation-duration: var(--animation-speed-flash);
+    animation-duration: var(--#{variables.$prefix}animation-speed-flash);
   }
 
   //#region direction

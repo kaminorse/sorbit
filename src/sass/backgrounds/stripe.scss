@@ -1,8 +1,3 @@
-/**
- * background/stripe.scss
- * @author kaminorse
- */
-
 @use "../variables/index.scss" as variables;
 
 .stripe {
@@ -10,13 +5,13 @@
   @each $color in variables.$colors {
     @for $p from 2 through 17 {
       &.is-#{$color}-#{$p * 5}0 {
-        background-color: var(--color-#{$color}-#{($p + 2) * 5}0);
+        background-color: var(--#{variables.$prefix}color-#{$color}-#{($p + 2) * 5}0);
         background-image: repeating-linear-gradient(
           0deg,
           transparent,
           transparent 0.75rem,
-          oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
-          oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
+          oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
+          oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
         );
         @for $n from 0 through 8 {
           $degree: $n * 45deg;
@@ -25,8 +20,8 @@
               $degree,
               transparent,
               transparent 0.75rem,
-              oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
-              oklch(var(--color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
+              oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
+              oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
             );
           }
         }

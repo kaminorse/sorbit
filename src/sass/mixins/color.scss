@@ -1,8 +1,3 @@
-/**
- * mixins/color.scss
- * @author kaminorse
- */
-
 @mixin setCssVariableColorScheme($colorScheme: "") {
   @if $colorScheme == "light" or $colorScheme == "dark" {
     @media (prefers-color-scheme: $colorScheme) {

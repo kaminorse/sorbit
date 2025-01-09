@@ -14,10 +14,10 @@ $line-height: 0.2rem;
     100% 0,
     50% calc(100% - #{$line-height})
   );
-  background: var(--color-default-fore);
+  background: var(--#{variables.$prefix}color-default-fore);
   @each $color in variables.$colors {
     &.is-#{$color} {
-      background: var(--color-#{$color}-fore);
+      background: var(--#{variables.$prefix}color-#{$color}-fore);
     }
   }
   @content;

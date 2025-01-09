@@ -1,17 +1,19 @@
-/**
- * layouts/columns.scss
- * @author kaminorse
- */
-
 @use "sass:math";
 @use "../mixins/index.scss" as mixins;
+@use "../variables/index.scss" as variables;
 
 $columns-count: 12;
 
 .columns {
+  --#{variables.$prefix}gutter-x: 0;
+  --#{variables.$prefix}gutter-y: 0;
+  @include mixins.base();
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: calc(var(--#{variables.$prefix}gutter-y) * -1);
+  margin-right: calc(var(--#{variables.$prefix}gutter-x) * -0.5);
+  margin-left: calc(var(--#{variables.$prefix}gutter-x) * -0.5);
   &.is-direction-row {
     flex-direction: row;
   }
@@ -40,6 +42,9 @@ $columns-count: 12;
 
   .column {
     @include mixins.column();
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%;
     &.is-full {
       flex: none;
       max-width: 100%;

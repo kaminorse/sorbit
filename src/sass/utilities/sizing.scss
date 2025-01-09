@@ -1,13 +1,8 @@
-/**
- * utilities/sizing.scss
- * @author kaminorse
- */
-
 @use "sass:string";
 @use "../functions/index.scss" as functions;
 
 @for $p from 0 through 100 {
-  $escaped: functions.str-replace(#{($p * 0.1)}, ".", "\\.");
+  $escaped: functions.strReplace(#{($p * 0.1)}, ".", "\\.");
 
   .is-width-#{$escaped}rem,
   .width-#{$escaped}rem {

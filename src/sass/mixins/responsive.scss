@@ -1,36 +1,39 @@
-/**
- * mixin/responsive.scss
- * @author kaminorse
- */
-
 @use "../variables/index.scss" as variables;
 
 @mixin mobile() {
-  @media screen and (max-width: variables.$breakpoint-tablet - 1px) {
+  $max-width: variables.$breakpoint-tablet - 0.02px;
+  @media screen and (max-width: $max-width) {
     @content;
   }
 }
 
 @mixin tablet() {
-  @media screen and (min-width: variables.$breakpoint-tablet) and (max-width: variables.$breakpoint-desktop - 1px) {
+  $min-width: variables.$breakpoint-tablet;
+  $max-width: variables.$breakpoint-desktop - 0.02px;
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
     @content;
   }
 }
 
 @mixin desktop() {
-  @media screen and (min-width: variables.$breakpoint-desktop) and (max-width: variables.$breakpoint-widescreen - 1px) {
+  $min-width: variables.$breakpoint-desktop;
+  $max-width: variables.$breakpoint-widescreen - 0.02px;
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
     @content;
   }
 }
 
 @mixin widescreen() {
-  @media screen and (min-width: variables.$breakpoint-widescreen) and (max-width: variables.$breakpoint-fullhd - 1px) {
+  $min-width: variables.$breakpoint-widescreen;
+  $max-width: variables.$breakpoint-fullhd - 0.02px;
+  @media screen and (min-width: $min-width) and (max-width: $max-width) {
     @content;
   }
 }
 
 @mixin fullhd() {
-  @media screen and (min-width: variables.$breakpoint-fullhd) {
+  $min-width: variables.$breakpoint-fullhd;
+  @media screen and (min-width: $min-width) {
     @content;
   }
 }
@@ -41,54 +44,57 @@
   }
 }
 
-@mixin is-responsive($suffix: "") {
+@mixin is-responsive($suffix: "", $prefix: "is-") {
   @include mobile() {
-    &.is-mobile#{$suffix},
-    &.is-mobile-or-more#{$suffix},
-    &.is-tablet-or-less#{$suffix},
-    &.is-desktop-or-less#{$suffix},
-    &.is-widescreen-or-less#{$suffix} &.is-fullhd-or-less#{$suffix} {
+    &.#{$prefix}mobile#{$suffix},
+    &.#{$prefix}mobile-or-more#{$suffix},
+    &.#{$prefix}tablet-or-less#{$suffix},
+    &.#{$prefix}desktop-or-less#{$suffix},
+    &.#{$prefix}widescreen-or-less#{$suffix},
+    &.#{$prefix}fullhd-or-less#{$suffix} {
       @content;
     }
   }
   @include tablet() {
-    &.is-mobile-or-more#{$suffix},
-    &.is-tablet-or-less#{$suffix},
-    &.is-tablet#{$suffix},
-    &.is-tablet-or-more#{$suffix},
-    &.is-desktop-or-less#{$suffix},
-    &.is-widescreen-or-less#{$suffix} &.is-fullhd-or-less#{$suffix} {
+    &.#{$prefix}mobile-or-more#{$suffix},
+    &.#{$prefix}tablet-or-less#{$suffix},
+    &.#{$prefix}tablet#{$suffix},
+    &.#{$prefix}tablet-or-more#{$suffix},
+    &.#{$prefix}desktop-or-less#{$suffix},
+    &.#{$prefix}widescreen-or-less#{$suffix},
+    &.#{$prefix}fullhd-or-less#{$suffix} {
       @content;
     }
   }
   @include desktop() {
-    &.is-mobile-or-more#{$suffix},
-    &.is-tablet-or-more#{$suffix},
-    &.is-desktop-or-less#{$suffix},
-    &.is-desktop,
-    &.is-desktop-or-more#{$suffix},
-    &.is-widescreen-or-less#{$suffix} &.is-fullhd-or-less#{$suffix} {
+    &.#{$prefix}mobile-or-more#{$suffix},
+    &.#{$prefix}tablet-or-more#{$suffix},
+    &.#{$prefix}desktop-or-less#{$suffix},
+    &.#{$prefix}desktop#{$suffix},
+    &.#{$prefix}desktop-or-more#{$suffix},
+    &.#{$prefix}widescreen-or-less#{$suffix},
+    &.#{$prefix}fullhd-or-less#{$suffix} {
       @content;
     }
   }
   @include widescreen() {
-    &.is-mobile-or-more#{$suffix},
-    &.is-tablet-or-more#{$suffix},
-    &.is-desktop-or-more#{$suffix},
-    &.is-widescreen-or-less#{$suffix},
-    &.is-widescreen#{$suffix},
-    &.is-widescreen-or-more#{$suffix},
-    &.is-fullhd-or-less#{$suffix} {
+    &.#{$prefix}mobile-or-more#{$suffix},
+    &.#{$prefix}tablet-or-more#{$suffix},
+    &.#{$prefix}desktop-or-more#{$suffix},
+    &.#{$prefix}widescreen-or-less#{$suffix},
+    &.#{$prefix}widescreen#{$suffix},
+    &.#{$prefix}widescreen-or-more#{$suffix},
+    &.#{$prefix}fullhd-or-less#{$suffix} {
       @content;
     }
   }
   @include fullhd() {
-    &.is-mobile-or-more#{$suffix},
-    &.is-tablet-or-more#{$suffix},
-    &.is-desktop-or-more#{$suffix},
-    &.is-widescreen-or-more#{$suffix},
-    &.is-fullhd-or-less#{$suffix},
-    &.is-fullhd#{$suffix} {
+    &.#{$prefix}mobile-or-more#{$suffix},
+    &.#{$prefix}tablet-or-more#{$suffix},
+    &.#{$prefix}desktop-or-more#{$suffix},
+    &.#{$prefix}widescreen-or-more#{$suffix},
+    &.#{$prefix}fullhd-or-less#{$suffix},
+    &.#{$prefix}fullhd#{$suffix} {
       @content;
     }
   }
@@ -217,10 +223,15 @@
 }
 
 @mixin column() {
+  box-sizing: border-box;
   display: block;
-  flex-basis: 0;
-  flex-grow: 1;
-  flex-shrink: 1;
-  max-width: 100%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
   position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding-top: calc(var(--#{variables.$prefix}gutter-y));
+  padding-right: calc(var(--#{variables.$prefix}gutter-x) * 0.5);
+  padding-left: calc(var(--#{variables.$prefix}gutter-x) * 0.5);
 }
