@@ -1,6 +1,43 @@
 @use "../variables/index.scss" as variables;
 @use "../mixins/index.scss" as mixins;
 
+@mixin nav-brand() {
+  > .nav-brand {
+    @include mixins.base();
+    display: flex;
+    > .nav-brand-left,
+    > .nav-brand-center,
+    > .nav-brand-right,
+    > .left,
+    > .center,
+    > .right {
+      @include mixins.base();
+      display: block;
+      flex-basis: 0;
+      flex-grow: 1;
+      flex-shrink: 1;
+      max-width: 100%;
+      margin: auto;
+      position: relative;
+    }
+    > .nav-brand-left,
+    > .left {
+      margin: auto auto auto 0;
+      text-align: left;
+    }
+    > .nav-brand-center,
+    > .center {
+      margin: auto;
+      text-align: center;
+    }
+    > .nav-brand-right,
+    > .right {
+      margin: auto 0 auto auto;
+      text-align: right;
+    }
+  }
+}
+
 .nav {
   min-height: 4rem;
   padding: 0.25rem 0;
@@ -159,40 +196,7 @@
     @include mixins.base();
     @include mixins.add-responsible-visible() {
       display: block;
-      > .nav-brand {
-        @include mixins.base();
-        display: flex;
-        > .nav-brand-left,
-        > .nav-brand-center,
-        > .nav-brand-right,
-        > .left,
-        > .center,
-        > .right {
-          @include mixins.base();
-          display: block;
-          flex-basis: 0;
-          flex-grow: 1;
-          flex-shrink: 1;
-          max-width: 100%;
-          margin: auto;
-          position: relative;
-        }
-        > .nav-brand-left,
-        > .left {
-          margin: auto auto auto 0;
-          text-align: left;
-        }
-        > .nav-brand-center,
-        > .center {
-          margin: auto;
-          text-align: center;
-        }
-        > .nav-brand-right,
-        > .right {
-          margin: auto 0 auto auto;
-          text-align: right;
-        }
-      }
+      @include nav-brand();
       > .nav-menu {
         @include mixins.base();
         display: none;

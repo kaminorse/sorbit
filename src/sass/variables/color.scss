@@ -62,6 +62,26 @@ $colorLightShades: (
         border: "600",
       ),
     ),
+    adminNav: (
+      fore: "050",
+      back: "600",
+      border: "600",
+      adminNavBrand: (
+        fore: "050",
+        back: "600",
+        border: "600",
+      ),
+      adminNavMenu: (
+        fore: "050",
+        back: "600",
+        border: "600",
+        adminNavMenuItem: (
+          fore: "050",
+          back: "600",
+          border: "600",
+        ),
+      ),
+    ),
     button: (
       fore: "050",
       back: "600",
@@ -77,6 +97,15 @@ $colorLightShades: (
     border: "600",
     placeholder: "650",
     shadow: "700",
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "400",
+          back: "600",
+          border: "600",
+        ),
+      ),
+    ),
     button: (
       fore: "400",
       back: "600",
@@ -121,6 +150,15 @@ $colorLightShades: (
         border: "600",
       ),
     ),
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "050",
+          back: "600",
+          border: "600",
+        ),
+      ),
+    ),
     button: (
       fore: "050",
       back: "600",
@@ -141,6 +179,15 @@ $colorLightShades: (
         fore: "050",
         back: "500",
         border: "500",
+      ),
+    ),
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "050",
+          back: "500",
+          border: "500",
+        ),
       ),
     ),
     button: (
@@ -186,6 +233,26 @@ $colorDarkShades: (
         border: "400",
       ),
     ),
+    adminNav: (
+      fore: "950",
+      back: "400",
+      border: "400",
+      adminNavBrand: (
+        fore: "950",
+        back: "400",
+        border: "400",
+      ),
+      adminNavMenu: (
+        fore: "950",
+        back: "400",
+        border: "400",
+        adminNavMenuItem: (
+          fore: "950",
+          back: "400",
+          border: "400",
+        ),
+      ),
+    ),
     button: (
       fore: "950",
       back: "400",
@@ -201,6 +268,15 @@ $colorDarkShades: (
     border: "600",
     placeholder: "600",
     shadow: "600",
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "600",
+          back: "400",
+          border: "400",
+        ),
+      ),
+    ),
     button: (
       fore: "600",
       back: "400",
@@ -221,6 +297,15 @@ $colorDarkShades: (
         fore: "950",
         back: "350",
         border: "350",
+      ),
+    ),
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "950",
+          back: "350",
+          border: "350",
+        ),
       ),
     ),
     button: (
@@ -245,6 +330,15 @@ $colorDarkShades: (
         border: "400",
       ),
     ),
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "950",
+          back: "400",
+          border: "400",
+        ),
+      ),
+    ),
     button: (
       fore: "950",
       back: "400",
@@ -265,6 +359,15 @@ $colorDarkShades: (
         fore: "950",
         back: "300",
         border: "300",
+      ),
+    ),
+    adminNav: (
+      adminNavMenu: (
+        adminNavMenuItem: (
+          fore: "950",
+          back: "300",
+          border: "300",
+        ),
       ),
     ),
     button: (

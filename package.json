@@ -4,11 +4,23 @@
   "description": "sweet css written by scss",
   "main": "src/sass/sorbit.scss",
   "scripts": {
-    "build": "npm run clean && npm run sass && npm run autoprefix && npm run cleancss",
-    "clean": "rimraf dist/css",
-    "autoprefix": "postcss --use autoprefixer --map false --output dist/css/sorbit.css dist/css/sorbit.css",
-    "cleancss": "cleancss -o dist/css/sorbit.min.css dist/css/sorbit.css",
-    "sass": "sass src/sass/sorbit.scss dist/css/sorbit.css"
+    "build": "npm run build-lib",
+    "build-lib": "npm run build-lib-clean && npm run build-lib-main && npm run build-lib-utilities",
+    "build-lib-main": "npm run build-lib-sass && npm run build-lib-copy-css && npm run build-lib-copy-map && npm run build-lib-postcss && npm run build-lib-postcss-min",
+    "build-lib-utilities": "npm run build-lib-utilities-sass && npm run build-lib-utilities-copy-css && npm run build-lib-utilities-copy-map && npm run build-lib-utilities-postcss && npm run build-lib-utilities-postcss-min",
+    "build-lib-clean": "rimraf dist",
+    "build-lib-sass": "sass src/sass/sorbit.scss dist/css/sorbit.css",
+    "build-lib-copy-css": "node -e \"require('fs').copyFileSync('./dist/css/sorbit.css', './dist/css/sorbit.min.css')\"",
+    "build-lib-copy-map": "node -e \"require('fs').copyFileSync('./dist/css/sorbit.css.map', './dist/css/sorbit.min.css.map')\"",
+    "build-lib-postcss": "postcss --output dist/css/sorbit.css dist/css/sorbit.css",
+    "build-lib-postcss-min": "postcss --output dist/css/sorbit.min.css dist/css/sorbit.min.css",
+    "build-lib-utilities-sass": "sass src/sass/sorbit-utilities.scss dist/css/sorbit-utilities.css",
+    "build-lib-utilities-copy-css": "node -e \"require('fs').copyFileSync('./dist/css/sorbit-utilities.css', './dist/css/sorbit-utilities.min.css')\"",
+    "build-lib-utilities-copy-map": "node -e \"require('fs').copyFileSync('./dist/css/sorbit-utilities.css.map', './dist/css/sorbit-utilities.min.css.map')\"",
+    "build-lib-utilities-postcss": "postcss --output dist/css/sorbit-utilities.css dist/css/sorbit-utilities.css",
+    "build-lib-utilities-postcss-min": "postcss --output dist/css/sorbit-utilities.min.css dist/css/sorbit-utilities.min.css",
+    "prepublishOnly": "npm run build",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",

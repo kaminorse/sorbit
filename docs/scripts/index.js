@@ -20,7 +20,7 @@ function toggleHamburger() {
 }
 
 function changeColorScheme(colorScheme) {
-  let tabula = document.querySelector(".tabula");
+  let tabula = document.querySelector(".soroot");
   if (tabula) {
     tabula.dataset.colorScheme = colorScheme;
   }
