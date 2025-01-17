@@ -77,13 +77,21 @@
           max-width: 30%;
           width: 30%;
         }
+        > .nav-brand-center,
+        > .center {
+          margin: auto;
+          text-align: center;
+          flex-basis: 40%;
+          max-width: 40%;
+          width: 40%;
+        }
         > .nav-brand-right,
         > .right {
           margin: auto 0 auto auto;
           text-align: right;
         }
       }
-      > .nav-menu {
+      .nav-menu {
         @include mixins.base();
         display: flex;
         flex-basis: 0;
