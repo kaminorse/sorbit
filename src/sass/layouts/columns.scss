@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "../mixins/index.scss" as mixins;
+@use "../functions/index.scss" as functions;
 @use "../variables/index.scss" as variables;
 
 $columns-count: 12;
@@ -38,6 +39,30 @@ $columns-count: 12;
   }
   @include mixins.is-responsive("-direction-column-reverse") {
     flex-direction: column-reverse;
+  }
+
+  @for $p from 0 through 16 {
+    $escapedQuarter: functions.strReplace(#{($p * 0.25)}, ".", "\\.");
+    &.has-gutter-#{$escapedQuarter}rem {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+    &.has-gutter-x-#{$escapedQuarter}rem {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+    }
+    &.has-gutter-y-#{$escapedQuarter}rem {
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+    @include mixins.is-responsive("-#{$escapedQuarter}rem", "has-gutter-") {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
+    @include mixins.is-responsive("-#{$escapedQuarter}rem", "has-gutter-x") {
+      --#{variables.$prefix}gutter-x: #{($p * 0.25rem)};
+    }
+    @include mixins.is-responsive("-#{$escapedQuarter}rem", "has-gutter-y") {
+      --#{variables.$prefix}gutter-y: #{($p * 0.25rem)};
+    }
   }
 
   .column {
