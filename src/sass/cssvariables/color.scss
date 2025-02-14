@@ -161,10 +161,19 @@
     }
     //#endregion admin-nav
 
+    //#region breadcrumb
+    $breadcrumb: map.get($colorShade, "breadcrumb");
+    @if ($breadcrumb != null) {
+      @include setColor($breadcrumb, "default", $pseudoName, "-breadcrumb");
+    }
+    //#endregion breadcrumb
+
+    //#region button
     $button: map.get($colorShade, "button");
     @if ($button != null) {
       @include setColor($button, "default", $pseudoName, "-button");
     }
+    //#endregion button
 
     @each $colorName in variables.$colors {
       @include setColor($colorShade, $colorName, $pseudoName);
@@ -203,10 +212,19 @@
       }
       //#endregion admin-nav
 
+      //#region breadcrumb
+      $breadcrumb: map.get($colorShade, "breadcrumb");
+      @if ($breadcrumb != null) {
+        @include setColor($breadcrumb, $colorName, $pseudoName, "-breadcrumb");
+      }
+      //#endregion breadcrumb
+
+      //#region button
       $button: map.get($colorShade, "button");
       @if ($button != null) {
         @include setColor($button, $colorName, $pseudoName, "-button");
       }
+      //#endregion button
     }
   }
 }
