@@ -3,14 +3,9 @@
 .centering {
   @include mixins.base();
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  & > * {
-    @include mixins.base();
-    margin-left: auto;
-    margin-right: auto;
-  }
   &.is-fullheight {
     height: 100%;
   }
