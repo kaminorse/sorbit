@@ -133,11 +133,21 @@
       @include setColor($accordion, "default", $pseudoName, "-accordion");
       $accordionSummary: map.get($accordion, "accordionSummary");
       @if ($accordionSummary != null) {
-        @include setColor($accordionSummary, "default", $pseudoName, "-accordion-summary");
+        @include setColor(
+          $accordionSummary,
+          "default",
+          $pseudoName,
+          "-accordion-summary"
+        );
       }
       $accordionDetails: map.get($accordion, "accordionDetails");
       @if ($accordionDetails != null) {
-        @include setColor($accordionDetails, "default", $pseudoName, "-accordion-details");
+        @include setColor(
+          $accordionDetails,
+          "default",
+          $pseudoName,
+          "-accordion-details"
+        );
       }
     }
     //#endregion accordion
@@ -148,14 +158,29 @@
       @include setColor($adminNav, "default", $pseudoName, "-admin-nav");
       $adminNavBrand: map.get($adminNav, "adminNavBrand");
       @if ($adminNavBrand != null) {
-        @include setColor($adminNavBrand, "default", $pseudoName, "-admin-nav-brand");
+        @include setColor(
+          $adminNavBrand,
+          "default",
+          $pseudoName,
+          "-admin-nav-brand"
+        );
       }
       $adminNavMenu: map.get($adminNav, "adminNavMenu");
       @if ($adminNavMenu != null) {
-        @include setColor($adminNavMenu, "default", $pseudoName, "-admin-nav-menu");
+        @include setColor(
+          $adminNavMenu,
+          "default",
+          $pseudoName,
+          "-admin-nav-menu"
+        );
         $adminNavMenuItem: map.get($adminNavMenu, "adminNavMenuItem");
         @if ($adminNavMenuItem != null) {
-          @include setColor($adminNavMenuItem, "default", $pseudoName, "-admin-nav-menu-item");
+          @include setColor(
+            $adminNavMenuItem,
+            "default",
+            $pseudoName,
+            "-admin-nav-menu-item"
+          );
         }
       }
     }
@@ -175,6 +200,38 @@
     }
     //#endregion button
 
+    //#region dialog
+    $dialog: map.get($colorShade, "dialog");
+    @if ($dialog != null) {
+      @include setColor($dialog, "default", $pseudoName, "-dialog");
+
+      $dialogAvatar: map.get($dialog, "dialogAvatar");
+      @if ($dialogAvatar != null) {
+        @include setColor(
+          $dialogAvatar,
+          "default",
+          $pseudoName,
+          "-dialog-avatar"
+        );
+      }
+
+      $dialogName: map.get($dialog, "dialogName");
+      @if ($dialogName != null) {
+        @include setColor($dialogName, "default", $pseudoName, "-dialog-name");
+      }
+
+      $dialogMessage: map.get($dialog, "dialogMessage");
+      @if ($dialogMessage != null) {
+        @include setColor(
+          $dialogMessage,
+          "default",
+          $pseudoName,
+          "-dialog-message"
+        );
+      }
+    }
+    //#endregion dialog
+
     @each $colorName in variables.$colors {
       @include setColor($colorShade, $colorName, $pseudoName);
 
@@ -184,11 +241,21 @@
         @include setColor($accordion, $colorName, $pseudoName, "-accordion");
         $accordionSummary: map.get($accordion, "accordionSummary");
         @if ($accordionSummary != null) {
-          @include setColor($accordionSummary, $colorName, $pseudoName, "-accordion-summary");
+          @include setColor(
+            $accordionSummary,
+            $colorName,
+            $pseudoName,
+            "-accordion-summary"
+          );
         }
         $accordionDetails: map.get($accordion, "accordionDetails");
         @if ($accordionDetails != null) {
-          @include setColor($accordionDetails, $colorName, $pseudoName, "-accordion-details");
+          @include setColor(
+            $accordionDetails,
+            $colorName,
+            $pseudoName,
+            "-accordion-details"
+          );
         }
       }
       //#endregion accordion
@@ -199,14 +266,29 @@
         @include setColor($adminNav, $colorName, $pseudoName, "-admin-nav");
         $adminNavBrand: map.get($adminNav, "adminNavBrand");
         @if ($adminNavBrand != null) {
-          @include setColor($adminNavBrand, $colorName, $pseudoName, "-admin-nav-brand");
+          @include setColor(
+            $adminNavBrand,
+            $colorName,
+            $pseudoName,
+            "-admin-nav-brand"
+          );
         }
         $adminNavMenu: map.get($adminNav, "adminNavMenu");
         @if ($adminNavMenu != null) {
-          @include setColor($adminNavMenu, $colorName, $pseudoName, "-admin-nav-menu");
+          @include setColor(
+            $adminNavMenu,
+            $colorName,
+            $pseudoName,
+            "-admin-nav-menu"
+          );
           $adminNavMenuItem: map.get($adminNavMenu, "adminNavMenuItem");
           @if ($adminNavMenuItem != null) {
-            @include setColor($adminNavMenuItem, $colorName, $pseudoName, "-admin-nav-menu-item");
+            @include setColor(
+              $adminNavMenuItem,
+              $colorName,
+              $pseudoName,
+              "-admin-nav-menu-item"
+            );
           }
         }
       }
@@ -225,6 +307,43 @@
         @include setColor($button, $colorName, $pseudoName, "-button");
       }
       //#endregion button
+
+      //#region dialog
+      $dialog: map.get($colorShade, "dialog");
+      @if ($dialog != null) {
+        @include setColor($dialog, $colorName, $pseudoName, "-dialog");
+
+        $dialogAvatar: map.get($dialog, "dialogAvatar");
+        @if ($dialogAvatar != null) {
+          @include setColor(
+            $dialogAvatar,
+            $colorName,
+            $pseudoName,
+            "-dialog-avatar"
+          );
+        }
+
+        $dialogName: map.get($dialog, "dialogName");
+        @if ($dialogName != null) {
+          @include setColor(
+            $dialogName,
+            $colorName,
+            $pseudoName,
+            "-dialog-name"
+          );
+        }
+
+        $dialogMessage: map.get($dialog, "dialogMessage");
+        @if ($dialogMessage != null) {
+          @include setColor(
+            $dialogMessage,
+            $colorName,
+            $pseudoName,
+            "-dialog-message"
+          );
+        }
+      }
+      //#endregion dialog
     }
   }
 }

@@ -62,6 +62,10 @@ function changeColor(color) {
     elem.className = `code ${color}`;
   });
 
+  document.querySelectorAll(".dialog").forEach((elem) => {
+    elem.className = `dialog is-left is-avatar-circle ${color}`;
+  });
+
   document.querySelectorAll(".input").forEach((elem) => {
     elem.className = `input ${color}`;
   });
