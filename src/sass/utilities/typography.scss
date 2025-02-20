@@ -77,21 +77,21 @@
 }
 
 .is-font-weight-light {
-  font-size: var(--#{variables.$prefix}font-weight-light) !important;
+  font-weight: var(--#{variables.$prefix}font-weight-light) !important;
 }
 
 .is-font-weight-normal {
-  font-size: var(--#{variables.$prefix}font-weight-normal) !important;
+  font-weight: var(--#{variables.$prefix}font-weight-normal) !important;
 }
 
 .is-font-weight-medium {
-  font-size: var(--#{variables.$prefix}font-weight-medium) !important;
+  font-weight: var(--#{variables.$prefix}font-weight-medium) !important;
 }
 
 .is-font-weight-semibold {
-  font-size: var(--#{variables.$prefix}font-weight-semibold) !important;
+  font-weight: var(--#{variables.$prefix}font-weight-semibold) !important;
 }
 
 .is-font-weight-bold {
-  font-size: var(--#{variables.$prefix}font-weight-bold) !important;
+  font-weight: var(--#{variables.$prefix}font-weight-bold) !important;
 }
