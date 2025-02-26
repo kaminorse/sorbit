@@ -8,13 +8,17 @@ $columns-count: 12;
 .columns {
   --#{variables.$prefix}gutter-x: 0;
   --#{variables.$prefix}gutter-y: 0;
+  --#{variables.$prefix}gutter-top: var(--#{variables.$prefix}gutter-y);
+  --#{variables.$prefix}gutter-bottom: var(--#{variables.$prefix}gutter-y);
+  --#{variables.$prefix}gutter-right: var(--#{variables.$prefix}gutter-x);
+  --#{variables.$prefix}gutter-left: var(--#{variables.$prefix}gutter-x);
   @include mixins.base();
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: calc(var(--#{variables.$prefix}gutter-y) * -1);
-  margin-right: calc(var(--#{variables.$prefix}gutter-x) * -0.5);
-  margin-left: calc(var(--#{variables.$prefix}gutter-x) * -0.5);
+  margin-top: calc(var(--#{variables.$prefix}gutter-top) * -1);
+  margin-right: calc(var(--#{variables.$prefix}gutter-right) * -0.5);
+  margin-left: calc(var(--#{variables.$prefix}gutter-left) * -0.5);
   &.is-direction-row {
     flex-direction: row;
   }
