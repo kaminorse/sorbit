@@ -6,14 +6,24 @@
   display: block;
   width: 100%;
   box-shadow: 0 0 0.5rem var(--#{variables.$prefix}color-default-shadow);
-  backdrop-filter: blur(0.25rem);
+  backdrop-filter: var(--#{variables.$prefix}header-backdrop-filter);
+
   &.is-sticky {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: var(--#{variables.$prefix}header-z-index-is-sticky);
   }
+
+  &.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--#{variables.$prefix}header-z-index-is-fixed);
+  }
+
   @each $color in variables.$colors {
     &.is-#{$color} {
       color: var(--#{variables.$prefix}color-#{$color}-fore);
