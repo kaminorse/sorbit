@@ -1,59 +1,7 @@
 @use "../mixins/index.scss" as mixins;
 @use "../variables/index.scss" as variables;
 
-.input {
-  @include mixins.base();
-  background-color: var(--#{variables.$prefix}color-default-back);
-  border-color: var(--#{variables.$prefix}color-default-border);
-  border-radius: 0.5rem;
-  border-style: solid;
-  border-width: var(--#{variables.$prefix}border-width-medium);
-  padding: 0.5rem;
-  &::placeholder {
-    color: var(--#{variables.$prefix}color-default-placeholder);
-  }
-  &:focus,
-  &.is-focus,
-  &.is-focused {
-    background-color: var(--#{variables.$prefix}color-default-focus-back);
-    border-color: var(--#{variables.$prefix}color-default-focus-border);
-  }
-  &[disabled],
-  fieldset[disabled],
-  &.is-disabled {
-    background-color: var(--#{variables.$prefix}color-default-disabled-back);
-    border-color: var(--#{variables.$prefix}color-default-disabled-border);
-  }
-  @each $color in variables.$colors {
-    &.is-#{$color} {
-      background-color: var(--#{variables.$prefix}color-#{$color}-back);
-      border-color: var(--#{variables.$prefix}color-#{$color}-border);
-      color: var(--#{variables.$prefix}color-#{$color}-fore);
-      &::placeholder {
-        color: var(--#{variables.$prefix}color-#{$color}-placeholder);
-      }
-      &:focus,
-      &.is-focus,
-      &.is-focused {
-        background-color: var(--#{variables.$prefix}color-#{$color}-focus-back);
-        border-color: var(--#{variables.$prefix}color-#{$color}-focus-border);
-      }
-      &[disabled],
-      fieldset[disabled],
-      &.is-disabled {
-        background-color: var(--#{variables.$prefix}color-#{$color}-disabled-back);
-        border-color: var(--#{variables.$prefix}color-#{$color}-disabled-border);
-      }
-    }
-  }
-}
-
-.input-text {
-  @extend .input;
-}
-
 .input-checkbox {
-  @extend .input;
   appearance: none;
   border-radius: 25%;
   cursor: pointer;
@@ -67,7 +15,8 @@
     border-color: transparent;
     border-radius: 25%;
     border-style: solid;
-    border-width: 0 var(--#{variables.$prefix}border-width-medium) var(--#{variables.$prefix}border-width-medium) 0;
+    border-width: 0 var(--#{variables.$prefix}border-width-medium)
+      var(--#{variables.$prefix}border-width-medium) 0;
     content: "";
     display: block;
     height: 1rem;
@@ -105,11 +54,17 @@
       &[disabled],
       fieldset[disabled],
       &.is-disabled {
-        background-color: var(--#{variables.$prefix}color-#{$color}-disabled-back);
-        border-color: var(--#{variables.$prefix}color-#{$color}-disabled-border);
+        background-color: var(
+          --#{variables.$prefix}color-#{$color}-disabled-back
+        );
+        border-color: var(
+          --#{variables.$prefix}color-#{$color}-disabled-border
+        );
         &:checked {
           &:after {
-            border-color: var(--#{variables.$prefix}color-#{$color}-disabled-fore);
+            border-color: var(
+              --#{variables.$prefix}color-#{$color}-disabled-fore
+            );
           }
         }
       }
@@ -118,7 +73,6 @@
 }
 
 .input-radio {
-  @extend .input;
   appearance: none;
   border-radius: 50%;
   cursor: pointer;
@@ -170,11 +124,17 @@
       &[disabled],
       fieldset[disabled],
       &.is-disabled {
-        background-color: var(--#{variables.$prefix}color-#{$color}-disabled-back);
-        border-color: var(--#{variables.$prefix}color-#{$color}-disabled-border);
+        background-color: var(
+          --#{variables.$prefix}color-#{$color}-disabled-back
+        );
+        border-color: var(
+          --#{variables.$prefix}color-#{$color}-disabled-border
+        );
         &:checked {
           &:after {
-            border-color: var(--#{variables.$prefix}color-#{$color}-disabled-fore);
+            border-color: var(
+              --#{variables.$prefix}color-#{$color}-disabled-fore
+            );
           }
         }
       }
@@ -182,37 +142,121 @@
   }
 }
 
+.input-range {
+  appearance: none;
+  cursor: pointer;
+  border-radius: var(--#{variables.$prefix}border-radius-pill);
+  width: 100%;
+  height: 1rem;
+  padding: 0;
+  .input-range-track {
+    cursor: pointer;
+    background-color: var(--#{variables.$prefix}color-default-back);
+  }
+  .input-range-thumb {
+    appearance: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    background-color: var(--#{variables.$prefix}color-default-border);
+    border-radius: var(--#{variables.$prefix}border-radius-circle);
+    cursor: pointer;
+    width: 2rem;
+  }
+  &::-webkit-slider-runnable-track {
+    @extend .input-range-track;
+  }
+  &::-moz-range-track {
+    @extend .input-range-track;
+  }
+  &::-webkit-slider-thumb {
+    @extend .input-range-thumb;
+  }
+  &::-moz-range-thumb {
+    @extend .input-range-thumb;
+  }
+  &:focus,
+  &.is-focus,
+  &.is-focused {
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track {
+      background-color: var(--#{variables.$prefix}color-default-focus-back);
+    }
+  }
+}
 
 .input-color {
-  @extend .input;
+  cursor: pointer;
   height: 2.5rem;
 }
 
-.input[type="text"],
-.input[type="email"],
-.input[type="number"],
-.input[type="password"],
-.input[type="search"] {
-  @extend .input-text;
+.input {
+  @include mixins.base();
+  background-color: var(--#{variables.$prefix}color-default-back);
+  border-color: var(--#{variables.$prefix}color-default-border);
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: var(--#{variables.$prefix}border-width-medium);
+  padding: 0.5rem;
+  &::placeholder {
+    color: var(--#{variables.$prefix}color-default-placeholder);
+  }
+  &:focus,
+  &.is-focus,
+  &.is-focused {
+    background-color: var(--#{variables.$prefix}color-default-focus-back);
+    border-color: var(--#{variables.$prefix}color-default-focus-border);
+  }
+  &[disabled],
+  fieldset[disabled],
+  &.is-disabled {
+    background-color: var(--#{variables.$prefix}color-default-disabled-back);
+    border-color: var(--#{variables.$prefix}color-default-disabled-border);
+  }
+  @each $color in variables.$colors {
+    &.is-#{$color} {
+      background-color: var(--#{variables.$prefix}color-#{$color}-back);
+      border-color: var(--#{variables.$prefix}color-#{$color}-border);
+      color: var(--#{variables.$prefix}color-#{$color}-fore);
+      &::placeholder {
+        color: var(--#{variables.$prefix}color-#{$color}-placeholder);
+      }
+      &:focus,
+      &.is-focus,
+      &.is-focused {
+        background-color: var(--#{variables.$prefix}color-#{$color}-focus-back);
+        border-color: var(--#{variables.$prefix}color-#{$color}-focus-border);
+      }
+      &[disabled],
+      fieldset[disabled],
+      &.is-disabled {
+        background-color: var(
+          --#{variables.$prefix}color-#{$color}-disabled-back
+        );
+        border-color: var(
+          --#{variables.$prefix}color-#{$color}-disabled-border
+        );
+      }
+    }
+  }
+  &[type="color"] {
+    @extend .input-color;
+  }
+  &[type="checkbox"] {
+    @extend .input-checkbox;
+  }
+  &[type="radio"] {
+    @extend .input-radio;
+  }
+  &[type="range"] {
+    @extend .input-range;
+  }
 }
 
-.input[type="date"],
-.input[type="month"],
-.input[type="time"],
-.input[type="week"],
-.input[type="datetime-local"] {
-  @extend .input-text;
-}
-
-.input[type="checkbox"] {
-  @extend .input-checkbox;
-}
-
-.input[type="radio"] {
-  @extend .input-radio;
-}
-
-
-.input[type="color"] {
-  @extend .input-color;
+textarea {
+  &.input {
+    min-height: min-content;
+    max-width: 100%;
+    width: 100%;
+    field-sizing: content;
+  }
 }

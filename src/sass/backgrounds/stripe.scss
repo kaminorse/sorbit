@@ -1,31 +1,41 @@
 @use "../variables/index.scss" as variables;
+@use "../mixins/index.scss" as mixins;
 
 .stripe {
+  --#{variables.$prefix}stripe-color-fore: oklch(
+    var(--#{variables.$prefix}color-default-stripe-fore-oklch) / 0.5
+  );
+  --#{variables.$prefix}stripe-color-back: var(
+    --#{variables.$prefix}color-default-stripe-back
+  );
+  --#{variables.$prefix}stripe-degree: 0deg;
+
+  @include mixins.base();
   background-size: auto auto;
+  background-color: var(--#{variables.$prefix}stripe-color-back);
+  background-image: repeating-linear-gradient(
+    var(--#{variables.$prefix}stripe-degree),
+    transparent,
+    transparent 0.75rem,
+    var(--#{variables.$prefix}stripe-color-fore) 0.75rem,
+    var(--#{variables.$prefix}stripe-color-fore) 1.5rem
+  );
+
+  @for $n from 0 through 24 {
+    $degree: $n * 15deg;
+    &.is-#{$degree} {
+      --#{variables.$prefix}stripe-degree: #{$degree};
+    }
+  }
+
   @each $color in variables.$colors {
-    @for $p from 2 through 17 {
-      &.is-#{$color}-#{$p * 5}0 {
-        background-color: var(--#{variables.$prefix}color-#{$color}-#{($p + 2) * 5}0);
-        background-image: repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 0.75rem,
-          oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
-          oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
-        );
-        @for $n from 0 through 8 {
-          $degree: $n * 45deg;
-          &.is-#{$degree} {
-            background-image: repeating-linear-gradient(
-              $degree,
-              transparent,
-              transparent 0.75rem,
-              oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 0.75rem,
-              oklch(var(--#{variables.$prefix}color-#{$color}-#{$p * 5}0-oklch) / 0.5) 1.5rem
-            );
-          }
-        }
-      }
+    &.is-#{$color} {
+      --#{variables.$prefix}stripe-color-fore: oklch(
+        var(--#{variables.$prefix}color-#{$color}-stripe-fore-oklch) / 0.5
+      );
+      --#{variables.$prefix}stripe-color-back: var(
+        --#{variables.$prefix}color-#{$color}-stripe-back
+      );
     }
   }
 }

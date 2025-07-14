@@ -106,12 +106,16 @@ function changeColor(color) {
     elem.className = `progress ${color} is-50-percent`;
   });
 
+  document.querySelectorAll(".dot").forEach((elem) => {
+    elem.className = `dot ${color}`;
+  });
+
   document.querySelectorAll(".gingham").forEach((elem) => {
-    elem.className = `gingham ${color}-600`;
+    elem.className = `gingham ${color}`;
   });
 
   document.querySelectorAll(".stripe").forEach((elem) => {
-    elem.className = `stripe ${color}-600`;
+    elem.className = `stripe ${color}`;
   });
 
   document.querySelectorAll(".accordion").forEach((elem) => {

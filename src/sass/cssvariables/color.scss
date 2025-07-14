@@ -127,6 +127,27 @@
 
     @include setColor($colorShade, "default", $pseudoName);
 
+    //#region dot
+    $dot: map.get($colorShade, "dot");
+    @if ($dot != null) {
+      @include setColor($dot, "default", $pseudoName, "-dot");
+    }
+    //#endregion dot
+
+    //#region gingham
+    $gingham: map.get($colorShade, "gingham");
+    @if ($gingham != null) {
+      @include setColor($gingham, "default", $pseudoName, "-gingham");
+    }
+    //#endregion gingham
+
+    //#region stripe
+    $stripe: map.get($colorShade, "stripe");
+    @if ($stripe != null) {
+      @include setColor($stripe, "default", $pseudoName, "-stripe");
+    }
+    //#endregion stripe
+
     //#region accordion
     $accordion: map.get($colorShade, "accordion");
     @if ($accordion != null) {
@@ -234,6 +255,27 @@
 
     @each $colorName in variables.$colors {
       @include setColor($colorShade, $colorName, $pseudoName);
+
+      //#region dot
+      $dot: map.get($colorShade, "dot");
+      @if ($dot != null) {
+        @include setColor($dot, $colorName, $pseudoName, "-dot");
+      }
+      //#endregion dot
+
+      //#region gingham
+      $gingham: map.get($colorShade, "gingham");
+      @if ($gingham != null) {
+        @include setColor($gingham, $colorName, $pseudoName, "-gingham");
+      }
+      //#endregion gingham
+
+      //#region stripe
+      $stripe: map.get($colorShade, "stripe");
+      @if ($stripe != null) {
+        @include setColor($stripe, $colorName, $pseudoName, "-stripe");
+      }
+      //#endregion stripe
 
       //#region accordion
       $accordion: map.get($colorShade, "accordion");
@@ -344,6 +386,7 @@
         }
       }
       //#endregion dialog
+
     }
   }
 }
