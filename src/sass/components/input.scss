@@ -191,7 +191,16 @@
 .input[type="text"],
 .input[type="email"],
 .input[type="number"],
-.input[type="password"] {
+.input[type="password"],
+.input[type="search"] {
+  @extend .input-text;
+}
+
+.input[type="date"],
+.input[type="month"],
+.input[type="time"],
+.input[type="week"],
+.input[type="datetime-local"] {
   @extend .input-text;
 }
 
