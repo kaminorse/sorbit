@@ -2,10 +2,31 @@
 @use "../variables/index.scss" as variables;
 
 .soroot {
+  --#{variables.$prefix}soroot-color-fore: var(
+    --#{variables.$prefix}color-default-soroot-fore,
+    var(--#{variables.$prefix}color-default-fore)
+  );
+  --#{variables.$prefix}soroot-color-back: var(
+    --#{variables.$prefix}color-default-soroot-back,
+    var(--#{variables.$prefix}color-default-back)
+  );
+  --#{variables.$prefix}soroot-selection-color-fore: var(
+    --#{variables.$prefix}color-default-soroot-selection-fore,
+    var(--#{variables.$prefix}color-default-selection-fore)
+  );
+  --#{variables.$prefix}soroot-selection-color-back: var(
+    --#{variables.$prefix}color-default-soroot-selection-back,
+    var(--#{variables.$prefix}color-default-selection-back)
+  );
+
   @include mixins.base();
   box-sizing: border-box;
   font-family: var(--#{variables.$prefix}font-family-sans-serif);
-  color: var(--#{variables.$prefix}color-default-fore);
-  background-color: var(--#{variables.$prefix}color-default-back);
+  color: var(--#{variables.$prefix}soroot-color-fore);
+  background-color: var(--#{variables.$prefix}soroot-color-back);
   z-index: var(--#{variables.$prefix}z-index-soroot);
+  &::selection {
+    color: var(--#{variables.$prefix}soroot-selection-color-fore);
+    background-color: var(--#{variables.$prefix}soroot-selection-color-back);
+  }
 }
